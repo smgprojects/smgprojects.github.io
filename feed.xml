@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open History Notebook</title>
-    <description>The open history notebook of historian Jason A. Heppler.</description>
-    <link>http://notebook.jasonheppler.orghttp://notebook.dev/</link>
-    <atom:link href="http://notebook.jasonheppler.orghttp://notebook.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Mar 2016 14:45:32 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2016 14:45:32 -0400</lastBuildDate>
+    <description>An open history notebook forked from Jason Heppler</description>
+    <link>http://smgprojects.github.io/</link>
+    <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 15 Mar 2016 17:28:18 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Mar 2016 17:28:18 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -15,8 +15,8 @@
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Tue, 01 Mar 2016 14:07:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/lima2011visual/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/lima2011visual/</guid>
+        <link>http://smgprojects.github.io/lima2011visual/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/lima2011visual/</guid>
         
         <category>visualization</category>
         
@@ -31,8 +31,8 @@
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:34:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/robinson1967minard/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/robinson1967minard/</guid>
+        <link>http://smgprojects.github.io/robinson1967minard/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/robinson1967minard/</guid>
         
         <category>visualization</category>
         
@@ -47,8 +47,8 @@
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:34:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/kinnahan2008walker/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/kinnahan2008walker/</guid>
+        <link>http://smgprojects.github.io/kinnahan2008walker/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/kinnahan2008walker/</guid>
         
         <category>visualization</category>
         
@@ -63,8 +63,8 @@
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:33:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/goodchild2004gis/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/goodchild2004gis/</guid>
+        <link>http://smgprojects.github.io/goodchild2004gis/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/goodchild2004gis/</guid>
         
         <category>visualization</category>
         
@@ -79,8 +79,8 @@
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:33:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/friendly2002minard/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/friendly2002minard/</guid>
+        <link>http://smgprojects.github.io/friendly2002minard/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/friendly2002minard/</guid>
         
         <category>visualization</category>
         
@@ -132,8 +132,8 @@ method was running away with itself.&lt;/p&gt;
 &lt;p&gt;p. 513: Charles Minard’s &lt;em&gt;Carte figurative et approximative des quantités de coton en Europe en 1858 et 1862&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:33:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/friendly2008goldenage/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/friendly2008goldenage/</guid>
+        <link>http://smgprojects.github.io/friendly2008goldenage/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/friendly2008goldenage/</guid>
         
         <category>visualization</category>
         
@@ -148,8 +148,8 @@ method was running away with itself.&lt;/p&gt;
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:32:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/fienberg1979graphical/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/fienberg1979graphical/</guid>
+        <link>http://smgprojects.github.io/fienberg1979graphical/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/fienberg1979graphical/</guid>
         
         <category>visualization</category>
         
@@ -164,8 +164,8 @@ method was running away with itself.&lt;/p&gt;
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:32:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/debats2011gis/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/debats2011gis/</guid>
+        <link>http://smgprojects.github.io/debats2011gis/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/debats2011gis/</guid>
         
         <category>visualization</category>
         
@@ -180,8 +180,8 @@ method was running away with itself.&lt;/p&gt;
 &lt;h4&gt;(missing reference)&lt;/h4&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 10:32:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/carr2005choropleth/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/carr2005choropleth/</guid>
+        <link>http://smgprojects.github.io/carr2005choropleth/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/carr2005choropleth/</guid>
         
         <category>visualization</category>
         
@@ -304,8 +304,8 @@ scc.incomerace.1980 &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
 &lt;p&gt;Polluted sites in Santa Clara County showing low-income and minority neighborhoods by Census tract, c. 1980. Low-income is defined as areas below the &lt;a href=&quot;http://www.bayareacensus.ca.gov/bayarea.htm&quot;&gt;county median&lt;/a&gt; of $23,369, and minority is defined as neighborhoods that have a greater proportion of minority households. Categories derived from the U.S. Census. Large black circles represent &lt;a href=&quot;https://github.com/hepplerj/machinesvalley/blob/gh-pages/data-files/ca-pollution/ca_superfund.csv&quot;&gt;Superfund sites&lt;/a&gt;, smaller red circles represent identified &lt;a href=&quot;https://github.com/hepplerj/machinesvalley/blob/gh-pages/data-files/ca-pollution/ca_toxic_sites.csv&quot;&gt;toxic or chemical leaks and spills&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 10 Feb 2016 08:07:00 -0500</pubDate>
-        <link>http://notebook.jasonheppler.orghttp://notebook.dev/superfund-sites-and-income-by-census-tract/</link>
-        <guid isPermaLink="true">http://notebook.jasonheppler.orghttp://notebook.dev/superfund-sites-and-income-by-census-tract/</guid>
+        <link>http://smgprojects.github.io/superfund-sites-and-income-by-census-tract/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/superfund-sites-and-income-by-census-tract/</guid>
         
         <category>R</category>
         
