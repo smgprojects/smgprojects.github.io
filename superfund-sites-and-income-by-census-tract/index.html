@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Superfund Sites and Income by Census Tract</title>
+    <meta name="description" content="The open history notebook of historian Jason A. Heppler.">
+    <meta name="author" content="Jason A. Heppler"/>
+
+    <!-- Get date last modified from git log. (Uses current time if file entry not found, e.g. projects/)  -->
+    
+
+    <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
+    
+      
+      
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Superfund Sites and Income by Census Tract" />
+    <meta property="dc:creator" content="Jason A. Heppler" />
+    <meta property="dc:date" content="2016-02-10T08:07:00-05:00" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/superfund-sites-and-income-by-census-tract/" />
+    <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
+    <meta property="dc:source" content="Open History Notebook" />
+    <meta property="dc:subject" content="History" />
+    <meta property="dc:type" content="website" />
+
+    <!-- RDFa Metadata (in OpenGraph) -->
+    <meta property="og:title" content="Superfund Sites and Income by Census Tract" />
+    <meta property="og:author" content="http://notebook.dev/bio.html" />
+    <meta property="og:site_name" content="Open History Notebook" />
+    <meta property="og:url" content="http://notebook.dev/superfund-sites-and-income-by-census-tract/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Jason A. Heppler"/>
+    <meta name="citation_date" content="2016-02-10T08:07:00-05:00"/>
+    <meta name="citation_title" content="Superfund Sites and Income by Census Tract"/>
+    <meta name="citation_journal_title" content="Open History Notebook"/>
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="http://notebook.dev">
+    <meta name="twitter:title" content="Open History Notebook">
+    <meta name="twitter:description" content="The open history notebook of historian Jason A. Heppler.">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/wak0qrc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://notebook.dev/components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://notebook.dev/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://notebook.dev/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="http://notebook.dev/css/main.css">
+    <!-- <link rel="stylesheet" href="http://notebook.dev/css/search.css"> -->
+    <!-- <link rel="stylesheet" href="http://notebook.dev/css/custom.css"> -->
+    <link rel="stylesheet" href="http://notebook.dev/css/bigfoot-default.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="canonical" href="http://notebook.jasonheppler.orghttp://notebook.dev/superfund-sites-and-income-by-census-tract/">
+
+    <!-- Initialize Bigfoot.js -->
+    <script type="text/javascript" src="http://notebook.dev/components/bigfoot/bigfoot.js"></script>
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+
+    <!-- Todo lists (via Lincoln Mullen) -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      $(document).ready(function() {
+        $("li:contains('[ ]')").html(function(_, html) {
+          return html.replace('[ ]', '<span style="color:red;">☐</span>');
+        });
+        $("li:contains('[s]')").html(function(_, html) {
+          return html.replace('[s]', '<span style="color:gold;">☐</span>');
+        });
+        $("li:contains('[x]')").html(function(_, html) {
+          return html.replace('[x]', '<span style="color:green;">☑</span>');
+        });
+      });
+      /* ]]> */
+    </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="http://notebook.dev/">Open History Notebook</a>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="http://notebook.dev/about/">About</a></li>
+        <li><a href="http://notebook.dev/essays/">Essays</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+  <div class="well sidebar-nav">
+
+  <center><img src="http://notebook.dev/images/logo.png" class="img-responsive" alt="Jason Heppler's Notebook"/><br/>
+  <a href="http://jasonheppler.org">Jason Heppler</a>
+  </center>
+
+  <br/>
+
+  <div id="search">
+    <form action="http://duckduckgo.com/" method="get">
+    <input type="hidden" name="sites" value="notebook.jasonheppler.org" />
+      <input type="text" id="search_input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+  </div>
+
+    <ul class="nav nav-list">
+      <li class="nav-header">General</li>
+      <li><a href="http://notebook.dev/tagged/">Notes by Tag</a></li>
+      <li><a href="http://notebook.dev/archive/">All Notes by Date</a></li>
+      <li><a href="http://notebook.dev/archive-alphabetical/">All Notes Alphabetically</a></li>
+      <li><a href="http://notebook.dev/essays/">Essays and General Writing</a></li>
+      <li><a href="http://notebook.dev/categories/">Categories</a></li>
+
+      <li class="nav-header">Topics and Projects</li>
+      <li><a href="http://notebook.dev/reading-notes/">Reading Notes</a></li>
+      <li><a href="http://notebook.dev/machines-valley-manuscript/">Machines in the Valley</a></li>
+      <li><a href="http://notebook.dev/visualization-humanities/">Visualization in the Humanities</a></li>
+      <li><a href="http://notebook.dev/open-research/">Open Research</a></li>
+      <li><a href="http://notebook.dev/spatial-history/">Spatial History</a></li>
+
+      <li class="nav-header">Meta</li>
+      <li><a href="http://notebook.dev/project-news/">Notebook News</a></li>
+      <li><a href="http://notebook.dev/about/">About Me</a></li>
+      <li><a href="http://notebook.dev/notebook/">About This Notebook</a></li>
+    </ul>
+  </div>
+
+</div> <!-- / span3 -->
+
+        <div class="span9">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Superfund Sites and Income by Census Tract</h1>
+    <p class="post-meta">Feb 10, 2016</p>
+  </header>
+
+  <article class="post-content">
+    
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">###--------------------------------------------------</span>
+<span class="c1">### Variables</span>
+<span class="c1">###--------------------------------------------------</span>
+
+<span class="c1"># Census data average incomes</span>
+income.median.1949 <span class="o">=</span> <span class="m">3689</span>
+income.median.1959 <span class="o">=</span> <span class="m">7417</span>
+income.median.1969 <span class="o">=</span> <span class="m">12456</span>
+income.median.1979 <span class="o">=</span> <span class="m">23369</span>
+income.median.1989 <span class="o">=</span> <span class="m">48115</span>
+
+<span class="c1">###--------------------------------------------------</span>
+<span class="c1">### Data prep</span>
+<span class="c1">###--------------------------------------------------</span>
+
+<span class="c1"># Population</span>
+sccpop.1980csv <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;/Users/jasonheppler/Dropbox/acad/data/census-data/nhgis0011_ds104_1980_tract.csv&quot;</span><span class="p">,</span> stringsAsFactors <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+sccpop.1980csv <span class="o">&lt;-</span> sccpop.1980csv<span class="p">[</span>sccpop.1980csv<span class="o">$</span>COUNTY<span class="o">==</span><span class="s">&quot;Santa Clara&quot;</span><span class="p">,</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;GISJOIN&quot;</span><span class="p">,</span><span class="s">&quot;STATE&quot;</span><span class="p">,</span><span class="s">&quot;COUNTY&quot;</span><span class="p">,</span><span class="s">&quot;C9D001&quot;</span><span class="p">,</span><span class="s">&quot;C9D002&quot;</span><span class="p">,</span><span class="s">&quot;C9D003&quot;</span><span class="p">,</span><span class="s">&quot;C9D004&quot;</span><span class="p">,</span><span class="s">&quot;C9D005&quot;</span><span class="p">,</span><span class="s">&quot;C9D006&quot;</span><span class="p">,</span><span class="s">&quot;C9D007&quot;</span><span class="p">,</span><span class="s">&quot;C9D008&quot;</span><span class="p">,</span><span class="s">&quot;C9D009&quot;</span><span class="p">,</span><span class="s">&quot;C9D010&quot;</span><span class="p">,</span><span class="s">&quot;C9D011&quot;</span><span class="p">,</span><span class="s">&quot;C9D012&quot;</span><span class="p">,</span><span class="s">&quot;C9D013&quot;</span><span class="p">,</span><span class="s">&quot;C9D014&quot;</span><span class="p">,</span><span class="s">&quot;C9D015&quot;</span><span class="p">)]</span>
+sccpop.1980csv <span class="o">&lt;-</span> sccpop.1980csv <span class="o">%&gt;%</span> mutate<span class="p">(</span>totalWhite <span class="o">=</span> C9D001<span class="p">)</span>
+sccpop.1980csv <span class="o">&lt;-</span> sccpop.1980csv <span class="o">%&gt;%</span> mutate<span class="p">(</span>totalMinority <span class="o">=</span> C9D002 <span class="o">+</span> C9D003 <span class="o">+</span> C9D004 <span class="o">+</span> C9D005 <span class="o">+</span> C9D006 <span class="o">+</span> C9D007 <span class="o">+</span> C9D008 <span class="o">+</span> C9D009 <span class="o">+</span> C9D010 <span class="o">+</span> C9D011 <span class="o">+</span> C9D012 <span class="o">+</span> C9D013 <span class="o">+</span> C9D014 <span class="o">+</span> C9D015<span class="p">)</span>
+sccpop.1980csv <span class="o">&lt;-</span> sccpop.1980csv <span class="o">%&gt;%</span> mutate<span class="p">(</span>total <span class="o">=</span> totalWhite <span class="o">+</span> totalMinority<span class="p">)</span>
+sccpop.1980csv <span class="o">&lt;-</span> sccpop.1980csv<span class="p">[</span>sccpop.1980csv<span class="o">$</span>COUNTY<span class="o">==</span><span class="s">&quot;Santa Clara&quot;</span><span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;GISJOIN&quot;</span><span class="p">,</span><span class="s">&quot;STATE&quot;</span><span class="p">,</span><span class="s">&quot;COUNTY&quot;</span><span class="p">,</span><span class="s">&quot;totalWhite&quot;</span><span class="p">,</span><span class="s">&quot;totalMinority&quot;</span><span class="p">,</span><span class="s">&quot;total&quot;</span><span class="p">)]</span>
+
+<span class="c1"># Income</span>
+sccincome.1980csv <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;/Users/jasonheppler/Dropbox/acad/data/census-data/income/nhgis0018_ds107_1980_tract.csv&quot;</span><span class="p">,</span> stringsAsFactors <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+sccincome.1980csv <span class="o">&lt;-</span> sccincome.1980csv<span class="p">[</span>sccincome.1980csv<span class="o">$</span>COUNTY<span class="o">==</span><span class="s">&quot;Santa Clara&quot;</span><span class="p">,</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;GISJOIN&quot;</span><span class="p">,</span><span class="s">&quot;STATE&quot;</span><span class="p">,</span><span class="s">&quot;COUNTY&quot;</span><span class="p">,</span><span class="s">&quot;DIE001&quot;</span><span class="p">)]</span>
+<span class="kp">names</span><span class="p">(</span>sccincome.1980csv<span class="p">)[</span><span class="kp">names</span><span class="p">(</span>sccincome.1980csv<span class="p">)</span><span class="o">==</span><span class="s">&quot;DIE001&quot;</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&quot;medianIncome&quot;</span>
+
+scc.joined.1980csv <span class="o">&lt;-</span> join<span class="p">(</span>sccincome.1980csv<span class="p">,</span> sccpop.1980csv<span class="p">,</span> by <span class="o">=</span> <span class="s">&quot;GISJOIN&quot;</span><span class="p">)</span>
+
+<span class="c1">###--------------------------------------------------</span>
+<span class="c1">### Shapefile prep (read, convert projection, and create DF)</span>
+<span class="c1">###--------------------------------------------------</span>
+
+wgs.84 <span class="o">&lt;-</span> <span class="s">&quot;+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0&quot;</span>
+
+catracts.1980.shp <span class="o">&lt;-</span> readOGR<span class="p">(</span><span class="s">&quot;/Users/jasonheppler/Dropbox/research-data/nhgis-shapefiles/us-tracts/&quot;</span><span class="p">,</span> <span class="s">&quot;US_tract_1980&quot;</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## OGR data source with driver: ESRI Shapefile 
+## Source: &quot;/Users/jasonheppler/Dropbox/research-data/nhgis-shapefiles/us-tracts/&quot;, layer: &quot;US_tract_1980&quot;
+## with 42917 features
+## It has 6 fields</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r">catracts.1980.shp <span class="o">&lt;-</span> spTransform<span class="p">(</span>catracts.1980.shp<span class="p">,</span> CRS<span class="p">(</span>wgs.84<span class="p">))</span>
+catracts.1980.shp<span class="o">@</span>data<span class="o">$</span>id <span class="o">&lt;-</span> <span class="kp">rownames</span><span class="p">(</span>catracts.1980.shp<span class="o">@</span>data<span class="p">)</span>
+catracts.1980 <span class="o">&lt;-</span> fortify<span class="p">(</span>catracts.1980.shp<span class="p">)</span>
+catracts.1980.df <span class="o">&lt;-</span> join<span class="p">(</span>catracts.1980<span class="p">,</span> catracts.1980.shp<span class="o">@</span>data<span class="p">,</span> by<span class="o">=</span><span class="s">&quot;id&quot;</span><span class="p">)</span>
+
+<span class="c1">###--------------------------------------------------</span>
+<span class="c1">### Data calculations</span>
+<span class="c1">###--------------------------------------------------</span>
+
+<span class="c1"># Calculate which tracts have higher income white/minority, </span>
+<span class="c1"># and lower income white/minority, based off average</span>
+scc.joined.1980csv<span class="o">$</span>popMajority <span class="o">&lt;-</span> <span class="kp">ifelse</span><span class="p">(</span>scc.joined.1980csv<span class="o">$</span>totalMinority <span class="o">&gt;</span> scc.joined.1980csv<span class="o">$</span>totalWhite<span class="p">,</span> <span class="s">&quot;minority&quot;</span><span class="p">,</span> <span class="s">&quot;white&quot;</span><span class="p">)</span>
+scc.joined.1980csv<span class="o">$</span>incomeAverage <span class="o">&lt;-</span> <span class="kp">ifelse</span><span class="p">(</span>scc.joined.1980csv<span class="o">$</span>medianIncome <span class="o">&gt;</span> income.median.1979<span class="p">,</span> <span class="s">&quot;Higher income&quot;</span><span class="p">,</span> <span class="s">&quot;Lower income&quot;</span><span class="p">)</span>
+scc.joined.1980csv<span class="o">$</span>incomeByRace <span class="o">&lt;-</span> <span class="kp">do.call</span><span class="p">(</span><span class="kp">paste</span><span class="p">,</span> scc.joined.1980csv<span class="p">[</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;incomeAverage&quot;</span><span class="p">,</span> <span class="s">&quot;popMajority&quot;</span><span class="p">)])</span>
+
+<span class="c1"># Join shapefile and data</span>
+merge.1980.shp <span class="o">&lt;-</span> join<span class="p">(</span>catracts.1980.df<span class="p">,</span> scc.joined.1980csv<span class="p">,</span> by<span class="o">=</span><span class="s">&quot;GISJOIN&quot;</span><span class="p">,</span> type<span class="o">=</span><span class="s">&quot;full&quot;</span><span class="p">)</span>
+tracts.1980.shp <span class="o">&lt;-</span> merge.1980.shp<span class="p">[</span> <span class="kp">which</span><span class="p">(</span>merge.1980.shp<span class="o">$</span>COUNTY<span class="o">==</span><span class="s">&#39;Santa Clara&#39;</span><span class="p">),</span> <span class="p">]</span>
+
+<span class="c1"># Superfunds</span>
+scc.superfunds.1980 <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;/Users/jasonheppler/Dropbox/acad/machinesvalley/htdoc/data-files/ca-pollution/ca_superfund.csv&quot;</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">,</span> header<span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+scc.toxics.1980 <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;/Users/jasonheppler/Dropbox/acad/machinesvalley/htdoc/data-files/ca-pollution/ca_toxic_sites.csv&quot;</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">,</span> header<span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+
+<span class="c1">###--------------------------------------------------</span>
+<span class="c1">### Map: Income by type</span>
+<span class="c1">###--------------------------------------------------</span>
+map <span class="o">&lt;-</span> get_map<span class="p">(</span><span class="s">&quot;Santa Clara, CA&quot;</span><span class="p">,</span> zoom <span class="o">=</span> <span class="m">11</span><span class="p">)</span>
+scc.incomerace.1980 <span class="o">&lt;-</span> ggmap<span class="p">(</span>map<span class="p">)</span> <span class="o">+</span> geom_polygon<span class="p">(</span>data<span class="o">=</span>tracts.1980.shp<span class="p">,</span>
+                                     aes<span class="p">(</span>map_od <span class="o">=</span> id<span class="p">,</span> x<span class="o">=</span>long<span class="p">,</span> y<span class="o">=</span>lat<span class="p">,</span> group<span class="o">=</span>group<span class="p">,</span> fill<span class="o">=</span>incomeByRace<span class="p">),</span>
+                                     size<span class="o">=</span><span class="m">0.01</span><span class="p">,</span>
+                                     color<span class="o">=</span><span class="s">&quot;white&quot;</span><span class="p">,</span>
+                                     alpha<span class="o">=</span><span class="m">0.6</span><span class="p">)</span>
+
+<span class="c1"># Theme and presentation</span>
+scc.incomerace.1980 <span class="o">+</span>
+  theme_map<span class="p">()</span> <span class="o">+</span>
+  scale_fill_brewer<span class="p">(</span><span class="s">&quot;Income&quot;</span><span class="p">,</span> type<span class="o">=</span><span class="s">&quot;qual&quot;</span><span class="p">,</span> palette<span class="o">=</span><span class="s">&quot;Spectral&quot;</span><span class="p">,</span> na.value<span class="o">=</span><span class="s">&quot;grey&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  geom_point<span class="p">(</span>data<span class="o">=</span>scc.superfunds.1980<span class="p">,</span>
+             aes<span class="p">(</span>x<span class="o">=</span>longitude<span class="p">,</span> y<span class="o">=</span>latitude<span class="p">),</span>
+             alpha<span class="o">=</span><span class="m">1</span><span class="p">,</span>
+             fill<span class="o">=</span><span class="kc">NA</span><span class="p">,</span>
+             color<span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">,</span>
+             stroke<span class="o">=</span><span class="m">1.5</span><span class="p">,</span>
+             pch<span class="o">=</span><span class="m">21</span><span class="p">,</span>
+             size<span class="o">=</span><span class="m">6</span><span class="p">,</span>
+             shape<span class="o">=</span><span class="m">21</span><span class="p">)</span> <span class="o">+</span>
+  geom_point<span class="p">(</span>data<span class="o">=</span>scc.toxics.1980<span class="p">,</span>
+             aes<span class="p">(</span>x<span class="o">=</span>longitude<span class="p">,</span> y<span class="o">=</span>latitude<span class="p">),</span>
+             alpha<span class="o">=</span><span class="m">1</span><span class="p">,</span>
+             fill<span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">,</span>
+             pch<span class="o">=</span><span class="m">21</span><span class="p">,</span>
+             size<span class="o">=</span><span class="m">2</span><span class="p">)</span> <span class="o">+</span>
+  theme<span class="p">(</span>axis.line<span class="o">=</span>element_blank<span class="p">(),</span>
+        axis.text.x<span class="o">=</span>element_blank<span class="p">(),</span>
+        axis.text.y<span class="o">=</span>element_blank<span class="p">(),</span>
+        axis.ticks<span class="o">=</span>element_blank<span class="p">(),</span>
+        axis.title.x<span class="o">=</span>element_blank<span class="p">(),</span>
+        axis.title.y<span class="o">=</span>element_blank<span class="p">(),</span>
+        legend.position <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.05</span><span class="p">,</span> <span class="m">0.05</span><span class="p">),</span> <span class="c1"># put the legend inside the plot area</span>
+        legend.justification <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">),</span>
+        legend.background <span class="o">=</span> element_rect<span class="p">(</span>color <span class="o">=</span> <span class="bp">F</span><span class="p">,</span> fill <span class="o">=</span> <span class="s">&quot;white&quot;</span><span class="p">)</span>
+  <span class="p">)</span> </code></pre></figure>
+
+<p><img src="/figures/unnamed-chunk-1-1.svg" alt="plot of chunk unnamed-chunk-1" /></p>
+
+<p>Polluted sites in Santa Clara County showing low-income and minority neighborhoods by Census tract, c. 1980. Low-income is defined as areas below the <a href="http://www.bayareacensus.ca.gov/bayarea.htm">county median</a> of $23,369, and minority is defined as neighborhoods that have a greater proportion of minority households. Categories derived from the U.S. Census. Large black circles represent <a href="https://github.com/hepplerj/machinesvalley/blob/gh-pages/data-files/ca-pollution/ca_superfund.csv">Superfund sites</a>, smaller red circles represent identified <a href="https://github.com/hepplerj/machinesvalley/blob/gh-pages/data-files/ca-pollution/ca_toxic_sites.csv">toxic or chemical leaks and spills</a>.</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 10 Feb 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 10 Feb 2016</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a 
+              href="https://github.com/hepplerj/notebook/commits/master/_posts/2016-02-10-superfund-sites-and-income-by-census-tract.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="http://notebook.dev/superfund-sites-and-income-by-census-tract/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#r'>R</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#superfund'>Superfund</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#santa-clara-county'>Santa Clara County</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#dissertation'>dissertation</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#mapping'>mapping</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#gis'>GIS</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#silicon-valley'>Silicon Valley</a></li>
+  
+  </ul>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="footer-wrapper">
+
+    <h2 class="footer-heading">Open History Notebook</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <figure class="image-left">
+            <img class="avatar" src="http://notebook.dev/images/me.jpg" height="120" width="120"/>
+          </figure>
+          <p class="text">I am a historian at Stanford University. I'm affiliated with the <a href="http://cesta.stanford.org">Center for Spatial and Textual Analysis</a> and <a href="https://library.stanford.edu/research/center-interdisciplinary-digital-research-cidr">Center for Interidsciplinary Digital Research</a>.</p>
+
+          <form method="get" action="http://duckduckgo.com/">
+            <input type="search" name="q" maxlength="255" placeholder="Search">
+            <input type="hidden" names="sites" value="notebook.jasonheppler.org">
+            <input type="hidden" name="k7" value="#faf8f8">
+            <input type="hidden" name="kj" value="#b33">
+            <input type="hidden" name="ky" value="#fafafa">
+            <input type="hidden" name="kx" value="b">
+            <input type="hidden" name="ko" value="-1">
+            <input type="hidden" name="k1" value="-1">
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+          </form>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <i class="fa fa-globe"></i> <a href="http://jasonheppler.org">jasonheppler.org</a>
+          </li>
+          
+          <li>
+              <i class="fa fa-github-square"></i> <a href="https://github.com/hepplerj"><span class="username">hepplerj</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+              <i class="fa fa-twitter-square"></i> <a href="https://twitter.com/jaheppler"><span class="username">jaheppler</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        Jason Heppler<br/>
+        <ul class="social-media-list">
+          <li><i class="fa fa-university"></i> Department of History, Building 200, 450 Serra Mall, Stanford University</li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:jason@jasonheppler.org">jason@jasonheppler.org</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12786552-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>
