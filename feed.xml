@@ -5,66 +5,331 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Mar 2016 23:38:32 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2016 23:38:32 -0400</lastBuildDate>
+    <pubDate>Wed, 16 Mar 2016 14:22:29 -0400</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 14:22:29 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>abbott2008cities</title>
+        <title>The Archaeologist and the Video Game</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#chapter-ten&quot; id=&quot;markdown-toc-chapter-ten&quot;&gt;Chapter Ten&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-video-game-and-the-archaeologist&quot; id=&quot;markdown-toc-the-video-game-and-the-archaeologist&quot;&gt;The Video Game and the Archaeologist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-potted-synopsis-of-game-studies&quot; id=&quot;markdown-toc-a-potted-synopsis-of-game-studies&quot;&gt;A potted synopsis of game studies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#third-space&quot; id=&quot;markdown-toc-third-space&quot;&gt;Third Space&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#landscape-archaeology--the-digital-flaneur&quot; id=&quot;markdown-toc-landscape-archaeology--the-digital-flaneur&quot;&gt;Landscape archaeology &amp;amp; the digital flaneur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#flow&quot; id=&quot;markdown-toc-flow&quot;&gt;Flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-payoff&quot; id=&quot;markdown-toc-the-payoff&quot;&gt;The Payoff&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#acknowledgements&quot; id=&quot;markdown-toc-acknowledgements&quot;&gt;acknowledgements&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#further-reading&quot; id=&quot;markdown-toc-further-reading&quot;&gt;further reading&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4&gt;&lt;span id=&quot;abbott2008cities&quot;&gt;Abbott, Carl. &lt;i&gt;How Cities Won The West: Four Centuries of Urban Change In
-      Western North America&lt;/i&gt;. Albuquerque: University of New Mexico Press, 2008.&lt;/span&gt;&lt;/h4&gt;
+&lt;h2 id=&quot;the-video-game-and-the-archaeologist&quot;&gt;The Video Game and the Archaeologist&lt;/h2&gt;
 
-&lt;h2 id=&quot;chapter-ten&quot;&gt;Chapter Ten&lt;/h2&gt;
+&lt;p&gt;Tell the colleagues in your department, in your company, that you play video games, and you will be greeted with one of only two reactions: a polite murmur accompanied by the dying look of ‘this person is not serious’, or the enthusiastic embrace of the true believer. There appears to be no middle ground. Yet, there is a long history of using games in education, in museum outreach, and in public archaeology. There is even a (much shorter) history of using games to persuade (as ‘serious games’ or ‘news games’). But there is practically no history at all of games being used to make a scholarly argument. This is to miss an opportunity.&lt;/p&gt;
 
-&lt;p&gt;(p. 184) “One of the foundations of Austin’s success was the digital economy of information technology companies: Texas Instruments and IBM came first, locating facilities in Austin in the 1960s. Westinghouse, McNeil Labs, Cypress Semiconductor, and many other companies came to nearby Round Rock, transforming it from a farm town of 3,000 to a high-end suburb of 78,000 in 2004. Austin in the mid-1980s won a fierce competition for Sematech, a federally sponsored consortium of high-tech corporations that aimed to develop commercial applications for technical innovations. Dell Computer, soon to be a rousing business success story and major employer, opened for business at the same time (later moving from Austin to Round Rock). The 1990s brought Samsung, Advanced Micro Devices, Motorola, and other semiconductor manufacturers among nearly 2,000 IT-related companies. IT employment shrank with the dot-com crash of 2001 but still accounted for roughly a quarter of area jobs.”&lt;/p&gt;
+&lt;p&gt;It is important however to ask, at the outset, what do games teach? What do games &lt;em&gt;do?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;(p. 182) Suburban tech plants and research “extended the historic American taste for the isolated and self-contained university campus. The bucolic campus, often in a small-town setting, was designed to insulate students and faculty from the distractions of the heterogeneous city.”&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“The game, or any computer game for that matter, is ultimately about mechanics, and not about content. The content is window dressing, and deep playing of a game such as &lt;em&gt;Civilization&lt;/em&gt; teaches little about history, but everything about how to manipulate the complex algorithms that model the simulation” (Kee &amp;amp; Graham, 274)&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;(p. 183) “Direct federal funding and federal markets for science-intensive production, as well as regional amenities, helped to make western metro areas some of the best educated in the country. Sixteen of the metro areas that had 500,000 or more residents in 1980 reported that 20 percent or more of their adult population (over twenty-five years old) had completed at least four years of college. Ten of these cities were western: Austin at 28 percent; Denver at 26 percent; San Francisco/Oakland/San Jose at 25 percent; and Seattle/Tacoma, Honolulu, Houston, San Diego, Tucson, Salt Lake City, and Dallas/Fort Worth all at between 20 and 24 percent. The West claimed twenty-eight of the fifty metro areas of all sizes with the same high education level – including not only such likely candidates as Colorado Springs and Santa Barbara but also less obvious cities such as Grand Forks, North Dakota; Boise, Idaho; and Midlands, Texas.”&lt;/p&gt;
+&lt;p&gt;Let us dispense with the notion that there is anything inherently gauche about archaeologists interested in the possibilities of video games, or any ‘natural’ reason why archaeology as a discipline should not be concerned with them. Manipulating algorithms, modelling societies through simulation: archaeologists have been doing this for years, within the ambit of GIS and Agent Based Models. The difference is, games have better eye-candy and production values. They should. Gaming as an industry generates more money than all of Hollywood.&lt;/p&gt;
 
-&lt;p&gt;(p. 183) “These trends came together in the early twenty-first century in a handful of ‘new economy’ cities oriented to the processing and distribution of information. San Francisco, San Jose, San Diego, Denver, Dallas, and Albuquerque were high on the list.”&lt;/p&gt;
+&lt;h2 id=&quot;a-potted-synopsis-of-game-studies&quot;&gt;A potted synopsis of game studies&lt;/h2&gt;
 
-&lt;p&gt;(p. 181) “The farmlands of Santa Clara County, California, became a “silicon landscape” of neat one-story factories and research campuses. In 1950, the county had 800 factory workers. In 1980, it had 264,000 manufacturing workers and 3,000 electronics firms.”&lt;/p&gt;
+&lt;p&gt;Broadly, there are two camps when it comes to analyzing the affective import of games. The ludologists, as the name implies, are interested in the rules of the games, the possibilities (or not) for action within the game. Narratologists on the other hand consider the story of the game, the story that emerges, or the story within which the game action takes place. Both approaches are useful for situating what a game does, or what a game achieves.&lt;/p&gt;
 
-&lt;p&gt;(p. 183) In building American scientific capacity federal initiatives transformed western universities. “Research grants and graduate student aid, especially after the passage of the National Defense Education Act (1958), provided vital funding at a time when regional campuses were struggling to cope with the first arrivals from the postwar baby boom. The University of Washington grew from 13,000 to 30,000 students in little more than a decade, in part because of vigorous pursuit of federal grants whose income equaled direct support from the state general fund. The University of California-San Diego was explicitly created to support high-technology research with strong lobbying from the giant defense contractor General Dynamics. When federal research and development funding for universities is compared on a per-capita basis, Alaska, Utah, Hawaii, New Mexico, Washington, California, and Colorado all exceeded the national average – with obvious consequences for Salt Lake City, Seattle, Denver/Boulder, and other cities.”&lt;/p&gt;
+&lt;p&gt;Another (rather archaeological) approach is to consider typologies of games. This is not to be confused with ‘genre’, as genres (‘first person shooter’; ‘rogue-like’; ‘management sim’; ‘casual’) are largely marketing categories that conflate issues of game play, or perspective, or agency, for the purposes of gaining space in the various venues where games are bought and sold. There is a voluminous literature on the typologies of games which try to distill essential features in order to understand the crucial ways in which games differ (the better to understand their narratological or ludological aspects). In the context of ‘historical’ games, a typology that helps us consider what aspects about the past we wish to communicate, to teach, focuses on categorizing how the game treats time and space.&lt;/p&gt;
 
-&lt;p&gt;(p. 181) “Stanford Industrial Park in 1951 was the first planned effort to link the science and engineering faculties of major universities to the ensign and production of cutting-edge engineering applications. Along with the development of companies like Hewlett-Packard, it was the first step in the evolution of Silicon Valley – the nickname for San Jose and nearby South Bay communities – as a center of the electronics industry. Federal contracts, especially for complex challenges like missile guidance systems, have been the Silicon Valley mainstay, driving the innovation cycle from experiment to defense application to civilian spin-off.”&lt;/p&gt;
+&lt;p&gt;Within ‘space’, we can ask how the game treats perspective, topography, and the environment. Within ‘time’, we can wonder about pace, representation, and teleology. The value of this kind of typology is that it would allow us consider our archaeological representations of space and time in that light, to work out what conventions of game design would be most affective in communicating the argument about the past that we wish to impart.&lt;/p&gt;
 
-&lt;p&gt;(p. 183) “By 1980, western cities were the centers of atomic research and production (still a rising industry after a decade of energy crises and reviving Cold War), aerospace companies, and companies that specialized in instrumentation and military control systems. One industrial cluster in the San Francisco Bay area centered around electronic data processing, another in southern California, around aerospace. Both places had thick networks of suppliers, mobility of workers among competing firms, and relatively open marketplaces of ideas. There were certainly rivalries and trade secrets, but the West Coast style was more open and flexible than rival East Coast centers such as Boston. It was a remarkable manifestation of some of the common, self-satisfied assumptions about the superiority of the ‘western’ style over the eastern.”&lt;/p&gt;
+&lt;h2 id=&quot;third-space&quot;&gt;Third Space&lt;/h2&gt;
 
-&lt;p&gt;(p. 182-183) “In the 1980s and 1990s, branch hardware and microchip factories, spinoff companies, and software firms spread the information-processing industry throughout the West. Having seen what the computer industry did for San Jose, every place wanted to be the next Silicon Valley. The information business built on earlier foundations in Dallas (Texas Instruments), Portland (Tektronix), and Phoenix (Motorola). It changed big cities such as Denver and Salt Lake City and radically transformed smaller cities like Boise. Local boosters in the 1980s talked up ‘silicon prairies,’ ‘silicon forests,’ ‘silicon deserts,’ and ‘silicon mountains.’ If they were lucky they developed homegrown firms or acquired research arms of large companies, but local leaders were often satisfied with a chip plant or fabricating plant controlled from Mountain View, Cupertino, Seoul, or Tokyo.”&lt;/p&gt;
+&lt;p&gt;Despite the neat breakdown between ‘narratology’ and ‘ludology’, which would seem to capture all there is to know about video games, there is a third space that games-about-history inhabit. Elliot and Kappel’s recent ‘Playing with the Past’ (2013) neatly captures this aspect. They point out that while games are systems of rules interpreted by the computer referee, and while these systems are enveloped within a narrative, games-about-the-past have a larger historical narrative &lt;em&gt;within which&lt;/em&gt; the game’s narrative must take place. That is to say, the players and designers are working within historical frameworks from the outset that inform their understanding of the past. Hence to make the game, to play the game, necessarily involves the kind of historical thinking (about contingency, about causality, about equifinality) that characterizes professional thinking about the past. ‘Why did that happen? What would happen if?’ are questions players ask about the game, which are very nearly the same thing that we ask of the past.&lt;/p&gt;
+
+&lt;p&gt;The fact of the matter is, while the &lt;em&gt;content&lt;/em&gt; of a game is important, it is not as important as the system of rules and relationships that govern the emergent play; reflecting on &lt;em&gt;why&lt;/em&gt; game play evolves the way it does forces the player to understand the rules of representation. This means that game players think about the past in ways that are the same as the kind of thinking about the past that we want in our students and publics. If one studies the communities of players that coalesce around particular games (especially games that allow for ‘modding’, or re-writing of the game rules, e.g, the &lt;em&gt;Civilization&lt;/em&gt; franchise), one finds quite heated discussions about how best to represent the past, debates over the consequences and meanings of modifications to the games, and - while maybe sometimes not the most factually informed debates - a keen understanding of &lt;em&gt;process&lt;/em&gt; in the past.&lt;/p&gt;
+
+&lt;h2 id=&quot;landscape-archaeology--the-digital-flaneur&quot;&gt;Landscape archaeology &amp;amp; the digital flaneur&lt;/h2&gt;
+
+&lt;p&gt;There is one particular kind of game that I think makes the inverse argument to my general thrust here; that is, the exception which proves the rule. So-called ‘walking simulators’ (a term of derision used by those who feel games should only be about killing things) are games where exploration and careful reading of the landscape are the prime mechanic (critically acclaimed examples include &lt;em&gt;Everyone’s Gone to the Rapture, Journey, Gone Home&lt;/em&gt;, and &lt;em&gt;Dear Esther&lt;/em&gt; . In these games, the environments, the art work, the carefully modelled buildings and digital material culture matter far more than the mechanics (in the sense I outlined above). Anthony Masinton has pointed out that these are more akin to museum dioramas in that they are carefully constructed vignettes designed to tell a story (&lt;em&gt;Gone Home&lt;/em&gt; might by these lights be the most archaeological game ever). I think these games are even more important than that; they are a kind of performed landscape archaeology. These games encourage a careful reading of the landscapes, and the material culture within those landscapes to tease out the story that happened before the player ever arrived. By contrast, games like the &lt;em&gt;Assassin’s Creed&lt;/em&gt; series have beautiful reconstructions that make no real difference to the game play or the story. In these, they merely serve as backdrop for a digital &lt;em&gt;parkour&lt;/em&gt;, an experience of the past as digital &lt;em&gt;flaneur&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;flow&quot;&gt;Flow&lt;/h2&gt;
+
+&lt;p&gt;The training of archaeologists has long had an emphasis on the practical - we learn &lt;em&gt;how&lt;/em&gt; to be archaeologists by &lt;em&gt;doing&lt;/em&gt; archaeology. We perform the learning. Where, and from whom, we learn the hands-on aspects of archaeology has a deep influence on how we think archaeologically, how we understand the past. This is of course why we speak of ‘schools’ of thought. To play a video game well involves that same aspect of performance, and the ‘who made this and how did they imagine the world’ matters equally as much. When we play a game well, we have internalized how that game represents its world. We have internalized an understanding of the system of rules and relationships that we &lt;em&gt;might not even be aware of&lt;/em&gt;. The learning that happens through video games is deep, and is tied to what psychologists call ‘flow’. Games don’t just represent a world: they actively watch the player. The best games adjust their difficulty in such a way as to achieve a flow state, a sense of mastery that sits in the sweet spot where the challenge is just hard enough to be difficult, but not so difficult that the player gives up in frustration. The best learning, in whatever context, is tied to that same sense.&lt;/p&gt;
+
+&lt;p&gt;(In a nice connection with ‘media archaeology’, it is worth pointing out that &lt;em&gt;Space Invaders&lt;/em&gt;, a game that has had a pronounced influence on the world since its release in the late 1970s created a sense of flow completely as a side-effect of the physical nature of its processor. The processor was slow, and couldn’t render the graphics and sound required by the game at the start. The emergent outcome was that the game was easy to play at first as the aliens plodded along, but as the player shot them out of the sky processing resources were freed up, making the game run faster and become more challenging. There is a physicality to video games that we as archaeologists would do well to remember).&lt;/p&gt;
+
+&lt;p&gt;In representing a world to use, the system of rules and relationships that govern the emergent game play are akin to the systems of rules and relationships that we as scholars use to construct our ideas about the past: game rules &lt;em&gt;are&lt;/em&gt; historiography. They &lt;em&gt;are&lt;/em&gt; method and theory, all in one. In the same way that an agent based simulation of the past encodes our ideas about how phenomenon x worked in the past (so that we can see what the consequences are of that idea for household formation amongst the Anasazi, say) game rules do encode ideas about (inter alia) power, ideology, action, colonialism, and empire. The game theorist Ian Bogost calls these ‘procedural rhetorics’, the arguments made by code (2007); the historian William Urrichio explicitly called code historiography (2005). Games about the past will be played, experienced, and internalized by orders of magnitude more people than who ever read our formal archaeologies. And the experience will resonate far more deeply than any visit to a site or museum. We ignore games as a venue for our scholarship at our peril.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-payoff&quot;&gt;The Payoff&lt;/h2&gt;
+
+&lt;p&gt;I have been arguing by omission that the content, the window dressing (the pretty graphics; the hyper-realistic depictions of textures and atmospheres, the 3d sound, the voice acting) does not matter nearly as much as close experience and engagement with the code and its emergent outcomes. That engagements allows a connection here with the kind of archaeology argued for by scholars such as Stuart Eve (2014) that seeks to use the mechanics of games and allied technologies such as mixed or augmented realities to focus on understanding the systems of relationships amongst the full sensory experience of the past. Eve calls this an ‘embodied GIS’ which does not focus on the archaeologist’s subjective experience of place, but rather, explores how sound, views lighting (and indeed, smell and touch) combine or are constrained by the archaeology of a place, &lt;em&gt;experienced&lt;/em&gt; in that place.&lt;/p&gt;
+
+&lt;p&gt;This suggests a way forward for the use of games as both a tool for research on the past, and a way to communicate that research to our various publics. Finally, we can turn our critical apparatus back to front and consider games as a venue within which we may &lt;em&gt;do&lt;/em&gt; archaeology. Search online for ‘archaeogaming’. The most succinct definition of what this could be comes from &lt;a href=&quot;http://gingerygamer.com/index.php/archaeogaming/&quot;&gt;Meghan Dennis&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Archaeogaming is the utilization and treatment of immaterial space to study created culture, specifically through video games.&lt;/p&gt;
+
+  &lt;p&gt;It requires treating a game world, a world bounded and defined by the limitations of its hardware, software and coding choices, as both a closed universe and as an extension of the external culture that created it. Everything that goes into the immaterial space comes from its external cultural source, in one way or another. Because of this, we see the same problems in studying culture in games as in studying culture in the material world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Archaeogaming is a subdiscipline that requires the same standards of practice as the physical collection of excavated data, only with a different toolset. It also provides the opportunity to use game worlds to reflect on practice, theory and the perceptions of our discipline.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Video games are an extraordinarily rich tool, area of research, and affective mode of communication whose possibilities we haven’t even begun to explore. Yet, they are not so foreign to the archaeologist’s ‘formal’ computational experience, with ties to GIS, Agent Based Models, and reconstructions. Play on!&lt;/p&gt;
+
+&lt;h2 id=&quot;acknowledgements&quot;&gt;acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Thank you to Colleen Morgan for organizing this special issue, to Meghan Dennis, Andrew Reinhardt and Tara Copplestone for #archaeogaming, and to Anthony Masinton and &lt;a href=&quot;https://twitter.com/_sorcha&quot;&gt;@_sorcha&lt;/a&gt; for commenting on the public draft of this piece.&lt;/p&gt;
+
+&lt;h3 id=&quot;further-reading&quot;&gt;further reading&lt;/h3&gt;
+
+&lt;p&gt;Kee, Kevin, and Shawn Graham. 2014. “Teaching in the Age of Pervasive Computing: The Case for Games in the High School and Undergraduate Classroom.” In &lt;em&gt;Pastplay: Teaching and Learning History with Technology&lt;/em&gt;, edited by Kevin Kee, 270-91. Ann Arbor: University of Michigan Press.&lt;/p&gt;
+
+&lt;p&gt;Bogost, Ian. 2007. &lt;em&gt;Persuasive Games: The Expressive Power of Video Games&lt;/em&gt;. Cambridge: MIT Press.&lt;/p&gt;
+
+&lt;p&gt;Urrichio, William. 2005. “&lt;a href=&quot;http://web.mit.edu/uricchio/Public/pdfs/pdfs/cybergames%20.pdf&quot;&gt;Cyberhistory: Historical Computer Games and Post-Structuralist Historiography&lt;/a&gt;,” in Jeffrey Goldstein and Joost Raessens, &lt;em&gt;Handbook of Computer Games Studies&lt;/em&gt;. Cambridge: MIT Press, 327-338.&lt;/p&gt;
+
+&lt;p&gt;Dennis, Meghan. nd. ‘Archaeogaming’ &lt;em&gt;gingerygamer.com&lt;/em&gt; http://gingerygamer.com/index.php/archaeogaming/&lt;/p&gt;
+
+&lt;p&gt;Eve, Stuart. 2014. &lt;em&gt;Dead Men’s Eyes: Embodied GIS, Mixed Reality and Landscape Archaeology&lt;/em&gt;. BAR 600. Oxford: Archaeopress.&lt;/p&gt;
+
+&lt;p&gt;Elliott, Andrew and Mathew Kapell. 2013. &lt;em&gt;Playing with the past : digital games and the simulation of history&lt;/em&gt;. New York: Bloomsbury.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 03 Dec 2012 00:00:00 -0500</pubDate>
-        <link>http://smgprojects.github.io/abbott2008/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/abbott2008/</guid>
+        <pubDate>Wed, 16 Mar 2016 14:16:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/the-archaeologist-and-the-video-game/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/the-archaeologist-and-the-video-game/</guid>
         
-        <category>reading notes</category>
+        <category>video games</category>
         
-        <category>companies</category>
+        <category>archaeogaming</category>
         
-        <category>population</category>
         
-        <category>Stanford University</category>
+        <category>Essays</category>
         
-        <category>Austin</category>
+      </item>
+    
+      <item>
+        <title>sonification of john adams</title>
+        <description>
+&lt;p&gt;A python script to sonify time-series data; in this case, topic model topic for entries from John Adams’ diaries.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from miditime.MIDITime import MIDITime
+from datetime import datetime
+
+#topic: local
+
+mymidi = MIDITime(120, &#39;johnadams1.mid&#39;, 120, 5, 1)
+my_data = [
+    {&#39;event_date&#39;: datetime(1753,6,8), &#39;magnitude&#39;: 1.8},
+    {&#39;event_date&#39;: datetime(1753,6,9), &#39;magnitude&#39;: 0.3},
+    {&#39;event_date&#39;: datetime(1753,6,10), &#39;magnitude&#39;: 3.1},
+    {&#39;event_date&#39;: datetime(1753,6,11), &#39;magnitude&#39;: 6.6},
+    {&#39;event_date&#39;: datetime(1753,6,12), &#39;magnitude&#39;: 0.4},
+    {&#39;event_date&#39;: datetime(1753,6,13), &#39;magnitude&#39;: 0.5},
+    {&#39;event_date&#39;: datetime(1753,6,14), &#39;magnitude&#39;: 5.3},
+    {&#39;event_date&#39;: datetime(1753,6,17), &#39;magnitude&#39;: 0.3},
+    {&#39;event_date&#39;: datetime(1753,6,18), &#39;magnitude&#39;: 1.8},
+    {&#39;event_date&#39;: datetime(1753,6,19), &#39;magnitude&#39;: 0},
+    {&#39;event_date&#39;: datetime(1753,6,20), &#39;magnitude&#39;: 0.46},
+    {&#39;event_date&#39;: datetime(1753,6,21), &#39;magnitude&#39;: 4},
+    {&#39;event_date&#39;: datetime(1753,6,22), &#39;magnitude&#39;: 2},
+    {&#39;event_date&#39;: datetime(1753,6,23), &#39;magnitude&#39;: 0},
+    {&#39;event_date&#39;: datetime(1753,6,24), &#39;magnitude&#39;: 1.3}
+]
+
+my_data_epoched = [{&#39;days_since_epoch&#39;: mymidi.days_since_epoch(d[&#39;event_date&#39;]), &#39;magnitude&#39;: d[&#39;magnitude&#39;]} for d in my_data]
+
+my_data_timed = [{&#39;beat&#39;: mymidi.beat(d[&#39;days_since_epoch&#39;]), &#39;magnitude&#39;: d[&#39;magnitude&#39;]} for d in my_data_epoched]
+
+start_time = my_data_timed[0][&#39;beat&#39;]
+
+def mag_to_pitch_tuned(magnitude):
+    # Where does this data point sit in the domain of your data? (I.E. the min magnitude is 3, the max in 5.6). In this case the optional &#39;True&#39; means the scale is reversed, so the highest value will return the lowest percentage.
+    scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude)
+
+    # Another option: Linear scale, reverse order
+    # scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude, True)
+
+    # Another option: Logarithmic scale, reverse order
+    # scale_pct = mymidi.log_scale_pct(3, 5.7, magnitude, True)
+
+    # Pick a range of notes. This allows you to play in a key.
+    c_major = [&#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;A&#39;, &#39;B&#39;]
+
+    #Find the note that matches your data point
+    note = mymidi.scale_to_note(scale_pct, c_major)
+
+    #Translate that note to a MIDI pitch
+    midi_pitch = mymidi.note_to_midi_pitch(note)
+
+    return midi_pitch
+
+note_list = []
+
+for d in my_data_timed:
+    note_list.append([
+        d[&#39;beat&#39;] - start_time,
+        mag_to_pitch_tuned(d[&#39;magnitude&#39;]),
+        100,  # attack
+        1  # duration, in beats
+    ])
+
+    # Add a track with those notes
+mymidi.add_track(note_list)
+
+# Output the .mid file
+mymidi.save_midi()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 12:39:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/sonification-of-john-adams/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/sonification-of-john-adams/</guid>
         
-        <category>Texas</category>
+        <category>sonification</category>
         
-        <category>California</category>
+        <category>topic modeling</category>
         
-        <category>urban growth</category>
+        <category>code</category>
         
-        <category>industrialization</category>
+        <category>soundbashing</category>
         
-        <category>Sematech</category>
         
-        <category>Samsung</category>
+        <category>Code</category>
         
-        <category>Stanford Industrial Park</category>
+      </item>
+    
+      <item>
+        <title>tan_virtual_2009</title>
+        <description>
+&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;p&gt;p 152- Tan’s suggestions, under ‘approaching the problem’ -&amp;gt; ‘in virtual heritage projects, digitalized artifacts somehow need to trigger the user’s cognitive process while he is exploring the virtual environment, &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 152 - ‘While developing a virtual heritage environment we need to consider two important basic things: (a) Content development: Technology always has some constrains with hardware and software; as well as connected to an ‘image of practice’. Media experts like: modelers, animators, programmers may know how to do -pg 153-  something, but may not be aware of the implicit cultural values of a par- ticular artifacts or environment. So, while working as a cultural preserva- tionist, the implemented methods or approaches reflects their own assumptions and may not be appropriate (Kalay 2008). (b) User interpretation: Virtual environment allows more freedom and authority. Freedom in walkthrough and time-travel allows open-ended sequences of expedition. Such freedom on the other hand may become temporally, as well as spatially confused and to some extent result in ‘getting lost’ in some ancient and unknown world. So, effort should be given to contextualize the experience and set the mood for its understanding (Kalay 2008). A virtual environment thus need to become a ‘context’ where multiple and diverse cultural experiences may occur at different levels for different users (from layman to expert) according to their level of interpretation. &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 153 - ‘Copeland (1998, 2004) suggested a ‘constructivist approach’ for interpretation in an archaeological site. It is an approach of interpretation based on ‘learn- ing by doing’ through problem solving. Copeland explained the implication of constructivist approach as the way that individuals are constantly constructing meaning by their own thought, feeling, actions, negotiation and reaction with the world. Thus constructivist interpretation seeks to engage visitors with evidence and help them to construct their own meaning’ &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#12&quot;&gt;Page 12&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;p151 authors develop  a 3 step model where step 1 ‘documentation’ involves the tangible &amp;amp; intangible, but as we move to step 2 ‘representation’ constraints and distortion lead to data loss, and then as we move to stage 3 ‘dissemination’ we combine ‘media’ (hardware, software, narrative) which then the user interacts with. The user is the missing aspect - there is no consideration of ‘age, cultural background, ideology, perception, psychology, technical skill, learning ability, cognition’ in the design of virtual heritage. This model is drawn from ChanLIn 2001, Osberg 199, Roussou 2008.  This is all to say that there is a ‘lack of literature focused on the theory and methodology of user interaction and interpretation of heritage’ - designers dump information onto the user. &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“To virtualize heritage means to actualize the heritage content digitally and to simulate it using computer graphics technology.”  + that’s the thing right there, that word ‘actualize’. Need to unpack that. p144 &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#3&quot;&gt;Page 3&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“According to Addison (2000) there are three major domains in virtual heritage:
+  - 3D Documentation: everything from site survey to epigraphy
+  - 3D Representation: from historic reconstruction to visualization
+  - 3D Dissemination: from immersive networked worlds to ‘in-situ’ augmented reality.” - p 146 &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#5&quot;&gt;Page 5&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;p 152- Tan’s suggestions, under ‘approaching the problem’ -&amp;gt; ‘in virtual heritage projects, digitalized artifacts somehow need to trigger the user’s cognitive process while he is exploring the virtual environment, &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 152 - ‘While developing a virtual heritage environment we need to consider two important basic things: (a) Content development: Technology always has some constrains with hardware and software; as well as connected to an ‘image of practice’. Media experts like: modelers, animators, programmers may know how to do -pg 153-  something, but may not be aware of the implicit cultural values of a par- ticular artifacts or environment. So, while working as a cultural preserva- tionist, the implemented methods or approaches reflects their own assumptions and may not be appropriate (Kalay 2008). (b) User interpretation: Virtual environment allows more freedom and authority. Freedom in walkthrough and time-travel allows open-ended sequences of expedition. Such freedom on the other hand may become temporally, as well as spatially confused and to some extent result in ‘getting lost’ in some ancient and unknown world. So, effort should be given to contextualize the experience and set the mood for its understanding (Kalay 2008). A virtual environment thus need to become a ‘context’ where multiple and diverse cultural experiences may occur at different levels for different users (from layman to expert) according to their level of interpretation. &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 153 - ‘Copeland (1998, 2004) suggested a ‘constructivist approach’ for interpretation in an archaeological site. It is an approach of interpretation based on ‘learn- ing by doing’ through problem solving. Copeland explained the implication of constructivist approach as the way that individuals are constantly constructing meaning by their own thought, feeling, actions, negotiation and reaction with the world. Thus constructivist interpretation seeks to engage visitors with evidence and help them to construct their own meaning’ &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#12&quot;&gt;Page 12&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 12:24:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/tan-virtual-2009/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/tan-virtual-2009/</guid>
+        
+        <category>virtual heritage</category>
+        
+        <category>user interface</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
+    
+      <item>
+        <title>tan - how the user is lost</title>
+        <description>
+&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;p&gt;[[2016-03-16-tan-fixing-virtual-heritage]][[2016-03-16-tan-virtual-heritage-reality-and-criticism]]&lt;/p&gt;
+
+&lt;p&gt;p151 authors develop  a 3 step model where step 1 ‘documentation’ involves the tangible &amp;amp; intangible, but as we move to step 2 ‘representation’ constraints and distortion lead to data loss, and then as we move to stage 3 ‘dissemination’ we combine ‘media’ (hardware, software, narrative) which then the user interacts with. The user is the missing aspect - there is no consideration of ‘age, cultural background, ideology, perception, psychology, technical skill, learning ability, cognition’ in the design of virtual heritage. This model is drawn from ChanLIn 2001, Osberg 199, Roussou 2008.  This is all to say that there is a ‘lack of literature focused on the theory and methodology of user interaction and interpretation of heritage’ - designers dump information onto the user. &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[[reconstruction_of_rome_but_sorry_no_sound_-131-]][[sound_gives_access_to_the_unseen_-140-]][[synaestesia_-145-]][[making_sense_as_much_cultural_as_is_bodily_-127-]]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 12:10:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/tan-how-the-user-is-lost/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/tan-how-the-user-is-lost/</guid>
+        
+        <category>virtual heritage</category>
+        
+        <category>user interface</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
+    
+      <item>
+        <title>tan- virtual heritage reality and criticism</title>
+        <description>
+&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;p&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. &lt;a href=&quot;http://scholarbank.nus.edu.sg/handle/10635/45499&quot;&gt;http://scholarbank.nus.edu.sg/handle/10635/45499&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“To virtualize heritage means to actualize the heritage content digitally and to simulate it using computer graphics technology.”  + that’s the thing right there, that word ‘actualize’. Need to unpack that. p144 &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#3&quot;&gt;Page 3&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“According to Addison (2000) there are three major domains in virtual heritage:
+  - 3D Documentation: everything from site survey to epigraphy
+  - 3D Representation: from historic reconstruction to visualization
+  - 3D Dissemination: from immersive networked worlds to ‘in-situ’ augmented reality.” - p 146 &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#5&quot;&gt;Page 5&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 11:16:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/tan-virtual-heritage-reality-and-criticism/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/tan-virtual-heritage-reality-and-criticism/</guid>
+        
+        
+        <category>Readings</category>
+        
+      </item>
+    
+      <item>
+        <title>Tan - Fixing Virtual Heritage</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#crosslinked-notes&quot; id=&quot;markdown-toc-crosslinked-notes&quot;&gt;crosslinked notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;crosslinked-notes&quot;&gt;crosslinked notes&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;2016-03-16-tan-viertual-heritage-reality-and-criticism.md&quot;&gt;tan- virtual heritage reality and criticism&lt;/a&gt;[[tan - domains of virtual heritage]][[tan - how the user is lost]]&lt;/p&gt;
+
+&lt;p&gt;p 152- Tan’s suggestions, under ‘approaching the problem’ -&amp;gt; ‘in virtual heritage projects, digitalized artifacts somehow need to trigger the user’s cognitive process while he is exploring the virtual environment, &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 152 - ‘While developing a virtual heritage environment we need to consider two important basic things: (a) Content development: Technology always has some constrains with hardware and software; as well as connected to an ‘image of practice’. Media experts like: modelers, animators, programmers may know how to do -pg 153-  something, but may not be aware of the implicit cultural values of a par- ticular artifacts or environment. So, while working as a cultural preserva- tionist, the implemented methods or approaches reflects their own assumptions and may not be appropriate (Kalay 2008). (b) User interpretation: Virtual environment allows more freedom and authority. Freedom in walkthrough and time-travel allows open-ended sequences of expedition. Such freedom on the other hand may become temporally, as well as spatially confused and to some extent result in ‘getting lost’ in some ancient and unknown world. So, effort should be given to contextualize the experience and set the mood for its understanding (Kalay 2008). A virtual environment thus need to become a ‘context’ where multiple and diverse cultural experiences may occur at different levels for different users (from layman to expert) according to their level of interpretation. &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pg 153 - ‘Copeland (1998, 2004) suggested a ‘constructivist approach’ for interpretation in an archaeological site. It is an approach of interpretation based on ‘learn- ing by doing’ through problem solving. Copeland explained the implication of constructivist approach as the way that individuals are constantly constructing meaning by their own thought, feeling, actions, negotiation and reaction with the world. Thus constructivist interpretation seeks to engage visitors with evidence and help them to construct their own meaning’ &lt;br /&gt;
+&lt;a href=&quot;sk://tan_virtual_2009#12&quot;&gt;Page 12&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[[making_sense_as_much_cultural_as_is_bodily_-127-]][[synaestesia_-145-]]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 11:15:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/tan-fixing-virtual-heritage/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/tan-fixing-virtual-heritage/</guid>
+        
+        <category>virtual heritage</category>
         
         
         <category>Readings</category>

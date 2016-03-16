@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tagged Notes</title>
+    <title>sonification of john adams</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -14,33 +14,33 @@
     
 
     <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
-     <!-- If we don't have a page.date, then use modified time (pages) -->
-      
     
+      
+      
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="Tagged Notes" />
+    <meta property="dc:title" content="sonification of john adams" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="1969-12-31T19:00:00-05:00" />
+    <meta property="dc:date" content="2016-03-16T12:39:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/tagged/" />
+    <meta property="dc:identifier" content="/sonification-of-john-adams/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Open History Notebook" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="Tagged Notes" />
+    <meta property="og:title" content="sonification of john adams" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Open History Notebook" />
-    <meta property="og:url" content="/tagged/" />
+    <meta property="og:url" content="/sonification-of-john-adams/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="1969-12-31T19:00:00-05:00"/>
-    <meta name="citation_title" content="Tagged Notes"/>
+    <meta name="citation_date" content="2016-03-16T12:39:00-04:00"/>
+    <meta name="citation_title" content="sonification of john adams"/>
     <meta name="citation_journal_title" content="Open History Notebook"/>
 
     <!-- Twitter cards -->
@@ -68,7 +68,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/tagged/">
+    <link rel="canonical" href="http://smgprojects.github.io/sonification-of-john-adams/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -159,255 +159,114 @@
 
 
         <div class="span9">
-        <h2>Tagged Notes</h2>
+        <div class="post">
 
-<div class="tag-page">
-<p>Click on a tag to see relevant list of notes.</p>
+  <header class="post-header">
+    <h1 class="post-title">sonification of john adams</h1>
+    <p class="post-meta">Mar 16, 2016</p>
+  </header>
 
+  <article class="post-content">
+    
+<p>A python script to sonify time-series data; in this case, topic model topic for entries from John Adams’ diaries.</p>
 
+<pre><code>from miditime.MIDITime import MIDITime
+from datetime import datetime
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#archaeogaming">
-            archaeogaming (1)
-    </a>
-    </span>
-</span>
+#topic: local
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#code">
-            code (1)
-    </a>
-    </span>
-</span>
+mymidi = MIDITime(120, 'johnadams1.mid', 120, 5, 1)
+my_data = [
+    {'event_date': datetime(1753,6,8), 'magnitude': 1.8},
+    {'event_date': datetime(1753,6,9), 'magnitude': 0.3},
+    {'event_date': datetime(1753,6,10), 'magnitude': 3.1},
+    {'event_date': datetime(1753,6,11), 'magnitude': 6.6},
+    {'event_date': datetime(1753,6,12), 'magnitude': 0.4},
+    {'event_date': datetime(1753,6,13), 'magnitude': 0.5},
+    {'event_date': datetime(1753,6,14), 'magnitude': 5.3},
+    {'event_date': datetime(1753,6,17), 'magnitude': 0.3},
+    {'event_date': datetime(1753,6,18), 'magnitude': 1.8},
+    {'event_date': datetime(1753,6,19), 'magnitude': 0},
+    {'event_date': datetime(1753,6,20), 'magnitude': 0.46},
+    {'event_date': datetime(1753,6,21), 'magnitude': 4},
+    {'event_date': datetime(1753,6,22), 'magnitude': 2},
+    {'event_date': datetime(1753,6,23), 'magnitude': 0},
+    {'event_date': datetime(1753,6,24), 'magnitude': 1.3}
+]
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#sonification">
-            sonification (1)
-    </a>
-    </span>
-</span>
+my_data_epoched = [{'days_since_epoch': mymidi.days_since_epoch(d['event_date']), 'magnitude': d['magnitude']} for d in my_data]
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#soundbashing">
-            soundbashing (1)
-    </a>
-    </span>
-</span>
+my_data_timed = [{'beat': mymidi.beat(d['days_since_epoch']), 'magnitude': d['magnitude']} for d in my_data_epoched]
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#topic-modeling">
-            topic modeling (1)
-    </a>
-    </span>
-</span>
+start_time = my_data_timed[0]['beat']
 
- <span class="site-tag">
-    <span style="font-size: 96%">
-    <a href="/tagged/#user-interface">
-            user interface (2)
-    </a>
-    </span>
-</span>
+def mag_to_pitch_tuned(magnitude):
+    # Where does this data point sit in the domain of your data? (I.E. the min magnitude is 3, the max in 5.6). In this case the optional 'True' means the scale is reversed, so the highest value will return the lowest percentage.
+    scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude)
 
- <span class="site-tag">
-    <span style="font-size: 93%">
-    <a href="/tagged/#video-games">
-            video games (1)
-    </a>
-    </span>
-</span>
+    # Another option: Linear scale, reverse order
+    # scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude, True)
 
- <span class="site-tag">
-    <span style="font-size: 99%">
-    <a href="/tagged/#virtual-heritage">
-            virtual heritage (3)
-    </a>
-    </span>
-</span>
+    # Another option: Logarithmic scale, reverse order
+    # scale_pct = mymidi.log_scale_pct(3, 5.7, magnitude, True)
 
+    # Pick a range of notes. This allows you to play in a key.
+    c_major = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
 
- <hr class="separator">
+    #Find the note that matches your data point
+    note = mymidi.scale_to_note(scale_pct, c_major)
 
- <h3>Tags</h3>
+    #Translate that note to a MIDI pitch
+    midi_pitch = mymidi.note_to_midi_pitch(note)
 
+    return midi_pitch
 
+note_list = []
+
+for d in my_data_timed:
+    note_list.append([
+        d['beat'] - start_time,
+        mag_to_pitch_tuned(d['magnitude']),
+        100,  # attack
+        1  # duration, in beats
+    ])
+
+    # Add a track with those notes
+mymidi.add_track(note_list)
+
+# Output the .mid file
+mymidi.save_midi()
+</code></pre>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 16 Mar 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 16 Mar 2016</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a 
+              href="https://github.com/shawngraham/notebook/commits/master/_posts/2016-03-16-sonification-of-john-adams.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/sonification-of-john-adams/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
   
+    <li class="categorylist"><a href='/tagged/#sonification'>sonification</a></li>
   
-
-<h4><a name="virtual-heritage"></a><a class="internal" href="/tagged/#virtual-heritage">virtual heritage</a></h4>
-
-<ul>
-
+    <li class="categorylist"><a href='/tagged/#topic-modeling'>topic modeling</a></li>
   
-  <li>
-    <a href="/tan-virtual-2009/">tan_virtual_2009</a>
-    <span class="date">March 16, 2016</span>
-  </li>
+    <li class="categorylist"><a href='/tagged/#code'>code</a></li>
   
-
+    <li class="categorylist"><a href='/tagged/#soundbashing'>soundbashing</a></li>
   
-  <li>
-    <a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-  
-  <li>
-    <a href="/tan-fixing-virtual-heritage/">Tan - Fixing Virtual Heritage</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="user-interface"></a><a class="internal" href="/tagged/#user-interface">user interface</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/tan-virtual-2009/">tan_virtual_2009</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-  
-  <li>
-    <a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="sonification"></a><a class="internal" href="/tagged/#sonification">sonification</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/sonification-of-john-adams/">sonification of john adams</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="topic-modeling"></a><a class="internal" href="/tagged/#topic-modeling">topic modeling</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/sonification-of-john-adams/">sonification of john adams</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="code"></a><a class="internal" href="/tagged/#code">code</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/sonification-of-john-adams/">sonification of john adams</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="soundbashing"></a><a class="internal" href="/tagged/#soundbashing">soundbashing</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/sonification-of-john-adams/">sonification of john adams</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="video-games"></a><a class="internal" href="/tagged/#video-games">video games</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
-
-  
-  
-
-<h4><a name="archaeogaming"></a><a class="internal" href="/tagged/#archaeogaming">archaeogaming</a></h4>
-
-<ul>
-
-  
-  <li>
-    <a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a>
-    <span class="date">March 16, 2016</span>
-  </li>
-  
-
-</ul>
-
-<hr>
-
+  </ul>
+</div>
 
 </div>
 
