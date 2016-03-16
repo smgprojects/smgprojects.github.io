@@ -178,6 +178,8 @@
   <li>The ability to render software code in a pleasing manner.</li>
 </ul>
 
+<p>I’ll just note here that I have a script on my machine that turns my annotations on pdfs into a single markdown document; another script makes URLs to open the original annotation on the appropriate page within Skim - see <a href="http://electricarchaeology.ca/2015/06/28/exporting-your-pdf-annotations-from-skim/">Exporting your annotations from Skim</a> and <a href="http://www.dansheffler.com/blog/2014-07-02-custom-skim-urls/">Custom Skim URLs</a>. So in any of my notes if you see a link to a page number, that opens a pdf at the right spot on my machine.</p>
+
 <h2 id="notes-essays-categories-tags">Notes, Essays, Categories, Tags</h2>
 
 <p><em>Jason continues:</em></p>
@@ -227,7 +229,19 @@ categories:
 
 <p>These scripts help keep categories, tags, and layout correct, and automate most of the maintenance I would otherwise be doing by hand.</p>
 
-<h2 id="deployment">Deployment</h2>
+<p><em>I’ll just note here I’ve added to the rakefile to create a command that moves the generated <code>public</code> folder into the smgprojects.github.io repo on my machine, so I can push changes online. The code is:</em></p>
+
+<pre><code>desc "Move public to github.io folder for syncing"
+task :togithub do
+    FileUtils.cp_r 'public/.', '/Users/shawngraham/Documents/smgprojects.github.io'
+end
+</code></pre>
+
+<h1 id="deployment">Deployment</h1>
+
+<p><em>If I were any good, I’d also have things set up to do the deploying as part of that task, rather like the gh-deploy code for <a href="http://mkdocs.org">mkdocs</a></em>.</p>
+
+<p>Jason continues:</p>
 
 <p>When I’m ready to push notes or edits to the live site, my <code>Rakefile</code> does the following:</p>
 
@@ -240,6 +254,8 @@ categories:
 </ul>
 
 <p>This takes around sixty seconds for the entire process to happen. It’s a little slow at times, but by and large doesn’t hamper my workflow.</p>
+
+<p><em>I don’t use the rsync part of Jason’s rakefile, but I do use the <code>rakefile draft</code> and <code>rakefile write</code> and rakefile <code>publish</code> (which moves the files out of the draft folder and into the posts folder.)</em></p>
 
 <h2 id="details">Details</h2>
 
@@ -258,7 +274,6 @@ categories:
 <p>I have replaced Jekyll’s default Markdown parser with <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, because Pandoc is awesome. It’s a document utility written in Haskell for translating Markdown.</p>
 
 <p>I have templates for writing in RMarkdown with embedded R code, using <a href="">Knitr</a> to produce plain Markdown with source code annotations. These are useful as reproducable research within the notebook and easy to transition into print publications. I blame <a href="http://lincolnmullen.com">Lincoln</a> for all this R stuff.</p>
-
 
   </article>
 
