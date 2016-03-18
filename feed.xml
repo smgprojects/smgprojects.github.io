@@ -5,8 +5,8 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Mar 2016 11:15:24 -0400</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2016 11:15:24 -0400</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2016 11:18:39 -0400</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2016 11:18:39 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -34,8 +34,13 @@
 &lt;h1 id=&quot;tutorial-levels&quot;&gt;tutorial levels&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;framing discussion for each level mimics evolution of hominins on earth - dispersal, colonisation of new ecological niches, ect.&lt;/li&gt;
-  &lt;li&gt;eg Level 5:
-&amp;gt; Our bots will need to interact with other groups during the archaeological expedition. &lt;br /&gt; The planet was not populated only by Lovans, just like the Earth was not a Homo sapiens-only club. We shared Eurasia with Neanderthals for 5,000 years. They were also hominis quite similar to us in many respects, including the use of technology, culture and even language. &lt;br /&gt; The Neandeerthals disappeared as a specides over 30,000 years ago. However, our DNA says that each of us has a little bit of Neeanderthal inside. And trust me, DNA never lies!&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;eg Level 5:&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Our bots will need to interact with other groups during the archaeological expedition. &lt;br /&gt; The planet was not populated only by Lovans, just like the Earth was not a Homo sapiens-only club. We shared Eurasia with Neanderthals for 5,000 years. They were also hominis quite similar to us in many respects, including the use of technology, culture and even language. &lt;br /&gt; The Neandeerthals disappeared as a specides over 30,000 years ago. However, our DNA says that each of us has a little bit of Neeanderthal inside. And trust me, DNA never lies!&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
   &lt;li&gt;These blurbs are framed as a discussion with your (junior, woman) colleague, Dr. Lovelace. &amp;lt;- I think that’s the name. I neglected to write it down and I don’t want to go back to level 1.&lt;/li&gt;
   &lt;li&gt;Art work between the levels seems to imply that the bots are not aware that they are bots, that they are sentient, have culture, and wonder why the hell they’re doing these different things.&lt;/li&gt;
   &lt;li&gt;Art work seems to reproduce some of the tropes of museum dioramas - mostly naked ‘cave people’, men armed, women looking on… but &lt;a href=&quot;#todo:&quot;&gt;I need to replay that level&lt;/a&gt; (I think it was between 3 &amp;amp; 4 that I saw that art work.&lt;/li&gt;
@@ -46,7 +51,7 @@
   &lt;li&gt;you’re presented with a map of the planet. Topography is represented; vegetation, slope, aspect etc all have an effect on how the bots move.&lt;/li&gt;
   &lt;li&gt;configure the bots to meet the targets; targets have to be reached via particular times (denoted by a time bar; optimal times to hit your targets are coloured blue to white). Targets literally are places on the ground that the bots have to reach. If I could figure out &lt;a href=&quot;#todo:&quot;&gt;how to take a screenshot on my damned tablet, I would&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Bots have ‘evolution points’ which tally up the longer the bots live; you get a set amount when you start playing. They can be spent on mobility, reproduction, and technology. There are power-ups and boosts, but I’m not yet &lt;a href=&quot;#todo:&quot;&gt;clear on how they work&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;A population graph keeps track of how well your bots are doing. They all day: mission is a failure and we haven’t learned how the Lovans managed this particular task.&lt;/li&gt;
+  &lt;li&gt;A population graph keeps track of how well your bots are doing. They all die: mission is a failure and we haven’t learned how the Lovans managed this particular task.&lt;/li&gt;
   &lt;li&gt;Other populations of bots are simulated; you can’t control them. But trouble ensues when your Lovans intersect with them. You know they’re bad, because they’r coloured red.&lt;/li&gt;
 &lt;/ul&gt;
 
