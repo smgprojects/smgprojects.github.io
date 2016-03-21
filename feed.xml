@@ -5,9 +5,37 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 15:23:35 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 15:23:35 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 15:25:04 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 15:25:04 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>getting mdwriter links to work</title>
+        <description>
+&lt;p&gt;A useful add-on for Atom is &lt;a href=&quot;https://atom.io/packages/markdown-writer&quot;&gt;md-writer&lt;/a&gt;. In particular, it allows me to make internal links to other notes in my notebook by highlighting a term, then hitting &lt;code&gt;command+shift+k&lt;/code&gt;. (This brings up a menu to allow me to select the relevant note. Say I wanted to cross-link to the code I used to sonify &lt;a href=&quot;http://smgprojects.github.io/sonification-of-john-adams/&quot; title=&quot;sonification of john adams&quot;&gt;the topic model&lt;/a&gt; of John Adams’ diaries, I’d highlight the term, hit the keystrokes, and there we go. Seems a little thing, but it’s very important for turning this whole thing into a wiki-style notebook.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve installed the package, you need to set up a &lt;code&gt;.cson&lt;/code&gt; file for markdown that tells it where to find the posts. For reference sake, it should look something &lt;a href=&quot;https://github.com/zhuochun/zhuochun.github.io/blob/cb34e3c16d42c52b281c34920ad55bbca223ac23/_mdwriter.cson&quot;&gt;like this&lt;/a&gt;. The important bits there are these:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;siteUrl: &quot;http://smgrojects.github.io/&quot;
+# URLs to tags/posts/categories JSON file
+urlForTags: &quot;http://smgrojects.github.io/tags.json&quot;
+urlForPosts: &quot;http://smgrojects.github.io/posts.json&quot;
+urlForCategories: &quot;http://smgrojects.github.io/categories.json&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Those .json files are generated from &lt;a href=&quot;https://gist.github.com/zhuochun/fe127356bcf8c07ae1fb&quot;&gt;this code&lt;/a&gt;; they live inside my &lt;code&gt;source&lt;/code&gt; folder and are generated when I &lt;code&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 21 Mar 2016 15:06:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/getting-mdwriter-links-to-work/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/getting-mdwriter-links-to-work/</guid>
+        
+        <category>notebook</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
     
       <item>
         <title>Evolving Planet Play Observations</title>

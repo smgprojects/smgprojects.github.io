@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "getting mdwriter links to work",
+            "url": "http://smgprojects.github.io/getting-mdwriter-links-to-work/",
+            "date": "2016-03-21T15:06:00-04:00"
+        },
+        
+        {
             "title": "Evolving Planet Play Observations",
             "url": "http://smgprojects.github.io/evolving-planet-play-observations/",
             "date": "2016-03-18T10:51:00-04:00"
