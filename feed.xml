@@ -5,9 +5,55 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Mar 2016 09:52:40 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 09:52:40 -0400</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2016 10:39:17 -0400</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 10:39:17 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Items to Read - archaeogaming</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#concerning-agent-base-models-readtodo&quot; id=&quot;markdown-toc-concerning-agent-base-models-readtodo&quot;&gt;concerning Agent Base Models &lt;a href=&quot;#todo:&quot;&gt;Read&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;concerning-agent-base-models-readtodo&quot;&gt;concerning Agent Base Models &lt;a href=&quot;#todo:&quot;&gt;Read&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://complexityblog.com/blog/index.php?itemid=57&quot;&gt;Feb 02: Comparing ABMs, Math Models, and Computer Games&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://ccl.northwestern.edu/2012/AERA2012.pdf&quot;&gt;Spinners, Dice, and Pawns: Using Board Games to Prepare for Agent-Based Modeling Activities&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.mifav.uniroma2.it/inevent/events/idea2010/doc/19_6.pdf&quot;&gt;Using an Agent-Based Modeling Simulation and Game to Teach Socio-Scientific Topics&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://cybergeo.revues.org/25561?lang=en&quot;&gt;Video games and urban simulation: new tools or new tricks?&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://gamephilosophy2014.org/wp-content/uploads/2014/11/Gregersen-2014.-Against-Autonomous-Simulation.-PCG20141.pdf&quot;&gt;Against autonomous simulation: video games as simulation and symbolic resources&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.researchgate.net/publication/257661322_Agent-based_land-use_models_and_farming_games_on_the_social_web-Fertile_ground_for_a_collaborative_future&quot;&gt;Agent-based land-use models and farming games on the social web—Fertile groundfor a collaborative future?&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1077&amp;amp;context=humbiol_preprints&quot;&gt;So You Think You Can Model? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Iza’s piece on assessing ABM’s - it was a prezi - where’d that go?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 22 Mar 2016 10:17:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/items-to-read-archaeogaming/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/items-to-read-archaeogaming/</guid>
+        
+        <category>archaeogaming</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
     
       <item>
         <title>linguistics and ubisoft</title>
@@ -544,31 +590,6 @@ mymidi.save_midi()
         <pubDate>Wed, 16 Mar 2016 12:24:00 -0400</pubDate>
         <link>http://smgprojects.github.io/tan-virtual-2009/</link>
         <guid isPermaLink="true">http://smgprojects.github.io/tan-virtual-2009/</guid>
-        
-        <category>virtual heritage</category>
-        
-        <category>user interface</category>
-        
-        
-        <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>tan - how the user is lost</title>
-        <description>
-&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
-
-&lt;p&gt;[[2016-03-16-tan-fixing-virtual-heritage]][[2016-03-16-tan-virtual-heritage-reality-and-criticism]]&lt;/p&gt;
-
-&lt;p&gt;p151 authors develop  a 3 step model where step 1 ‘documentation’ involves the tangible &amp;amp; intangible, but as we move to step 2 ‘representation’ constraints and distortion lead to data loss, and then as we move to stage 3 ‘dissemination’ we combine ‘media’ (hardware, software, narrative) which then the user interacts with. The user is the missing aspect - there is no consideration of ‘age, cultural background, ideology, perception, psychology, technical skill, learning ability, cognition’ in the design of virtual heritage. This model is drawn from ChanLIn 2001, Osberg 199, Roussou 2008.  This is all to say that there is a ‘lack of literature focused on the theory and methodology of user interaction and interpretation of heritage’ - designers dump information onto the user. &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[[reconstruction_of_rome_but_sorry_no_sound_-131-]][[sound_gives_access_to_the_unseen_-140-]][[synaestesia_-145-]][[making_sense_as_much_cultural_as_is_bodily_-127-]]&lt;/p&gt;
-</description>
-        <pubDate>Wed, 16 Mar 2016 12:10:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/tan-how-the-user-is-lost/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/tan-how-the-user-is-lost/</guid>
         
         <category>virtual heritage</category>
         
