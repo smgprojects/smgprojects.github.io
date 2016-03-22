@@ -5,8 +5,8 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 21:32:12 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 21:32:12 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 21:35:03 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 21:35:03 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -19,9 +19,9 @@
 
 &lt;p&gt;Kanban boards are all over the place. At their simplest, it’s just a whiteboard with three colums, ‘to do’, ‘doing’, and ‘done’. You write your tasks on post-it notes, and move them through the columns as you do ‘em. Simple.&lt;/p&gt;
 
-&lt;p&gt;I’m not sure who’s behind it, but ‘imdone’ has a great atom plugin that monitors your project for key phrases like TO DO in your code or your notes. Then, with alt+t, it opens up a board &lt;em&gt;inside atom&lt;/em&gt; where you can see all of your tasks - and move them around as you get through them. It’s pretty cool and works extremely well. Only hiccup I’ve encountered so far is making sure that the &lt;code&gt;.imdone&lt;/code&gt; config file is in my project folder.&lt;/p&gt;
+&lt;p&gt;I’m not sure who’s behind it, but ‘imdone’ has a great &lt;a href=&quot;https://atom.io/packages/imdone-atom&quot;&gt;atom plugin&lt;/a&gt; that monitors your project for key phrases like TO DO in your code or your notes. Then, with alt+t, it opens up a board &lt;em&gt;inside atom&lt;/em&gt; where you can see all of your tasks - and move them around as you get through them. It’s pretty cool and works extremely well. Only hiccup I’ve encountered so far is making sure that the &lt;code&gt;.imdone&lt;/code&gt; config file is in my project folder.&lt;/p&gt;
 
-&lt;p&gt;So, now when I’m writing a note, I can turn any text I want into a &lt;code&gt;to do&lt;/code&gt; by making it into a special link, &lt;code&gt;[like this](#todo:)&lt;/code&gt;. The combination of imdone with mdwriter’s quick &lt;a href=&quot;http://smgprojects.github.io/getting-mdwriter-links-to-work/&quot; title=&quot;getting mdwriter links to work&quot;&gt;linking to my other notes&lt;/a&gt; make atom a great environment for writing this open notebook.&lt;/p&gt;
+&lt;p&gt;So, now when I’m writing a note, I can turn any text I want into a &lt;code&gt;to do&lt;/code&gt; by making it into a special link, &lt;code&gt;[like this](#todo:)&lt;/code&gt;. The combination of imdone with mdwriter’s quick &lt;a href=&quot;http://smgprojects.github.io/getting-mdwriter-links-to-work/&quot; title=&quot;getting mdwriter links to work&quot;&gt;linking to my other notes&lt;/a&gt; make atom a great environment for writing this open notebook. The plugin has some other bits and bobs of functionality (like github issue tracking too!) so a great plugin for this project.&lt;/p&gt;
 
 &lt;p&gt;See also the &lt;a href=&quot;http://blog.imdone.io/&quot;&gt;imdone blog&lt;/a&gt;.&lt;/p&gt;
 
