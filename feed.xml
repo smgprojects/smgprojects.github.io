@@ -5,16 +5,47 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 21:16:01 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 21:16:01 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 21:32:12 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 21:32:12 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Kanban Style Board in Atom &amp;amp; this Notebook</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#kanban-board&quot; id=&quot;markdown-toc-kanban-board&quot;&gt;Kanban Board&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;kanban-board&quot;&gt;Kanban Board&lt;/h2&gt;
+
+&lt;p&gt;Kanban boards are all over the place. At their simplest, it’s just a whiteboard with three colums, ‘to do’, ‘doing’, and ‘done’. You write your tasks on post-it notes, and move them through the columns as you do ‘em. Simple.&lt;/p&gt;
+
+&lt;p&gt;I’m not sure who’s behind it, but ‘imdone’ has a great atom plugin that monitors your project for key phrases like TO DO in your code or your notes. Then, with alt+t, it opens up a board &lt;em&gt;inside atom&lt;/em&gt; where you can see all of your tasks - and move them around as you get through them. It’s pretty cool and works extremely well. Only hiccup I’ve encountered so far is making sure that the &lt;code&gt;.imdone&lt;/code&gt; config file is in my project folder.&lt;/p&gt;
+
+&lt;p&gt;So, now when I’m writing a note, I can turn any text I want into a &lt;code&gt;to do&lt;/code&gt; by making it into a special link, &lt;code&gt;[like this](#todo:)&lt;/code&gt;. The combination of imdone with mdwriter’s quick &lt;a href=&quot;http://smgprojects.github.io/getting-mdwriter-links-to-work/&quot; title=&quot;getting mdwriter links to work&quot;&gt;linking to my other notes&lt;/a&gt; make atom a great environment for writing this open notebook.&lt;/p&gt;
+
+&lt;p&gt;See also the &lt;a href=&quot;http://blog.imdone.io/&quot;&gt;imdone blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.github-camo.com/11fce0ef0d4ef9d954d03e091050fe1373134c37/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3233333530352f31313132313436312f39383939666231342d383931622d313165352d386162612d6134363436663862313432382e676966&quot; alt=&quot;imdone&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Mar 2016 21:24:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/kanban-style-board-in-atom-and-this-notebook/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/kanban-style-board-in-atom-and-this-notebook/</guid>
+        
+        <category>notebook</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>archaeogaming map</title>
         <description>
 &lt;p&gt;A while back Andrew Reinhard devised a map of questions / relationships that could be usefully filed under the ‘archaeogaming’ rubric. I think it’d be handy to have a copy of that map filed here. The writeup of how I made it is on &lt;a href=&quot;http://electricarchaeology.ca/2015/12/18/a-map-of-archaeogaming/&quot;&gt;the blog&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/archaeomap.jpg&quot; alt=&quot;archaeomap&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/archaeomap.jpg&quot; alt=&quot;archaeomap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;https://gist.github.com/shawngraham/5a036bc0477dbae48b91&quot;&gt;this gist&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-R&quot;&gt;###
 URL &amp;lt;- paste0(
@@ -66,7 +97,7 @@ urlForCategories: &quot;http://smgrojects.github.io/categories.json&quot;
         <category>notebook</category>
         
         
-        <category>Code</category>
+        <category>Meta</category>
         
       </item>
     
