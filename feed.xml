@@ -5,8 +5,8 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 21:03:24 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 21:03:24 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 21:16:01 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 21:16:01 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -16,7 +16,7 @@
 
 &lt;p&gt;&lt;img src=&quot;images/archaeomap.jpg&quot; alt=&quot;archaeomap&quot; /&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;###
+&lt;pre&gt;&lt;code class=&quot;language-R&quot;&gt;###
 URL &amp;lt;- paste0(
   &quot;https://gist.githubusercontent.com/shawngraham/2bfad0c10e7519a630a9/raw/&quot;,
   &quot;7a7a2da8c4358a81e0dc05cc64405d7c9f975803/archaeomap-flare.json&quot;)
