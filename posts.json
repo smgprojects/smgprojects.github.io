@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "linguistics and ubisoft",
+            "url": "http://smgprojects.github.io/linguistics-and-ubisoft/",
+            "date": "2016-03-22T09:29:00-04:00"
+        },
+        
+        {
             "title": "clement2012",
             "url": "http://smgprojects.github.io/clement2013/",
             "date": "2016-03-21T22:03:00-04:00"
@@ -62,7 +68,7 @@
         },
         
         {
-            "title": "Tan - Fixing Virtual Heritage",
+            "title": "tan - Fixing Virtual Heritage",
             "url": "http://smgprojects.github.io/tan-fixing-virtual-heritage/",
             "date": "2016-03-16T11:15:00-04:00"
         }
