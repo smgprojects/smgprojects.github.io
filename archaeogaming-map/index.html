@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>All Notes by Date</title>
+    <title>archaeogaming map</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -14,33 +14,33 @@
     
 
     <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
-     <!-- If we don't have a page.date, then use modified time (pages) -->
-      
     
+      
+      
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="All Notes by Date" />
+    <meta property="dc:title" content="archaeogaming map" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="1969-12-31T19:00:00-05:00" />
+    <meta property="dc:date" content="2016-03-21T20:49:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/archive/" />
+    <meta property="dc:identifier" content="/archaeogaming-map/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Open Digital Humanities Notebook" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="All Notes by Date" />
+    <meta property="og:title" content="archaeogaming map" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Open Digital Humanities Notebook" />
-    <meta property="og:url" content="/archive/" />
+    <meta property="og:url" content="/archaeogaming-map/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="1969-12-31T19:00:00-05:00"/>
-    <meta name="citation_title" content="All Notes by Date"/>
+    <meta name="citation_date" content="2016-03-21T20:49:00-04:00"/>
+    <meta name="citation_title" content="archaeogaming map"/>
     <meta name="citation_journal_title" content="Open Digital Humanities Notebook"/>
 
     <!-- Twitter cards -->
@@ -68,7 +68,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/archive/">
+    <link rel="canonical" href="http://smgprojects.github.io/archaeogaming-map/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -160,56 +160,60 @@
 
 
         <div class="span9">
-        <h3>All Notes by Date (9 total)</h3>
+        <div class="post">
 
-<table class="table-stripped">
+  <header class="post-header">
+    <h1 class="post-title">archaeogaming map</h1>
+    <p class="post-meta">Mar 21, 2016</p>
+  </header>
+
+  <article class="post-content">
+    
+<p>A while back Andrew Reinhard devised a map of questions / relationships that could be usefully filed under the ‘archaeogaming’ rubric. I think it’d be handy to have a copy of that map filed here. The writeup of how I made it is on <a href="http://electricarchaeology.ca/2015/12/18/a-map-of-archaeogaming/">the blog</a></p>
+
+<p><img src="images/archaeomap.jpg" alt="archaeomap" /></p>
+
+<pre><code>###
+URL &lt;- paste0(
+  "https://gist.githubusercontent.com/shawngraham/2bfad0c10e7519a630a9/raw/",
+  "7a7a2da8c4358a81e0dc05cc64405d7c9f975803/archaeomap-flare.json")
+
+## Convert to list format
+Flare &lt;- jsonlite::fromJSON(URL, simplifyDataFrame = FALSE)
+
+# Use subset of data for more readable diagram
+
+radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
+diagonalNetwork(List = Flare, fontSize = 10, fontFamily = "xkcd", opacity = 0.9, width = 500)
+
+</code></pre>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 21 Mar 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 21 Mar 2016</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2016-03-21-archaeogaming-map.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/archaeogaming-map/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
   
-    <tr>
-    <td>21 Mar 2016</td>
-    <td><a href="/archaeogaming-map/">archaeogaming map</a></td>
-    </tr>
+    <li class="categorylist"><a href='/tagged/#archaeogaming'>archaeogaming</a></li>
   
-    <tr>
-    <td>21 Mar 2016</td>
-    <td><a href="/getting-mdwriter-links-to-work/">getting mdwriter links to work</a></td>
-    </tr>
-  
-    <tr>
-    <td>18 Mar 2016</td>
-    <td><a href="/evolving-planet-play-observations/">Evolving Planet Play Observations</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/sonification-of-john-adams/">sonification of john adams</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/tan-virtual-2009/">tan_virtual_2009</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/tan-virtual-heritage-reality-and-criticism/">tan- virtual heritage reality and criticism</a></td>
-    </tr>
-  
-    <tr>
-    <td>16 Mar 2016</td>
-    <td><a href="/tan-fixing-virtual-heritage/">Tan - Fixing Virtual Heritage</a></td>
-    </tr>
-  
-</table>
+  </ul>
+</div>
+
+</div>
+
         </div>
       </div>
     </div>

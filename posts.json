@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "archaeogaming map",
+            "url": "http://smgprojects.github.io/archaeogaming-map/",
+            "date": "2016-03-21T20:49:00-04:00"
+        },
+        
+        {
             "title": "getting mdwriter links to work",
             "url": "http://smgprojects.github.io/getting-mdwriter-links-to-work/",
             "date": "2016-03-21T15:06:00-04:00"

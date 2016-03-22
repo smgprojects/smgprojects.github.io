@@ -5,9 +5,42 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 15:25:04 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 15:25:04 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 21:03:24 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 21:03:24 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>archaeogaming map</title>
+        <description>
+&lt;p&gt;A while back Andrew Reinhard devised a map of questions / relationships that could be usefully filed under the ‘archaeogaming’ rubric. I think it’d be handy to have a copy of that map filed here. The writeup of how I made it is on &lt;a href=&quot;http://electricarchaeology.ca/2015/12/18/a-map-of-archaeogaming/&quot;&gt;the blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/archaeomap.jpg&quot; alt=&quot;archaeomap&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;###
+URL &amp;lt;- paste0(
+  &quot;https://gist.githubusercontent.com/shawngraham/2bfad0c10e7519a630a9/raw/&quot;,
+  &quot;7a7a2da8c4358a81e0dc05cc64405d7c9f975803/archaeomap-flare.json&quot;)
+
+## Convert to list format
+Flare &amp;lt;- jsonlite::fromJSON(URL, simplifyDataFrame = FALSE)
+
+# Use subset of data for more readable diagram
+
+radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
+diagonalNetwork(List = Flare, fontSize = 10, fontFamily = &quot;xkcd&quot;, opacity = 0.9, width = 500)
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Mon, 21 Mar 2016 20:49:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/archaeogaming-map/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/archaeogaming-map/</guid>
+        
+        <category>archaeogaming</category>
+        
+        
+        <category>Observations</category>
+        
+      </item>
     
       <item>
         <title>getting mdwriter links to work</title>
