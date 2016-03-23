@@ -5,12 +5,12 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Mar 2016 10:39:17 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 10:39:17 -0400</lastBuildDate>
+    <pubDate>Wed, 23 Mar 2016 12:41:14 -0400</pubDate>
+    <lastBuildDate>Wed, 23 Mar 2016 12:41:14 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>Items to Read - archaeogaming</title>
+        <title>items to Read - archaeogaming</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#concerning-agent-base-models-readtodo&quot; id=&quot;markdown-toc-concerning-agent-base-models-readtodo&quot;&gt;concerning Agent Base Models &lt;a href=&quot;#todo:&quot;&gt;Read&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -49,6 +49,8 @@
         <guid isPermaLink="true">http://smgprojects.github.io/items-to-read-archaeogaming/</guid>
         
         <category>archaeogaming</category>
+        
+        <category>to read</category>
         
         
         <category>Readings</category>
