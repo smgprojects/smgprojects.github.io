@@ -5,9 +5,100 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Mar 2016 12:48:01 -0400</pubDate>
-    <lastBuildDate>Wed, 23 Mar 2016 12:48:01 -0400</lastBuildDate>
+    <pubDate>Sun, 27 Mar 2016 22:05:23 -0400</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2016 22:05:23 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>a twitter conversation re soundbashing</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-deep-thought&quot; id=&quot;markdown-toc-a-deep-thought&quot;&gt;A deep thought&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#some-interesting-twitter-posts-tonight&quot; id=&quot;markdown-toc-some-interesting-twitter-posts-tonight&quot;&gt;Some interesting twitter posts tonight&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-deep-thought&quot;&gt;A deep thought&lt;/h2&gt;
+
+&lt;p&gt;https://twitter.com/electricarchaeo/status/713549883186266112&lt;/p&gt;
+
+&lt;h2 id=&quot;some-interesting-twitter-posts-tonight&quot;&gt;Some interesting twitter posts tonight&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/ranti/status/714256452907479040&quot;&gt;https://twitter.com/ranti/status/714256452907479040&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714257006849208321&quot;&gt;https://twitter.com/zenobiewan/status/714257006849208321&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/precatlady/status/714258734185316352&quot;&gt;https://twitter.com/precatlady/status/714258734185316352&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/tinysapien/status/714258919842058240&quot;&gt;https://twitter.com/tinysapien/status/714258919842058240&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714258970420969472&quot;&gt;https://twitter.com/zenobiewan/status/714258970420969472&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714259228949483520&quot;&gt;https://twitter.com/zenobiewan/status/714259228949483520&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714259468578492416&quot;&gt;https://twitter.com/zenobiewan/status/714259468578492416&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/precatlady/status/714262938786394114&quot;&gt;https://twitter.com/precatlady/status/714262938786394114&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263187298750464&quot;&gt;https://twitter.com/zenobiewan/status/714263187298750464&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263314163900416&quot;&gt;https://twitter.com/zenobiewan/status/714263314163900416&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263776657170433&quot;&gt;https://twitter.com/zenobiewan/status/714263776657170433&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263918982463488&quot;&gt;https://twitter.com/zenobiewan/status/714263918982463488&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/MesolithicMe/status/714266787106398209&quot;&gt;https://twitter.com/MesolithicMe/status/714266787106398209&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/tinysapien/status/714267129948872707&quot;&gt;https://twitter.com/tinysapien/status/714267129948872707&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/MesolithicMe/status/714267908344512513&quot;&gt;https://twitter.com/MesolithicMe/status/714267908344512513&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Mar 2016 22:01:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/a-twitter-conversation-re-soundbashing/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/a-twitter-conversation-re-soundbashing/</guid>
+        
+        <category>soundbashing</category>
+        
+        
+        <category>Observations</category>
+        
+      </item>
+    
+      <item>
+        <title>a single open notebook for a class?</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#problems&quot; id=&quot;markdown-toc-problems&quot;&gt;Problems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-test-this&quot; id=&quot;markdown-toc-how-to-test-this&quot;&gt;How to test this?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What if I set up this open notebook infrastructure as a communal notebook for an entire class? How could that work? Maybe by making the hidden drafts folder (which I normally write into with &lt;code&gt;rake draft&lt;/code&gt;) its own github repo. Students would fork it, then put their notes into it. I’d sync from that, then fold into the overall structure &amp;amp; push live to the net.&lt;/p&gt;
+
+&lt;h2 id=&quot;problems&quot;&gt;Problems&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;getting students to observe YAML conventions automatically. Having a template is great, but everyone keeps overwriting the damned thing causing conflicts. SOLUTION: a rake file?
+    &lt;ul&gt;
+      &lt;li&gt;which opens another problem, windows vs mac etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;more problems would emerge, no doubt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-test-this&quot;&gt;How to test this?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Maybe with Andrew R, set something similar up for our No Man’s Sky stuff?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 25 Mar 2016 09:07:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/a-single-open-notebook-for-a-class/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/a-single-open-notebook-for-a-class/</guid>
+        
+        <category>teaching</category>
+        
+        <category>archaeogaming</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>items to Read - archaeogaming</title>
@@ -459,146 +550,6 @@ urlForCategories: &quot;http://smgrojects.github.io/categories.json&quot;
         
         
         <category>Essays</category>
-        
-      </item>
-    
-      <item>
-        <title>sonification of john adams</title>
-        <description>
-&lt;p&gt;A python script to sonify time-series data; in this case, topic model topic for entries from John Adams’ diaries.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from miditime.MIDITime import MIDITime
-from datetime import datetime
-
-#topic: local
-
-mymidi = MIDITime(120, &#39;johnadams1.mid&#39;, 120, 5, 1)
-my_data = [
-    {&#39;event_date&#39;: datetime(1753,6,8), &#39;magnitude&#39;: 1.8},
-    {&#39;event_date&#39;: datetime(1753,6,9), &#39;magnitude&#39;: 0.3},
-    {&#39;event_date&#39;: datetime(1753,6,10), &#39;magnitude&#39;: 3.1},
-    {&#39;event_date&#39;: datetime(1753,6,11), &#39;magnitude&#39;: 6.6},
-    {&#39;event_date&#39;: datetime(1753,6,12), &#39;magnitude&#39;: 0.4},
-    {&#39;event_date&#39;: datetime(1753,6,13), &#39;magnitude&#39;: 0.5},
-    {&#39;event_date&#39;: datetime(1753,6,14), &#39;magnitude&#39;: 5.3},
-    {&#39;event_date&#39;: datetime(1753,6,17), &#39;magnitude&#39;: 0.3},
-    {&#39;event_date&#39;: datetime(1753,6,18), &#39;magnitude&#39;: 1.8},
-    {&#39;event_date&#39;: datetime(1753,6,19), &#39;magnitude&#39;: 0},
-    {&#39;event_date&#39;: datetime(1753,6,20), &#39;magnitude&#39;: 0.46},
-    {&#39;event_date&#39;: datetime(1753,6,21), &#39;magnitude&#39;: 4},
-    {&#39;event_date&#39;: datetime(1753,6,22), &#39;magnitude&#39;: 2},
-    {&#39;event_date&#39;: datetime(1753,6,23), &#39;magnitude&#39;: 0},
-    {&#39;event_date&#39;: datetime(1753,6,24), &#39;magnitude&#39;: 1.3}
-]
-
-my_data_epoched = [{&#39;days_since_epoch&#39;: mymidi.days_since_epoch(d[&#39;event_date&#39;]), &#39;magnitude&#39;: d[&#39;magnitude&#39;]} for d in my_data]
-
-my_data_timed = [{&#39;beat&#39;: mymidi.beat(d[&#39;days_since_epoch&#39;]), &#39;magnitude&#39;: d[&#39;magnitude&#39;]} for d in my_data_epoched]
-
-start_time = my_data_timed[0][&#39;beat&#39;]
-
-def mag_to_pitch_tuned(magnitude):
-    # Where does this data point sit in the domain of your data? (I.E. the min magnitude is 3, the max in 5.6). In this case the optional &#39;True&#39; means the scale is reversed, so the highest value will return the lowest percentage.
-    scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude)
-
-    # Another option: Linear scale, reverse order
-    # scale_pct = mymidi.linear_scale_pct(3, 5.7, magnitude, True)
-
-    # Another option: Logarithmic scale, reverse order
-    # scale_pct = mymidi.log_scale_pct(3, 5.7, magnitude, True)
-
-    # Pick a range of notes. This allows you to play in a key.
-    c_major = [&#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;A&#39;, &#39;B&#39;]
-
-    #Find the note that matches your data point
-    note = mymidi.scale_to_note(scale_pct, c_major)
-
-    #Translate that note to a MIDI pitch
-    midi_pitch = mymidi.note_to_midi_pitch(note)
-
-    return midi_pitch
-
-note_list = []
-
-for d in my_data_timed:
-    note_list.append([
-        d[&#39;beat&#39;] - start_time,
-        mag_to_pitch_tuned(d[&#39;magnitude&#39;]),
-        100,  # attack
-        1  # duration, in beats
-    ])
-
-    # Add a track with those notes
-mymidi.add_track(note_list)
-
-# Output the .mid file
-mymidi.save_midi()
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Wed, 16 Mar 2016 12:39:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/sonification-of-john-adams/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/sonification-of-john-adams/</guid>
-        
-        <category>sonification</category>
-        
-        <category>topic modeling</category>
-        
-        <category>code</category>
-        
-        <category>soundbashing</category>
-        
-        
-        <category>Code</category>
-        
-      </item>
-    
-      <item>
-        <title>tan_virtual_2009</title>
-        <description>
-&lt;h4&gt;&lt;span id=&quot;tan_virtual_2009&quot;&gt;Tan, B.-K., and H. Rahaman. “Virtual Heritage: Reality and Criticism,” 2009. http://scholarbank.nus.edu.sg/handle/10635/45499.&lt;/span&gt;&lt;/h4&gt;
-
-&lt;p&gt;p 152- Tan’s suggestions, under ‘approaching the problem’ -&amp;gt; ‘in virtual heritage projects, digitalized artifacts somehow need to trigger the user’s cognitive process while that person is exploring the virtual environment,&lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;pg 152 - ‘While developing a virtual heritage environment we need to consider two important basic things: (a) Content development: Technology always has some constrains with hardware and software; as well as connected to an ‘image of practice’. Media experts like: modelers, animators, programmers may know how to do -pg 153-  something, but may not be aware of the implicit cultural values of a par- ticular artifacts or environment. So, while working as a cultural preserva- tionist, the implemented methods or approaches reflects their own assumptions and may not be appropriate (Kalay 2008). (b) User interpretation: Virtual environment allows more freedom and authority. Freedom in walkthrough and time-travel allows open-ended sequences of expedition. Such freedom on the other hand may become temporally, as well as spatially confused and to some extent result in ‘getting lost’ in some ancient and unknown world. So, effort should be given to contextualize the experience and set the mood for its understanding (Kalay 2008). A virtual environment thus need to become a ‘context’ where multiple and diverse cultural experiences may occur at different levels for different users (from layman to expert) according to their level of interpretation. &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;pg 153 - ‘Copeland (1998, 2004) suggested a ‘constructivist approach’ for interpretation in an archaeological site. It is an approach of interpretation based on ‘learn- ing by doing’ through problem solving. Copeland explained the implication of constructivist approach as the way that individuals are constantly constructing meaning by their own thought, feeling, actions, negotiation and reaction with the world. Thus constructivist interpretation seeks to engage visitors with evidence and help them to construct their own meaning’ &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#12&quot;&gt;Page 12&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;p151 authors develop  a 3 step model where step 1 ‘documentation’ involves the tangible &amp;amp; intangible, but as we move to step 2 ‘representation’ constraints and distortion lead to data loss, and then as we move to stage 3 ‘dissemination’ we combine ‘media’ (hardware, software, narrative) which then the user interacts with. The user is the missing aspect - there is no consideration of ‘age, cultural background, ideology, perception, psychology, technical skill, learning ability, cognition’ in the design of virtual heritage. This model is drawn from ChanLIn 2001, Osberg 199, Roussou 2008.  This is all to say that there is a ‘lack of literature focused on the theory and methodology of user interaction and interpretation of heritage’ - designers dump information onto the user. &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;“To virtualize heritage means to actualize the heritage content digitally and to simulate it using computer graphics technology.”  + that’s the thing right there, that word ‘actualize’. Need to unpack that. p144 &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#3&quot;&gt;Page 3&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“According to Addison (2000) there are three major domains in virtual heritage:
-  - 3D Documentation: everything from site survey to epigraphy
-  - 3D Representation: from historic reconstruction to visualization
-  - 3D Dissemination: from immersive networked worlds to ‘in-situ’ augmented reality.” - p 146 &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#5&quot;&gt;Page 5&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;p 152- Tan’s suggestions, under ‘approaching the problem’ -&amp;gt; ‘in virtual heritage projects, digitalized artifacts somehow need to trigger the user’s cognitive process while he is exploring the virtual environment, &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;pg 152 - ‘While developing a virtual heritage environment we need to consider two important basic things: (a) Content development: Technology always has some constrains with hardware and software; as well as connected to an ‘image of practice’. Media experts like: modelers, animators, programmers may know how to do -pg 153-  something, but may not be aware of the implicit cultural values of a par- ticular artifacts or environment. So, while working as a cultural preserva- tionist, the implemented methods or approaches reflects their own assumptions and may not be appropriate (Kalay 2008). (b) User interpretation: Virtual environment allows more freedom and authority. Freedom in walkthrough and time-travel allows open-ended sequences of expedition. Such freedom on the other hand may become temporally, as well as spatially confused and to some extent result in ‘getting lost’ in some ancient and unknown world. So, effort should be given to contextualize the experience and set the mood for its understanding (Kalay 2008). A virtual environment thus need to become a ‘context’ where multiple and diverse cultural experiences may occur at different levels for different users (from layman to expert) according to their level of interpretation. &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#11&quot;&gt;Page 11&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;pg 153 - ‘Copeland (1998, 2004) suggested a ‘constructivist approach’ for interpretation in an archaeological site. It is an approach of interpretation based on ‘learn- ing by doing’ through problem solving. Copeland explained the implication of constructivist approach as the way that individuals are constantly constructing meaning by their own thought, feeling, actions, negotiation and reaction with the world. Thus constructivist interpretation seeks to engage visitors with evidence and help them to construct their own meaning’ &lt;br /&gt;
-&lt;a href=&quot;sk://tan_virtual_2009#12&quot;&gt;Page 12&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 16 Mar 2016 12:24:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/tan-virtual-2009/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/tan-virtual-2009/</guid>
-        
-        <category>virtual heritage</category>
-        
-        <category>user interface</category>
-        
-        
-        <category>Readings</category>
         
       </item>
     
