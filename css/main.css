@@ -228,16 +228,16 @@ kbd {
 /* =Wrapper
 -----------------------------------------------------------------------------*/
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(1200px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
   margin-right: auto;
-  margin-left: auto;
+  /* margin-left: 1px; */
   padding-right: 30px;
-  padding-left: 30px; }
+  /* padding-left: $spacing-unit; */ }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(1200px - (30px));
+      max-width: calc(1200px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -616,7 +616,7 @@ h6 .badge {
 
 .site-header ul li {
   display: inline-block;
-  padding-left: 15px; }
+  padding-left: 10px; }
 
 .site-header ul li a {
   color: #f2f2f2; }
@@ -905,14 +905,14 @@ ul#post-categories li:last-child:after {
   margin-top: 9px; }
 
 .nav-list {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1px;
+  padding-right: 1px;
   margin-bottom: 0; }
 
 .nav-list > li > a,
 .nav-list .nav-header {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -35px;
+  margin-right: -35px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   font-size: 14px; }
 
