@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "a test of pdf",
+            "url": "http://smgprojects.github.io/a-test-of-pdf/",
+            "date": "2016-04-06T19:29:00-04:00"
+        },
+        
+        {
             "title": "a twitter conversation re soundbashing",
             "url": "http://smgprojects.github.io/a-twitter-conversation-re-soundbashing/",
             "date": "2016-03-27T22:01:00-04:00"

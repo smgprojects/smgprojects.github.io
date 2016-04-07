@@ -12,7 +12,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "ff-tisa-web-pro", "Droid Serif", serif;
+  font-family: "Lato", "Light", sans-serif;
   font-size: 1.6em;
   line-height: 24px;
   background: #fdfdfd;
@@ -49,7 +49,7 @@ h4,
 h5,
 h6 {
   text-rendering: optimizeLegibility;
-  font-family: "ff-meta-web-pro", Helvetica, sans-serif; }
+  font-family: "Lato", "Bold", sans-serif; }
 
 h1 {
   font-size: 3rem;
@@ -275,7 +275,7 @@ table caption {
 table th,
 table td {
   font-size: 94%;
-  font-family: "ff-meta-web-pro", Helvetica, sans-serif;
+  font-family: "Lato", "Bold", sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   padding: 16px;
   padding-bottom: 15px; }
@@ -628,7 +628,7 @@ h6 .badge {
   margin-bottom: 0;
   float: left;
   font-weight: 300;
-  font-family: "ff-meta-web-pro", Helvetica, sans-serif; }
+  font-family: "Lato", "Bold", sans-serif; }
   .site-title, .site-title:visited {
     color: #f2f2f2; }
   .site-title:hover {
@@ -897,7 +897,7 @@ ul#post-categories li:last-child:after {
 
 .sidebar-nav {
   padding: 9px 0;
-  font-family: "ff-meta-web-pro", Helvetica, sans-serif; }
+  font-family: "Lato", "Bold", sans-serif; }
 
 /* =Sidebar
 -----------------------------------------------------------------------------*/
