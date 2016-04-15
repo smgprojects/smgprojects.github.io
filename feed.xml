@@ -5,8 +5,8 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Apr 2016 09:07:33 -0400</pubDate>
-    <lastBuildDate>Fri, 15 Apr 2016 09:07:33 -0400</lastBuildDate>
+    <pubDate>Fri, 15 Apr 2016 09:09:20 -0400</pubDate>
+    <lastBuildDate>Fri, 15 Apr 2016 09:09:20 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -51,14 +51,12 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
 &lt;h1 id=&quot;get-data-out-of-open-context&quot;&gt;Get data out of Open Context&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Eric on how to get stuff out of OpenContext:&lt;/p&gt;
-
-    &lt;p&gt;https://twitter.com/ekansa/status/720706858093137920&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Eric on how to get stuff out of OpenContext:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;https://twitter.com/ekansa/status/720827996915900416&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/ekansa/status/720706858093137920&quot;&gt;https://twitter.com/ekansa/status/720706858093137920&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/ekansa/status/720827996915900416&quot;&gt;https://twitter.com/ekansa/status/720827996915900416&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;http://opencontext.org/media-search/Turkey.json?proj=22-kenan-tepe&amp;amp;prop=22-image-type---22-field-photo&amp;amp;response=uri-meta
 &lt;/code&gt;&lt;/pre&gt;
@@ -78,9 +76,9 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
   &lt;li&gt;for 3d viz of hue, saturation, brightness, see Joel’s post.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFTo6yUUAAjsaR.jpg&quot; alt=&quot;img&quot; /&gt; https://twitter.com/electricarchaeo/status/720949378526113792&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFTo6yUUAAjsaR.jpg&quot; alt=&quot;img&quot; /&gt; &lt;a href=&quot;https://twitter.com/electricarchaeo/status/720949378526113792&quot;&gt;https://twitter.com/electricarchaeo/status/720949378526113792&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFWG0mVIAAUA19.jpg&quot; alt=&quot;img&quot; /&gt; https://twitter.com/electricarchaeo/status/720952091364233221&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFWG0mVIAAUA19.jpg&quot; alt=&quot;img&quot; /&gt; &lt;a href=&quot;https://twitter.com/electricarchaeo/status/720952091364233221&quot;&gt;https://twitter.com/electricarchaeo/status/720952091364233221&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Mar 2016 11:47:00 -0400</pubDate>
         <link>http://smgprojects.github.io/imageplot-opencontext/</link>
