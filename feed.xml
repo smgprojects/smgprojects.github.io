@@ -5,23 +5,9 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Apr 2016 08:57:02 -0400</pubDate>
-    <lastBuildDate>Fri, 15 Apr 2016 08:57:02 -0400</lastBuildDate>
+    <pubDate>Fri, 15 Apr 2016 09:07:33 -0400</pubDate>
+    <lastBuildDate>Fri, 15 Apr 2016 09:07:33 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
-    
-      <item>
-        <title>Imageplot and OpenContext</title>
-        <description></description>
-        <pubDate>Fri, 15 Apr 2016 08:47:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/imageplot-and-opencontext/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/imageplot-and-opencontext/</guid>
-        
-        
-        <category></category>
-        
-        <category></category>
-        
-      </item>
     
       <item>
         <title>a test of pdf</title>
@@ -49,6 +35,62 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         <category>workflow</category>
         
         <category>notebook</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
+    
+      <item>
+        <title>Imageplot and Opencontext</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#get-data-out-of-open-context&quot; id=&quot;markdown-toc-get-data-out-of-open-context&quot;&gt;Get data out of Open Context&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#analyze-images-with-imageplot&quot; id=&quot;markdown-toc-analyze-images-with-imageplot&quot;&gt;Analyze images with imageplot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;get-data-out-of-open-context&quot;&gt;Get data out of Open Context&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eric on how to get stuff out of OpenContext:&lt;/p&gt;
+
+    &lt;p&gt;https://twitter.com/ekansa/status/720706858093137920&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;https://twitter.com/ekansa/status/720827996915900416&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://opencontext.org/media-search/Turkey.json?proj=22-kenan-tepe&amp;amp;prop=22-image-type---22-field-photo&amp;amp;response=uri-meta
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;note the &lt;code&gt;.json?&lt;/code&gt; location. Copied the results into Excel &amp;amp; filtered by thumbnail. It was just easier.&lt;/li&gt;
+  &lt;li&gt;put the URLs into a text file&lt;/li&gt;
+  &lt;li&gt;used wget: &lt;code&gt;wget -r --no-parent -w 2 --limit-rate=10k -i input.txt -nH -nd -np&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;this puts the images into a single folder, rather than replicating opencontext’s deep folders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;analyze-images-with-imageplot&quot;&gt;Analyze images with imageplot&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;in imageplot, open imagemeasure.txt from the extras folder, run it.&lt;/li&gt;
+  &lt;li&gt;in imageplot, open imageplot.txt and run that.&lt;/li&gt;
+  &lt;li&gt;for 3d viz of hue, saturation, brightness, see Joel’s post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFTo6yUUAAjsaR.jpg&quot; alt=&quot;img&quot; /&gt; https://twitter.com/electricarchaeo/status/720949378526113792&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFWG0mVIAAUA19.jpg&quot; alt=&quot;img&quot; /&gt; https://twitter.com/electricarchaeo/status/720952091364233221&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2016 11:47:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/imageplot-opencontext/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/imageplot-opencontext/</guid>
+        
+        <category>archaeology</category>
+        
+        <category>how-to</category>
+        
+        <category>images</category>
         
         
         <category>Meta</category>

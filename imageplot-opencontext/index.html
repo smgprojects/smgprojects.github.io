@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Categories</title>
+    <title>Imageplot and Opencontext</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -14,33 +14,33 @@
     
 
     <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
-     <!-- If we don't have a page.date, then use modified time (pages) -->
-      
     
+      
+      
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="Categories" />
+    <meta property="dc:title" content="Imageplot and Opencontext" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="1969-12-31T19:00:00-05:00" />
+    <meta property="dc:date" content="2016-03-28T11:47:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/categories/" />
+    <meta property="dc:identifier" content="/imageplot-opencontext/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="Categories" />
+    <meta property="og:title" content="Imageplot and Opencontext" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
-    <meta property="og:url" content="/categories/" />
+    <meta property="og:url" content="/imageplot-opencontext/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="1969-12-31T19:00:00-05:00"/>
-    <meta name="citation_title" content="Categories"/>
+    <meta name="citation_date" content="2016-03-28T11:47:00-04:00"/>
+    <meta name="citation_title" content="Imageplot and Opencontext"/>
     <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
 
     <!-- Twitter cards -->
@@ -69,7 +69,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/categories/">
+    <link rel="canonical" href="http://smgprojects.github.io/imageplot-opencontext/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -165,168 +165,79 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Categories</h1>
+    <h1 class="post-title">Imageplot and Opencontext</h1>
+    <p class="post-meta">Mar 28, 2016</p>
   </header>
 
   <article class="post-content">
-    <p>Notes organized by category.</p>
-
-<h3 id="readings">Readings</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/items-to-read-archaeogaming/">items to Read - archaeogaming</a></li>
-    
-  
-    
-    <li><a href="/clement2013/">clement2012</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-2009/">tan_virtual_2009</a></li>
-    
-  
-    
-    <li><a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-heritage-reality-and-criticism/">tan- virtual heritage reality and criticism</a></li>
-    
-  
-    
-    <li><a href="/tan-fixing-virtual-heritage/">tan - Fixing Virtual Heritage</a></li>
-    
-  
-
+    <ul id="markdown-toc">
+  <li><a href="#get-data-out-of-open-context" id="markdown-toc-get-data-out-of-open-context">Get data out of Open Context</a></li>
+  <li><a href="#analyze-images-with-imageplot" id="markdown-toc-analyze-images-with-imageplot">Analyze images with imageplot</a></li>
 </ul>
 
-<h3 id="code">Code</h3>
+<h1 id="get-data-out-of-open-context">Get data out of Open Context</h1>
 
 <ul>
+  <li>
+    <p>Eric on how to get stuff out of OpenContext:</p>
 
-  
-    
-  
-
-  
-    
-    <li><a href="/sonification-of-john-adams/">sonification of john adams</a></li>
-    
-  
-
+    <p>https://twitter.com/ekansa/status/720706858093137920</p>
+  </li>
 </ul>
 
-<h3 id="essays">Essays</h3>
+<p>https://twitter.com/ekansa/status/720827996915900416</p>
+
+<pre><code>http://opencontext.org/media-search/Turkey.json?proj=22-kenan-tepe&amp;prop=22-image-type---22-field-photo&amp;response=uri-meta
+</code></pre>
 
 <ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></li>
-    
-  
-
+  <li>note the <code>.json?</code> location. Copied the results into Excel &amp; filtered by thumbnail. It was just easier.</li>
+  <li>put the URLs into a text file</li>
+  <li>used wget: <code>wget -r --no-parent -w 2 --limit-rate=10k -i input.txt -nH -nd -np</code></li>
+  <li>this puts the images into a single folder, rather than replicating opencontext’s deep folders</li>
 </ul>
 
-<h3 id="observations">Observations</h3>
+<h1 id="analyze-images-with-imageplot">Analyze images with imageplot</h1>
 
 <ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/a-twitter-conversation-re-soundbashing/">a twitter conversation re soundbashing</a></li>
-    
-  
-    
-    <li><a href="/archaeogaming-map/">archaeogaming map</a></li>
-    
-  
-    
-    <li><a href="/evolving-planet-play-observations/">Evolving Planet Play Observations</a></li>
-    
-  
-
+  <li>in imageplot, open imagemeasure.txt from the extras folder, run it.</li>
+  <li>in imageplot, open imageplot.txt and run that.</li>
+  <li>for 3d viz of hue, saturation, brightness, see Joel’s post.</li>
 </ul>
 
-<h3 id="meta">Meta</h3>
+<p><img src="https://pbs.twimg.com/media/CgFTo6yUUAAjsaR.jpg" alt="img" /> https://twitter.com/electricarchaeo/status/720949378526113792</p>
 
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/a-test-of-pdf/">a test of pdf</a></li>
-    
-  
-    
-    <li><a href="/imageplot-opencontext/">Imageplot and Opencontext</a></li>
-    
-  
-    
-    <li><a href="/a-single-open-notebook-for-a-class/">a single open notebook for a class?</a></li>
-    
-  
-    
-    <li><a href="/kanban-style-board-in-atom-and-this-notebook/">Kanban Style Board in Atom &amp; this Notebook</a></li>
-    
-  
-    
-    <li><a href="/getting-mdwriter-links-to-work/">getting mdwriter links to work</a></li>
-    
-  
-
-</ul>
-
-<h3 id="videos">Videos</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/linguistics-and-ubisoft/">linguistics and ubisoft</a></li>
-    
-  
-
-</ul>
-
+<p><img src="https://pbs.twimg.com/media/CgFWG0mVIAAUA19.jpg" alt="img" /> https://twitter.com/electricarchaeo/status/720952091364233221</p>
 
   </article>
 
-</div>
-
-<p class="text-info">
+  <p class="text-info">
     <table class="table table-condensed" id="post-info">
       <tr class="info">
-        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 31 Dec 1969</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 28 Mar 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 15 Apr 2016</small></td>
         <td><small><i class="fa fa-github-square"></i>&nbsp;<a
-              href="https://github.com/smgprojects/notebook/commits/master/source/categories.md">History</a></small></td>
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2016-04-15-imageplot-opencontext.md">History</a></small></td>
         <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
-        <td><small><a href="/categories/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+        <td><small><a href="/imageplot-opencontext/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
       </tr>
     </table>
     </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#archaeology'>archaeology</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#how-to'>how-to</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#images'>images</a></li>
+  
+  </ul>
+</div>
+
+</div>
 
         </div>
       </div>
