@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Web Annotations",
+            "url": "http://smgprojects.github.io/web-annotations/",
+            "date": "2016-05-02T10:49:00-04:00"
+        },
+        
+        {
             "title": "Items to Read concerning Glitch",
             "url": "http://smgprojects.github.io/items-to-read-re-glitch/",
             "date": "2016-04-21T08:53:00-04:00"
