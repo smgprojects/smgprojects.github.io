@@ -5,9 +5,71 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 May 2016 10:52:15 -0400</pubDate>
-    <lastBuildDate>Mon, 02 May 2016 10:52:15 -0400</lastBuildDate>
+    <pubDate>Mon, 02 May 2016 12:28:01 -0400</pubDate>
+    <lastBuildDate>Mon, 02 May 2016 12:28:01 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>lupton2014</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#theorising-digital-society---chapter-2&quot; id=&quot;markdown-toc-theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;&lt;span id=&quot;lupton2014digital&quot;&gt;Lupton, Deborah. &lt;i&gt;Digital Sociology&lt;/i&gt;. Routledge, 2014.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;introduction&lt;/h1&gt;
+&lt;p&gt;##p2
+- cites anthros Daniel Miller and Heather Horst (2012:4) on digital techs starting to become constitutive of ‘self-hood, embodiement, social lie, social relations and social institutions’.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;tech not just part of what makes us human, it also makes our social world&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;digital tecnologies are so pervasive and ubiquitous as to be invisible; claims to the contrary are spoken from ‘a jposition which only serves to highlight the now unobtrusive, taken-for-graneted elements of digitisation.’ [sg: I’d say ‘digitisation’ and ‘digitalization’ are slightly different things, and perhaps Lupton is talking here about the latter?]&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##p3
+- argues that urban space is now a product of surveillance technologies, whether of people or for movement of private/public vehicles, payment of goods,  etc.
+- ‘[combination of private photos, video + state surveillance]’ means that we are increasingly becoming digital data subjects, whether we like it or not, and whether we choose this or not’. &lt;a href=&quot;http://www.peasantmuse.com/2012/06/from-data-self-to-data-serf.html&quot;&gt;makes me think of Jeremey Antley’s stuff on data serfs&lt;/a&gt; though ‘subject’ was meant in a slightly different sense in lupton2014&lt;/p&gt;
+
+&lt;p&gt;##p5
+- “If it is accepted that ‘life is digital’ … I would argue that sociology needs to make the study of digital technologies central to its very remit… to study digital society is to focus on many aspects that have long been central preoccupations of sociologists: selfhood, identity, embodiment, power relations and social inqualities, social networks, social structures, social institutions, and social theory.”&lt;/p&gt;
+
+&lt;p&gt;##p8
+- ‘digital data are not just automatically created object of digital technologies. They are the products of human action. Human judgement steps in at each stage of the production of data: in deciding what constitutes data; what data are important to collect and aggregate; how they should be classified and organised into heirarchies; whether they are ‘clean’ or ‘dirty’(needing additional work to use for analysis); and so on”. [SG: AMEN!]&lt;/p&gt;
+
+&lt;p&gt;##p15-16
+- outlines 4 aspects that define ‘digital sociology’
+  - ‘professional digital practice’
+  - ‘analyses of digital technology use’
+  - ‘digital data analysis’ (quant, qual)
+  - critical digital sociology’ (ie reflexive analysis of dig tech ‘informed by social and cultural theory’)
+- [sg interesting that there doesn’t seem to be any notion of ‘deformation’ in all of this. Then again, maybe we don’t want social science (is soc. a social science?) deforming things…]&lt;/p&gt;
+
+&lt;h1 id=&quot;theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/h1&gt;
+&lt;p&gt;##p21
+- discussing google, facebook, apple, and amazon, calls them ‘internet empires’ which is an interesting choice of words, especially when we think of #dhpoco and/or things like facebookzero, wikipedia gateway, etc, [see http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating(http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating)]
+## p22
+- ‘each act of communication via digital media has become a valuable entity by being transofrmed into digital data that can be aggregated into massive data sets… these acts of communication have become commoditised’
+- ‘where once it was the physical labour of workers that produced surplus value, now the intellectural labour of the masses has monetary value, constituting a new information economy in which thought has become reified, public, and commodified’. cites Smith 2013, Thrift 2005,2006 on this.&lt;/p&gt;
+
+&lt;p&gt;##p 23
+- Discussing Lash 2005, 2006 on flux and flows of information, for Lash 2006, ‘notes that flux is characterised by tensions, struggles for power, whereas pure flow presupposes unrestricted movements.’ [What did Urry sociology beyond societies say on this matter?]
+- ‘This distinction between flux and flow of digital networks and data is an important one. It contravenes a dominant representation of digital data as circulating freely… and emphasises that there are difficulites and blockages in the flows inherent to the global information society.’ [SG - struggles over representation, digital heritage, archaeology, gatekeeping of journals etc: flux?]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 May 2016 11:39:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/lupton2014/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/lupton2014/</guid>
+        
+        <category>sociology</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
     
       <item>
         <title>Web Annotations</title>
@@ -483,35 +545,6 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         
         
         <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>Kanban Style Board in Atom &amp;amp; this Notebook</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#kanban-board&quot; id=&quot;markdown-toc-kanban-board&quot;&gt;Kanban Board&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;kanban-board&quot;&gt;Kanban Board&lt;/h2&gt;
-
-&lt;p&gt;Kanban boards are all over the place. At their simplest, it’s just a whiteboard with three colums, ‘to do’, ‘doing’, and ‘done’. You write your tasks on post-it notes, and move them through the columns as you do ‘em. Simple.&lt;/p&gt;
-
-&lt;p&gt;I’m not sure who’s behind it, but ‘imdone’ has a great &lt;a href=&quot;https://atom.io/packages/imdone-atom&quot;&gt;atom plugin&lt;/a&gt; that monitors your project for key phrases like TO DO in your code or your notes. Then, with alt+t, it opens up a board &lt;em&gt;inside atom&lt;/em&gt; where you can see all of your tasks - and move them around as you get through them. It’s pretty cool and works extremely well. Only hiccup I’ve encountered so far is making sure that the &lt;code&gt;.imdone&lt;/code&gt; config file is in my project folder.&lt;/p&gt;
-
-&lt;p&gt;So, now when I’m writing a note, I can turn any text I want into a &lt;code&gt;to do&lt;/code&gt; by making it into a special link, &lt;code&gt;[like this](#todo:)&lt;/code&gt;. The combination of imdone with mdwriter’s quick &lt;a href=&quot;http://smgprojects.github.io/getting-mdwriter-links-to-work/&quot; title=&quot;getting mdwriter links to work&quot;&gt;linking to my other notes&lt;/a&gt; make atom a great environment for writing this open notebook. The plugin has some other bits and bobs of functionality (like github issue tracking too!) so a great plugin for this project.&lt;/p&gt;
-
-&lt;p&gt;See also the &lt;a href=&quot;http://blog.imdone.io/&quot;&gt;imdone blog&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.github-camo.com/11fce0ef0d4ef9d954d03e091050fe1373134c37/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3233333530352f31313132313436312f39383939666231342d383931622d313165352d386162612d6134363436663862313432382e676966&quot; alt=&quot;imdone&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Mar 2016 21:24:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/kanban-style-board-in-atom-and-this-notebook/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/kanban-style-board-in-atom-and-this-notebook/</guid>
-        
-        <category>notebook</category>
-        
-        
-        <category>Meta</category>
         
       </item>
     
