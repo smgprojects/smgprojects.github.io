@@ -5,13 +5,15 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 May 2016 12:29:36 -0400</pubDate>
-    <lastBuildDate>Mon, 02 May 2016 12:29:36 -0400</lastBuildDate>
+    <pubDate>Mon, 02 May 2016 12:52:17 -0400</pubDate>
+    <lastBuildDate>Mon, 02 May 2016 12:52:17 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>lupton2014</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+        <description>&lt;h4&gt;&lt;span id=&quot;lupton2014digital&quot;&gt;Lupton, Deborah. &lt;i&gt;Digital Sociology&lt;/i&gt;. Routledge, 2014.&lt;/span&gt;&lt;/h4&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;introduction&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#p2&quot; id=&quot;markdown-toc-p2&quot;&gt;p2&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#p3&quot; id=&quot;markdown-toc-p3&quot;&gt;p3&lt;/a&gt;&lt;/li&gt;
@@ -22,16 +24,19 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#theorising-digital-society---chapter-2&quot; id=&quot;markdown-toc-theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#p21&quot; id=&quot;markdown-toc-p21&quot;&gt;p21&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#p22&quot; id=&quot;markdown-toc-p22&quot;&gt;p22&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#p23&quot; id=&quot;markdown-toc-p23&quot;&gt;p23&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#digital-technologies-and-data-as-sociomaterial-objects&quot; id=&quot;markdown-toc-digital-technologies-and-data-as-sociomaterial-objects&quot;&gt;Digital Technologies and Data as Sociomaterial Objects&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#p23-1&quot; id=&quot;markdown-toc-p23-1&quot;&gt;p23&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#p25&quot; id=&quot;markdown-toc-p25&quot;&gt;p25&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#p26&quot; id=&quot;markdown-toc-p26&quot;&gt;p26&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4&gt;&lt;span id=&quot;lupton2014digital&quot;&gt;Lupton, Deborah. &lt;i&gt;Digital Sociology&lt;/i&gt;. Routledge, 2014.&lt;/span&gt;&lt;/h4&gt;
-
 &lt;h1 id=&quot;introduction&quot;&gt;introduction&lt;/h1&gt;
 
-&lt;h2 id=&quot;p2&quot;&gt;p2&lt;/h2&gt;
+&lt;h3 id=&quot;p2&quot;&gt;p2&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;cites anthros Daniel Miller and Heather Horst (2012:4) on digital techs starting to become constitutive of ‘self-hood, embodiement, social lie, social relations and social institutions’.&lt;/p&gt;
@@ -44,23 +49,23 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;p3&quot;&gt;p3&lt;/h2&gt;
+&lt;h3 id=&quot;p3&quot;&gt;p3&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;argues that urban space is now a product of surveillance technologies, whether of people or for movement of private/public vehicles, payment of goods,  etc.&lt;/li&gt;
   &lt;li&gt;‘[combination of private photos, video + state surveillance]’ means that we are increasingly becoming digital data subjects, whether we like it or not, and whether we choose this or not’. &lt;a href=&quot;http://www.peasantmuse.com/2012/06/from-data-self-to-data-serf.html&quot;&gt;makes me think of Jeremey Antley’s stuff on data serfs&lt;/a&gt; though ‘subject’ was meant in a slightly different sense in lupton2014&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;p5&quot;&gt;p5&lt;/h2&gt;
+&lt;h3 id=&quot;p5&quot;&gt;p5&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;“If it is accepted that ‘life is digital’ … I would argue that sociology needs to make the study of digital technologies central to its very remit… to study digital society is to focus on many aspects that have long been central preoccupations of sociologists: selfhood, identity, embodiment, power relations and social inqualities, social networks, social structures, social institutions, and social theory.”&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;p8&quot;&gt;p8&lt;/h2&gt;
+&lt;h3 id=&quot;p8&quot;&gt;p8&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;‘digital data are not just automatically created object of digital technologies. They are the products of human action. Human judgement steps in at each stage of the production of data: in deciding what constitutes data; what data are important to collect and aggregate; how they should be classified and organised into heirarchies; whether they are ‘clean’ or ‘dirty’(needing additional work to use for analysis); and so on”. [SG: AMEN!]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;p15-16&quot;&gt;p15-16&lt;/h2&gt;
+&lt;h3 id=&quot;p15-16&quot;&gt;p15-16&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;outlines 4 aspects that define ‘digital sociology’
     &lt;ul&gt;
@@ -75,18 +80,44 @@
 
 &lt;h1 id=&quot;theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/h1&gt;
 
-&lt;h2 id=&quot;p21&quot;&gt;p21&lt;/h2&gt;
+&lt;h3 id=&quot;p21&quot;&gt;p21&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;discussing google, facebook, apple, and amazon, calls them ‘internet empires’ which is an interesting choice of words, especially when we think of #dhpoco and/or things like facebookzero, wikipedia gateway, etc, [see http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating(http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating)]
-## p22&lt;/li&gt;
+  &lt;li&gt;discussing google, facebook, apple, and amazon, calls them ‘internet empires’ which is an interesting choice of words, especially when we think of #dhpoco and/or things like facebookzero, wikipedia gateway, etc, [see http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating(http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating)]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;p22&quot;&gt;p22&lt;/h3&gt;
+&lt;ul&gt;
   &lt;li&gt;‘each act of communication via digital media has become a valuable entity by being transofrmed into digital data that can be aggregated into massive data sets… these acts of communication have become commoditised’&lt;/li&gt;
   &lt;li&gt;‘where once it was the physical labour of workers that produced surplus value, now the intellectural labour of the masses has monetary value, constituting a new information economy in which thought has become reified, public, and commodified’. cites Smith 2013, Thrift 2005,2006 on this.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;p23&quot;&gt;p23&lt;/h2&gt;
+&lt;h3 id=&quot;p23&quot;&gt;p23&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Discussing Lash 2005, 2006 on flux and flows of information, for Lash 2006, ‘notes that flux is characterised by tensions, struggles for power, whereas pure flow presupposes unrestricted movements.’ [What did Urry sociology beyond societies say on this matter?]&lt;/li&gt;
   &lt;li&gt;‘This distinction between flux and flow of digital networks and data is an important one. It contravenes a dominant representation of digital data as circulating freely… and emphasises that there are difficulites and blockages in the flows inherent to the global information society.’ [SG - struggles over representation, digital heritage, archaeology, gatekeeping of journals etc: flux?]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;digital-technologies-and-data-as-sociomaterial-objects&quot;&gt;Digital Technologies and Data as Sociomaterial Objects&lt;/h3&gt;
+
+&lt;h3 id=&quot;p23-1&quot;&gt;p23&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;‘Exponents [of actor-network theory] contend that humans are always imbricated within networks comprised of human and non-human actors and cannot be isolated from these networks’ [sg yep. see Hodder, entangled, Ingold on meshworks, Gosden, pretty much archaeological theory full stop, yes?]
+### p24&lt;/li&gt;
+  &lt;li&gt;discusses ‘assemblages’ as denoting an ‘intermingling of the human and non-human in various dynamic ways’. [SG Again, archaeological theory. How come nobody except archaeologists - and even then, a minority - actually reads any archaeological theory? Archaeology very useful in all this digital stuff….]&lt;/li&gt;
+  &lt;li&gt;‘…the digital data objects that are brought together through digital technologies … are assemblages of complex interactions of economic, technological, social and cultural logics. Representing digital phenomena as objects serves the purpose of acknolwedging their existence, effects, and power’. [SG makes me think of &lt;a href=&quot;http://platformstudies.com/&quot;&gt;platform studies&lt;/a&gt; as well as linked open data, rdf, ontologies, etc. Wonder what Seb would think.]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;p25&quot;&gt;p25&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;‘software is no longer static: it is constantly responding to inputs from its users and from other networked systems: updating data, recognising location as the user moves around in space, noticing what activities the user is engaging in on her or his device…’ [SG which is why games and game studies at the level of representations of how to engage with the world are critically important as the dominate teacher of how to interact with the digital. clumsy phrasing, yes.]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Whereas many commentators in the popular media governement and business world view digital data as the ultimate forms of truth and accurate knowledge, sociologists and other social theorists have empahsised that these forms of information, like any other type, are scoially created and have a social life, a vitality, of their own. Digital data objects structure our concepts of identity, embodiment, relationships, our choices and preferences and even our access to services or spaces.’ [sg: which is why deformation and breaking are critical?]&lt;/p&gt;
+
+&lt;h3 id=&quot;p26&quot;&gt;p26&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;a sociomaterial perspective draws attention to the ‘tangible physicality’ of digital: ‘the maintenance that supports this operation is messy and contingent, often involving pragmatic compromises, negotiations and just-in-time interventions to keep the system working. Geographical, economic social, political and cultural factors - including such basic requirements as a stable electricyt supply and access to a computer network - combine to promote or undermine the workings of digital technologies’. SG: Goes on to point out the problems of e-waste.&lt;/li&gt;
+  &lt;li&gt;SG: describes the kinds of e-waste. doesn’t mention &lt;em&gt;where&lt;/em&gt; this e-waste turns up - makes me think of those photographs of ship wrecking yards where the workers are all barefoot, etc. ewaste is one place where dh could point a bit more of its focus, colonial ramifications of, etc.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 02 May 2016 11:39:00 -0400</pubDate>
