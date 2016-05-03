@@ -5,9 +5,47 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 May 2016 12:52:17 -0400</pubDate>
-    <lastBuildDate>Mon, 02 May 2016 12:52:17 -0400</lastBuildDate>
+    <pubDate>Tue, 03 May 2016 09:47:57 -0400</pubDate>
+    <lastBuildDate>Tue, 03 May 2016 09:47:57 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Beacons and Programming the City</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#readings&quot; id=&quot;markdown-toc-readings&quot;&gt;Readings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gear--sdks&quot; id=&quot;markdown-toc-gear--sdks&quot;&gt;Gear &amp;amp; SDKS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;readings&quot;&gt;Readings&lt;/h1&gt;
+
+&lt;p&gt;Williams, Mita. The City As Classroom vs. The City As Advertising Platform &lt;em&gt;Medium&lt;/em&gt; https://medium.com/@copystar/the-city-as-classroom-vs-the-city-as-advertising-platform-c3a356753f67#.xcdr64km0&lt;/p&gt;
+
+&lt;h1 id=&quot;gear--sdks&quot;&gt;Gear &amp;amp; SDKS&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/business/a/facebook-bluetooth-beacons&quot;&gt;https://www.facebook.com/business/a/facebook-bluetooth-beacons&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/beacons/eddystone#full_support_for_eddystone&quot;&gt;https://developers.google.com/beacons/eddystone#full_support_for_eddystone&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://evothings.com/diy-arduino-beacons/&quot;&gt;https://evothings.com/diy-arduino-beacons/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://store.punchthrough.com/collections/all/products/bean&quot;&gt;http://store.punchthrough.com/collections/all/products/bean&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://librarybox.us/&quot;&gt;http://librarybox.us/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://piratebox.cc/&quot;&gt;https://piratebox.cc/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 May 2016 09:42:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/beacons-and-programming-the-city/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/beacons-and-programming-the-city/</guid>
+        
+        <category>designdh</category>
+        
+        <category>IoT</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
     
       <item>
         <title>lupton2014</title>
@@ -109,10 +147,13 @@
 
 &lt;h3 id=&quot;p25&quot;&gt;p25&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;‘software is no longer static: it is constantly responding to inputs from its users and from other networked systems: updating data, recognising location as the user moves around in space, noticing what activities the user is engaging in on her or his device…’ [SG which is why games and game studies at the level of representations of how to engage with the world are critically important as the dominate teacher of how to interact with the digital. clumsy phrasing, yes.]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;‘software is no longer static: it is constantly responding to inputs from its users and from other networked systems: updating data, recognising location as the user moves around in space, noticing what activities the user is engaging in on her or his device…’ [SG which is why games and game studies at the level of representations of how to engage with the world are critically important as the dominate teacher of how to interact with the digital. clumsy phrasing, yes.]&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Whereas many commentators in the popular media governement and business world view digital data as the ultimate forms of truth and accurate knowledge, sociologists and other social theorists have empahsised that these forms of information, like any other type, are scoially created and have a social life, a vitality, of their own. Digital data objects structure our concepts of identity, embodiment, relationships, our choices and preferences and even our access to services or spaces.’ [sg: which is why deformation and breaking are critical?]&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Whereas many commentators in the popular media governement and business world view digital data as the ultimate forms of truth and accurate knowledge, sociologists and other social theorists have empahsised that these forms of information, like any other type, are scoially created and have a social life, a vitality, of their own. Digital data objects structure our concepts of identity, embodiment, relationships, our choices and preferences and even our access to services or spaces.’ [sg: which is why deformation and breaking are critical?]&lt;/p&gt;
 
 &lt;h3 id=&quot;p26&quot;&gt;p26&lt;/h3&gt;
 &lt;ul&gt;
@@ -497,114 +538,6 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         
         
         <category>Videos</category>
-        
-      </item>
-    
-      <item>
-        <title>clement2012</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#clement---distant-listening-on-data-visualisations-and-noise-in-the-digital-humanities&quot; id=&quot;markdown-toc-clement---distant-listening-on-data-visualisations-and-noise-in-the-digital-humanities&quot;&gt;Clement - “Distant Listening: On Data Visualisations and Noise in the Digital Humanities”&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#background-reading-steinian-texts-with-music-and-with-computers&quot; id=&quot;markdown-toc-background-reading-steinian-texts-with-music-and-with-computers&quot;&gt;Background: reading Steinian texts with music and with computers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-computational-and-musical-renditions-tell-us-about-the-nature-of-representing-literary-texts&quot; id=&quot;markdown-toc-what-computational-and-musical-renditions-tell-us-about-the-nature-of-representing-literary-texts&quot;&gt;What computational and musical renditions tell us about the nature of representing literary texts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#audacity&quot; id=&quot;markdown-toc-audacity&quot;&gt;Audacity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#prosevis&quot; id=&quot;markdown-toc-prosevis&quot;&gt;ProseVis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-reading-steins-texts-with-digital-tools-can-tell-us-about-digital-humanities-scholarship&quot; id=&quot;markdown-toc-what-reading-steins-texts-with-digital-tools-can-tell-us-about-digital-humanities-scholarship&quot;&gt;What reading Stein’s texts with digital tools can tell us about digital humanities scholarship&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;&lt;span id=&quot;clement2012distant&quot;&gt;Clement, Tanya. “Distant Listening: On Data Visualisations And Noise in the Digital Humanities.” &lt;i&gt;Digital Studies/Le Champ Numérique&lt;/i&gt;, 2012. http://digitalstudies.org/ojs/index.php/digital_studies/article/view/228/297.&lt;/span&gt;&lt;/h4&gt;
-
-&lt;h3 id=&quot;clement---distant-listening-on-data-visualisations-and-noise-in-the-digital-humanities&quot;&gt;Clement - “Distant Listening: On Data Visualisations and Noise in the Digital Humanities”&lt;/h3&gt;
-
-&lt;p&gt;nb - I turned the html version of this paper into a pdf so I could read and annotate it in Skim, wherein I have a script to export all my annotations as the markdown you see below.&lt;/p&gt;
-
-&lt;h3 id=&quot;background-reading-steinian-texts-with-music-and-with-computers&quot;&gt;Background: reading Steinian texts with music and with computers&lt;/h3&gt;
-
-&lt;p&gt;‘use musical composition and computational tools to help express something inherent to Stein’s texts that was otherwise obscured with more traditional readings’ &amp;lt;-  &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#5&quot;&gt;Page 5&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘readers argue that setting a Steinian text to music is a welcome abstraction that brings the text to new heights of expression, while computing them seems to concretise their subtleties and diminish their expressive possibilities.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#5&quot;&gt;Page 5&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘In each of these cases, music brings out latent meanings in an otherwise inexpressive or unreadable text.’ &amp;lt;- the texts, as texts, are too dense, too troublesome; music makes the meaning &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#6&quot;&gt;Page 6&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘This attempt to engage with the meaning of the text by setting it to music is similar to attempts to read Stein texts with computational analysis.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#6&quot;&gt;Page 6&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘In either case, Bucknell and Goldsmith see musical and computational interventions as key to reading and understanding the texts’ ongoing processes of meaning-making.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#6&quot;&gt;Page 6&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘Dusman’s narration of her entire process of setting Stein’s text to music is illuminating in terms of understanding how the process of musical annotation and computation share similar underlying methods for scaffolding (setting concrete and abstract textual elements to an external system) in order to express a reading of the text.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#7&quot;&gt;Page 7&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘Systematically concretising the text was just one phase in the interpretive process: musical and computational transpositions create another level of abstraction with which the interpreter engages.’ &amp;lt;- this process is really interesting, especially when we think of things that are already abstractions, eg, topic models, word vectors, frequencies? &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#7&quot;&gt;Page 7&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-computational-and-musical-renditions-tell-us-about-the-nature-of-representing-literary-texts&quot;&gt;What computational and musical renditions tell us about the nature of representing literary texts&lt;/h3&gt;
-
-&lt;p&gt;‘Using digital and musical interventions to interpret texts means both concretising and abstracting as part of the interpretive experience.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#8&quot;&gt;Page 8&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Yet, it is at the moment at which the text—whether it has been rendered in paragraphs on the typographical or manuscript page or in musical staffs or as data in bar graphs—is “played” that the reader or listener enters that space of interpretive activity. &amp;lt;- &lt;a href=&quot;#todo:&quot;&gt;how does the listener respond to my sonifications?&lt;/a&gt; &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#8&quot;&gt;Page 8&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘A sense of “playing” a visualisation is important to note in the context of this discussion because, in the digital humanities, we still tend to “read” a visualisation on a computer screen, whether in tables, in heat maps, or in elaborate and networked spidery nodes.’ &amp;lt; - so let’s get beyond the screen essentialism &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#8&quot;&gt;Page 8&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘One “reads” a visualisation, but to “play” the visualisation is to engage the spatialised interpretation of that visualisation as an embodied reader in a situated context within a specific hermeneutical framework.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#9&quot;&gt;Page 9&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘First, in seeming contrast to the move from musical score to performance—from two-dimensional representation to four-dimensional life in which we understand that there are multiple levels of interpretation such as the composer’s, the producers’, the performers’ and the distant listener’s—computing seems to distill the many-layered four-dimensional space of the text in perfor- mance (i.e., embodied within the performance network of interpretations with the listener in time and space) into a two-dimensional script called “code.” In other words, historically, the musical score is understood as an attempt to represent complex relationships such as the co-occurrence of multiple elements across time and space, a representation that is a provocation to further interpretation.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#9&quot;&gt;Page 9&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;she cites drucker’s notion of &lt;a href=&quot;#todo:&quot;&gt;observer-codepence&lt;/a&gt; &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#9&quot;&gt;Page 9&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;audacity&quot;&gt;Audacity&lt;/h3&gt;
-
-&lt;p&gt;‘Likewise, instead of reading a two-dimensional visualisation as the inevitable result (or complete representation) of data analysis, we learn to read visualisations as musical scores, as signposts pointing towards many possible interpretive “results” or readings’ &amp;lt;- the next step clearly to make them &lt;em&gt;actual&lt;/em&gt; scores…? &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘That is, the reader reads the musical score with the necessary perspective of capta rather than data because she expects the musical graphical representation to be, not only based on interpretation but also open to interpretation and meant to be played, to be spatialised in time and embodied by voices. Likewise, mindful of the situated hermeneutical framework that we bring to our readings of all data visualisations, we can learn to create and read computational visualisations as capta.’  &amp;lt;- and so, if we move beyond visualization and attend to the other senses, the emphasis on ‘data’ naturally would shift to ‘capta’ more fully? &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#10&quot;&gt;Page 10&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; discussing using audacity’s native visualization tools to understand sound-as-visualization - “Unlike a waveform, a spectrogram shows the information necessary to plot prosody features that include timbre and accent, features to which Bernstein and others have attributed meaning-making properties.” &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#13&quot;&gt;Page 13&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;prosevis&quot;&gt;ProseVis&lt;/h3&gt;
-
-&lt;p&gt;http://tclement.ischool.utexas.edu/ProseVis. &amp;lt;- tool to visualize the ‘pre-speech potential of sound’  &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#14&quot;&gt;Page 14&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;it visualises the XML transcription that OpenMary produces in the process of creating an audio file. &amp;lt;- makes me think of Rob’s raspberry pi device for sonifying the data lost in OCR… &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#15&quot;&gt;Page 15&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;‘the ProseVis interface encourages interpretive activity in which the reader engages in a performance of all of these elements, enacted within the same kind of multilayered context of “observer-codependence” that an entourage of composers, producers, performers, and audience members would bring to a real time performance.’ &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#17&quot;&gt;Page 17&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-reading-steins-texts-with-digital-tools-can-tell-us-about-digital-humanities-scholarship&quot;&gt;What reading Stein’s texts with digital tools can tell us about digital humanities scholarship&lt;/h3&gt;
-
-&lt;p&gt;‘The traditions reflected in a computational visualisation are always part of a hermeneutic framework that is also always part of a history of technological and methodological remediations.’ &amp;lt;- see also tara copplestone on photobashing &amp;amp; remediation in archaeology &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#18&quot;&gt;Page 18&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;‘As a culture, we use sound to make meaning, but we have sublimated its study because, like studying “noise,” studying sound is inconvenient, logistically burdensome in terms of the richness of the resulting patterns, and requires a daunting degree of agency from the interpreter, who must establish new methodologies for interpretation.’ &amp;lt;- yeppers. &lt;br /&gt;
-&lt;a href=&quot;sk://clement2013distant#24&quot;&gt;Page 24&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Mar 2016 22:03:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/clement2013/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/clement2013/</guid>
-        
-        <category>soundbashing</category>
-        
-        <category>visualization</category>
-        
-        <category>music</category>
-        
-        
-        <category>Readings</category>
         
       </item>
     

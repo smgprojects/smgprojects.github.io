@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Beacons and Programming the City",
+            "url": "http://smgprojects.github.io/beacons-and-programming-the-city/",
+            "date": "2016-05-03T09:42:00-04:00"
+        },
+        
+        {
             "title": "lupton2014",
             "url": "http://smgprojects.github.io/lupton2014/",
             "date": "2016-05-02T11:39:00-04:00"
