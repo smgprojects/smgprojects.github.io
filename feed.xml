@@ -5,9 +5,75 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 05 May 2016 10:55:59 -0400</pubDate>
-    <lastBuildDate>Thu, 05 May 2016 10:55:59 -0400</lastBuildDate>
+    <pubDate>Thu, 05 May 2016 12:46:30 -0400</pubDate>
+    <lastBuildDate>Thu, 05 May 2016 12:46:30 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>demo of reading report from hypothesis script</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#script&quot; id=&quot;markdown-toc-script&quot;&gt;script&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#output&quot; id=&quot;markdown-toc-output&quot;&gt;output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;script&quot;&gt;script&lt;/h2&gt;
+&lt;p&gt;Script is at &lt;a href=&quot;https://gist.github.com/shawngraham/8dddf5b924588184b0568ca98f827b8b&quot;&gt;https://gist.github.com/shawngraham/8dddf5b924588184b0568ca98f827b8b&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I changed it to save as .md; then I copy the html from that file and paste into my open notebook template for a note card. The html that follows below is generated from the script above.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if you use the script, the tag from lines 82-85 &lt;strong&gt;must&lt;/strong&gt; be used with &lt;code&gt;:1&lt;/code&gt; etc, iterating upwards as you go.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;individual annotations should use the headings in line 105 with colons, in order to appear in the table.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;output&quot;&gt;output&lt;/h2&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Monthly Morphology Report for http://www.degruyter.com/view/j/opar.2014.1.issue-1/opar-2015-0013/opar-2015-0013.xml&lt;/title&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;style&gt;
+body { font-family: verdana; margin: .5in; }
+table, td, th { border-collapse: collapse; border: 1px solid black }
+td { padding: 6px }
+th { padding: 6px; background-color: lightgrey}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Reading report http://www.degruyter.com/view/j/opar.2014.1.issue-1/opar-2015-0013/opar-2015-0013.xml&lt;/h1&gt;
+&lt;h2&gt;Abstract Interpretation&lt;/h2&gt;
+
+&lt;p&gt;&lt;b&gt;Title:&lt;/b&gt; Additive Archaeology: An Alternative Framework for Recontextualising Archaeological Entities&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Subject:&lt;/b&gt; 3: grand disciplinary challenge, 2: real, virtual, and authentic are becoming increasingly unstable, 1: Additive manufacturin&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Key Themes:&lt;/b&gt; 1: avin Lucas’ characterisation of the archaeological record as a product of contending processes of materialisation and dematerialisation&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Key Literature:&lt;/b&gt; 1: Lucas, G., Understanding the Archaeological Record, Cambridge University Press, Cambridge, 2012.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;The Interesting Bits:&lt;/b&gt; &lt;ul&gt;&lt;li&gt;1: For example, Gavin Lucas’ very sophisticated exploration of the nature of the archaeological record elaborates on one central question: “What is the ontological relationship between ‘methodological’ concepts like stratigraphy and typology on the one hand and current ‘theoretical’ notions like materiality and agency on the other” [3, p.3].&lt;/li&gt;&lt;li&gt;7: the practices of the field archaeologist are not so much data collection but interventions, or material interactions, in which tools and procedures are mobilised locally to materialise new entities or artefacts (e.g. drawings, samples, photographs, context sheets, field diaries, finds and reports); it is these new, mobile, dynamic assemblages of autonomous objects that become archives.  &lt;/li&gt;&lt;li&gt;6: a new agenda of mutually constituting archaeological ‘interventions’ and ‘entities’&lt;/li&gt;&lt;li&gt;5: viewing any one facet in isolation can lead to fundamental disconnects or an “interpretive dilemma, in which explanations often hover between vacuity and incommensurability” [3, p.169].&lt;/li&gt;&lt;li&gt;4: he archaeological record as constructed in the present, also known as the archive.&lt;/li&gt;&lt;li&gt;3: next meaning is expressed in terms of how deposits and assemblages come to be, something he labels as “formation theory&lt;/li&gt;&lt;li&gt;2: the first connotation is that of material culture, materiality or artefacts understood in their broadest sense&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;h2&gt;Tabular Representation&lt;/h2&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;AnalysisMethod&lt;/th&gt;&lt;th&gt;Location&lt;/th&gt;&lt;th&gt;SubjectGroups&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;item 1 need to read this&lt;/td&gt;&lt;td&gt;a heading borrowed from original script. Need something better.&lt;/td&gt;&lt;td&gt;betraying origin of script in different domain&lt;/td&gt;&lt;td&gt;hmm&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;i like this&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;things themselves&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Thu, 05 May 2016 12:42:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/</guid>
+        
+        <category>script</category>
+        
+        
+        <category>Reading Notes</category>
+        
+      </item>
     
       <item>
         <title>Beacons and Programming the City</title>
@@ -483,45 +549,6 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         
         
         <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>linguistics and ubisoft</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#video-blurb&quot; id=&quot;markdown-toc-video-blurb&quot;&gt;video blurb&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#interesting-timestamps&quot; id=&quot;markdown-toc-interesting-timestamps&quot;&gt;interesting timestamps&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#video&quot; id=&quot;markdown-toc-video&quot;&gt;video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A video interview with the linguists who consulted with Ubisoft on the construction of language in ‘Far Cry Primal’&lt;/p&gt;
-
-&lt;h2 id=&quot;video-blurb&quot;&gt;video blurb&lt;/h2&gt;
-&lt;p&gt;John sat down with Andrew Byrd and Brenna Reinhart Byrd, linguistics experts invited by Ubisoft to create two languages for use in Far Cry Primal. The conversation ranged from discussing Andrew and Brenna’s involvement in the development process to the challenges and rewards of seeking an “authentic” approach to recreating historical (and prehistoric) events in works of fiction.&lt;/p&gt;
-
-&lt;h2 id=&quot;interesting-timestamps&quot;&gt;interesting timestamps&lt;/h2&gt;
-&lt;p&gt;1:36 Andrew and Brenna’s involvement in Far Cry Primal
-5:27 Casting and the development process
-15:06 Proto-Indo-European and internal reconstruction
-26:19 Complexity in early language systems
-35:55 Authenticity and representation
-39:55 Academics and the public&lt;/p&gt;
-
-&lt;h2 id=&quot;video&quot;&gt;video&lt;/h2&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jp4bvDvSI8Q&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Tue, 22 Mar 2016 09:29:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/linguistics-and-ubisoft/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/linguistics-and-ubisoft/</guid>
-        
-        <category>archaeogaming</category>
-        
-        <category>linguistics</category>
-        
-        <category>Far Cry Primal</category>
-        
-        
-        <category>Videos</category>
         
       </item>
     
