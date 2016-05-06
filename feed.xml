@@ -5,9 +5,27 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 May 2016 10:52:39 -0400</pubDate>
-    <lastBuildDate>Fri, 06 May 2016 10:52:39 -0400</lastBuildDate>
+    <pubDate>Fri, 06 May 2016 11:25:43 -0400</pubDate>
+    <lastBuildDate>Fri, 06 May 2016 11:25:43 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Tags and Subtags in Hypothesis</title>
+        <description>
+&lt;p&gt;When using the &lt;a href=&quot;https://github.com/smgprojects/notebook/tree/master/source/scripts&quot;&gt;tagging script&lt;/a&gt; &lt;code&gt;getannotations.py&lt;/code&gt; the tags in hypothesis have to be structured. The diagram below shows the current structure I am trying to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/BB_00085.pdf.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 May 2016 11:21:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/tags-and-subtags-in-hypothesis/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/tags-and-subtags-in-hypothesis/</guid>
+        
+        <category>annotations</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>demo of reading report from hypothesis script</title>
@@ -508,54 +526,6 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         
         
         <category>Meta</category>
-        
-      </item>
-    
-      <item>
-        <title>items to Read - archaeogaming</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#concerning-agent-base-models-readtodo&quot; id=&quot;markdown-toc-concerning-agent-base-models-readtodo&quot;&gt;concerning Agent Base Models &lt;a href=&quot;#todo:&quot;&gt;Read&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;concerning-agent-base-models-readtodo&quot;&gt;concerning Agent Base Models &lt;a href=&quot;#todo:&quot;&gt;Read&lt;/a&gt;&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://complexityblog.com/blog/index.php?itemid=57&quot;&gt;Feb 02: Comparing ABMs, Math Models, and Computer Games&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://ccl.northwestern.edu/2012/AERA2012.pdf&quot;&gt;Spinners, Dice, and Pawns: Using Board Games to Prepare for Agent-Based Modeling Activities&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.mifav.uniroma2.it/inevent/events/idea2010/doc/19_6.pdf&quot;&gt;Using an Agent-Based Modeling Simulation and Game to Teach Socio-Scientific Topics&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://cybergeo.revues.org/25561?lang=en&quot;&gt;Video games and urban simulation: new tools or new tricks?&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://gamephilosophy2014.org/wp-content/uploads/2014/11/Gregersen-2014.-Against-Autonomous-Simulation.-PCG20141.pdf&quot;&gt;Against autonomous simulation: video games as simulation and symbolic resources&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.researchgate.net/publication/257661322_Agent-based_land-use_models_and_farming_games_on_the_social_web-Fertile_ground_for_a_collaborative_future&quot;&gt;Agent-based land-use models and farming games on the social web—Fertile groundfor a collaborative future?&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1077&amp;amp;context=humbiol_preprints&quot;&gt;So You Think You Can Model? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Iza’s piece on assessing ABM’s - it was a prezi - where’d that go?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 22 Mar 2016 10:17:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/items-to-read-archaeogaming/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/items-to-read-archaeogaming/</guid>
-        
-        <category>archaeogaming</category>
-        
-        <category>to read</category>
-        
-        
-        <category>Readings</category>
         
       </item>
     

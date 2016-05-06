@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Tags and Subtags in Hypothesis",
+            "url": "http://smgprojects.github.io/tags-and-subtags-in-hypothesis/",
+            "date": "2016-05-06T11:21:00-04:00"
+        },
+        
+        {
             "title": "demo of reading report from hypothesis script",
             "url": "http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/",
             "date": "2016-05-05T12:42:00-04:00"

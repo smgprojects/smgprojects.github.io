@@ -104,7 +104,7 @@ def subfindings_from_h_annotation(h_annotation):
 
 def make_table(h_annotations):
     rows = []
-    raw_findings = select_annotations_with_tag_prefix(h_annotations, 'Item')
+    raw_findings = select_annotations_with_tag_prefix(h_annotations, 'Note')
     for raw_finding in raw_findings:
         rows += subfindings_from_h_annotation(raw_finding)
     html = '<table>'
