@@ -5,9 +5,188 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 May 2016 12:58:36 -0400</pubDate>
-    <lastBuildDate>Fri, 06 May 2016 12:58:36 -0400</lastBuildDate>
+    <pubDate>Wed, 11 May 2016 10:05:49 -0400</pubDate>
+    <lastBuildDate>Wed, 11 May 2016 10:05:49 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Experiment - Bad Equity</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#source-materials&quot; id=&quot;markdown-toc-source-materials&quot;&gt;Source Materials&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-1-obtaining-the-text-files&quot; id=&quot;markdown-toc-step-1-obtaining-the-text-files&quot;&gt;Step 1. Obtaining the text files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-2-has-anyone-else-tried-to-do-this&quot; id=&quot;markdown-toc-step-2-has-anyone-else-tried-to-do-this&quot;&gt;Step 2. Has anyone else tried to do this?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-3-ryans-scripts&quot; id=&quot;markdown-toc-step-3-ryans-scripts&quot;&gt;Step 3. Ryan’s scripts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-4-counting-special-characters&quot; id=&quot;markdown-toc-step-4-counting-special-characters&quot;&gt;Step 4. Counting Special characters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-5-visualizing-the-results-how-bad-is-my-ocr&quot; id=&quot;markdown-toc-step-5-visualizing-the-results-how-bad-is-my-ocr&quot;&gt;Step 5: ‘Visualizing’ the results: How bad is my OCR?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#result&quot; id=&quot;markdown-toc-result&quot;&gt;Result&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-have-i-learned&quot; id=&quot;markdown-toc-what-have-i-learned&quot;&gt;What have I learned?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#to-do-next&quot; id=&quot;markdown-toc-to-do-next&quot;&gt;To do next:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;source-materials&quot;&gt;Source Materials&lt;/h2&gt;
+&lt;p&gt;The Shawville &lt;a href=&quot;http://theequity.ca/&quot;&gt;Equity&lt;/a&gt; is a weekly newspaper published in Shawville Quebec. It has published continuously since 1883, when it was first published in the county seat, Bryson. Recently, the Provincial Archives of Quebec (‘&lt;a href=&quot;http://collections.banq.qc.ca/&quot;&gt;Bibliotheque et Archives Nationales du Quebec&lt;/a&gt;’) scanned and OCR’d the &lt;a href=&quot;http://collections.banq.qc.ca:8008/jrn03/equity/src/&quot;&gt;run from 1883 to 2010&lt;/a&gt;, using the materials held at the Equity’s office, as part of a larger project to scan the journals of Quebec’s long-established English communities.&lt;/p&gt;
+
+&lt;p&gt;I initially thought I would have to download all of the pdfs and extract the text layer from those, but in the repo, both the pdf and the txt file are available as separate files. I’ve re-posted an example &lt;a href=&quot;https://gist.github.com/shawngraham/8323899898cf016d5829f68394e63699&quot;&gt;text file here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wondered: how good is the OCR? And, without manually checking each text file, can I auto-magically generate some sort of proxy for assessing this?&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-obtaining-the-text-files&quot;&gt;Step 1. Obtaining the text files&lt;/h2&gt;
+&lt;p&gt;Obtaining the text files was just a matter of correctly formatting a &lt;code&gt;wget&lt;/code&gt; command. For whatever reason, I had a &lt;em&gt;lot&lt;/em&gt; of trouble doing this. All I really needed to do was point wget at this directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://collections.banq.qc.ca:8008/jrn03/equity/src/&quot;&gt;http://collections.banq.qc.ca:8008/jrn03/equity/src/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wget http://collections.banq.qc.ca:8008/jrn03/equity/src/ -A .txt -r --no-parent -nd –w 2 --limit-rate=10k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;but, for whatever reason, I felt I needed to generate a list of urls first, and &lt;em&gt;then&lt;/em&gt; point wget at it. My &lt;code&gt;urlgenerator.py&lt;/code&gt; was derived from the Programming Historian lesson on &lt;a href=&quot;http://programminghistorian.org/lessons/applied-archival-downloading-with-wget&quot;&gt;applied archival downloading&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;urls = &#39;&#39;;
+f=open(&#39;urls.txt&#39;,&#39;w&#39;)
+for x in range(1883, 2011):
+    urls = &#39;http://collections.banq.qc.ca:8008/jrn03/equity/src/%d/\n&#39; % (x)
+    f.write(urls)
+f.close
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ben also suggested a way of doing this in Ruby, to get right down to the month &amp;amp; day subdirectories:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Ruby&quot;&gt;t=Time.new(1883,05,01)
+400.times { print&quot;http://collections.banq.qc.ca:8008/jrn03/equity/src/#{t.year}/#{t.month}/#{t.day}/83471_#{t.year}-#{t.month}-#{t.day}.pdf\n&quot;; t += 6*24*60*60 }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;…although because the archives uses leading zeros for months 1 - 9 and days 1 - 9, some more fiddling is required. In the end, if I could’ve just sussed wget properly in the first place… ah well. Learning Ruby is clearly something I need to do.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I downloaded every edition from 1883 through to the end of 1914, 1595 files. This took the better part of a day.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-2-has-anyone-else-tried-to-do-this&quot;&gt;Step 2. Has anyone else tried to do this?&lt;/h2&gt;
+
+&lt;p&gt;And the answer is, yes, yes they have. A quick question on Twitter brought me to this post by &lt;a href=&quot;https://ryanfb.github.io/etc/2015/03/16/automatic_evaluation_of_ocr_quality.html&quot;&gt;Ryan Baumann, Assessing OCR Quality&lt;/a&gt;. Later, I also had an excellent discussion with Ben Brumfield who pointed me to his work on &lt;a href=&quot;http://manuscripttranscription.blogspot.ca/2013/02/detecting-handwriting-in-ocr-text.html&quot;&gt;detecting handwriting in OCR’d texts&lt;/a&gt; and &lt;a href=&quot;https://github.com/idigbio-aocr/HandwritingDetection/blob/master/code/find_labels_with_handwriting.rb&quot;&gt;code for the same&lt;/a&gt;. I haven’t tried Ben’s script yet. Below, I discuss trying to get Ryan’s approach to work&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-ryans-scripts&quot;&gt;Step 3. Ryan’s scripts&lt;/h2&gt;
+&lt;p&gt;Ryan’s scripts work by automatically detecting the language of each line in the ocr’d text. It uses a python module called &lt;code&gt;[langid](https://github.com/saffsd/langid.py)&lt;/code&gt; to determine the probability that a text is in a particular language. Badly OCR’d lines make determining this difficult. His two scripts (&lt;a href=&quot;https://gist.github.com/ryanfb/0ee1082a597e200ca8c3#file-scorelines-sh&quot;&gt;scorelines.sh&lt;/a&gt; and &lt;a href=&quot;https://gist.github.com/ryanfb/c9bd9a1ce0f6f7cb2a45#file-ocrquality-rb&quot;&gt;ocrquality.rb&lt;/a&gt;) eventually should result in a value between 0 and 1 where 0 indicates no problem in assessing the language, hence, good OCR. (See Ryan’s &lt;a href=&quot;https://twitter.com/ryanfb/status/730085822817566721&quot;&gt;tweet&lt;/a&gt;).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;first hiccup: &lt;code&gt;chmod&lt;/code&gt;. Forgot I had to &lt;code&gt;sudo chmod 700 scorelines.sh&lt;/code&gt; etc so that they’d work.&lt;/li&gt;
+  &lt;li&gt;second hiccup: depending on the txt file, the scripts would work, or crash spectacularly with a wide variety of errors. Because of that variety, my suspicion is that special characters in the text file - or possibly (probably?) weird encoding - is causing the scripts to break. A long trawl of stackexchange had me try &lt;code&gt;LANG=C&lt;/code&gt; pre-pended, eg,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;$ LANG=C ./scorelines.sh filename.txt | ./ocrquality.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and again, sometimes it worked, sometimes it didn’t. If I ran &lt;code&gt;scorelines.sh&lt;/code&gt; on its own, piping the output to file, which I then fed into &lt;code&gt;ocrquality.rb&lt;/code&gt;, sometimes that would work when the two commands piped together wouldn’t. And sometimes not. The only common denominator was the txt file itself.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In which case, could the count of special characters be taken as a proxy for bad OCR?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it’s at this point that I should return to Ben’s script, which parses each file with regex to count the myriad ways OCR can break, and creates a kind of tabular record of the same. For his purposes - identifying handwriting in printed text - this gives him an indication of which files to peruse more carefully. In a twitter exchange, we talked about ‘why special characters?’. I showed him the sample txt (linked above) and he noted that I had way more special characters than him. This got me to thinking: what about Ryan Cordell’s post on ‘&lt;a href=&quot;http://ryancordell.org/research/qijtb-the-raven/&quot;&gt;Qijtb the Raven&lt;/a&gt;?’. He uses &lt;a href=&quot;http://www.sno.phy.queensu.ca/~phil/exiftool/&quot;&gt;exiftool&lt;/a&gt; to see the metadata in the pdfs, which gives him crucial information on how the pdfs were generated. &lt;strong&gt;I need to do this too&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;At any rate, at this point, I wondered two things: 1) how carefully did they set up their OCR? and 2) is this related to the (likely?) possibility that the person running the OCR application does not speak English as a first language? Is there a quality control issue at play during the process of scanning?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-4-counting-special-characters&quot;&gt;Step 4. Counting Special characters&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;a script to count special characters was actually hard to find. I tried &lt;code&gt;wc&lt;/code&gt; at first, to see if that could give me any useful output:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;find . -name &#39;*.txt&#39; | xargs wc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;…which, when piped to file, would give me the number of lines, number of words, and number of bytes. This output did not seem meaningful.
+- more perusal of stackexchange found this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;for f in *.txt; do
+python -c &quot;import collections, pprint; pprint.pprint(dict(collections.Counter(open(&#39;$f&#39;, &#39;r&#39;).read())))&quot;
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;this gave me the count for &lt;em&gt;every&lt;/em&gt; character. This was a bit more useful, in that there is a fixed universe of possible characters, right? So I could maybe look at the ratio of the alphabet characters a-z to all the special characters. Since English doesn’t use diacritical marks (but this being a paper in Quebec, there will be a certain amount of French marks), special characters, plus umlauts, etc, could be useful. &lt;strong&gt;I have not yet calculated a ratio score&lt;/strong&gt;. I only just thought of it.&lt;/li&gt;
+  &lt;li&gt;on DH Slack, I described what I was up to in the ‘DHAnswers’ channel. Finlay McCourt re-wrote the script:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;#!/usr/bin/env python
+import collections, pprint, re, sys
+with open(sys.argv[1],&#39;r&#39;) as file_in:
+    chars = re.sub(&#39;[\s\w!!&quot;#$%&amp;amp;()*+,-./:;&amp;lt;=&amp;gt;?@^_`{|}~\[\]\&#39;\\\]&#39;,&#39;&#39;, file_in.read())
+    counts = collections.Counter(chars)
+pprint.pprint(counts.most_common())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;…which counts the special characters, and puts them into a json-ish format. I called this script &lt;code&gt;bettercount.py&lt;/code&gt; and put a bash wrapper around it: &lt;code&gt;for f in *; do python bettercount.py $f; done&lt;/code&gt;. Thus, in my directory with the txt files, I piped commands together:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;./feedfile.sh &amp;gt; output.csv&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;…which passes each file to bettercount.py. I opened &lt;code&gt;output.csv&lt;/code&gt; in Sublime Text (which handles find &amp;amp; replace much better than Atom). I delete new lines to get each file and the number and count of special characters, one per line. I know I could have done this in my &lt;code&gt;bettercount.py&lt;/code&gt; script, but &lt;em&gt;shrug&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’m working on a Mac, and I’ll be damned if I can figure out Numbers for working with spreadsheets. I copied my output to a &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1g04mSEYUA11uGnW6QDOyOXOcrYh6DRlLOIvytXHTXd8/edit?usp=sharing&quot;&gt;google spreadsheet&lt;/a&gt;. I added up the number of special characters. &lt;strong&gt;Again, I could calculate a ratio here of numbers of special characters to possible special character types, to normalize things&lt;/strong&gt;. That might be a good idea.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-5-visualizing-the-results-how-bad-is-my-ocr&quot;&gt;Step 5: ‘Visualizing’ the results: How bad is my OCR?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;I’m not keen on graphs at the moment. As part of a larger project, I’m trying to make visualization strange again so that the kinds of unconsicous bias that come from received notions of how-to-graph-things don’t get in the way.&lt;/li&gt;
+  &lt;li&gt;So I sonified all this with Musicalgorithms.com, &lt;a href=&quot;http://musicalgorithms.org/3.0/index.html&quot;&gt;version 3&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;take the column of numbers to sonify. Remove line breaks so that all the numbers are on a single line, separated by a single space&lt;/li&gt;
+      &lt;li&gt;paste this line into the musicalgorithms csv format:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-csv&quot;&gt;# Of Voices, Text Area Name, Text Area Data
+1,morphBox,
+,areaPitch1,1140 2 991 [etc]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;hit the ‘load’ button on Musicalgorithms, &lt;strong&gt;paste&lt;/strong&gt; the formatted data into the box. (I say ‘paste’ because loading the csv directly, when you have this many ‘notes’, seems to introduce errors that bork the sonification).&lt;/li&gt;
+  &lt;li&gt;I moved directly to ‘play/download’ and accepted all of the default parameter mappings.&lt;/li&gt;
+  &lt;li&gt;I placed the resulting .mid file into Garageband to try to make the ‘sonification’ into rather more pleasing music. Well, ‘pleasing’ for a given value of pleasure, I guess.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;the ‘music’ can be heard at &lt;a href=&quot;https://soundcloud.com/shawn-graham-60451318/bad-equity&quot;&gt;soundcloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the defaults at musicalgorithms take the first few notes and apply a kind of &lt;em&gt;ritardo&lt;/em&gt; to slow them down, to make a kind of intro.&lt;/li&gt;
+  &lt;li&gt;I added the drum beat because part of my larger project is to acknowledge the performative, &lt;em&gt;capta&lt;/em&gt; aspect of all visualization. It’s jarring, and that’s deliberate, because I want the listener to reflect on the performative aspects of all visualizations… that’s a post/paper for another day.&lt;/li&gt;
+  &lt;li&gt;You can hear the deep plunks when there are gaps in the record; you can hear the really high notes when a txt file is filled with garbage. The rather narrow range of notes implies that there are certain kinds of special characters that repeat over and over, which is suggestive of the kinds of errors that the OCR is making.&lt;/li&gt;
+  &lt;li&gt;Garageband makes a kind of visualization of the music, a player-piano roll-esque side-scroller, showing the values mapped over the 88 tones of the keyboard. This visualization, notwithstanding what I said above, is actually rather interesting:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CiI9f_oWsAEzwoN.jpg&quot; alt=&quot;garagebandviz&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note how the notes are rather dispersed in the earliest scans (at left, 1883) and become more and more tightly focussed as time spans towards 1914 (at right). That up-and-down tick at the right? My suspicion, yet to be confirmed, is that that corresponds to either a) new printing technology b) new typeface c) the move to Shawville when Shawville began to eclipse Bryson for prominence d) all of the above?&lt;/p&gt;
+
+&lt;h2 id=&quot;what-have-i-learned&quot;&gt;What have I learned?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;dipping into the txt files from 1914, the eye can immediately determine that we have better quality scans. Using the special characters as a proxy for bad OCR &lt;strong&gt;seems&lt;/strong&gt; to be valid. But how can I validate this impression?&lt;/li&gt;
+  &lt;li&gt;the patterning of the cloud of special characters &lt;strong&gt;might&lt;/strong&gt; be giving me a way of exploring something of the materiality of printing? It reminds me of Ingrid’s DH MA thesis at Carleton, where she adduced how small errors in reprints of &lt;em&gt;A History of the Pyrates&lt;/em&gt; said more about the culture/physical situation of printers than the world of authors&lt;/li&gt;
+  &lt;li&gt;For all my sonification, it’s the visual player-piano roll that seems to be giving me the most useful information&lt;/li&gt;
+  &lt;li&gt;That said, the sound itself forces a different kind of attention whilst listening, and the narrowing of tone over time does come across. Or am I just looking for that, now that I’ve seen the player-piano roll? Another ‘auditory hallucination’? see my &lt;a href=&quot;http://programminghistorian.github.io/ph-submissions/lessons/sonification&quot;&gt;Programming Historian tutorial (under-review version)&lt;/a&gt;:
+&amp;gt;What’s going on here? If that song was already known to you, you probably heard the actual ‘words’. Yet, no words are present in the song - if the song was not already familiar to you, it sounded like garbled nonsense (see more examples on Andy Baio’s website). This effect is sometimes called an ‘auditory hallucination’. This example shows how in any representation of data we can hear/see what is not, strictly speaking, there. We fill the holes with our own expectations. &lt;br /&gt; Consider the implications for history. If we sonify our data, and begin to hear patterns in the sound, or odd outliers, our cultural expectations about how music works (our memories of similar snippets of music, heard in particular contexts) are going to colour our interpretation. This I would argue is true about all representations of the past, but sonifying is just odd enough to our regular methods that this self-awareness will help us identify or communicate the critical patterns in the (data of the) past.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;to-do-next&quot;&gt;To do next:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;get more txt files&lt;/li&gt;
+  &lt;li&gt;re-run the analysis. Do the patterns hold up?&lt;/li&gt;
+  &lt;li&gt;what are the special characters doing?&lt;/li&gt;
+  &lt;li&gt;use exiftool to consider the metadata&lt;/li&gt;
+  &lt;li&gt;how can I make this data haptic?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 09:02:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/experiment-bad-equity/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/experiment-bad-equity/</guid>
+        
+        <category>soundbashing</category>
+        
+        <category>ocr</category>
+        
+        <category>newspapers</category>
+        
+        
+        <category>Experiment</category>
+        
+      </item>
     
       <item>
         <title>reilly2015</title>
@@ -511,60 +690,6 @@ for i in *.pdf; do sips -s format png $i --out $i.png;done
         
         
         <category>Meta</category>
-        
-      </item>
-    
-      <item>
-        <title>a twitter conversation re soundbashing</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#a-deep-thought&quot; id=&quot;markdown-toc-a-deep-thought&quot;&gt;A deep thought&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#some-interesting-twitter-posts-tonight&quot; id=&quot;markdown-toc-some-interesting-twitter-posts-tonight&quot;&gt;Some interesting twitter posts tonight&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;a-deep-thought&quot;&gt;A deep thought&lt;/h2&gt;
-
-&lt;p&gt;https://twitter.com/electricarchaeo/status/713549883186266112&lt;/p&gt;
-
-&lt;h2 id=&quot;some-interesting-twitter-posts-tonight&quot;&gt;Some interesting twitter posts tonight&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/ranti/status/714256452907479040&quot;&gt;https://twitter.com/ranti/status/714256452907479040&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714257006849208321&quot;&gt;https://twitter.com/zenobiewan/status/714257006849208321&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/precatlady/status/714258734185316352&quot;&gt;https://twitter.com/precatlady/status/714258734185316352&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/tinysapien/status/714258919842058240&quot;&gt;https://twitter.com/tinysapien/status/714258919842058240&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714258970420969472&quot;&gt;https://twitter.com/zenobiewan/status/714258970420969472&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714259228949483520&quot;&gt;https://twitter.com/zenobiewan/status/714259228949483520&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714259468578492416&quot;&gt;https://twitter.com/zenobiewan/status/714259468578492416&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/precatlady/status/714262938786394114&quot;&gt;https://twitter.com/precatlady/status/714262938786394114&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263187298750464&quot;&gt;https://twitter.com/zenobiewan/status/714263187298750464&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263314163900416&quot;&gt;https://twitter.com/zenobiewan/status/714263314163900416&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263776657170433&quot;&gt;https://twitter.com/zenobiewan/status/714263776657170433&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/zenobiewan/status/714263918982463488&quot;&gt;https://twitter.com/zenobiewan/status/714263918982463488&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/MesolithicMe/status/714266787106398209&quot;&gt;https://twitter.com/MesolithicMe/status/714266787106398209&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/tinysapien/status/714267129948872707&quot;&gt;https://twitter.com/tinysapien/status/714267129948872707&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/MesolithicMe/status/714267908344512513&quot;&gt;https://twitter.com/MesolithicMe/status/714267908344512513&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 27 Mar 2016 22:01:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/a-twitter-conversation-re-soundbashing/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/a-twitter-conversation-re-soundbashing/</guid>
-        
-        <category>soundbashing</category>
-        
-        
-        <category>Observations</category>
         
       </item>
     
