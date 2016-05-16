@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Experiment - Determining Bad OCR via Automated Spellcheck",
+            "url": "http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/",
+            "date": "2016-05-16T13:10:00-04:00"
+        },
+        
+        {
             "title": "Experiment - Bad Equity",
             "url": "http://smgprojects.github.io/experiment-bad-equity/",
             "date": "2016-05-11T09:02:00-04:00"

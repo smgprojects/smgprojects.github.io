@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Categories</title>
+    <title>Experiment - Determining Bad OCR via Automated Spellcheck</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -14,33 +14,33 @@
     
 
     <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
-     <!-- If we don't have a page.date, then use modified time (pages) -->
-      
     
+      
+      
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="Categories" />
+    <meta property="dc:title" content="Experiment - Determining Bad OCR via Automated Spellcheck" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="1969-12-31T19:00:00-05:00" />
+    <meta property="dc:date" content="2016-05-16T13:10:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/categories/" />
+    <meta property="dc:identifier" content="/experiment-determining-bad-ocr-via-automated-spellcheck/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="Categories" />
+    <meta property="og:title" content="Experiment - Determining Bad OCR via Automated Spellcheck" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
-    <meta property="og:url" content="/categories/" />
+    <meta property="og:url" content="/experiment-determining-bad-ocr-via-automated-spellcheck/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="1969-12-31T19:00:00-05:00"/>
-    <meta name="citation_title" content="Categories"/>
+    <meta name="citation_date" content="2016-05-16T13:10:00-04:00"/>
+    <meta name="citation_title" content="Experiment - Determining Bad OCR via Automated Spellcheck"/>
     <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
 
     <!-- Twitter cards -->
@@ -69,7 +69,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/categories/">
+    <link rel="canonical" href="http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -165,216 +165,81 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Categories</h1>
+    <h1 class="post-title">Experiment - Determining Bad OCR via Automated Spellcheck</h1>
+    <p class="post-meta">May 16, 2016</p>
   </header>
 
   <article class="post-content">
-    <p>Notes organized by category.</p>
-
-<h3 id="readings">Readings</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/reilly2015/">reilly2015</a></li>
-    
-  
-    
-    <li><a href="/demo-of-reading-report-from-hypothesis-script/">demo of reading report from hypothesis script</a></li>
-    
-  
-    
-    <li><a href="/beacons-and-programming-the-city/">Beacons and Programming the City</a></li>
-    
-  
-    
-    <li><a href="/lupton2014/">lupton2014</a></li>
-    
-  
-    
-    <li><a href="/web-annotations/">Web Annotations</a></li>
-    
-  
-    
-    <li><a href="/items-to-read-re-glitch/">Items to Read concerning Glitch</a></li>
-    
-  
-    
-    <li><a href="/items-to-read-archaeogaming/">items to Read - archaeogaming</a></li>
-    
-  
-    
-    <li><a href="/clement2013/">clement2012</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-2009/">tan_virtual_2009</a></li>
-    
-  
-    
-    <li><a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-heritage-reality-and-criticism/">tan- virtual heritage reality and criticism</a></li>
-    
-  
-    
-    <li><a href="/tan-fixing-virtual-heritage/">tan - Fixing Virtual Heritage</a></li>
-    
-  
-
+    <ul id="markdown-toc">
+  <li><a href="#misspelled-words-as-indicator" id="markdown-toc-misspelled-words-as-indicator">Misspelled words as indicator</a></li>
+  <li><a href="#the-script" id="markdown-toc-the-script">The script</a></li>
+  <li><a href="#output" id="markdown-toc-output">output</a></li>
+  <li><a href="#graphs" id="markdown-toc-graphs">graphs</a></li>
 </ul>
 
-<h3 id="code">Code</h3>
+<h1 id="misspelled-words-as-indicator">Misspelled words as indicator</h1>
+<p>In ‘<a href="http://smgprojects.github.io/experiment-bad-equity/" title="Experiment - Bad Equity">Bad Equity</a>’, I ran an experiment trying to sonify the dirtiness of the OCR. It was suggested to me by Ben Brumfield (in DH Slack) that perhaps something like <a href="http://aspell.net/">Aspell</a> might be a useful avenue to pursue.</p>
 
-<ul>
+<p>The following script runs each text file in turn through Aspell’s spell checker. The basic idea is to compare the number of ‘mispelled’ words (per Aspell’s English Canadian dictionary) to the total number of words in each document. Thus, the closer that ratio gets to 1, the worse the OCR.</p>
 
-  
-    
-  
+<h1 id="the-script">The script</h1>
 
-  
-    
-    <li><a href="/sonification-of-john-adams/">sonification of john adams</a></li>
-    
-  
+<pre><code class="language-sh">for f in *.txt; do
+  totalbadwords="$(cat "$f" | aspell list -d en_CA --encoding utf-8 | wc -w)"
+  totalwords="$(wc -w "$f")"
+  echo "$totalbadwords, $totalwords" &gt;&gt; "finalscore.csv"
+done
+</code></pre>
 
-</ul>
+<p>(also on <a href="https://gist.github.com/shawngraham/239edbcd7f5a495a7218bb93a9ce76a1">Github</a>)</p>
 
-<h3 id="essays">Essays</h3>
+<p>The script iterates through each text file. <code>totalbadwords</code> is a variable for storing the result of each file being run through Aspell’s dictionary, identifying ‘mistakes’, and then <code>wc</code> is used to count the number of these. <code>totalwords</code> just counts the number of words in each file. These values are echoed to a csv file so that I can open it in a spreadsheet or wherever to count, graph the result. Yes, I could do that in the script too I expect, but trying to write scripts that do one thing and one thing only.</p>
 
-<ul>
+<h1 id="output">output</h1>
 
-  
-    
-  
+<p>Currently, the output is sitting on my laptop, and <a href="https://docs.google.com/spreadsheets/d/1AfowhLwZQuuYMZtTDrD0riW33UPPxlgjwSumAJBrU2M/edit#gid=1997085128">here on gdocs</a>.</p>
 
-  
-    
-    <li><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></li>
-    
-  
+<h1 id="graphs">graphs</h1>
 
-</ul>
+<p>I tweeted some of the resulting graphs. In reverse order:</p>
 
-<h3 id="observations">Observations</h3>
+<p><a href="https://twitter.com/electricarchaeo/status/730781961506160642">https://twitter.com/electricarchaeo/status/730781961506160642</a></p>
 
-<ul>
+<p><a href="https://twitter.com/electricarchaeo/status/730571625540820993">https://twitter.com/electricarchaeo/status/730571625540820993</a></p>
 
-  
-    
-  
+<p><a href="https://twitter.com/electricarchaeo/status/730571270870437889">https://twitter.com/electricarchaeo/status/730571270870437889</a></p>
 
-  
-    
-    <li><a href="/a-twitter-conversation-re-soundbashing/">a twitter conversation re soundbashing</a></li>
-    
-  
-    
-    <li><a href="/archaeogaming-map/">archaeogaming map</a></li>
-    
-  
-    
-    <li><a href="/evolving-planet-play-observations/">Evolving Planet Play Observations</a></li>
-    
-  
-
-</ul>
-
-<h3 id="meta">Meta</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/tags-and-subtags-in-hypothesis/">Tags and Subtags in Hypothesis</a></li>
-    
-  
-    
-    <li><a href="/imageplot-opencontext/">Imageplot and Opencontext</a></li>
-    
-  
-    
-    <li><a href="/a-test-of-pdf/">a test of pdf</a></li>
-    
-  
-    
-    <li><a href="/a-single-open-notebook-for-a-class/">a single open notebook for a class?</a></li>
-    
-  
-    
-    <li><a href="/kanban-style-board-in-atom-and-this-notebook/">Kanban Style Board in Atom &amp; this Notebook</a></li>
-    
-  
-    
-    <li><a href="/getting-mdwriter-links-to-work/">getting mdwriter links to work</a></li>
-    
-  
-
-</ul>
-
-<h3 id="videos">Videos</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/linguistics-and-ubisoft/">linguistics and ubisoft</a></li>
-    
-  
-
-</ul>
-
-<h3 id="experiments">Experiments</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/experiment-determining-bad-ocr-via-automated-spellcheck/">Experiment - Determining Bad OCR via Automated Spellcheck</a></li>
-    
-  
-    
-    <li><a href="/experiment-bad-equity/">Experiment - Bad Equity</a></li>
-    
-  
-
-</ul>
-
+<p><img src="https://pbs.twimg.com/media/CiRCUkIW0AQTkQ-.jpg" alt="img" /></p>
 
   </article>
 
-</div>
-
-<p class="text-info">
+  <p class="text-info">
     <table class="table table-condensed" id="post-info">
       <tr class="info">
-        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 31 Dec 1969</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 16 May 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 16 May 2016</small></td>
         <td><small><i class="fa fa-github-square"></i>&nbsp;<a
-              href="https://github.com/smgprojects/notebook/commits/master/source/categories.md">History</a></small></td>
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2016-05-16-experiment-determining-bad-ocr-via-automated-spellcheck.md">History</a></small></td>
         <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
-        <td><small><a href="/categories/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+        <td><small><a href="/experiment-determining-bad-ocr-via-automated-spellcheck/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
       </tr>
     </table>
     </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#soundbashing'>soundbashing</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#ocr'>ocr</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#newspapers'>newspapers</a></li>
+  
+  </ul>
+</div>
+
+</div>
 
         </div>
       </div>

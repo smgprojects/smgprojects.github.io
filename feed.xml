@@ -5,9 +5,67 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 May 2016 13:21:35 -0400</pubDate>
-    <lastBuildDate>Mon, 16 May 2016 13:21:35 -0400</lastBuildDate>
+    <pubDate>Mon, 16 May 2016 13:34:31 -0400</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 13:34:31 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Experiment - Determining Bad OCR via Automated Spellcheck</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#misspelled-words-as-indicator&quot; id=&quot;markdown-toc-misspelled-words-as-indicator&quot;&gt;Misspelled words as indicator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-script&quot; id=&quot;markdown-toc-the-script&quot;&gt;The script&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#output&quot; id=&quot;markdown-toc-output&quot;&gt;output&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#graphs&quot; id=&quot;markdown-toc-graphs&quot;&gt;graphs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;misspelled-words-as-indicator&quot;&gt;Misspelled words as indicator&lt;/h1&gt;
+&lt;p&gt;In ‘&lt;a href=&quot;http://smgprojects.github.io/experiment-bad-equity/&quot; title=&quot;Experiment - Bad Equity&quot;&gt;Bad Equity&lt;/a&gt;’, I ran an experiment trying to sonify the dirtiness of the OCR. It was suggested to me by Ben Brumfield (in DH Slack) that perhaps something like &lt;a href=&quot;http://aspell.net/&quot;&gt;Aspell&lt;/a&gt; might be a useful avenue to pursue.&lt;/p&gt;
+
+&lt;p&gt;The following script runs each text file in turn through Aspell’s spell checker. The basic idea is to compare the number of ‘mispelled’ words (per Aspell’s English Canadian dictionary) to the total number of words in each document. Thus, the closer that ratio gets to 1, the worse the OCR.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-script&quot;&gt;The script&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;for f in *.txt; do
+  totalbadwords=&quot;$(cat &quot;$f&quot; | aspell list -d en_CA --encoding utf-8 | wc -w)&quot;
+  totalwords=&quot;$(wc -w &quot;$f&quot;)&quot;
+  echo &quot;$totalbadwords, $totalwords&quot; &amp;gt;&amp;gt; &quot;finalscore.csv&quot;
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(also on &lt;a href=&quot;https://gist.github.com/shawngraham/239edbcd7f5a495a7218bb93a9ce76a1&quot;&gt;Github&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;The script iterates through each text file. &lt;code&gt;totalbadwords&lt;/code&gt; is a variable for storing the result of each file being run through Aspell’s dictionary, identifying ‘mistakes’, and then &lt;code&gt;wc&lt;/code&gt; is used to count the number of these. &lt;code&gt;totalwords&lt;/code&gt; just counts the number of words in each file. These values are echoed to a csv file so that I can open it in a spreadsheet or wherever to count, graph the result. Yes, I could do that in the script too I expect, but trying to write scripts that do one thing and one thing only.&lt;/p&gt;
+
+&lt;h1 id=&quot;output&quot;&gt;output&lt;/h1&gt;
+
+&lt;p&gt;Currently, the output is sitting on my laptop, and &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1AfowhLwZQuuYMZtTDrD0riW33UPPxlgjwSumAJBrU2M/edit#gid=1997085128&quot;&gt;here on gdocs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;graphs&quot;&gt;graphs&lt;/h1&gt;
+
+&lt;p&gt;I tweeted some of the resulting graphs. In reverse order:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/electricarchaeo/status/730781961506160642&quot;&gt;https://twitter.com/electricarchaeo/status/730781961506160642&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/electricarchaeo/status/730571625540820993&quot;&gt;https://twitter.com/electricarchaeo/status/730571625540820993&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/electricarchaeo/status/730571270870437889&quot;&gt;https://twitter.com/electricarchaeo/status/730571270870437889&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CiRCUkIW0AQTkQ-.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 May 2016 13:10:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/</guid>
+        
+        <category>soundbashing</category>
+        
+        <category>ocr</category>
+        
+        <category>newspapers</category>
+        
+        
+        <category>Experiments</category>
+        
+      </item>
     
       <item>
         <title>Experiment - Bad Equity</title>
@@ -660,38 +718,6 @@ th { padding: 6px; background-color: lightgrey}
         <category>how-to</category>
         
         <category>images</category>
-        
-        
-        <category>Meta</category>
-        
-      </item>
-    
-      <item>
-        <title>a test of pdf</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#boogie-board-syncing&quot; id=&quot;markdown-toc-boogie-board-syncing&quot;&gt;Boogie Board syncing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;boogie-board-syncing&quot;&gt;Boogie Board syncing&lt;/h1&gt;
-
-&lt;p&gt;I was given a &lt;a href=&quot;https://myboogieboard.com/ewriters/sync&quot;&gt;boogie board sync&lt;/a&gt;. It’s an interesting little piece of kit, especially if you’re like me you find yourself scribbling notes and reminders and so on onto available pieces of paper. It saves your scrawls as pdf, which then sync via bluetooth onto your machine (it does lots of other things too). There is an app for your phone which does all this, and evernote is also a possible destination.&lt;/p&gt;
-
-&lt;p&gt;I use a simple command to convert the pdfs to pngs to put into my notebook.
-&lt;code&gt;
-for i in *.pdf; do sips -s format png $i --out $i.png;done
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The result:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/test.pdf.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Apr 2016 19:29:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/a-test-of-pdf/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/a-test-of-pdf/</guid>
-        
-        <category>workflow</category>
-        
-        <category>notebook</category>
         
         
         <category>Meta</category>
