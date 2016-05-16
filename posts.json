@@ -2,6 +2,18 @@
     "posts": [
         
         {
+            "title": "Experiment - Bad Equity",
+            "url": "http://smgprojects.github.io/experiment-bad-equity/",
+            "date": "2016-05-11T09:02:00-04:00"
+        },
+        
+        {
+            "title": "reilly2015",
+            "url": "http://smgprojects.github.io/reilly2015/",
+            "date": "2016-05-06T12:55:00-04:00"
+        },
+        
+        {
             "title": "Tags and Subtags in Hypothesis",
             "url": "http://smgprojects.github.io/tags-and-subtags-in-hypothesis/",
             "date": "2016-05-06T11:21:00-04:00"
