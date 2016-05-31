@@ -57,7 +57,11 @@
         
         "ocr",
         
-        "newspapers"
+        "newspapers",
+        
+        "experiment",
+        
+        "Annotations"
         
     ]
 }

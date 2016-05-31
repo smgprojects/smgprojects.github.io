@@ -5,9 +5,63 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 May 2016 13:39:23 -0400</pubDate>
-    <lastBuildDate>Mon, 16 May 2016 13:39:23 -0400</lastBuildDate>
+    <pubDate>Tue, 31 May 2016 15:06:06 -0400</pubDate>
+    <lastBuildDate>Tue, 31 May 2016 15:06:06 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>testing Kriss Shafer&#39;s script for extracting Hypothes.is annotations to Jekyll</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#here-goes&quot; id=&quot;markdown-toc-here-goes&quot;&gt;Here goes!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script can be found on Kris’s &lt;a href=&quot;https://github.com/kshaffer/pypothesis&quot;&gt;github&lt;/a&gt;. Here, I’m taking his output and banging it into my open notebook templates. I’ll need to fix some layout stuff I’m sure.&lt;/p&gt;
+
+&lt;h2 id=&quot;here-goes&quot;&gt;Here goes!&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/&quot;&gt;Experiment - Determining Bad OCR via Automated Spellcheck&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;all editions&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;6600 files were downloaded; 333 files appear to be these missing editions with the placeholder text. I have not yet manually verified all of this… which is partly the point, right? (&lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/&quot;&gt;Experiment - Determining Bad OCR via Automated Spellcheck&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;each text file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;6267 print editions, from 1893 - 2010 (&lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/&quot;&gt;Experiment - Determining Bad OCR via Automated Spellcheck&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;.75 range&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;that is, from .72 to .9. They all have the same placeholder text, but the quality of the ocr makes some consistent errors, which is interesting. (&lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Tue, 31 May 2016 14:58:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/test/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/test/</guid>
+        
+        <category>experiment</category>
+        
+        <category>Annotations</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>Experiment - Determining Bad OCR via Automated Spellcheck</title>
@@ -678,60 +732,6 @@ th { padding: 6px; background-color: lightgrey}
         
         
         <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>Imageplot and Opencontext</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#get-data-out-of-open-context&quot; id=&quot;markdown-toc-get-data-out-of-open-context&quot;&gt;Get data out of Open Context&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#analyze-images-with-imageplot&quot; id=&quot;markdown-toc-analyze-images-with-imageplot&quot;&gt;Analyze images with imageplot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;get-data-out-of-open-context&quot;&gt;Get data out of Open Context&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Eric on how to get stuff out of OpenContext:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/ekansa/status/720706858093137920&quot;&gt;https://twitter.com/ekansa/status/720706858093137920&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/ekansa/status/720827996915900416&quot;&gt;https://twitter.com/ekansa/status/720827996915900416&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://opencontext.org/media-search/Turkey.json?proj=22-kenan-tepe&amp;amp;prop=22-image-type---22-field-photo&amp;amp;response=uri-meta
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;note the &lt;code&gt;.json?&lt;/code&gt; location. Copied the results into Excel &amp;amp; filtered by thumbnail. It was just easier.&lt;/li&gt;
-  &lt;li&gt;put the URLs into a text file&lt;/li&gt;
-  &lt;li&gt;used wget: &lt;code&gt;wget -r --no-parent -w 2 --limit-rate=10k -i input.txt -nH -nd -np&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;this puts the images into a single folder, rather than replicating opencontext’s deep folders&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;analyze-images-with-imageplot&quot;&gt;Analyze images with imageplot&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;in imageplot, open imagemeasure.txt from the extras folder, run it.&lt;/li&gt;
-  &lt;li&gt;in imageplot, open imageplot.txt and run that.&lt;/li&gt;
-  &lt;li&gt;for 3d viz of hue, saturation, brightness, see Joel’s post.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFTo6yUUAAjsaR.jpg&quot; alt=&quot;img&quot; /&gt; &lt;a href=&quot;https://twitter.com/electricarchaeo/status/720949378526113792&quot;&gt;https://twitter.com/electricarchaeo/status/720949378526113792&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CgFWG0mVIAAUA19.jpg&quot; alt=&quot;img&quot; /&gt; &lt;a href=&quot;https://twitter.com/electricarchaeo/status/720952091364233221&quot;&gt;https://twitter.com/electricarchaeo/status/720952091364233221&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 14 Apr 2016 11:47:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/imageplot-opencontext/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/imageplot-opencontext/</guid>
-        
-        <category>archaeology</category>
-        
-        <category>how-to</category>
-        
-        <category>images</category>
-        
-        
-        <category>Meta</category>
         
       </item>
     

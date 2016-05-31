@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "testing Kriss Shafer&#39;s script for extracting Hypothes.is annotations to Jekyll",
+            "url": "http://smgprojects.github.io/test/",
+            "date": "2016-05-31T14:58:00-04:00"
+        },
+        
+        {
             "title": "Experiment - Determining Bad OCR via Automated Spellcheck",
             "url": "http://smgprojects.github.io/experiment-determining-bad-ocr-via-automated-spellcheck/",
             "date": "2016-05-16T13:10:00-04:00"
