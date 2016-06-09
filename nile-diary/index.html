@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Nile Diary</title>
+    <meta name="description" content="An open history notebook forked from Jason Heppler">
+    <meta name="author" content="Shawn Graham"/>
+
+    <!-- Get date last modified from git log. (Uses current time if file entry not found, e.g. projects/)  -->
+    
+
+    <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
+    
+      
+      
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Nile Diary" />
+    <meta property="dc:creator" content="Shawn Graham" />
+    <meta property="dc:date" content="2016-06-09T14:12:00-04:00" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/nile-diary/" />
+    <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
+    <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="dc:subject" content="History" />
+    <meta property="dc:type" content="website" />
+
+    <!-- RDFa Metadata (in OpenGraph) -->
+    <meta property="og:title" content="Nile Diary" />
+    <meta property="og:author" content="/bio.html" />
+    <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="og:url" content="/nile-diary/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Shawn Graham"/>
+    <meta name="citation_date" content="2016-06-09T14:12:00-04:00"/>
+    <meta name="citation_title" content="Nile Diary"/>
+    <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17">
+    <meta name="twitter:description" content="An open history notebook forked from Jason Heppler">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/wak0qrc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Custom Styling -->
+    <!-- <link rel="stylesheet" href="/css/lmullen.css"> -->
+    <link rel="stylesheet" href="/css/main.css"> 
+    <!-- <link rel="stylesheet" href="/css/search.css"> -->
+    <!-- <link rel="stylesheet" href="/css/custom.css"> -->
+    <link rel="stylesheet" href="/css/bigfoot-default.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="canonical" href="http://smgprojects.github.io/nile-diary/">
+
+    <!-- Initialize Bigfoot.js -->
+    <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+
+    <!-- Todo lists (via Lincoln Mullen) -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      $(document).ready(function() {
+        $("li:contains('[ ]')").html(function(_, html) {
+          return html.replace('[ ]', '<span style="color:red;">☐</span>');
+        });
+        $("li:contains('[s]')").html(function(_, html) {
+          return html.replace('[s]', '<span style="color:gold;">☐</span>');
+        });
+        $("li:contains('[x]')").html(function(_, html) {
+          return html.replace('[x]', '<span style="color:green;">☑</span>');
+        });
+      });
+      /* ]]> */
+    </script>
+    <script defer async src="//hypothes.is/embed.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Shawn Graham's Open Digital Humanities Notebook 2016-17</a>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/essays/">Essays</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+  <div class="well sidebar-nav">
+
+<!--- <center><img src="/images/logo.png" class="img-responsive" alt="Shawn Graham's Notebook"/><br/>
+  <a href="http://electricarchaeology.ca">Shawn Graham</a>
+  </center>
+--->
+  <br/>
+
+  <div id="search">
+    <form action="http://duckduckgo.com/" method="get">
+    <input type="hidden" name="sites" value="smgprojects.github.io" />
+      <input type="text" id="search_input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+  </div>
+
+    <ul class="nav nav-list">
+      <li class="nav-header">General</li>
+      <li><a href="/tagged/">Notes by Tag</a></li>
+      <li><a href="/archive/">All Notes by Date</a></li>
+      <li><a href="/archive-alphabetical/">All Notes Alphabetically</a></li>
+      <li><a href="/essays/">Essays and General Writing</a></li>
+      <li><a href="/categories/">Categories</a></li>
+
+      <li class="nav-header">Topics and Projects</li>
+      <li><a href="/reading-notes/">Reading Notes</a></li>
+      <li><a href="/archaeogaming/">Archaeogaming</a></li>
+      <li><a href="/design-studio/">Design Studio in DH</a></li>
+      <li><a href="/soundbashing-history/">Soundbashing History</a></li>
+      <li class="nav-header">Meta</li>
+      <li><a href="/project-news/">Notebook News</a></li>
+      <li><a href="/about/">About Me</a></li>
+      <li><a href="/notebook/">About This Notebook</a></li>
+    </ul>
+  </div>
+
+</div> <!-- / span3 -->
+
+
+        <div class="span9">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Nile Diary</h1>
+    <p class="post-meta">Jun 9, 2016</p>
+  </header>
+
+  <article class="post-content">
+    <p>Source: <a href="http://dla.library.upenn.edu/dla/medren/pageturn.html?id=MEDREN_5103295">http://dla.library.upenn.edu/dla/medren/pageturn.html?id=MEDREN_5103295</a></p>
+
+<ul id="markdown-toc">
+  <li><a href="#editors-note" id="markdown-toc-editors-note">Editor’s note</a></li>
+  <li><a href="#august-1874" id="markdown-toc-august-1874">August 1874</a></li>
+  <li><a href="#september-1874" id="markdown-toc-september-1874">September 1874</a></li>
+  <li><a href="#october-1874" id="markdown-toc-october-1874">October 1874</a></li>
+</ul>
+
+<h2 id="editors-note">Editor’s note</h2>
+
+<p>I am interested in this diary because - eventually - the author spends time in Rome and Pompeii. I am also interested to see what her impression is of the Nile, its antiquities and its people. From a methodological point of view, I am also transcribing this diary to learn how to use <a href="https://transkribus.eu/Transkribus/">Transcribus</a>, an environment that uses machine learning to -eventually- learn how to OCR the handwriting. Some of its (Transkribus’) features include automatic line detection, which is great for moving through the transcription methodically. Transkribus will also export the transcription as TEI, or as text embedded in the pdf, or as a Word doc. It doesn’t do markdown. It also doesn’t seem to export a space at the end of a line of text, and so you get words mushed where there should be line breaks. Finally, I was also interested in pushing this through <a href="https://github.com/elotroalex/ed">‘Ed’</a>, but I kept getting weird kramdown errors and I figured, bah, just put it in my notebook. As always, <a href="http://hypothes.is">Hypothes.is</a> is enabled to allow me to mark up and link outwards to other kinds of information. Yes, I could do that in the text too, but I like the Hypothesis api.</p>
+
+<h2 id="august-1874">August 1874</h2>
+
+<p><strong>Aug. 22 - 1874</strong>. Left New York in Cunard steamer Algeria David, George, Bruce, D. W. Bishop and Ella Barrett with Augusta (the laundress) to see us off - a rainy day. D. W. Bishop introduced us toMr. Brown of Yorkshire, and to Mr. Smith, a Presb. clergyman of Lenox whowith his family was going to his native Scotland. Capt. read serviceon Sunday morning - in afternoon dead body of whale white, andshiny quite near us upon the water and hundreds of little birds uponit. The first half of voyage had smooth sea, mild temperature,and head winds. Saw a number of vessels. The second sundaymorning found the sea running high (it had been quite roughfor a couple of days) suddenly a great wave rose ten feetabove the deck and came down upon it knocking downevery one before it, C. among the number and came downthe gangway and into all the deck staterooms to the depthof five or six inches, setting all moveable things, trunks, etcafloat. I sat up on my couch and held on to my trunk and to C’schair that they might not go out and obstruct the passage ways.This was shortly before 10. A.M. After a time C. waded downto me with her shoes in her hand to report herself all soundbut drenched. Lunch was served at noon, and soon afterthe stewards had succeed in getting the water out of the
+room sufficiently for C. to change her dress and for us tolook into my trunk. Everything below the trays had to bewrung out and hung up! On Sunday night a woman in the steerage died of heart defects. The wave was not the causethey were not at all wet there. The following night she wasburied at sea, the Capt. and Dr. being present. Tuesday at 2 P.M. landed passengers at Queenstown, having goneup into the harbor farther than I had ever been before.</p>
+
+<h2 id="september-1874">September 1874</h2>
+
+<p><strong>Sept 2</strong> - Wednesay at 8 A.M. stopped at the bar of the Merseyfor four hours for the tide. Finally stopped about 2 P.Mcustoms house officers and mr. Sherlock came on board.We were at the Adelphi where Mr. Sherlock had engagedrooms for us at 3 1/2 P.M. Among our passengers we hadbecome more particularly acquainted with there with us atthe Captain’s talbe Mrs. Larisson and daughter of Baltimore and her niece Miss Patterson, (great nice of Mr Mrs Bonapart)Mr. Yarnall of Philadelphia, going out to meet his wife and children in England - Mr. Jaqueneot a silk merchant 25 years old, native of Genoa, but living 6 years or morein Japan full of life and lafter - a Scotch lawyer opposite -Mr. Middleton, half Italian, half English, a most refined and cultivated young gentleman. He was baptized by PopeGregory 16, has an uncle a cardinal, and a great grand father’s headwas hung under London Bridge for being a Jacobite. Therewas also a Mr. and Mrs. Macklin, a most devoted couple who had a room opposite ours. After dinner walked to Brown’s Librarybut had not long to remain, the Egyptian collection lookedinteresting. Stepped into the great Northern Hotel - bough thei…critable piece of camphor. I did not have any letters towrite as I had written to all the family from Queenstown.</p>
+
+<p><strong>Sept. 3</strong> Thursday. Had been most comfortable at the Adelphi.Left room after 9 a.m. in the London and North Western. The countrylooked brown and autumnal. At E. Sq. Station saw six cor….s chained together Reached Euston Sq. station 2.30 P.M.Are at Bracon’s Hoetel, 21 Dover st. Piccadilly. A rainy afternoonvery tired, did not go out.</p>
+
+<p><strong>Sept. 4</strong> Friday. A rainy day went about noon to theKensington Museum. Met directly Miss Carter of Ireland,one of our fellow passengers who showed us the drawings ofthe students, one of her own among them very prettilycoloured, a fruit piece. A course of frut is gone through beforethey are allowed to go to the human figure. Took our lunch in the grill room. The wall in …. representing the month and seasons, stained glass window of Fox and Grafer. At oneend is a great range with a very large gridiron, and the steakor chop the only things furnished there are cooked before youreyes and serve quite hot and nice. Opening out of this is theDining room where cut from the joint etc are served. We went through the picture gallery, Resa…. galleries, and the Loancoolection which is very beautiful particularly in enamels.</p>
+
+<p><strong>Sept. 5</strong> Saturday. Walked over to Regents Quadrant, and downRegent at 20 Carleton Terrace. C. spoke to one of the men whohave fruit stalls behind the terrace at the end of St James Park - hisgreat grand father had had the stall originally. He had a cowthere too so as to sell fresh milk. Bought guide books for Egyptat Stanfords and …. map of London at Smiths. Lunched atCharing Cross Station, noisy and confused. Strolled to the VictoriaEmbankment and sat down in garden by Charing Cross Bridge. Herestill stands the old water gate of York House. Visited NationalGallery - notice the Turners, and took cab home. Found ourtrunks by the goods train had arrived.</p>
+
+<p><strong>Sept. 6.</strong> Sunday All Saints Margaret st. reachedthere late, a fi… seat, ch.. absent on holliday - wretched sermon. Church beautiful. A cold rainy day, did not go out again.</p>
+
+<p><strong>Sept. 7</strong> - Monday - Next to St Pauls - entered by door at endwhich is much more impressive than side entrace. A chapel on theleft hand is filled up much in Roman Catholic style. Thework of decorating dome etc progresses very slowly. Brassmural tablets have been erected to the memory of the officers andmen who perished by the capsizing of the Captain off CapeFinisterre in 1870. The tonnage or construction of the vessel had beenchanged while building and the Captian had not be modified. This isperperly set forth in the memorial. Took lunch and spent the restof the day in Bethnell Green Museum and wonderfully beautifulcollection of pictures etc. On leaving I went a little way into VictoriaPark - returning xxxxx Lunatic Asylum, Holborn Valley Viaduct, NewMetropolitan Market with its handsome iron gates and street runningunder it. Somewhere a house with slab inserted to show that Drydenlived there.</p>
+
+<p><strong>Sept. 8</strong> - Tuesday. Went to Dr. Reynolds - every thing very tastefuldrawings, fern cakes, Scotch grey xxxxx. He had nothing different tosay except to approve of our sojurn in Egypt. Mrs. O’Sullivanand Mrs. Landen out of town, left cards. Went to the Grill roomfor lunch, went into the International Gallery - pictures modern and quite interesting - the garden fine - heard organ in AlbertHall and crossed Hyde Park to see Albert memorial veryfine and grand. In the evening had a very pleasant visitfrom Mr. Middleton who brought a beautiful collection ofgold coins to show us. He took C’s watch to be repaired.</p>
+
+<p>** Sept 9** - Wednesday. Went out a pouring rain and boughtsome fruit for lunch. Mr. M. came for lunch at 12.30 and then wewent out in brougham to Westminster Abbey. He got the key,of some places there not generally shown to the public. Wewent up a narrow winding room stone stairs behindthe chapel of Edward the Confessor into an upper roomwhere prayers were said for the soul of Henry 5th hishelmet, shiled, and saddle of the armour that her wore atAgincourt were on a beam above, they probablywould not bear handling. He showed us someother places of this sort used for praying for somedeparted one in particular. He opened another littledoor a wooden stairs to the same sort of little roomwhere were effigies of distinguished persons dressed in the clothes they had worn in life- these very effigieswere carried in the funeral procession. There were Charles 2nd in beautiful lace and velvet, Queen Elizabeth frightfully ugly,Lord Nelson. The Duke of Buckingham (George Villiers) wasrepresented as lying dead, all the others as standing and alive. Agreat quantity of mock jewelry decorated them all, but they wore their own clothes and superb real lace. In a closet were the mannikinswith out any faces or dresses. Saw the wooden box containing thebones of Major Andre. In a side chapel on one side is a recent bustof the late F. D. Maurice where it seems strangely out of place. Noticedthe very beautiful iron work enclosing the tombe of Henry 7. Went intohist beautiful chapel, superb roof, banners of the knights of the order ofthe Bath, no banners are added but a new brass plate is put infor each new knight. No one is allowed to go upon the roofthe ceiling is considered so insecure. We went into theChapter House a very beautiful octagonal room with largelofty windows a high roo with one beatuiful marble columb in the centre - the original fine tile floor. Theyhave it practically covered with matting to preserve it. In thechapel of Ed. the Confessor near the entrance Mr. M. drew a boltin the floor and showed us a bit about 10 in by 5 of the original mosaicpavement. In the cloisters some composition has been putover the roof and carvings to preserve them as they were allcrumbling away. He pointed out some of the new purchased
+at the National Gallery - fine old pictures and wonderful prices.One by                 is so much retouched that they talk of having it cleaned to come down to the original He broughtus a guide book to London a hundred years ago to look at.Among the coins he brought was one of silver of Queen Elizabethmade so old and ugly that she ordered them all destoryed, abouta third of this has been cut off, but the head it left entire. Thisis the only one know to exist. The British Museum offered him [pounds] 60 for it which he declined but has left it to the Museum in his will. After he left us I bought this book etc. Miss Carymade us a very agreeable visit in the evening. She toldus that it has been quite the fashion this summer to makeexcursions in the environs in certain six horse coaches, whichare often driven by the owners, gentlemen, sometimes peersof the realm. They start from the White Horse cellars also by</p>
+
+<p><strong>Sept. 10</strong> - Thursday. To Northumberland House,Trafalgar Square which is entirely dismantled, every thingmoveable gone even to the mantels and the timbers, stone, doorwindows stair cases etc are being sold at auction. TheBallroom and Pompeian room must have been superb.The kitchen, offices, pantries, and the arrangements for the servants are on a very extensive scale. The building is palatial, and when the garden ran down to the Thames itmust have been superb. Drove to the Victoria Station, luncheon,and went by train 1/2 hr to Dulwich, where a ten minutes walkbrought us to the gallery - free - the Murillo’s and Cuyp’s areparticularly fine. The Murillo’s Madonna of the Rosary is here,his Flower Girl and Peasant Boys. Rembrandt’s Little ServingMaid looking out of a window is very attractive. Other finepcitures by other artists. Had to wait a while for the train.Sydenham is but a very little farther.</p>
+
+<p><strong>Sept. 11</strong> - Friday. Mr. M. lunched with us again. We wentin the brougham to the Foreign Office, a superbe new building - built around four side of a large quadrangle, on this interiorcourt statues and bust ornament the walls of the building. Thestaircase is magnificent entirely of mrables of the countrywhe wh of the balustrade is of dove colored marble perhaps 10 inwide, side walls painted on the plaster in excellent lathcoloring fine. The room for the reception of ambassadors iselegant, but they have retained the old fireplace which istoo insignificant for this fine room. The dining roomadjoining is spacious and elegant here they have retained the old mahogany furniture which is not much xxxx. Passedinto the India Office which was built before this and is notnearly so fine. Saw some carved slabs from India undera glass roof. At the British Museum saw some of thecoins and intaglios some of the latter very fine and costly. Inthe same room is the Etruscan jewelry bought fromCastellani for which together with the bronzes the Museumgave [pounds]20 000. Among these bronzes is a life size headof Minirva very beautiful, the back of the head filled inwith wood- a little figure about 8 in. high which haddiamond eyes - could not get near this as the room wasbeing cleaned. mr. M. by some magic took us intothe room where are the manuscripts and wrote an order fortwo which were brought, also a sack to put them onthey had belonged to the Dukes of Norfolk and were bequeathedby one of them to the Museum the first was of the 13th centurythe last a volume of a Bible was of the 14th, very finelyexecuted, a miniature of about 3 1/2 in by 4 1/2 on almostevery leaf the back rounds of these were of a very richdiaper patterns often showing the Dukes arms as ifwas painted for Lxxx of course they were on vellum.
+There can be very few manuscripts as fine as this. For oneof the cases outside is a part of the Magna Charta, which someone rescued from a sailor just as he was going to cut it intopatterns. Next into the reading room an immense circularroom lighted from the top with every convenience- books ofreference line the walls all around - the real library isshut off in numerous small room and every quarter hour atruck of books is wheeled in that has been ordered the previousquarter. Mr. M. told us that the sale of the NorthumberlandHouse brought only [pounds] 5000, the government gave [pounds] 100,000 for thehouse and I think [pounds] 156,000 more for the grounds. The Governmentcompelled the Duke to sell it as it is planned to run a finestreet through there. After parting with Mr. M. we went to theDeré gallery where we found Mr. and Mrs. Pjee Ronalds en routefor home; but as Mr. R is not well at present it is probable thatthey will remain this side. They told us of the death of Mr. Ad. Thomas.Passed the evening very agreeably in the Cary’s parlor, MrsLeRoy was there.</p>
+
+<p><strong>Sept. 12</strong> - Saturday. Called at St. George’s Albemarle st. to seeif Mrs. L. Spencer might be there - walked up New Bond st. stoppedinto Phillip’s China shop. For Solon’s cameo’s about 10 in by 5 in he asked from       to 35 figureines. There is only one of eachsubject no duplicates of his work and he is employed by N….In this respect his work is like pictures. A tea set bought by a N. S. lady was 55 guineas - it consists of 18 cups and saucer 2 cakeplates and a slp bowl. Tiffany has some single cups of it jolanderpattern rich brown and gold grass and birds on white ground linedwith pink. The Artistic Grey stone ware is made in Londonand called Doulton Pottery. Looked for books about Egypt.Went to our bankers and to enquire for Alston, then to theBethnall Green Museum, looked principally at the FrenchSchool of paintings which is very fine rich in Meissoniers,Vernels, Decamps, Greuze etc. Some very few Raynolds,and Lawrence’s. Dined at the Criterion - a very fine buildingelegant staircase - tiles on each side with fine effect.Had walked through the Metropolitan meat market.</p>
+
+<p><strong>Sept 13</strong> Sunday - Went to St Andrews, nells St. ritualistic - choir away, service not very satisfactory, sermon poor.Corssed over to All Saints where we saw the end of the Communnion service. The Officiating Priests were dressed in a sortof pale brown robes trimmed with red. He who carried thechalice seemed to wave it in the form of a cross before presenting it to each person - when we first entered we saw afew men go to the altar and when they had commensied file off ontheir side, when they had finished a few more women ear - thecheri was fine - the service seemed impressive. The church verytasteful and rich in its decorations, beautiful marbles, some tileand bricks of various colrs are introduced with good effect. Therestaurants being closed wwe lunched at home and walkedto Westminster Abbey and though we arrived there 15 minutesbefore the hour specified every seat where one could hope to hearwith comfort was filled. Made several ineffectual attempts andlooked around during most of the service - stood and heard a fewwords towards the end of the sermon. Saw Mr. Lewis Rutherford there.After walking around the equestrian statue of Richard Couer de Liontook a hanson and drove through Pimlico, through Victoria street and other streets of new andcomfortable houses, belonging very largely to the Marquis of Westministerthere over the scarcely finished Chelsea suspension bridge (had topayd 2d. toll each way) to Battersea Park - a park for the people andthey seemed to be enjoying it this fine afternoon. Some finetrees, and flower beds stiffly laid out; but tended with care and verypretty and tasteful altogeether very attractive, two or three houses of refreshment. Returningcame through Chelsea street where are Bassicks which must be a
+fifth of a mile in length and some way up through Strand st toPiccadilly. From Battersea Park had noticed the Hospital, and a Cedar of Lebanon which Murray says is in Physic Gardens there.</p>
+
+<p><strong>Sept. 14</strong> - Monday. Again to Westminster Abbey where wepoke about for a long time looking more particularly at theinteresting things that Mr. M. had shown us, at the Champslevé enamel which were were not accquainted with before.The Chapter House is very interesting. Near the entranceis the wooden door leading to where the Pyx was keptSome one who had tried to rob it was flayed and his skinnailed upon the door. Mr. M. remembered seeing somebit of it there, and put his hand over the top said he couldfeel some of it still. Lunched at the Criterion and came home.C. Went to bed with a headache. In the evening Mrs.L. Spencer and Charlie called also Mr. M., he broughtC’s watch and some photographs for us to look at.</p>
+
+<p>**Sept. 15 **- Tuesday - Commenced our preparations forleaving by buying a number of Murray’s Guides etc.At Goodis 19 South Audley st saw fine plates for Duke ofEdinburg 15 Guineas each, some things were cheaper thanat Kensington Museums. The display was very beautiful. Lunch in South Kensington Museum. Noticed the ornamentsof pure gold brought from Ashantee, also slate swords etc etc. Noticedenamels which can be well studied here, think our little box”Tho absent not forgot” is Battersea Enamel - saw more champlieeenamel near by were the cloisonné a Limoges enamels. Upstairs in the jewel case is an enormous pearl 2 inches ormore long and about 1 in thick it is shaded, there are manyother interesting stones. Noticed the Henri II vase calledinlaid earthenware - very much valued. Found a courier waiting to see us when we returned. He spokeall languages, and had been every where, and all this for [pounds] 15 a month.</p>
+
+<p><strong>Sept. 16</strong> - Wednesday - Walked around Berkeley Sq., where isGunter’s Fashionalbe place for rich and in afternoons during the seasonscarriages may be seen in front of this shop with ladies insideenjoying the ices. Earl of Haddinton and some others live here,houses quite plain, but of extra width. Left my water in M….st., and strolled around Grosvenor Sq. where the houses are very muchfiner - that of the Earl of Crawford and Balcarres especially fine - theseof the Earl of Percy and of the Earl of Shaftesbury are quite out ofrepair, Bought some drugs etc, and went to the British MuseumLooked amost opposite in a side st. Looked principally at the
+wonders of Greek art, also at some of the stones from Assyria andEgypt. Looked for some of the couriers.</p>
+
+<p><strong>Sept. 17</strong> Thursday. Went out late and shopped - more books forEgypt. Magnesium tirches and a colored spectacles also for Egypt boughtoff a jew - Solomon 22 Red Lion Square. He manufacturers thelamps for burning the magneisum wire. We were sent here byJohnstong and Mathewys? T.S. Halton Garden who seemed to belarge manufactures of the magnesium wire ribbon, powers etcand called them selves assayers - a husky pieace the ribbon about1/10 in wide was 12/ an ounce and made a coil about 3 1/2 in. diameter.All the lamps except the smallest size burn two ribbons at onceand all have clock work for playing it out, a vary in price from50/ to [pounds] 6.10. Red Lion Sq. is cheapest and best plan. Pilliough andBaccarat are both in Halton Garden.</p>
+
+<p><strong>Sept. 18</strong> - Friday - Did not go out until nearly two.Bought still another guide Book. Went into the roomsof the Arundel Society 24 Old Bond st. framed on the wallswere many of their beautiful chromos from the works of Rafaelle, Fra Bartholomeo, Ghilaundajo etc. saw photo graphs from the original fresco or oil paintings of theold masters as the cale might. Their work is truly artisitic.</p>
+
+<p><strong>Sept. 19</strong> Saturday Packed a trunk to go to Paris by Petit VitesseAgain did not go out unitl about 2 P.M. bought an albumwent into Soho Bazaar, which seemed to be a collection of small shops forselling often useless artists. They finished paering our street today.It seems to have been macadmised - they dug up the old stones andperhaps added some new, scattered fresh earth and watered it and rolledit down by means of a steam engine with the tires of each of the twowheeles about a foot wide and behind a roller of about thrice the widthwhich would have just fitted  xxxx them. The job is not very good.</p>
+
+<p><strong>Sept. 20</strong> - Sunday. Went for 10 a.m. service to Westminister Abbey.Canon Kingsley did not preach after; but read the commandmentand gospel very badly. The congregation did not assemble until nearthe hour. Drove to see the church of st. Clement’s xxxx, where Dr.Johnson worshipped for 20 years in a pew in the gallery upon the right in enteringthe church by the second column from the back. The congregation wereall singing when we looked in. Looked in St-Mary-le-Strand churchit is handsome inside- has been modernized - is of a general greenish tintappeared to be xxx xxx Stepped into the quadrangle of SomersetHouse - an imposing building two very deep basements below thelevel of the ground. Lunched in the city - Temple bar still standsalthough all shored up. Drove around the Bank - the new general P.O. is close by and looked handsome, passed around the MansionHouse, Exchange, Monument, Guild Hall etc. Our driver showedus Bennetts new clock, with bells and great figures which are inmotion when it strikes. Attended servie in St. Pauls, CanonLightfoot, if it were he, gave a fairly good sermon; but mannernot very goo. A large choir of men and boys (good; but wouldprobably have been better at the jesuit church and nearly as intelli-gable. Afterwards drove to Regents Park on the East sidesome beautiful residences along there. The colosseum there is to come down.</p>
+
+<p><strong>Sept. 21</strong> - Monday. Packed trunks and went in cab to change onepair of colored glasses which had been given to us a wrong xxx butit being the day of atonement Solomon’s place was closed andwas taken to one of his wokers who elonged it but the wholeaffair cost twice as much as a new pair would have done.At charing cross Station our luggage weighed heavy, couldnot allow us on both parcels - paid in full on that to BoulogneThe train passage through quite a pretty country to Folkstone.(via Tunbridge) Had left London at 1.25 - left Folkstone xxxxdiaxxx on arrival of train 3.50 and reached Boulogne about 5. P.M. therehaving been considerable wind and some sprinkling of rain many were
+sea-sick. I did not disgrace myself. There were four or five French fishermenand a little boy on board who has been run down at sea in their boat.He excited a good deal of sympathy particularly one man who was injured -the father of the boy. It was curious to see the women hauling the trunks -they looked old; but were very brisk. In short dark woollen dresses withwet worsted stockings and wooden shoes, carefully flushed white caps and long mas-sive looking gold earings. She looked very clean, and quite happy. We were sometime detained at the Douane. After dinner wlked a few steps eachway in the street, and saw “la retraite”, that is the guarde Eugenie who areabout returning to their home after a short visit in Boulogne. There wereilluminated church lanterns carried in the procession and from variouswindows brilliant colored lights were displayed for a few moments as they passed.</p>
+
+<p><strong>Sept. 22.</strong> Tuesday. Looked out of the Dining room window on thestatue of Jenner (the discoverer of vaccination) and on the busy throngof women principally. Drove about for an hour up to the old town which is still surrounded by a high wall, enteredunder of its old gateways. The belfrey of the Palais de justicedates back to the 13th century and is quite grass grown. The cathedral isquite a fine building - has a tall dome - the paintings xxx aremostly black and white. Went through the part of the town where thefishermen live. Their nets are hung on short poles out of the upper
+windows. In the street the women and children were busy mendingand making them. Went into the fish market - all women there.many curious and bright colored fish for sale. After lunch walkedacross the bridge to the station. 1.30 P.Pm. Luggage weighed again and some allowancegiven us to Paris - had to go a long way down the station to the cars.Came on in the Dames Seules, superb sunset, detention again forthe custom house. Reached Paris about 6 P.M. did not get to theWestminster until about 7.</p>
+
+<p><strong>Sept. 23d</strong>. Wednesday. A rainy day. went out a while tosee if we could do better about rooms; but saw nothing readyso nice, had lunch in the coffee room and went to the customshouse for our trunks which had been registered through. Lookedinto our turnks and made an appointment at Norths.</p>
+
+<p><strong>Sept. 24</strong> - Thursday - Went to Drexel, Haejet and Co for money andletters and to some shops - lunched at Guerres- went to North’s butwill have to go again tomorrow, met Miss Bennett there, and MrsDaly at Bon Marché - had met Mrs. Robbins in the morning,drove around the Tuilleries and Louvre - the Tuilleries are …lydestoryed especially that part towards the rue Rivoli. The cronersof rue Castiglione where the ministre of Finance was is fenced in asif they were about to rebuild it. The column Vendome is half up?</p>
+
+<p><strong>Sept. 25</strong> - Friday - Given up to vanity. Hair dressed etc… made appointment for tomorrow. Enjoyed … dresses of northcollars for self at Wagen’s and elsewhere. met Mrs. Robbins, Mrs. J.S. Morgan,and Mrs. Lamdon.</p>
+
+<p><strong>Sept. 26</strong> - Saturday. Engaged Mr M. W’s bonnets of Virot Attendedto more of the commisions and bought two of Marielles books for Egypt anda diner dress. Saw a large book of Mariettei on Denderah, verycareful drawings of heiroglphyicks etc.</p>
+
+<p><strong>Sept 27</strong> - Sunday - visited church, …. a conglomerationof Pres. and Epis., a short turn in the Bois. Called on Mrs. L. Spencer.Afternoon Episcopal Church, rue de Bayard, heard mrs. Morgan. TheChamps Elysee crowded with people sitting in dr..ing. Warm weather.</p>
+
+<p><strong>Sept. 28</strong> - Monday - Went to conseil office and to see Dr. Laerille alsoto the Beaux Arts where we saw the painting by M. Baudey for theinterior of the new Opera House. They show a great deal of boldness.He is about thirty two - had the Prix de Rome. Our trunk camebyt Petite Vitesse, had apparently been examined at the custom House.In the evening Heloise now Mme Robin, a former cousins maid called.</p>
+
+<p><strong>Sept. 29</strong> - Tuesday - Were engaged at home until afternoon whenwe made a number of visits; but only saw Mrs. Tucker where wemade a short visit other guests coming.</p>
+
+<p><strong>Sept. 30</strong> - Wednesday - More or less rain all day - … -looked at Milliners for a travelling hat; but think the commonmilliners just as poor in proportion as Virot. Wrote to Mrs. Carpenter</p>
+
+<h2 id="october-1874">October 1874</h2>
+
+<p><strong>Oct. 1</strong> - Thursday - The usual unsatisfactory Paris day.Pleasant letters from home and from Alston.</p>
+
+<p><strong>Oct. 2</strong> - Friday - I read letter from Mrs. Shenck the artistputting himself at our service some day. C. had letter from theContesse de Chaponay asking her to visit her at her chateau Badonnear Nantes. C. answered her and did not go out untillate. I wound up several commissions and visited Mrs. Robbinsin the morning. A very rainy afternoon.</p>
+
+<p><strong>Oct. 3</strong> - Saturday - Did not do much. Talked with a ….maid. Heard from Mrs. Hurlbut that maids are inconvenientup the Nile. Pretty j.. buckles are as hard to get here as they wouldbe in the U. S.</p>
+
+<p><strong>Oct. 4</strong> - Sunday - Did not go to church. Weather showery.Went to Mrs. Hurlbut who says no one takes a maid upthe Nile. Went to see Mrs. Thomas, she and Ad. seemed hadbut the little boy was playing about unconscious of his loss.Ad. sails for home this week with his child. And Mrs. Thomasgoes to Nice for the winter.</p>
+
+<p><strong>Oct. 5</strong> - Monday - After the usual morning detentions we went to enquire the character of Josephine Deleglige who was very highlyrecommended. Went into the church opposite because we saw a carpetdown. Though the church was handsome and the people looked nice,the ceremony seemed tedious. The couple had a good time torest seated in their comfortable own chairs. When the ceremonywas nearly over a young lady who was seated directly behindthe bride rose and taking a bag in her hand was handed downthe aisle by a gentlmean, She handing a sort of box or bag intowhich almost everyone put a small coin, the berger preceeded herand announced that it was “pour les pauvres”. Before they had entirelyfinished another lady rose and taking a boy by the hand handedanother box the verger saying it was for the church. Therefollowed more music prayers etc. We stopped for a moment intothe Madelaine where was another wedding. In the eveningcame Mrs. Robbins, later Mrs. Q. about ten in came Alstonwho ordered a café complet, he not having taken time to eat at hisown hotel.</p>
+
+<p><strong>Oct. 6</strong> Tuesday. Mr. Schenk called in having hastened … ….from Anvergne in consquence of my note, and appointed Thursdayfour our visit to him.</p>
+
+<p><strong>Oct. 8</strong> Thursday - In the noon train chemin de fer du Nordwent out a short distance to Villiers-l-Bel. Here Mr. Schenckmeet us and took us in his own conveyance to his studio a L’Ec….A barn like building, rough plaster within and without and poundedearth floor, that he may let his animals in without fear. Hehas a half doz large pictures done or nearly so - sheep in summerand in snow. One of grapes, one of wolves, a small one with cattle.A dozen sketches taken this summer. Showed us a sketchfor a large historical piece which will …. be painted. Hedoes not hesitate to say that he is the first cattle painter ofFrance. Took us to his house where his wife had bread and cheesecake wine etc put on the Jardin Noble for us. Saw his sheepdraft ponies etc. He and madame accompanied us to the cars. Thewhole execution was very interesting.</p>
+
+<p><strong>Oct. 10</strong> Saturday. Visited picture gallery of the Louvre. Inthe evening to the theatre francaise. Saw La charnie byScribe. Some of the acting was fine. Moral very bad.Went out into the foyer between each act in consequenceof the great heat. The whole thing was quite curious to novices.</p>
+
+<p><strong>Oct. 11</strong> Sunday - After morning church tried to see Mrs. Spenceralso La Princesse        . In the evening Mr. and Mrs S. calledthe conceierge having mistaken our message.</p>
+
+<p><strong>Oct. 12</strong> Monday - Busy packing. Josephine came … havingagreed to pay her 250 frs. which shall include all but lodgingIn Egypt she shall receive 100 frs. a month which shall includeher washing all her other expenses to be paid for her that is eatingand lodging. Evening went to the Gaite saw Orphee aux Enfer.A spectacle - a great deal of ballet and altogether not very nice.We had been recommended to go by Mrs. Spencer als by Neil R…land.C took her Ja… and I took cold.Oct 13. Tuesday Sent off trunk by petite vitesse to Alexandria.Decided in the evening to remain another day.</p>
+
+<p><strong>Oct. 14.</strong> Wednesday Alston went with us to library, also tothe Academie des Beaux Arts - saw de la Roche’s Hemicycle, paixde Rome, etx At Louvre fine collection porcelain, Henri 2 wareAfter lunch to the Luemburg - saw fine statuary that hadbeen at the Vienna exhibition, also the picture gallery.Have not written journal since Alston came; but have seenseveral interesting sights besides shopping</p>
+
+<p><strong>Oct. 15</strong> Thursday - Left hotel a ten A. M. Alston there to seeus off. At the station found Daudet to say goodbye. ReachedDijon about 6. P.M.</p>
+
+<p><strong>Oct. 16</strong> Friday - Drove about Dijon. Went to Palace of Dukesof Burgundy. … fine tombs in white marble painted in colorsthat of Philippe le Hardi especially - around the sides are beautifullysculptued arcades filled with monks finely carved. A finemantle piece and altar pieces. The Palais de Justice still retainsa finely carved ceiling and there a many other relics. P.M. to Lyon</p>
+
+<p><strong>Oct. 17</strong> Saturday. In the afternoon went to shops calledLa Croix Rousse . the silk weavers district. Went intoone house where we saw brocatelle and velvet being made.Bought a picture of the Russian Empress made on a jacard loom.The man showed us an old jacard loom which had 200 bobbinsI believe they are called - they have now sometimes 3000. As onepulled along could see 12 loom in almost every houseAnd when the carriage stopped the noise of them was quite remarkable. Let Josephine go to Marsailles tonight.</p>
+
+<p><strong>Oct. 18</strong> Sunday. In the afternoon drove rip to NotreDame de Fourvriere - no view, but pleasant executionstreets filled with pleasure seekers. The walls of the church are covered with offering of pictures etc. A new church is commencedclose by. After coming down the hill crossed both Rhone and Soane toget to the park which through not very large is very beautiful.Went into a fine green house filled with tropical plants. Returnedhome later passing among some fine residences.</p>
+
+<p><strong>Oct. 19</strong> Monday Left hotel before 7 a.m. It was GrandHotel de Lyons opposite the Bourse. Lyons is a very finecity has grown wonderfully since I last saw it. Thewhole R.R. route very interesting. More especially afterpassing Orange. We often saw Roman remains from the cars. The rocks sometimes had a volcanic appearance.Had a good view of the amphtitheatre at Arles, and some otherremains. Passed along the … which appeared as if cobblesontes and pebles had been rained upon it. Many mulberry treestoday and lately olive trees. Josephine met us at the station.Aloes planted near it. Went to Grand Hotel de Marsailles.</p>
+
+<p><strong>Oct. 20</strong>. Tuesday Strolled about the streets, bought somefigs and found them good. Afternoon drove up to Notre Dame de laGarde, splendid view over whole city and curious jagged ….hills on the right. Chateau d’If and other islands quite near.In every way a charming view. Then drove along the
+fort, looked up its curious narrow streets with tall housesthen along the fine new Bassin de la Joliette - splendid docksand a great deal of shipping. Passed near new cathedral whichis being built. The church of Notre Dame de la Garde is new and rich - the walls covered with pictures of perils by seaand land - models of ships hang from the ceiling, flags, and banners.</p>
+
+<p><strong>Oct. 21</strong> Wednesday - Walked about bought a pome granite for .75 - it had come from Spain. Thenative fruit here is chaper and not so fine. Oysters soldalong the streets at from one to two francs a doz. Figstwo sous a day. Thrushes and larks in the market as game. Saw juju for sale, looks like aleather colored olive, taste agreeable. Plenty of olivesboth green and black. Peaches for sale, and bananas, but notvery plenty. Saw some other curious fruits. Muscles andsmall crabs abouyt two and a half inches across, think theymust have had soft shlls. Also a curious thing fromamong the rocks, something like the prickle outsideof a chestnut but blak and a very little yellow to eatinside. J. says they are ousins, very good to eat and inthe proper season are four or five inches across. Left intrain about noon, and being behind time did not reach</p>
+
+<p><strong>Oct. 22</strong>- Thursday Cannes until nearly six P. M. Grand Hotelde Cannes. A lovely ride. Olives, oranges, sunberries, umbrellapines. Picturesque and luxuriant views, wonderful rocks, and the mediterraneanSaw Roman remains at Frejus which young Frenchman in carpointed out to C.</p>
+
+<p><strong>Oct 22</strong>. Thursday A… and various kinds of palins alsoprickle pear, with fruit on it (which I recognize as what Ibought some years ago, look like little pine apples). Orange andlemon trees, all in the hotel garden before our windows and beyondthe sea, of which we hear the roll distinctly. Took a superbdrive, and the “grand tour de la Californie pas le caual”charming views, Esterel rocks jutting out proudly with thesea towards the west. In front Ile St. Margueritefrom which Marshal Bazaine recently escaped. Villa dottedall over the landscape. Vegetation charming quite differentfrom any thing to which I am accustomed. The fragrantyellow cassia in bloom from which they make scent. Theblue green eucalyptus tree a pleasing variety and many othernovelties. Returning stopped at Villa San Jean, belongingto the Comtesse de Chaponay, very beautiful did not gointo the house though the old servant who knew of Cath urged us to do so. Drove in the opposite direction to seewhere Lord Brougham had lived. Walked in the afternoon.Old town very narrow and dirty. Went into market just asthey were removing the booths. Peaches, chestnuts, pearsgrapes, tomatoes beans etc. There is a factory of pottery herefine shapes, coarse ware, attempts at Etruscan, cheap.Saw men driving piles. Twelve men pulled ropes tolift - a heavy arrangement of iron and stone and then let itfall upon the pile. Dreadful labor. Charming re….Two months away from home today.</p>
+
+<p><em>*Oct. 238</em> Friday Left Cannes towards noon and should havebeen at Nice in an hour. Train about a half hour behindtime and there a long detention in leaving station at Nice.Hotel de France, considered best cuisine in Nice, ….rooms, lovely southern exposure. Walked about promenadesAnglais, bridges over the Piglione, looked in at the Chauvain</p>
+
+<p><strong>Oct. 24</strong> Saturday No letters. C. took me up stairs at thechauvain and showed me the room occupied four years ago etc.Soon after noon went by rail three quarters of an hour toMonaco, in omnibus up the hill to the palace. Built arounda hollow square, the arcades of which have tawdry frescoes of century, some represent the labours of Hercules from whomMonaco is said to date. A fine marble st… going up both ways.The appartments tasteful, the floors marble f the ordinary peacheycolor coarse mosaics so much used in Italy, poor portrait offamily conections, some reigning in Austria, Bavaria et. Finebedroom where the Duke of York, brother to George the third died. Theview from the windows much interesting. The garden is ….-ing t….d on the slope of the hill, carefully laid out next thetropical vegetation to which we are becoming quite accustomed. A ten minute drive or less to Monte Carlo. We enteredthe casino, directly opposite the entrance a fince concertwas going on in a large hall. The audience only abouttwenty five patrons. Towards our right was a beautifulreading room in a rather Pompeian style of decoration - abundantly supplied with papers. Turning back to the leftcrossing a richly decorated room where no one was sitting toone still riches  in something of a Moorish style when werethe gambling tables - about sixty persons were sitting atthem playing of whom ten were women. There might havebeen thirty or more looking on. Outside are gardens beautifullylaid out and an excellent hotel, also a restuarant. Were back at Nice by 5.30. The shop keepers do not find enough visitors yet for them to open their shop. Many have the shutters still closed.</p>
+
+<p><strong>Oct. 25</strong> - Sunday. Drove to C….s Arrived there the roadruns directly through the remains of a Roman amphitheatrecontinued to the church built on the site of a temple of DianaPeeked into the cloisters of Franciscan convent adjoining. Wentinto cemetery. For the centre was a fine monument to anEnglish lady. In front of the church are several magnificienttrees “chenes Virls” Several hundred years old. Returned byway of Carabacel( a part of Nice further removed from the sea)There seemed to be a great many villas, some of them veryfine.Drove the whole length of promenade anglais,very pretty, it took about 8 minutes. Saw G. Crosby andwife in front of his house there. Drove over bridge to the oldtown and got out and walked about some of the narrowstreets and market places. Stepped into a house that lookedfiner than the rest, it had belonged to a noble family butno to some one else and seemed used in part as ersatz tenementhouse. After lunch went to the English church buthad made a mistake in the hour of service. The churchis very pretty and neat stained glass windows, font nearthe door. The grave yard between the church and the street. In the afternoon went over to the park to hear the music, partlywith the hope of seeing M. Thiers who had just arrived. droveto the old chateau, charming view, Nice laying below, and thedry bed of the torrent distinctly dividing the old and new townsa amphitheatre of hills surrounding it except where the Mediterranean stretched. Many villas on the hill sides. In frontof our hotel, the date palm and Eucalyptus alternate. It is onlyabout ten years since the first Eycalyptus were planted hereand they are large trees. They seem to have leaves of twodistincally different shapes or perhaps they change in shapeas the tree grows older. It only grows between Marsailles and Genoa. The bark is smooth but peels offeven quite cut on the branches giving it a ragged appearance.The pepper trees here are very pretty with their fine foliage andbright peppers hanging down.</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 09 Jun 2016</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 09 Jun 2016</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2016-06-09-nile-diary.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/nile-diary/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#transcription'>transcription</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#nile'>Nile</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#travel'>travel</a></li>
+  
+  </ul>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="footer-wrapper">
+
+    <h2 class="footer-heading">Shawn Graham's Open Digital Humanities Notebook 2016-17</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <figure class="image-left">
+            <img class="avatar" src="/images/minionme.jpeg" height="120" width="120"/>
+          </figure>
+          <p class="text">I'm at Carleton University in Ottawa Canada.</p>
+
+          <form method="get" action="http://duckduckgo.com/">
+            <input type="search" name="q" maxlength="255" placeholder="Search">
+            <input type="hidden" names="sites" value="smgprojects.github.io">
+            <input type="hidden" name="k7" value="#faf8f8">
+            <input type="hidden" name="kj" value="#b33">
+            <input type="hidden" name="ky" value="#fafafa">
+            <input type="hidden" name="kx" value="b">
+            <input type="hidden" name="ko" value="-1">
+            <input type="hidden" name="k1" value="-1">
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+          </form>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <i class="fa fa-globe"></i> <a href="http://electricarchaeology.ca">electricarchaeology.ca</a>
+          </li>
+          
+          <li>
+              <i class="fa fa-github-square"></i> <a href="https://github.com/shawngraham"><span class="username">shawngraham</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+              <i class="fa fa-twitter-square"></i> <a href="https://twitter.com/electricarchaeo"><span class="username">electricarchaeo</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        Shawn Graham<br/>
+        <ul class="social-media-list">
+          <li><i class="fa fa-university"></i> Department of History, 406 Paterson Hall, Carleton University, Ottawa Canada</li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:shawn.graham@carleton.ca">shawn.graham@carleton.ca</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75211414-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

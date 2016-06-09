@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Nile Diary",
+            "url": "http://smgprojects.github.io/nile-diary/",
+            "date": "2016-06-09T14:12:00-04:00"
+        },
+        
+        {
             "title": "testing Kris Shaffer&#39;s script for extracting Hypothes.is annotations to Jekyll",
             "url": "http://smgprojects.github.io/test/",
             "date": "2016-05-31T14:58:00-04:00"
