@@ -5,9 +5,59 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 24 Jun 2016 11:32:21 -0400</pubDate>
-    <lastBuildDate>Fri, 24 Jun 2016 11:32:21 -0400</lastBuildDate>
+    <pubDate>Mon, 11 Jul 2016 15:26:18 -0400</pubDate>
+    <lastBuildDate>Mon, 11 Jul 2016 15:26:18 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>nile diary plan</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#ideas&quot; id=&quot;markdown-toc-ideas&quot;&gt;Ideas?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#what-would-any-of-this-mean-do-imply&quot; id=&quot;markdown-toc-what-would-any-of-this-mean-do-imply&quot;&gt;what would any of this mean? do? imply?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;In a nutshell:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;** DH the shit out of this**&lt;/p&gt;
+
+&lt;h1 id=&quot;ideas&quot;&gt;Ideas?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;initial idea was just a test of &lt;a href=&quot;http://transkribus.edu&quot;&gt;transkribus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;resource is extremely rich though&lt;/li&gt;
+  &lt;li&gt;topic models over space/time: some kind of choropleth?&lt;/li&gt;
+  &lt;li&gt;find more such diaries&lt;/li&gt;
+  &lt;li&gt;Micropasts, crowdsource corrections to my transcription, get more&lt;/li&gt;
+  &lt;li&gt;wordvectors: her perceptions of ‘others’; her perception of ‘the past’&lt;/li&gt;
+  &lt;li&gt;RNN: what is the platonic ideal type for her diary, for others? What would a machine written journey look like? what would a machine written journey tell us?&lt;/li&gt;
+  &lt;li&gt;neatline; map the journey, link into the things she tells us (art works, churches, etc)&lt;/li&gt;
+  &lt;li&gt;possible to find other diaries of people in roughly the same time, place? competing views?&lt;/li&gt;
+  &lt;li&gt;Twine game, built around her journey (her stuff gets stolen, rifled through on a number of occasions: the player character, perhaps…)&lt;/li&gt;
+  &lt;li&gt;sonification of the data models; sonification of key words/phrases a la sonification of punctuation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-would-any-of-this-mean-do-imply&quot;&gt;what would any of this mean? do? imply?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the $0.64 question&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 10:20:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/nile-diary-plan/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/nile-diary-plan/</guid>
+        
+        <category>Nile</category>
+        
+        <category>diary</category>
+        
+        <category>planning</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>LDAvis of the Nile Diary - test</title>
@@ -26,6 +76,50 @@
         
         
         <category>Observations</category>
+        
+      </item>
+    
+      <item>
+        <title>portable makerspaces?</title>
+        <description>
+&lt;p&gt;See the responses to this tweet&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/electricarchaeo/status/742745299253264384&quot;&gt;https://twitter.com/electricarchaeo/status/742745299253264384&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;so: a pop-up maker space for a classroom. must be carryable by 1 human. what goes in?&lt;/p&gt;
+
+&lt;p&gt;best response:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Carlitosi71/status/742798048670175233&quot;&gt;https://twitter.com/Carlitosi71/status/742798048670175233&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Jun 2016 17:29:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/portable-makerspaces/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/portable-makerspaces/</guid>
+        
+        <category>design-studio</category>
+        
+        
+        <category>Readings</category>
+        
+      </item>
+    
+      <item>
+        <title>Teaching tech in a group</title>
+        <description>
+&lt;p&gt;&lt;a href=&quot;http://miriamposner.com/blog/a-better-way-to-teach-technical-skills-to-a-group/&quot;&gt;A better way to teach technical skills to a group&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://whatisamedialab.com/2016/05/10/prototyping-the-past-the-maker-lab-in-the-humanities-at-the-university-of-victoria/&quot;&gt;Prototyping the past; maker labe in humanities at U Vic&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Jun 2016 17:27:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/teaching-tech-in-a-group/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/teaching-tech-in-a-group/</guid>
+        
+        <category>design-studio</category>
+        
+        <category>pedagogy</category>
+        
+        
+        <category>Readings</category>
         
       </item>
     
@@ -656,227 +750,6 @@ th { padding: 6px; background-color: lightgrey}
         
         
         <category>Meta</category>
-        
-      </item>
-    
-      <item>
-        <title>demo of reading report from hypothesis script</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#script&quot; id=&quot;markdown-toc-script&quot;&gt;script&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#output&quot; id=&quot;markdown-toc-output&quot;&gt;output:&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#reading-report&quot; id=&quot;markdown-toc-reading-report&quot;&gt;Reading report&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#summary&quot; id=&quot;markdown-toc-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#tabular-representation&quot; id=&quot;markdown-toc-tabular-representation&quot;&gt;Tabular Representation&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;script&quot;&gt;script&lt;/h2&gt;
-&lt;p&gt;Script is at &lt;a href=&quot;https://gist.github.com/shawngraham/8dddf5b924588184b0568ca98f827b8b&quot;&gt;https://gist.github.com/shawngraham/8dddf5b924588184b0568ca98f827b8b&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;I changed it to save as .md; then I copy the html from that file and paste into my open notebook template for a note card. The html that follows below is generated from the script above.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you use the script, the tag from lines 82-85 &lt;strong&gt;must&lt;/strong&gt; be used with &lt;code&gt;:1&lt;/code&gt; etc, iterating upwards as you go.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;individual annotations should use the headings in line 105 with colons, in order to appear in the table.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;output&quot;&gt;output:&lt;/h2&gt;
-
-&lt;style&gt;
-
-table, td, th { border-collapse: collapse; border: 1px solid black }
-td { padding: 6px }
-th { padding: 6px; background-color: lightgrey}
-&lt;/style&gt;
-
-&lt;h2 id=&quot;reading-report&quot;&gt;Reading report&lt;/h2&gt;
-&lt;p&gt;for &lt;a href=&quot;http://www.degruyter.com/view/j/opar.2014.1.issue-1/opar-2015-0013/opar-2015-0013.xml&quot;&gt;http://www.degruyter.com/view/j/opar.2014.1.issue-1/opar-2015-0013/opar-2015-0013.xml&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Additive Archaeology: An Alternative Framework for Recontextualising Archaeological Entities&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; 3: grand disciplinary challenge, 2: real, virtual, and authentic are becoming increasingly unstable, 1: Additive manufacturin&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Key Themes:&lt;/strong&gt; 1: a radical new generative framework within which to recontextualise and reconsider the nature of archaeological entities specifically within the domain of digital archaeology, 1: avin Lucas’ characterisation of the archaeological record as a product of contending processes of materialisation and dematerialisation&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Key Literature:&lt;/strong&gt; 1: Lucas, G., Understanding the Archaeological Record, Cambridge University Press, Cambridge, 2012.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The Interesting Bits:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;Materialising the record: the material world is, at any given time, an archive of this process of (de)materialization” [3, p.205]&lt;/li&gt;&lt;li&gt;Materialising the record: Here, depositional processes (called containment or territorialisation) cohere to assemble, or gather, things in specific places&lt;/li&gt;&lt;li&gt;Materialising the record: Complimentary processes (called enchainment or coding) cohere to generate recurring associations such as typological similarities or repeated find combinations.&lt;/li&gt;&lt;li&gt;Materialising the record: the practices of the field archaeologist are not so much data collection but interventions, or material interactions, in which tools and procedures are mobilised locally to materialise new entities or artefacts (e.g. drawings, samples, photographs, context sheets, field diaries, finds and reports); it is these new, mobile, dynamic assemblages of autonomous objects that become archives.  &lt;/li&gt;&lt;li&gt;Materialising the record: he archaeological record as constructed in the present, also known as the archive.&lt;/li&gt;&lt;li&gt;Materialising the record: the first connotation is that of material culture, materiality or artefacts understood in their broadest sense&lt;/li&gt;&lt;li&gt;Materialising the record: next meaning is expressed in terms of how deposits and assemblages come to be, something he labels as “formation theory&lt;/li&gt;&lt;/ul&gt;
-
-&lt;h3 id=&quot;tabular-representation&quot;&gt;Tabular Representation&lt;/h3&gt;
-&lt;table&gt;&lt;tr&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;Resonances&lt;/th&gt;&lt;th&gt;Crossref&lt;/th&gt;&lt;th&gt;Problems&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;decisions are made in &#39;real&#39; archives about what is kept, what is left out. &lt;/td&gt;&lt;td&gt;I wonder how far the metaphor of the &#39;archive&#39; can be pushed before it breaks? Before it conceals more than it reveals?&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&#39;containment&#39; - who/what does the containing? Depositional processes. &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&#39;enchainment&#39; is a cool word; seems to suggest an element of coercion, perhaps? This must be Lucas&#39; term.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;data are always constructed; the act of &#39;collecting&#39; is also an act of creation. Here, it literally results in the creation of new material culture too.&lt;/td&gt;&lt;td&gt;Drucker&lt;/td&gt;&lt;td&gt;[DHQ](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html)&lt;/td&gt;&lt;td&gt;Problems:&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;archaeological record as archive&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;archaeological record as things themselves&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;archaeological record as the processes of how things come to be&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-</description>
-        <pubDate>Thu, 05 May 2016 12:42:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/</guid>
-        
-        <category>script</category>
-        
-        
-        <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>Beacons and Programming the City</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#readings&quot; id=&quot;markdown-toc-readings&quot;&gt;Readings&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#gear--sdks&quot; id=&quot;markdown-toc-gear--sdks&quot;&gt;Gear &amp;amp; SDKS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;readings&quot;&gt;Readings&lt;/h1&gt;
-
-&lt;p&gt;Williams, Mita. The City As Classroom vs. The City As Advertising Platform &lt;em&gt;Medium&lt;/em&gt; https://medium.com/@copystar/the-city-as-classroom-vs-the-city-as-advertising-platform-c3a356753f67#.xcdr64km0&lt;/p&gt;
-
-&lt;h1 id=&quot;gear--sdks&quot;&gt;Gear &amp;amp; SDKS&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/business/a/facebook-bluetooth-beacons&quot;&gt;https://www.facebook.com/business/a/facebook-bluetooth-beacons&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/beacons/eddystone#full_support_for_eddystone&quot;&gt;https://developers.google.com/beacons/eddystone#full_support_for_eddystone&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://evothings.com/diy-arduino-beacons/&quot;&gt;https://evothings.com/diy-arduino-beacons/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://store.punchthrough.com/collections/all/products/bean&quot;&gt;http://store.punchthrough.com/collections/all/products/bean&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://librarybox.us/&quot;&gt;http://librarybox.us/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://piratebox.cc/&quot;&gt;https://piratebox.cc/&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 03 May 2016 09:42:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/beacons-and-programming-the-city/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/beacons-and-programming-the-city/</guid>
-        
-        <category>designdh</category>
-        
-        <category>IoT</category>
-        
-        
-        <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>lupton2014</title>
-        <description>&lt;h4&gt;&lt;span id=&quot;lupton2014digital&quot;&gt;Lupton, Deborah. &lt;i&gt;Digital Sociology&lt;/i&gt;. Routledge, 2014.&lt;/span&gt;&lt;/h4&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#theorising-digital-society---chapter-2&quot; id=&quot;markdown-toc-theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#digital-technologies-and-data-as-sociomaterial-objects&quot; id=&quot;markdown-toc-digital-technologies-and-data-as-sociomaterial-objects&quot;&gt;Digital Technologies and Data as Sociomaterial Objects&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#prosumption-neoliberalism-and-the-sharing-subject&quot; id=&quot;markdown-toc-prosumption-neoliberalism-and-the-sharing-subject&quot;&gt;Prosumption, Neoliberalism and the Sharing subject&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;introduction&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;p2&lt;/strong&gt;
-- cites anthros Daniel Miller and Heather Horst (2012:4) on digital techs starting to become constitutive of ‘self-hood, embodiement, social lie, social relations and social institutions’.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;tech not just part of what makes us human, it also makes our social world&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;digital tecnologies are so pervasive and ubiquitous as to be invisible; claims to the contrary are spoken from ‘a jposition which only serves to highlight the now unobtrusive, taken-for-graneted elements of digitisation.’ [sg: I’d say ‘digitisation’ and ‘digitalization’ are slightly different things, and perhaps Lupton is talking here about the latter?]&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;p3&lt;/strong&gt;
-- argues that urban space is now a product of surveillance technologies, whether of people or for movement of private/public vehicles, payment of goods,  etc.
-- ‘[combination of private photos, video + state surveillance]’ means that we are increasingly becoming digital data subjects, whether we like it or not, and whether we choose this or not’. &lt;a href=&quot;http://www.peasantmuse.com/2012/06/from-data-self-to-data-serf.html&quot;&gt;makes me think of Jeremey Antley’s stuff on data serfs&lt;/a&gt; though ‘subject’ was meant in a slightly different sense in lupton2014&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p5&lt;/strong&gt;
-- “If it is accepted that ‘life is digital’ … I would argue that sociology needs to make the study of digital technologies central to its very remit… to study digital society is to focus on many aspects that have long been central preoccupations of sociologists: selfhood, identity, embodiment, power relations and social inqualities, social networks, social structures, social institutions, and social theory.”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p8&lt;/strong&gt;
-- ‘digital data are not just automatically created object of digital technologies. They are the products of human action. Human judgement steps in at each stage of the production of data: in deciding what constitutes data; what data are important to collect and aggregate; how they should be classified and organised into heirarchies; whether they are ‘clean’ or ‘dirty’(needing additional work to use for analysis); and so on”. [SG: AMEN!]&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p15-16&lt;/strong&gt;
-- outlines 4 aspects that define ‘digital sociology’
-  - ‘professional digital practice’
-  - ‘analyses of digital technology use’
-  - ‘digital data analysis’ (quant, qual)
-  - critical digital sociology’ (ie reflexive analysis of dig tech ‘informed by social and cultural theory’)
-- [sg interesting that there doesn’t seem to be any notion of ‘deformation’ in all of this. Then again, maybe we don’t want social science (is soc. a social science?) deforming things…]&lt;/p&gt;
-
-&lt;h1 id=&quot;theorising-digital-society---chapter-2&quot;&gt;theorising digital society - chapter 2&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;p21&lt;/strong&gt;
-- discussing google, facebook, apple, and amazon, calls them ‘internet empires’ which is an interesting choice of words, especially when we think of #dhpoco and/or things like facebookzero, wikipedia gateway, etc, [see http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating(http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating)]&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p22&lt;/strong&gt;
-- ‘each act of communication via digital media has become a valuable entity by being transofrmed into digital data that can be aggregated into massive data sets… these acts of communication have become commoditised’
-- ‘where once it was the physical labour of workers that produced surplus value, now the intellectural labour of the masses has monetary value, constituting a new information economy in which thought has become reified, public, and commodified’. cites Smith 2013, Thrift 2005,2006 on this.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p23&lt;/strong&gt;
-- Discussing Lash 2005, 2006 on flux and flows of information, for Lash 2006, ‘notes that flux is characterised by tensions, struggles for power, whereas pure flow presupposes unrestricted movements.’ [What did Urry sociology beyond societies say on this matter?]
-- ‘This distinction between flux and flow of digital networks and data is an important one. It contravenes a dominant representation of digital data as circulating freely… and emphasises that there are difficulites and blockages in the flows inherent to the global information society.’ [SG - struggles over representation, digital heritage, archaeology, gatekeeping of journals etc: flux?]&lt;/p&gt;
-
-&lt;h3 id=&quot;digital-technologies-and-data-as-sociomaterial-objects&quot;&gt;Digital Technologies and Data as Sociomaterial Objects&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;p23&lt;/strong&gt;
-- ‘Exponents [of actor-network theory] contend that humans are always imbricated within networks comprised of human and non-human actors and cannot be isolated from these networks’ [sg yep. see Hodder, entangled, Ingold on meshworks, Gosden, pretty much archaeological theory full stop, yes?]
-&lt;strong&gt;p24&lt;/strong&gt;
-- discusses ‘assemblages’ as denoting an ‘intermingling of the human and non-human in various dynamic ways’. [SG Again, archaeological theory. How come nobody except archaeologists - and even then, a minority - actually reads any archaeological theory? Archaeology very useful in all this digital stuff….]
-- ‘…the digital data objects that are brought together through digital technologies … are assemblages of complex interactions of economic, technological, social and cultural logics. Representing digital phenomena as objects serves the purpose of acknolwedging their existence, effects, and power’. [SG makes me think of &lt;a href=&quot;http://platformstudies.com/&quot;&gt;platform studies&lt;/a&gt; as well as linked open data, rdf, ontologies, etc. Wonder what Seb would think.]&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p25&lt;/strong&gt;
-- ‘software is no longer static: it is constantly responding to inputs from its users and from other networked systems: updating data, recognising location as the user moves around in space, noticing what activities the user is engaging in on her or his device…’ SG which is why games and game studies at the level of representations of how to engage with the world are critically important as the dominate teacher of how to interact with the digital. clumsy phrasing, yes.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Whereas many commentators in the popular media governement and business world view digital data as the ultimate forms of truth and accurate knowledge, sociologists and other social theorists have empahsised that these forms of information, like any other type, are scoially created and have a social life, a vitality, of their own. Digital data objects structure our concepts of identity, embodiment, relationships, our choices and preferences and even our access to services or spaces.’ [sg: which is why deformation and breaking are critical?]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;p26&lt;/strong&gt;
-- a sociomaterial perspective draws attention to the ‘tangible physicality’ of digital: ‘the maintenance that supports this operation is messy and contingent, often involving pragmatic compromises, negotiations and just-in-time interventions to keep the system working. Geographical, economic social, political and cultural factors - including such basic requirements as a stable electricyt supply and access to a computer network - combine to promote or undermine the workings of digital technologies’. SG: Goes on to point out the problems of e-waste.
-- SG: describes the kinds of e-waste. doesn’t mention &lt;em&gt;where&lt;/em&gt; this e-waste turns up - makes me think of those photographs of ship wrecking yards where the workers are all barefoot, etc. ewaste is one place where dh could point a bit more of its focus, colonial ramifications of, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;p27&lt;/strong&gt;
-- discusses the ‘materiality’ of digital objects, esp w/ regard to storage [sg: see &lt;a href=&quot;http://newcloudatlas.org/&quot;&gt;new cloud atlas&lt;/a&gt;]
-- digital data ‘decay’ due to format change: “analogue materials that are rendered into digital form for archival purposes and then destoryed may therefore be lost if their digital forms can no longer be used” &amp;lt;- cites Gabrys 2011&lt;/p&gt;
-
-&lt;h3 id=&quot;prosumption-neoliberalism-and-the-sharing-subject&quot;&gt;Prosumption, Neoliberalism and the Sharing subject&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;cf also &lt;a href=&quot;https://via.hypothes.is/https://lareviewofbooks.org/article/neoliberal-tools-archives-political-history-digital-humanities/&quot;&gt;neoliberal tools&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://thehyperlab.ca/the-scandal-of-digital-humanities/&quot;&gt;Brian’s response&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;pg27&lt;/strong&gt; -notes the creative act of interacting with digital techs - makes a kind of ‘prosumer’ (tho discusses that notion &amp;amp; defines it earlier pgs 10-11, under general description of web2.0) - ‘serve a neoliberal [continues to pg28]&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;pg28&lt;/strong&gt;
-- “political mode of governance.” Defines neoliberalism via its ‘main tenets’, idea of the individual who has responsibility for their own situation; ‘individuals are expected and encouraged to be self-reflexive, or to view their lives as projects that require entrepreneurial investment of time and energy.’ &amp;lt;- cf with &lt;a href=&quot;https://ekansa-pubs.github.io/click-here-to-save-archaeology/&quot;&gt;Kansa, click here to save archaeology&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;also connects with &lt;a href=&quot;http://liu.english.ucsb.edu/the-laws-of-cool-knowledge-work-and-the-culture-of-information-catalogue-copy-and-table-of-contents/&quot;&gt;laws of cool?&lt;/a&gt;? Lupton goes on to tie ‘prosumption’ to Foucault 1988 &lt;a href=&quot;http://foucault.info/doc/documents/foucault-technologiesofself-en-html&quot;&gt;technologies of the self&lt;/a&gt; “the practices of selfhood that make up human actors: those activities that are directed at self-care or self-improvement.” -&amp;gt; a type of social labour.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;pg29&lt;/strong&gt;
-- social media as a kind of confessional, a way of reproducing social norms &amp;amp; expectations [sg social shaming? templated selves? dinah boyd maybe?]&lt;/p&gt;
-</description>
-        <pubDate>Mon, 02 May 2016 11:39:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/lupton2014/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/lupton2014/</guid>
-        
-        <category>sociology</category>
-        
-        
-        <category>Readings</category>
         
       </item>
     

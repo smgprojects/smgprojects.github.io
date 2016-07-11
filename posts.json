@@ -2,9 +2,27 @@
     "posts": [
         
         {
+            "title": "nile diary plan",
+            "url": "http://smgprojects.github.io/nile-diary-plan/",
+            "date": "2016-06-30T10:20:00-04:00"
+        },
+        
+        {
             "title": "LDAvis of the Nile Diary - test",
             "url": "http://smgprojects.github.io/ldavis-of-the-nile-diary-test/",
             "date": "2016-06-24T11:20:00-04:00"
+        },
+        
+        {
+            "title": "portable makerspaces?",
+            "url": "http://smgprojects.github.io/portable-makerspaces/",
+            "date": "2016-06-14T17:29:00-04:00"
+        },
+        
+        {
+            "title": "Teaching tech in a group",
+            "url": "http://smgprojects.github.io/teaching-tech-in-a-group/",
+            "date": "2016-06-14T17:27:00-04:00"
         },
         
         {
