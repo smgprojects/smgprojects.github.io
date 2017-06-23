@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Shawn Graham's Open Digital Humanities Notebook 2016-17</title>
+    <title>writing with bookdown</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -19,28 +19,28 @@
       
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="" />
+    <meta property="dc:title" content="writing with bookdown" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="2015-11-14T00:56:38-05:00" />
+    <meta property="dc:date" content="2017-02-27T11:56:00-05:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/" />
+    <meta property="dc:identifier" content="/writing-with-bookdown/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="writing with bookdown" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/writing-with-bookdown/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="2015-11-14T00:56:38-05:00"/>
-    <meta name="citation_title" content=""/>
+    <meta name="citation_date" content="2017-02-27T11:56:00-05:00"/>
+    <meta name="citation_title" content="writing with bookdown"/>
     <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
 
     <!-- Twitter cards -->
@@ -69,7 +69,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/">
+    <link rel="canonical" href="http://smgprojects.github.io/writing-with-bookdown/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -162,154 +162,86 @@
 
 
         <div class="span9">
-          <h2 id="welcome">Welcome</h2>
+        <div class="post">
 
-<p>My name is <a href="http://electricarchaeology.ca">Shawn Graham</a> and I am an associate professor of Digital Humanities in the Department of History at <a href="http://carleton.ca/history">Carleton University</a>. This is my open research notebook for my sabbatical in the 2016-17 academic year. <a href="http://github.com/shawngraham">My GitHub repositories are here.</a></p>
+  <header class="post-header">
+    <h1 class="post-title">writing with bookdown</h1>
+    <p class="post-meta">Feb 27, 2017</p>
+  </header>
 
-<p>Readers may leave annotations on any part of this notebook using the <a href="https://hypothes.is/">hypothesis</a> web annotation architecture. See that strip down the right hand side of the page? Click on there to get started!</p>
+  <article class="post-content">
+    
+<p>For my current project, the Open Digital Archaeology Textbook Environment (ODATE for short; I’m rubbish at a) names and b) acronyms) Neha, Michael, Beth and I are trying to use Slack to manage our conversations, and writing instead in a series of markdown files, and use a repo to manage the collaboration, resolve conflicts, etc. Right now this is going swimmingly because for various reasons the rest of the gang can’t devote any time to this project. For my part, I’m trying to get the infrastructure and preliminary writing set up so we can hit the ground running in around mid march.</p>
 
-<h3 id="active-projects">Active Projects</h3>
+<p>Given our requirements outlined above, I looked around at a couple of different platforms, settling eventually on Bookdown . I like Bookdown because I can write in whatever editor strikes my fancy (switching into R to do the build) and it will give me a complete flat website (<em>with</em> search), an epub, and a PDF, grabbing my citations from a Bibtext file and formatting appropriately (we have a collaborative Zotero library for adding to while we write/research; export to Bibtext, boom!). Right now, I’m writing within RStudio. With some minimal tweaking, it also allows me to build in Hypothes.is collaborative annotation (and via the Hypothesis API, I plan on collating annotations periodically to guid revisioning and also perhaps to build into the book user appendices, but that idea is still nebulous at the moment). I’ve also run the resulting website from Bookdown through various web accessibility tools, and the report comes back fairly positive. With some more tweaking, I think I can make the final product super-accessible, or at the very least, produce PDFs that screenreaders and so on can work with.</p>
 
-<ul>
-  <li><a href="/soundbashing-history/">Soundbashing the Past</a></li>
-  <li><a href="/archaeogaming/">Archaeogaming</a></li>
-</ul>
+<p>Getting Bookdown set up was not without its idiosyncracies. The RStudio version has to be the preview release. Then:</p>
 
-<dl>
+<p>create a new project in RStudio (do this in a brand new folder)
+run the following script to install Bookdown:
+<code>
+install.packages("devtools")
+devtools::install_github("rstudio/bookdown")
+</code></p>
+
+<p>create a new textfile with metadata that describe how the book will be built. The metadata is in a format called YAML (‘yet another markup language’) that uses keys and values that get passed into other parts of Bookdown:
+<code>
+title: "The archaeology of spoons"
+author: "Graham, Gupta, Carter, &amp; Compton"
+date: "July 1 2017"
+description: "A book about cocleararchaeology."
+github-repo: "my-github-account/my-project"
+cover-image: "images/cover.png"
+url: 'https\://my-domain-ex/my-project/'
+bibliography: myproject.bib
+biblio-style: apa-like
+link-citations: yes
+</code>
+This is the only thing you need to have in this file, which is saved in the project folder as index.Rmd.</p>
+
+<p>Write! We write the content of this book as text files, saving the parts in order. Each file should be numbered 01-introduction.Rmd, 02-a-history-of-spoons.Rmd, 03-the-spoons-of-site-x.Rmd and so on.
+Build the book. With Bookdown installed, there will be a ‘Build Book’ button in the R Studio build pane. This will generate the static html files for the book, the pdf, and the epub. All of these will be found in a new folder in your project, <code>_book</code>. There are many more customizations that can be done, but that is sufficient to get one started.
+To get Hypothesis working, we have to modify the <code>_output.yml</code> file:</p>
+
+<pre><code>bookdown::gitbook:
+  includes:
+      in_header: hypothesis.html
+</code></pre>
+<p>That html file is just a file with a single line, where you add the script src line for embedding hypothesis (see this guidance).</p>
+
+<p>You end up with a Gitbook-looking site.</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 27 Feb 2017</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 23 Jun 2017</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2017-06-23-writing-with-bookdown.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/writing-with-bookdown/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
   
+    <li class="categorylist"><a href='/tagged/#odate'>ODATE</a></li>
   
-</dl>
-
-
-
-
-  <h3 class="page-heading">Recent Essays and Posts</h3>
-
-  <table class="table-stripped">
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
+    <li class="categorylist"><a href='/tagged/#writing'>writing</a></li>
   
-    <tr>
-      <td width="15%;">03 Feb 2017</td>
-      <td width="70%;"><a href="/rehashing-archaeology/">rehashing archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
-
+    <li class="categorylist"><a href='/tagged/#platform'>platform</a></li>
   
-    <tr>
-      <td width="15%;">28 Oct 2016</td>
-      <td width="70%;"><a href="/ethics-of-video-games-in-archaeology/">ethics of video games in archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
-
+    <li class="categorylist"><a href='/tagged/#static-site-generator'>static site generator</a></li>
   
-    <tr>
-      <td width="15%;">16 Mar 2016</td>
-      <td width="70%;"><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
+  </ul>
+</div>
 
-  
-  </table>
-
-  <h3 class="page-heading">Recent Notes</h3>
-
-  <table class="table-stripped">
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/notes-on-running-the-dh-usb/">notes on running the dh usb</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/tracery-on-glitch/">tracery on glitch</a></td>
-      <td style="width: 15%;"><span class="label label-success">ExperimentsCode</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/the-workflow-in-this-notebook/">the workflow in this notebook</a></td>
-      <td style="width: 15%;"><span class="label label-success">Meta</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/running-torch-rnn-in-docker-on-my-mac/">running torch-rnn in docker on my mac</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">24 Apr 2017</td>
-      <td width="70%;"><a href="/cradle/">cradle</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">07 Apr 2017</td>
-      <td width="70%;"><a href="/tracery-to-write-music/">tracery to write music</a></td>
-      <td style="width: 15%;"><span class="label label-success">ExperimentsCode</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">27 Feb 2017</td>
-      <td width="70%;"><a href="/writing-with-bookdown/">writing with bookdown</a></td>
-      <td style="width: 15%;"><span class="label label-success">Meta</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">03 Feb 2017</td>
-      <td width="70%;"><a href="/rehashing-archaeology/">rehashing archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">16 Jan 2017</td>
-      <td width="70%;"><a href="/textreuse-package-for-r/">textreuse package for R</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">28 Oct 2016</td>
-      <td width="70%;"><a href="/ethics-of-video-games-in-archaeology/">ethics of video games in archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-      </tr>
-
-    
-    <tr>
-    <td></td>
-    <td><a href="/archive/">All notes &rarr;</a></td>
-    </tr>
-  </table>
-
-  <hr class="separator">
-
-  <i class="fa fa-github-square"></i> <a href="http://github.com/shawngraham">Github Activity</a>
-
-  <ul><li>shawngraham pushed to master at smgprojects/smgprojects.github.io: <em>reminder</em> <a href="https://github.com/smgprojects/smgprojects.github.io/compare/61b22faaf6...662d34b29f">03:42 2017/06/23</a></li><li>shawngraham pushed to master at smgprojects/smgprojects.github.io: <em>a new note</em> <a href="https://github.com/smgprojects/smgprojects.github.io/compare/7a718eea8c...61b22faaf6">03:39 2017/06/23</a></li><li>shawngraham starred tensorflow/models: <em></em> <a href="https://github.com/tensorflow/models">03:15 2017/06/23</a></li><li>shawngraham pushed to gh-pages at shawngraham/hist3814-manual: <em>adding some pics</em> <a href="https://github.com/shawngraham/hist3814-manual/compare/d45e4fca55...439be47855">06:57 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo fix2</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/edf9a00a1b...ff113d3c54">03:13 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo fix</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/3eb7819930...edf9a00a1b">03:11 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/dd05a2e4f3...3eb7819930">03:03 2017/06/22</a></li><li>shawngraham pushed to gh-pages at shawngraham/hist3814-manual: <em>clarification</em> <a href="https://github.com/shawngraham/hist3814-manual/compare/e72a08acef...d45e4fca55">07:34 2017/06/21</a></li></ul>
-
-  <hr>
-
-  <p class="rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></p>
+</div>
 
         </div>
       </div>

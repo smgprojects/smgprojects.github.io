@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Shawn Graham's Open Digital Humanities Notebook 2016-17</title>
+    <title>notes on running the dh usb</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -19,28 +19,28 @@
       
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="" />
+    <meta property="dc:title" content="notes on running the dh usb" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="2015-11-14T00:56:38-05:00" />
+    <meta property="dc:date" content="2017-06-23T11:59:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/" />
+    <meta property="dc:identifier" content="/notes-on-running-the-dh-usb/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="notes on running the dh usb" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/notes-on-running-the-dh-usb/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="2015-11-14T00:56:38-05:00"/>
-    <meta name="citation_title" content=""/>
+    <meta name="citation_date" content="2017-06-23T11:59:00-04:00"/>
+    <meta name="citation_title" content="notes on running the dh usb"/>
     <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
 
     <!-- Twitter cards -->
@@ -69,7 +69,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/">
+    <link rel="canonical" href="http://smgprojects.github.io/notes-on-running-the-dh-usb/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -162,154 +162,74 @@
 
 
         <div class="span9">
-          <h2 id="welcome">Welcome</h2>
+        <div class="post">
 
-<p>My name is <a href="http://electricarchaeology.ca">Shawn Graham</a> and I am an associate professor of Digital Humanities in the Department of History at <a href="http://carleton.ca/history">Carleton University</a>. This is my open research notebook for my sabbatical in the 2016-17 academic year. <a href="http://github.com/shawngraham">My GitHub repositories are here.</a></p>
+  <header class="post-header">
+    <h1 class="post-title">notes on running the dh usb</h1>
+    <p class="post-meta">Jun 23, 2017</p>
+  </header>
 
-<p>Readers may leave annotations on any part of this notebook using the <a href="https://hypothes.is/">hypothesis</a> web annotation architecture. See that strip down the right hand side of the page? Click on there to get started!</p>
+  <article class="post-content">
+    
+<p>Our digital archaeology textbook will be intertwined with an instance of the DHBox. One of the participants in that project is Jonathan Reeve, who has been building a version that runs off a bootable USB. So naturally, I had to give it a spin. I ran out, got a new usb stick and….</p>
 
-<h3 id="active-projects">Active Projects</h3>
+<p>…had to figure out Bittorrent. Every time I went to install the client, every browser I had on every machine kept blocking it as malicious. Normally I can work around this sort of thing, but it was really pernicious. Turned out, my stable of computers were all quite happy with uTorrent instead. With that installed, I grabbed the torrent files from the DH-USB repository, and let them do their magic. It took 3 hrs to get the full .img file.</p>
 
-<ul>
-  <li><a href="/soundbashing-history/">Soundbashing the Past</a></li>
-  <li><a href="/archaeogaming/">Archaeogaming</a></li>
-</ul>
+<p>…had to figure out how to put that .img onto a usb stick such that it would be bootable. Unetbootin should’ve worked, but didn’t. In the end, I had to do it from the command line, per the ‘alternative instructions’:</p>
 
-<dl>
+<blockquote>
+  <p>MacOS: Identify the label of your USB drive with the command diskutil list. Then unmount the disk with diskutil unmountDisk /dev/diskX, replacing diskX with your drive name. Finally, run sudo dd if=/path/to/dh-usb.img of=/dev/rdiskX bs=1m again replacing /path/to/dh-usb.img with the path to the .img file, and diskX with the name of your disk.</p>
+</blockquote>
+
+<p>Then I had to figure out how to get the damned machines to boot from the stick rather than their own hard drive. On the Mac, this was easy – just hold the alt key down while the machine powers up, and you can then select the usb stick. NB: you can also, it seems, select whatever wifi network happens to be in the air at this stage, but if you do this (I did) everything will go sproing shortly thereafter and the stick won’t boot. So don’t do this. On the Windows 10 machine I had access to, booting up from a disk or stick is no longer the straight-forward ‘hold down f11’ or whatever anymore. No, you have to search for the ‘advanced startup’ options, and then find the boot from disk option, where  you specify the usb stick. THEN the machine powers down and up again… and will tell you that the security settings won’t let you proceed any further. Apparently, there’s a setting somewhere in the BIOS that you have to switch, but as it wasn’t my machine and I’d had enough, I abandoned it. Windows folks, godspeed. (Incidentally, for various reasons, computers much older than about five years are out of luck, as some key pieces of ur-code have changed in recent years:</p>
+
+<blockquote>
+  <p>[you need] a modern system that supports UEFI. Legacy BIOS boot may be possible, but it hasn’t been extensively tested</p>
+</blockquote>
+
+<p>I had some other issues subsequent as I tried to install R and R Studio, but I’ve sorted those out with Jonathan and by the time you read this, they probably won’t be issues any more (but you can click on the ‘closed issues’ on the repo to see what my issues were). One thing that drove me nuts was trying to persuade Arch Linux to find the damned wifi.</p>
+
+<p>I eventually stumbled across this re ubuntu: https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx</p>
+
+<p>so tried this:</p>
+
+<p><code>$ lspci -vvnn | grep -A 9 Network</code></p>
+
+<p>and saw that I had kernal modules: brcmfmac, wl, but none in use. So I tried this:</p>
+
+<p><code>$ sudo modprobe brcmfmac</code></p>
+
+<p>and ran the first command again; kernal now in use!</p>
+
+<p><code>$ sudo wifi-menu</code></p>
+
+<p>…and connected. Kept getting connection errors; went to settings &gt; network and connected through there, ta da!</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 23 Jun 2017</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 23 Jun 2017</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2017-06-23-notes-on-running-the-dh-usb.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/notes-on-running-the-dh-usb/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
   
+    <li class="categorylist"><a href='/tagged/#platforms'>platforms</a></li>
   
-</dl>
+  </ul>
+</div>
 
-
-
-
-  <h3 class="page-heading">Recent Essays and Posts</h3>
-
-  <table class="table-stripped">
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-  
-    <tr>
-      <td width="15%;">03 Feb 2017</td>
-      <td width="70%;"><a href="/rehashing-archaeology/">rehashing archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
-
-  
-    <tr>
-      <td width="15%;">28 Oct 2016</td>
-      <td width="70%;"><a href="/ethics-of-video-games-in-archaeology/">ethics of video games in archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
-
-  
-    <tr>
-      <td width="15%;">16 Mar 2016</td>
-      <td width="70%;"><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-    </tr>
-
-  
-  </table>
-
-  <h3 class="page-heading">Recent Notes</h3>
-
-  <table class="table-stripped">
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/notes-on-running-the-dh-usb/">notes on running the dh usb</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/tracery-on-glitch/">tracery on glitch</a></td>
-      <td style="width: 15%;"><span class="label label-success">ExperimentsCode</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/the-workflow-in-this-notebook/">the workflow in this notebook</a></td>
-      <td style="width: 15%;"><span class="label label-success">Meta</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">23 Jun 2017</td>
-      <td width="70%;"><a href="/running-torch-rnn-in-docker-on-my-mac/">running torch-rnn in docker on my mac</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">24 Apr 2017</td>
-      <td width="70%;"><a href="/cradle/">cradle</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">07 Apr 2017</td>
-      <td width="70%;"><a href="/tracery-to-write-music/">tracery to write music</a></td>
-      <td style="width: 15%;"><span class="label label-success">ExperimentsCode</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">27 Feb 2017</td>
-      <td width="70%;"><a href="/writing-with-bookdown/">writing with bookdown</a></td>
-      <td style="width: 15%;"><span class="label label-success">Meta</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">03 Feb 2017</td>
-      <td width="70%;"><a href="/rehashing-archaeology/">rehashing archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">16 Jan 2017</td>
-      <td width="70%;"><a href="/textreuse-package-for-r/">textreuse package for R</a></td>
-      <td style="width: 15%;"><span class="label label-success">Code</span></td>
-      </tr>
-
-    
-
-      <td width="15%;">28 Oct 2016</td>
-      <td width="70%;"><a href="/ethics-of-video-games-in-archaeology/">ethics of video games in archaeology</a></td>
-      <td style="width: 15%;"><span class="label label-success">Essays</span></td>
-      </tr>
-
-    
-    <tr>
-    <td></td>
-    <td><a href="/archive/">All notes &rarr;</a></td>
-    </tr>
-  </table>
-
-  <hr class="separator">
-
-  <i class="fa fa-github-square"></i> <a href="http://github.com/shawngraham">Github Activity</a>
-
-  <ul><li>shawngraham pushed to master at smgprojects/smgprojects.github.io: <em>reminder</em> <a href="https://github.com/smgprojects/smgprojects.github.io/compare/61b22faaf6...662d34b29f">03:42 2017/06/23</a></li><li>shawngraham pushed to master at smgprojects/smgprojects.github.io: <em>a new note</em> <a href="https://github.com/smgprojects/smgprojects.github.io/compare/7a718eea8c...61b22faaf6">03:39 2017/06/23</a></li><li>shawngraham starred tensorflow/models: <em></em> <a href="https://github.com/tensorflow/models">03:15 2017/06/23</a></li><li>shawngraham pushed to gh-pages at shawngraham/hist3814-manual: <em>adding some pics</em> <a href="https://github.com/shawngraham/hist3814-manual/compare/d45e4fca55...439be47855">06:57 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo fix2</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/edf9a00a1b...ff113d3c54">03:13 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo fix</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/3eb7819930...edf9a00a1b">03:11 2017/06/22</a></li><li>shawngraham pushed to master at shawngraham/shawngraham.github.io: <em>new site hugo</em> <a href="https://github.com/shawngraham/shawngraham.github.io/compare/dd05a2e4f3...3eb7819930">03:03 2017/06/22</a></li><li>shawngraham pushed to gh-pages at shawngraham/hist3814-manual: <em>clarification</em> <a href="https://github.com/shawngraham/hist3814-manual/compare/e72a08acef...d45e4fca55">07:34 2017/06/21</a></li></ul>
-
-  <hr>
-
-  <p class="rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></p>
+</div>
 
         </div>
       </div>

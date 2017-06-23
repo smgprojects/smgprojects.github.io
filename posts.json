@@ -2,6 +2,18 @@
     "posts": [
         
         {
+            "title": "notes on running the dh usb",
+            "url": "http://smgprojects.github.io/notes-on-running-the-dh-usb/",
+            "date": "2017-06-23T11:59:00-04:00"
+        },
+        
+        {
+            "title": "tracery on glitch",
+            "url": "http://smgprojects.github.io/tracery-on-glitch/",
+            "date": "2017-06-23T11:48:00-04:00"
+        },
+        
+        {
             "title": "the workflow in this notebook",
             "url": "http://smgprojects.github.io/the-workflow-in-this-notebook/",
             "date": "2017-06-23T11:39:00-04:00"
@@ -11,6 +23,48 @@
             "title": "running torch-rnn in docker on my mac",
             "url": "http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/",
             "date": "2017-06-23T11:35:00-04:00"
+        },
+        
+        {
+            "title": "cradle",
+            "url": "http://smgprojects.github.io/cradle/",
+            "date": "2017-04-24T11:47:00-04:00"
+        },
+        
+        {
+            "title": "tracery to write music",
+            "url": "http://smgprojects.github.io/tracery-to-write-music/",
+            "date": "2017-04-07T11:51:00-04:00"
+        },
+        
+        {
+            "title": "writing with bookdown",
+            "url": "http://smgprojects.github.io/writing-with-bookdown/",
+            "date": "2017-02-27T11:56:00-05:00"
+        },
+        
+        {
+            "title": "rehashing archaeology",
+            "url": "http://smgprojects.github.io/rehashing-archaeology/",
+            "date": "2017-02-03T12:02:00-05:00"
+        },
+        
+        {
+            "title": "textreuse package for R",
+            "url": "http://smgprojects.github.io/textreuse-package-for-r/",
+            "date": "2017-01-16T12:04:00-05:00"
+        },
+        
+        {
+            "title": "ethics of video games in archaeology",
+            "url": "http://smgprojects.github.io/ethics-of-video-games-in-archaeology/",
+            "date": "2016-10-28T12:09:00-04:00"
+        },
+        
+        {
+            "title": "distantly reading digital archaeology mobilizing the past",
+            "url": "http://smgprojects.github.io/distantly-reading-digital-archaeology-mobilizing-the-past/",
+            "date": "2016-10-08T12:13:00-04:00"
         },
         
         {

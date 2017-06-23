@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>rehashing archaeology</title>
+    <meta name="description" content="An open history notebook forked from Jason Heppler">
+    <meta name="author" content="Shawn Graham"/>
+
+    <!-- Get date last modified from git log. (Uses current time if file entry not found, e.g. projects/)  -->
+    
+
+    <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
+    
+      
+      
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="rehashing archaeology" />
+    <meta property="dc:creator" content="Shawn Graham" />
+    <meta property="dc:date" content="2017-02-03T12:02:00-05:00" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/rehashing-archaeology/" />
+    <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
+    <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="dc:subject" content="History" />
+    <meta property="dc:type" content="website" />
+
+    <!-- RDFa Metadata (in OpenGraph) -->
+    <meta property="og:title" content="rehashing archaeology" />
+    <meta property="og:author" content="/bio.html" />
+    <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="og:url" content="/rehashing-archaeology/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Shawn Graham"/>
+    <meta name="citation_date" content="2017-02-03T12:02:00-05:00"/>
+    <meta name="citation_title" content="rehashing archaeology"/>
+    <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17">
+    <meta name="twitter:description" content="An open history notebook forked from Jason Heppler">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/wak0qrc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Custom Styling -->
+    <!-- <link rel="stylesheet" href="/css/lmullen.css"> -->
+    <link rel="stylesheet" href="/css/main.css"> 
+    <!-- <link rel="stylesheet" href="/css/search.css"> -->
+    <!-- <link rel="stylesheet" href="/css/custom.css"> -->
+    <link rel="stylesheet" href="/css/bigfoot-default.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="canonical" href="http://smgprojects.github.io/rehashing-archaeology/">
+
+    <!-- Initialize Bigfoot.js -->
+    <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+
+    <!-- Todo lists (via Lincoln Mullen) -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      $(document).ready(function() {
+        $("li:contains('[ ]')").html(function(_, html) {
+          return html.replace('[ ]', '<span style="color:red;">☐</span>');
+        });
+        $("li:contains('[s]')").html(function(_, html) {
+          return html.replace('[s]', '<span style="color:gold;">☐</span>');
+        });
+        $("li:contains('[x]')").html(function(_, html) {
+          return html.replace('[x]', '<span style="color:green;">☑</span>');
+        });
+      });
+      /* ]]> */
+    </script>
+    <script defer async src="//hypothes.is/embed.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Shawn Graham's Open Digital Humanities Notebook 2016-17</a>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/essays/">Essays</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+  <div class="well sidebar-nav">
+
+<!--- <center><img src="/images/logo.png" class="img-responsive" alt="Shawn Graham's Notebook"/><br/>
+  <a href="http://electricarchaeology.ca">Shawn Graham</a>
+  </center>
+--->
+  <br/>
+
+  <div id="search">
+    <form action="http://duckduckgo.com/" method="get">
+    <input type="hidden" name="sites" value="smgprojects.github.io" />
+      <input type="text" id="search_input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+  </div>
+
+    <ul class="nav nav-list">
+      <li class="nav-header">General</li>
+      <li><a href="/tagged/">Notes by Tag</a></li>
+      <li><a href="/archive/">All Notes by Date</a></li>
+      <li><a href="/archive-alphabetical/">All Notes Alphabetically</a></li>
+      <li><a href="/essays/">Essays and General Writing</a></li>
+      <li><a href="/categories/">Categories</a></li>
+
+      <li class="nav-header">Topics and Projects</li>
+      <li><a href="/reading-notes/">Reading Notes</a></li>
+      <li><a href="/archaeogaming/">Archaeogaming</a></li>
+      <li><a href="/design-studio/">Design Studio in DH</a></li>
+      <li><a href="/soundbashing-history/">Soundbashing History</a></li>
+      <li class="nav-header">Meta</li>
+      <li><a href="/project-news/">Notebook News</a></li>
+      <li><a href="/about/">About Me</a></li>
+      <li><a href="/notebook/">About This Notebook</a></li>
+    </ul>
+  </div>
+
+</div> <!-- / span3 -->
+
+
+        <div class="span9">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">rehashing archaeology</h1>
+    <p class="post-meta">Feb 3, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <ul id="markdown-toc">
+  <li><a href="#rehashing-archaeology" id="markdown-toc-rehashing-archaeology">Rehashing Archaeology</a></li>
+  <li><a href="#citations" id="markdown-toc-citations">Citations</a></li>
+  <li><a href="#pivots" id="markdown-toc-pivots">Pivots</a></li>
+  <li><a href="#ok-so-how-do-you-do-this" id="markdown-toc-ok-so-how-do-you-do-this">Ok, so how do you do this?</a>    <ul>
+      <li><a href="#examples-of-good-teaching" id="markdown-toc-examples-of-good-teaching">Examples of good teaching?</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>slides: https://shawngraham.github.io/presentations/harvard.html  (resize your browser window a bit smaller, make it square, for best viewing).</p>
+
+<p>video: https://www.youtube.com/watch?v=PGHFt-d9SCo</p>
+
+<p>notes:</p>
+
+<h1 id="rehashing-archaeology">Rehashing Archaeology</h1>
+
+<p>—</p>
+
+<p>To rehash:</p>
+
+<p>v. To bring forth again in another form without significant alteration: <em>rehashing old ideas.</em>
+v. To discuss again.</p>
+
+<p>—</p>
+
+<p>Bit of a negative connotation there.</p>
+
+<p>—</p>
+
+<p>I asked on twitter, as you do, what people thought I meant by ‘rehashing archaeology’, as I hadn’t figured it out yet. Titles first, thinking later, eh?</p>
+
+<p>—</p>
+
+<p>Stu: saying the same thing that has been said before but in a slightly different way to avoid plagiarism?</p>
+
+<p>Ted: Fossilized hash browns. Or possibly HashMaps.</p>
+
+<p>Lorna: rearranging what it stands for/means, away from current understanding?</p>
+
+<p>—</p>
+
+<p>I like these.</p>
+
+<p>I want to discuss digital archaeology in all of these terms. Digital archaeology is nothing unless it gets rehashed. The problem is, how do you teach this?</p>
+
+<p>—</p>
+
+<h1 id="citations">Citations</h1>
+
+<p>Let’s start with Stu’s thoughts.</p>
+
+<p>Confession – I google myself to see where my work is being cited. Numbers look good; this is a kind of reuse of my archaeological data, right? My studies are being cited, ergo the work I did is useful to someone else, ergo, it is being reused. But when you go deeper into this ‘reuse’, you find that it’s a surface-y reuse. Bit disappointing, really, to think your career is filler for someone else’s padding.</p>
+
+<p>—</p>
+
+<p>That your entire life’s work is just an academic ‘required figure’, as Paul O’Donnel once put it.</p>
+
+<p>—</p>
+
+<p>I have a topic model of 20 000 archae journal articles, from the 1930s to the 2010s, and no topic within it uses the words ‘reuse’ ‘reproducible’, ‘re-analyze’ in any meaningful way. ‘Data’ is prominent in two topics, but always new data. While we might ‘revisit’ an issue from time to time, no one is analyzing someone else’s data in any meaningful way in the broader noise of academia. Play with the topic models yourself at http://graeworks.net/digitalarchae/</p>
+
+<p>—</p>
+
+<p>Nobody is rehashing archaeology.</p>
+
+<p>—</p>
+
+<p>A sobering thought. Part of the problem is packaging. We don’t play nice with each other.</p>
+
+<p>In our heart of hearts, we don’t <em>want</em> other people looking at our data. You see this in embryo when you try to force students to work together on a project. Re-using data is a group project where your group members live in the future, and you just <em>know</em> they’re going to be angry with you.</p>
+
+<p>—</p>
+
+<p>And will the data they play with be the data you left behind? How will they know?  Be on guard for deliberate alterations.</p>
+
+<p>[guard image]
+—</p>
+
+<p>This leads me to make a tie in to Ted’s comment about hashmaps.
+# hash</p>
+
+<p>A hash function takes any input and maps it to a particular value. It’s deterministic. If the input changes – say a text file gets edited and something gets deleted – the hash at the other end is changed.</p>
+
+<p>—</p>
+
+<p>This is useful in security, to test that a message hasn’t been changed en-route; it’s useful for searching a database only for things that have changed; there are many useful things one can do with it. I direct you to wikipedia for more…
+In the current attacks on rationality, knowing that our data has not been corrupted is going to become ever more important. We need to become familiar with hash functions in order to guard against malicious use of archaeology for political ends.</p>
+
+<p>—</p>
+
+<p>There are other uses for hash functions in archaeology, of course.</p>
+
+<p>—</p>
+
+<p>In my own work w/ Damien Huffer, we’ve been using Lincoln Mullen’s R package for detecting text-reuse via hash functions to trace patterns in the trade in human remains online (turns out, it’s a very useful signature for individual buyers and sellers’ writing patterns, even when there’s no id otherwise associated with the post. Be sure your sins will find you out.)</p>
+
+<p>—</p>
+
+<p>but again, how do you teach archaeology students these things? it doesn’t ‘look’ like archaeology</p>
+
+<p>Which leads me to Lorna Richardson’s comment on digital archaeology perhaps being a pivot away from how we’ve done things in the past to how we might do things in the future.</p>
+
+<p>—</p>
+
+<h1 id="pivots">Pivots</h1>
+
+<p>Lorna’s research is extremely important for digital archaeology. One of the things she focuses on is what might be called the consumption side of archaeology within the web – of what is lately known as ‘fake news’ but formerly, ‘propaganda’.</p>
+
+<p>We want people to engage with archaeology, right? Well, take a look at what’s happening on neo-nazi websites (I will not use the term alt-right.)</p>
+
+<p>If people reuse archaeology, how do we teach them to do it correctly? How do we counter this? Are our current approaches to teaching archaeology <em>effective</em> for the wider impact of archaeological knowledge in society?</p>
+
+<p>—</p>
+
+<p>I understand digital archaeology as necessarily a public archaeology.</p>
+
+<p>—</p>
+
+<h1 id="ok-so-how-do-you-do-this">Ok, so how do you do this?</h1>
+
+<p>Let’s return to the first problem, of surfacey reuse by academics.</p>
+
+<p>—</p>
+
+<p>Eric and I hatched a scheme last summer to promote re-use of materials in OpenContext.</p>
+
+<p>[img opencontext prize poster]
+Incentives!, we thought, the good neoliberal dh-tools that we are. We offered real money – up to a $1000 in prizes. We promoted the hang out of it. We made films, we wrote tutorials, we contacted professors across the anglosphere.</p>
+
+<p>—</p>
+
+<p>We had very little uptake.</p>
+
+<p>[img tumbleweeds]</p>
+
+<p>—
+## Why?</p>
+
+<p>—</p>
+
+<p>Money is not enough. But I wonder if part of the problem is that we’re dealing with a sunk-cost effect. So much of our computational archaeological infrastructure is proprietary software. Software, and databases, for which we’ve paid licensing fees. We’ve paid so much money, we damn well make sure that there is someone in our department, in our company, who can use Arcgis. Because this department, this company, uses ArcGis, it makes sense to teach that. But all this open source stuff? All these new formats? Who uses it? It’s a classic chicken-and-egg problem.</p>
+
+<p>Two other problems: there is no culture of undergraduate teaching with actual datasets ready to take advantage of the opportunity. Two, working with digital data still requires a level of digital literacy that we haven’t yet reached.</p>
+
+<p>—</p>
+
+<h2 id="examples-of-good-teaching">Examples of good teaching?</h2>
+
+<p>Take a look at what the digital historians are doing: in particular, people like Lincoln Mullen.</p>
+
+<p>—</p>
+
+<p>Lincoln’s work builds capacity in others.
+https://github.com/ropensci/historydata</p>
+
+<p>—
+Lincoln’s work is shared, and it’s explicitly about teaching how to use the materials he’s pulling together in his teaching</p>
+
+<p>http://lincolnmullen.com/projects/worksheets/</p>
+
+<p>—
+Lincoln addresses how to get your materials online in a format that others can then use</p>
+
+<p>https://lmullen.github.io/rmd-notebook/</p>
+
+<p>—
+Ben Marwick, who is with you today, is doing this as well, and so as not to pre-empt him or otherwise get in his way, I’ll just tell you all to <em>listen to him very closely</em>!</p>
+
+<p>—
+## My own teaching fails</p>
+
+<p>I hide in a history department these days, so I try to teach these things to my undergrads. First lesson I’ve learned is to never underestimate the social context of whom you’re trying to teach.</p>
+
+<p>Anxiety – my digital history students, if I can coax them through the door, are not in any way shape or form ‘naturally conversant’ with any of this. “If I wanted to do computers, I wouldn’t have taken history” said a student in one of my (officially non-dh) courses. “What if it breaks? What if it doesn’t work? How do I get an ‘a’?”</p>
+
+<p>Fear of Failure – we have not taught students how to fail productively. we have created systems where the risks of trying something different are usually catastrophic. Digital work requires the ‘screwmeneutical imperative’, as Ramsay famously put it.</p>
+
+<p>—
+Tech tutorials are <em>awful</em> and I’m guilty of this as anyone: see http://workbook.craftingdigitalhistory.ca</p>
+
+<p>—
+Tech changes too rapidly, and the kinds of machines that students are sold are not necessarily the kind that can be usefully employed in this work. I’ve had students turn up to my dataviz DH course with nothing more than an iPad mini. I also end up spending two or three weeks solid getting everyone’s machine properly configured.</p>
+
+<p>My mom thinks I mostly do tech support. She’s mostly right.</p>
+
+<p>—
+# Ok, so what do we do?</p>
+
+<p>We turn our teaching inside out. We do it in public. I’m not talking about MOOCs, though I suppose they have a role here, as educational tourism.</p>
+
+<p>No, I mean, we literally put all of our teaching out there and invite the public to take part alongside our formal students</p>
+
+<p>—</p>
+
+<p>we share with our students (and public) what has worked for us, and what hasn’t. we publish studies where the hypothesis didn’t work out. we replicate (with our students, and our public) someone else’s study.</p>
+
+<p>—
+this will be dangerous. you’re a white male? put that to use. get out there and take risks, and make it safe for others to do so too.</p>
+
+<p>—
+And it will require special tools. I’m building one right now with Neha Gupta, Michael Carter, and Beth Compton.</p>
+
+<p>—
+# ODATE</p>
+
+<p>The Open Digital Archaeology Textbook Environment</p>
+
+<p>[img: DHBox + ProgrammingHistorian + Slack]</p>
+
+<p>funded by ecampusontario: thanks!</p>
+
+<p>—
+By building this, I’m trying to shift the infrastructure cost of learning to do digital archaeology from the student, from the individual, to myself. Build once, deploy everywhere as they used to say. To do digital archaeology should require only a browser. mitigate sunk costs</p>
+
+<p>Taking our cue from OpenContext, we will include recipes for different kinds of tasks alongside the more formal learning activities.</p>
+
+<p>Want to use ODATE for purely research purposes? No problem. Just use it.</p>
+
+<p>Everything will be hashed properly so that you’ll know that, should you install it locally for yourself, you’ve got the true copy.</p>
+
+<p>—
+What I need now are case studies. Data sets to work with. Reproducible research. Help?</p>
+
+<p>—
+Digital archae is an opportunity to rethink how we do things, to put a positive hash on rehashing the past.</p>
+
+<p>—
+This is what rehashing digital archaeology really means. we have to enable people to reuse our data for themselves, so at least the possibility will exist that they can see the truth of what is argued.</p>
+
+<p>Rehashing is going to take a lot of work. But the results will be delicious.</p>
+
+<p>—</p>
+
+<p>Thank you.</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 03 Feb 2017</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 23 Jun 2017</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2017-06-23-rehashing-archaeology.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/rehashing-archaeology/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#code'>code</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#re-use'>re-use</a></li>
+  
+  </ul>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="footer-wrapper">
+
+    <h2 class="footer-heading">Shawn Graham's Open Digital Humanities Notebook 2016-17</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <figure class="image-left">
+            <img class="avatar" src="/images/minionme.jpeg" height="120" width="120"/>
+          </figure>
+          <p class="text">I'm at Carleton University in Ottawa Canada.</p>
+
+          <form method="get" action="http://duckduckgo.com/">
+            <input type="search" name="q" maxlength="255" placeholder="Search">
+            <input type="hidden" names="sites" value="smgprojects.github.io">
+            <input type="hidden" name="k7" value="#faf8f8">
+            <input type="hidden" name="kj" value="#b33">
+            <input type="hidden" name="ky" value="#fafafa">
+            <input type="hidden" name="kx" value="b">
+            <input type="hidden" name="ko" value="-1">
+            <input type="hidden" name="k1" value="-1">
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+          </form>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <i class="fa fa-globe"></i> <a href="http://electricarchaeology.ca">electricarchaeology.ca</a>
+          </li>
+          
+          <li>
+              <i class="fa fa-github-square"></i> <a href="https://github.com/shawngraham"><span class="username">shawngraham</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+              <i class="fa fa-twitter-square"></i> <a href="https://twitter.com/electricarchaeo"><span class="username">electricarchaeo</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        Shawn Graham<br/>
+        <ul class="social-media-list">
+          <li><i class="fa fa-university"></i> Department of History, 406 Paterson Hall, Carleton University, Ottawa Canada</li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:shawn.graham@carleton.ca">shawn.graham@carleton.ca</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75211414-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>
