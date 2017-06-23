@@ -8,6 +8,12 @@
         },
         
         {
+            "title": "Hypothes.is annotations",
+            "url": "http://smgprojects.github.io/hypothesis-annotations/",
+            "date": "2017-06-23T14:37:00-04:00"
+        },
+        
+        {
             "title": "using hugo academic to make shawngraham.github.io",
             "url": "http://smgprojects.github.io/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/",
             "date": "2017-06-23T12:33:00-04:00"
@@ -47,12 +53,6 @@
             "title": "running torch-rnn in docker on my mac",
             "url": "http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/",
             "date": "2017-06-23T11:35:00-04:00"
-        },
-        
-        {
-            "title": "Hypothesis Annotations",
-            "url": "http://smgprojects.github.io/hypothesis-annotations/",
-            "date": "2017-06-23T00:00:00-04:00"
         },
         
         {

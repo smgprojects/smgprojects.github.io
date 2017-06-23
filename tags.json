@@ -109,7 +109,9 @@
         
         "json",
         
-        "data"
+        "data",
+        
+        "hypothesis"
         
     ]
 }
