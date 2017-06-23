@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "the workflow in this notebook",
+            "url": "http://smgprojects.github.io/the-workflow-in-this-notebook/",
+            "date": "2017-06-23T11:39:00-04:00"
+        },
+        
+        {
             "title": "running torch-rnn in docker on my mac",
             "url": "http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/",
             "date": "2017-06-23T11:35:00-04:00"
