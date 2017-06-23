@@ -5,9 +5,166 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Jun 2017 12:25:18 -0400</pubDate>
-    <lastBuildDate>Fri, 23 Jun 2017 12:25:18 -0400</lastBuildDate>
+    <pubDate>Fri, 23 Jun 2017 12:54:17 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Jun 2017 12:54:17 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>using hugo academic to make shawngraham.github.io</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#location-of-the-draft-folder&quot; id=&quot;markdown-toc-location-of-the-draft-folder&quot;&gt;location of the draft folder&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#writing&quot; id=&quot;markdown-toc-writing&quot;&gt;writing:&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#build--deploy&quot; id=&quot;markdown-toc-build--deploy&quot;&gt;build &amp;amp; deploy:&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-publication&quot; id=&quot;markdown-toc-create-a-publication&quot;&gt;Create a publication&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#post-an-article&quot; id=&quot;markdown-toc-post-an-article&quot;&gt;Post an article&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-project&quot; id=&quot;markdown-toc-create-a-project&quot;&gt;Create a project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-talk&quot; id=&quot;markdown-toc-create-a-talk&quot;&gt;Create a talk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#manage-node-index-pages&quot; id=&quot;markdown-toc-manage-node-index-pages&quot;&gt;Manage node index pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#removing-content&quot; id=&quot;markdown-toc-removing-content&quot;&gt;Removing content&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#view-your-updated-site&quot; id=&quot;markdown-toc-view-your-updated-site&quot;&gt;View your updated site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deploy-your-site&quot; id=&quot;markdown-toc-deploy-your-site&quot;&gt;Deploy your site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;location-of-the-draft-folder&quot;&gt;location of the draft folder&lt;/h2&gt;
+
+&lt;p&gt;/Users/shawngraham/experiments/hugo/my_githubio_site&lt;/p&gt;
+
+&lt;h2 id=&quot;writing&quot;&gt;writing:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;is done in the ‘content’ folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;build--deploy&quot;&gt;build &amp;amp; deploy:&lt;/h2&gt;
+
+&lt;p&gt;(from the github.com/gcushen/hugo-academic)&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-publication&quot;&gt;Create a publication&lt;/h2&gt;
+
+&lt;p&gt;To create a new publication:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new publication/my-paper-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then edit the default variables at the top of &lt;code&gt;content/publication/my-paper-name.md&lt;/code&gt; to include the details of your publication. The &lt;code&gt;url_&lt;/code&gt; variables are used to generate links associated with your publication, such as for viewing PDFs of papers. Here is an example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+abstract = &quot;An abstract...&quot;
+authors = [&quot;First author&#39;s name&quot;, &quot;Second author&#39;s name&quot;]
+date = &quot;2013-07-01&quot;
+image = &quot;&quot;
+image_preview = &quot;&quot;
+math = false
+publication = &quot;The publishing part of the citation goes here. You may use *Markdown* for italics etc.&quot;
+title = &quot;A publication title, such as title of a paper&quot;
+url_code = &quot;&quot;
+url_dataset = &quot;&quot;
+url_pdf = &quot;pdf/my-paper-name.pdf&quot;
+url_project = &quot;&quot;
+url_slides = &quot;&quot;
+url_video = &quot;&quot;
++++
+
+Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;url_&lt;/code&gt; links can either point to local or web content. Associated local publication content, such as PDFs, may be copied to a &lt;code&gt;static/pdf/&lt;/code&gt; folder and referenced like &lt;code&gt;url_pdf = &quot;pdf/my-paper-name.pdf&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also associate custom link buttons with the publication by adding the following block(s) within the variable preamble above, which is denoted by &lt;code&gt;+++&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[[url_custom]]
+    name = &quot;Custom Link&quot;
+    url = &quot;http://www.example.org&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you enabled &lt;code&gt;detailed_list&lt;/code&gt; for publications in &lt;code&gt;config.toml&lt;/code&gt;, then there are a few more optional variables that you can include in the publication page preamble. You may use &lt;code&gt;abstract_short = &quot;friendly summary of abstract&quot;&lt;/code&gt; and &lt;code&gt;publication_short = &quot;abbreviated publication details&quot;&lt;/code&gt; to display a friendly summary of the abstract and abbreviate the publication details, respectively. Furthermore, there is the option to display a different image on the homepage to the publication detail page by setting &lt;code&gt;image_preview = &quot;my-image.jpg&quot;&lt;/code&gt;. This can be useful if you wish to scale down the image for the homepage or simply if you just wish to show a different image for the preview.&lt;/p&gt;
+
+&lt;p&gt;Any double quotes (&lt;code&gt;&quot;&lt;/code&gt;) or backslashes (e.g. LaTeX &lt;code&gt;\times&lt;/code&gt;) occurring within the value of any frontmatter parameter (such as the &lt;em&gt;abstract&lt;/em&gt;) should be escaped with a backslash (&lt;code&gt;\&lt;/code&gt;). For example, the symbol &lt;code&gt;&quot;&lt;/code&gt; and LaTeX text &lt;code&gt;\times&lt;/code&gt; become &lt;code&gt;\&quot;&lt;/code&gt; and &lt;code&gt;\\times&lt;/code&gt;, respectively. Refer to the &lt;a href=&quot;https://github.com/toml-lang/toml#user-content-string&quot;&gt;TOML documentation&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;h2 id=&quot;post-an-article&quot;&gt;Post an article&lt;/h2&gt;
+
+&lt;p&gt;To create a blog/news article:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/my-article-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/post/my-article-name.md&lt;/code&gt; with your full title and content.&lt;/p&gt;
+
+&lt;p&gt;Hugo will automatically generate summaries of posts that appear on the homepage. If you are dissatisfied with an automated summary, you can either limit the summary length by appropriately placing &lt;code&gt;&amp;#60;&amp;#33;&amp;#45;&amp;#45;more&amp;#45;&amp;#45;&amp;#62;&lt;/code&gt; in the article body, or completely override the automated summary by adding a &lt;code&gt;summary&lt;/code&gt; parameter to the &lt;code&gt;+++&lt;/code&gt; preamble such that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;summary = &quot;Summary of my post.&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To disable commenting for a specific post, you can add &lt;code&gt;disable_comments = true&lt;/code&gt; to the post &lt;code&gt;+++&lt;/code&gt; preamble. Or to disable commenting for all posts, you can either set &lt;code&gt;disqusShortname = &quot;&quot;&lt;/code&gt; or &lt;code&gt;disable_comments = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-project&quot;&gt;Create a project&lt;/h2&gt;
+
+&lt;p&gt;To create a project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new project/my-project-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/project/my-project-name.md&lt;/code&gt;. Either you can link the project to an external project website by setting the &lt;code&gt;external_link = &quot;http://external-project.com&quot;&lt;/code&gt; variable at the top of the file, or you can add content (below the final &lt;code&gt;+++&lt;/code&gt;) in order to render a project page on your website.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-talk&quot;&gt;Create a talk&lt;/h2&gt;
+
+&lt;p&gt;To create a talk:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new talk/my-talk-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then edit the newly created file &lt;code&gt;content/talk/my-talk-name.md&lt;/code&gt; with your full talk title and details. Note that many of the talk parameters are similar to the publication parameters.&lt;/p&gt;
+
+&lt;h2 id=&quot;manage-node-index-pages&quot;&gt;Manage node index pages&lt;/h2&gt;
+
+&lt;p&gt;The node index pages (e.g. &lt;code&gt;/post/&lt;/code&gt;) are the special pages which list all of your content. They can exist for blog posts, publications, and talks. The homepage widgets will automatically link to the node index pages when you have more items of content than can be displayed in the widget. Therefore, if you don’t have much content, you may not see the automatic links yet - but you can also manually link to them using a normal Markdown formatted link in your content.&lt;/p&gt;
+
+&lt;p&gt;You can edit the title and add your own content, such as an introduction, by creating and editing the following content files for the node indexes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/_index.md
+hugo new publication/_index.md
+hugo new talk/_index.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then remove all parameters except for &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;math&lt;/code&gt;, &lt;code&gt;highlight&lt;/code&gt;, and &lt;code&gt;date&lt;/code&gt;. Edit the &lt;code&gt;title&lt;/code&gt; parameter as desired and add any content after the &lt;code&gt;+++&lt;/code&gt; preamble/frontmatter ends. For example, you should have something similar to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-toml&quot;&gt;+++
+title = &quot;List of my posts&quot;
+date = &quot;2017-01-01T00:00:00Z&quot;
+math = false
+highlight = false
++++
+
+Below is an automatically generated list of all my blog posts!
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;removing-content&quot;&gt;Removing content&lt;/h2&gt;
+
+&lt;p&gt;Generally, to remove content, simply delete the relevant file from your &lt;code&gt;content/post&lt;/code&gt;, &lt;code&gt;content/publication&lt;/code&gt;, &lt;code&gt;content/project&lt;/code&gt;, or &lt;code&gt;content/talk&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;view-your-updated-site&quot;&gt;View your updated site&lt;/h2&gt;
+
+&lt;p&gt;After you have made changes to your site, you can view it by running the &lt;code&gt;hugo server --watch&lt;/code&gt; command and then opening &lt;a href=&quot;http://localhost:1313&quot;&gt;localhost:1313&lt;/a&gt; in your web browser.&lt;/p&gt;
+
+&lt;h2 id=&quot;deploy-your-site&quot;&gt;Deploy your site&lt;/h2&gt;
+
+&lt;p&gt;Finally, you can build the static website to a &lt;code&gt;public/&lt;/code&gt; folder ready for deployment using the &lt;code&gt;hugo&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;You may then deploy your site by copying the &lt;code&gt;public/&lt;/code&gt; directory (by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.&lt;/p&gt;
+
+&lt;p&gt;Note that running &lt;code&gt;hugo&lt;/code&gt; does not remove any previously generated files before building. Therefore, it’s best practice to delete your &lt;code&gt;public/&lt;/code&gt; directory prior to running &lt;code&gt;hugo&lt;/code&gt; to ensure no old or interim files are deployed to your server.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 12:33:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/</guid>
+        
+        <category>writing</category>
+        
+        
+        <category>Meta</category>
+        
+      </item>
     
       <item>
         <title>getting data out of opencontext</title>
@@ -564,258 +721,6 @@ To get Hypothesis working, we have to modify the &lt;code&gt;_output.yml&lt;/cod
         
         
         <category>Meta</category>
-        
-      </item>
-    
-      <item>
-        <title>rehashing archaeology</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#rehashing-archaeology&quot; id=&quot;markdown-toc-rehashing-archaeology&quot;&gt;Rehashing Archaeology&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#citations&quot; id=&quot;markdown-toc-citations&quot;&gt;Citations&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#pivots&quot; id=&quot;markdown-toc-pivots&quot;&gt;Pivots&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ok-so-how-do-you-do-this&quot; id=&quot;markdown-toc-ok-so-how-do-you-do-this&quot;&gt;Ok, so how do you do this?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#examples-of-good-teaching&quot; id=&quot;markdown-toc-examples-of-good-teaching&quot;&gt;Examples of good teaching?&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;slides: https://shawngraham.github.io/presentations/harvard.html  (resize your browser window a bit smaller, make it square, for best viewing).&lt;/p&gt;
-
-&lt;p&gt;video: https://www.youtube.com/watch?v=PGHFt-d9SCo&lt;/p&gt;
-
-&lt;p&gt;notes:&lt;/p&gt;
-
-&lt;h1 id=&quot;rehashing-archaeology&quot;&gt;Rehashing Archaeology&lt;/h1&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;To rehash:&lt;/p&gt;
-
-&lt;p&gt;v. To bring forth again in another form without significant alteration: &lt;em&gt;rehashing old ideas.&lt;/em&gt;
-v. To discuss again.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Bit of a negative connotation there.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;I asked on twitter, as you do, what people thought I meant by ‘rehashing archaeology’, as I hadn’t figured it out yet. Titles first, thinking later, eh?&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Stu: saying the same thing that has been said before but in a slightly different way to avoid plagiarism?&lt;/p&gt;
-
-&lt;p&gt;Ted: Fossilized hash browns. Or possibly HashMaps.&lt;/p&gt;
-
-&lt;p&gt;Lorna: rearranging what it stands for/means, away from current understanding?&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;I like these.&lt;/p&gt;
-
-&lt;p&gt;I want to discuss digital archaeology in all of these terms. Digital archaeology is nothing unless it gets rehashed. The problem is, how do you teach this?&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;h1 id=&quot;citations&quot;&gt;Citations&lt;/h1&gt;
-
-&lt;p&gt;Let’s start with Stu’s thoughts.&lt;/p&gt;
-
-&lt;p&gt;Confession – I google myself to see where my work is being cited. Numbers look good; this is a kind of reuse of my archaeological data, right? My studies are being cited, ergo the work I did is useful to someone else, ergo, it is being reused. But when you go deeper into this ‘reuse’, you find that it’s a surface-y reuse. Bit disappointing, really, to think your career is filler for someone else’s padding.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;That your entire life’s work is just an academic ‘required figure’, as Paul O’Donnel once put it.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;I have a topic model of 20 000 archae journal articles, from the 1930s to the 2010s, and no topic within it uses the words ‘reuse’ ‘reproducible’, ‘re-analyze’ in any meaningful way. ‘Data’ is prominent in two topics, but always new data. While we might ‘revisit’ an issue from time to time, no one is analyzing someone else’s data in any meaningful way in the broader noise of academia. Play with the topic models yourself at http://graeworks.net/digitalarchae/&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Nobody is rehashing archaeology.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;A sobering thought. Part of the problem is packaging. We don’t play nice with each other.&lt;/p&gt;
-
-&lt;p&gt;In our heart of hearts, we don’t &lt;em&gt;want&lt;/em&gt; other people looking at our data. You see this in embryo when you try to force students to work together on a project. Re-using data is a group project where your group members live in the future, and you just &lt;em&gt;know&lt;/em&gt; they’re going to be angry with you.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;And will the data they play with be the data you left behind? How will they know?  Be on guard for deliberate alterations.&lt;/p&gt;
-
-&lt;p&gt;[guard image]
-—&lt;/p&gt;
-
-&lt;p&gt;This leads me to make a tie in to Ted’s comment about hashmaps.
-# hash&lt;/p&gt;
-
-&lt;p&gt;A hash function takes any input and maps it to a particular value. It’s deterministic. If the input changes – say a text file gets edited and something gets deleted – the hash at the other end is changed.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;This is useful in security, to test that a message hasn’t been changed en-route; it’s useful for searching a database only for things that have changed; there are many useful things one can do with it. I direct you to wikipedia for more…
-In the current attacks on rationality, knowing that our data has not been corrupted is going to become ever more important. We need to become familiar with hash functions in order to guard against malicious use of archaeology for political ends.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;There are other uses for hash functions in archaeology, of course.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;In my own work w/ Damien Huffer, we’ve been using Lincoln Mullen’s R package for detecting text-reuse via hash functions to trace patterns in the trade in human remains online (turns out, it’s a very useful signature for individual buyers and sellers’ writing patterns, even when there’s no id otherwise associated with the post. Be sure your sins will find you out.)&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;but again, how do you teach archaeology students these things? it doesn’t ‘look’ like archaeology&lt;/p&gt;
-
-&lt;p&gt;Which leads me to Lorna Richardson’s comment on digital archaeology perhaps being a pivot away from how we’ve done things in the past to how we might do things in the future.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;h1 id=&quot;pivots&quot;&gt;Pivots&lt;/h1&gt;
-
-&lt;p&gt;Lorna’s research is extremely important for digital archaeology. One of the things she focuses on is what might be called the consumption side of archaeology within the web – of what is lately known as ‘fake news’ but formerly, ‘propaganda’.&lt;/p&gt;
-
-&lt;p&gt;We want people to engage with archaeology, right? Well, take a look at what’s happening on neo-nazi websites (I will not use the term alt-right.)&lt;/p&gt;
-
-&lt;p&gt;If people reuse archaeology, how do we teach them to do it correctly? How do we counter this? Are our current approaches to teaching archaeology &lt;em&gt;effective&lt;/em&gt; for the wider impact of archaeological knowledge in society?&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;I understand digital archaeology as necessarily a public archaeology.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;h1 id=&quot;ok-so-how-do-you-do-this&quot;&gt;Ok, so how do you do this?&lt;/h1&gt;
-
-&lt;p&gt;Let’s return to the first problem, of surfacey reuse by academics.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Eric and I hatched a scheme last summer to promote re-use of materials in OpenContext.&lt;/p&gt;
-
-&lt;p&gt;[img opencontext prize poster]
-Incentives!, we thought, the good neoliberal dh-tools that we are. We offered real money – up to a $1000 in prizes. We promoted the hang out of it. We made films, we wrote tutorials, we contacted professors across the anglosphere.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;We had very little uptake.&lt;/p&gt;
-
-&lt;p&gt;[img tumbleweeds]&lt;/p&gt;
-
-&lt;p&gt;—
-## Why?&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Money is not enough. But I wonder if part of the problem is that we’re dealing with a sunk-cost effect. So much of our computational archaeological infrastructure is proprietary software. Software, and databases, for which we’ve paid licensing fees. We’ve paid so much money, we damn well make sure that there is someone in our department, in our company, who can use Arcgis. Because this department, this company, uses ArcGis, it makes sense to teach that. But all this open source stuff? All these new formats? Who uses it? It’s a classic chicken-and-egg problem.&lt;/p&gt;
-
-&lt;p&gt;Two other problems: there is no culture of undergraduate teaching with actual datasets ready to take advantage of the opportunity. Two, working with digital data still requires a level of digital literacy that we haven’t yet reached.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;h2 id=&quot;examples-of-good-teaching&quot;&gt;Examples of good teaching?&lt;/h2&gt;
-
-&lt;p&gt;Take a look at what the digital historians are doing: in particular, people like Lincoln Mullen.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Lincoln’s work builds capacity in others.
-https://github.com/ropensci/historydata&lt;/p&gt;
-
-&lt;p&gt;—
-Lincoln’s work is shared, and it’s explicitly about teaching how to use the materials he’s pulling together in his teaching&lt;/p&gt;
-
-&lt;p&gt;http://lincolnmullen.com/projects/worksheets/&lt;/p&gt;
-
-&lt;p&gt;—
-Lincoln addresses how to get your materials online in a format that others can then use&lt;/p&gt;
-
-&lt;p&gt;https://lmullen.github.io/rmd-notebook/&lt;/p&gt;
-
-&lt;p&gt;—
-Ben Marwick, who is with you today, is doing this as well, and so as not to pre-empt him or otherwise get in his way, I’ll just tell you all to &lt;em&gt;listen to him very closely&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;—
-## My own teaching fails&lt;/p&gt;
-
-&lt;p&gt;I hide in a history department these days, so I try to teach these things to my undergrads. First lesson I’ve learned is to never underestimate the social context of whom you’re trying to teach.&lt;/p&gt;
-
-&lt;p&gt;Anxiety – my digital history students, if I can coax them through the door, are not in any way shape or form ‘naturally conversant’ with any of this. “If I wanted to do computers, I wouldn’t have taken history” said a student in one of my (officially non-dh) courses. “What if it breaks? What if it doesn’t work? How do I get an ‘a’?”&lt;/p&gt;
-
-&lt;p&gt;Fear of Failure – we have not taught students how to fail productively. we have created systems where the risks of trying something different are usually catastrophic. Digital work requires the ‘screwmeneutical imperative’, as Ramsay famously put it.&lt;/p&gt;
-
-&lt;p&gt;—
-Tech tutorials are &lt;em&gt;awful&lt;/em&gt; and I’m guilty of this as anyone: see http://workbook.craftingdigitalhistory.ca&lt;/p&gt;
-
-&lt;p&gt;—
-Tech changes too rapidly, and the kinds of machines that students are sold are not necessarily the kind that can be usefully employed in this work. I’ve had students turn up to my dataviz DH course with nothing more than an iPad mini. I also end up spending two or three weeks solid getting everyone’s machine properly configured.&lt;/p&gt;
-
-&lt;p&gt;My mom thinks I mostly do tech support. She’s mostly right.&lt;/p&gt;
-
-&lt;p&gt;—
-# Ok, so what do we do?&lt;/p&gt;
-
-&lt;p&gt;We turn our teaching inside out. We do it in public. I’m not talking about MOOCs, though I suppose they have a role here, as educational tourism.&lt;/p&gt;
-
-&lt;p&gt;No, I mean, we literally put all of our teaching out there and invite the public to take part alongside our formal students&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;we share with our students (and public) what has worked for us, and what hasn’t. we publish studies where the hypothesis didn’t work out. we replicate (with our students, and our public) someone else’s study.&lt;/p&gt;
-
-&lt;p&gt;—
-this will be dangerous. you’re a white male? put that to use. get out there and take risks, and make it safe for others to do so too.&lt;/p&gt;
-
-&lt;p&gt;—
-And it will require special tools. I’m building one right now with Neha Gupta, Michael Carter, and Beth Compton.&lt;/p&gt;
-
-&lt;p&gt;—
-# ODATE&lt;/p&gt;
-
-&lt;p&gt;The Open Digital Archaeology Textbook Environment&lt;/p&gt;
-
-&lt;p&gt;[img: DHBox + ProgrammingHistorian + Slack]&lt;/p&gt;
-
-&lt;p&gt;funded by ecampusontario: thanks!&lt;/p&gt;
-
-&lt;p&gt;—
-By building this, I’m trying to shift the infrastructure cost of learning to do digital archaeology from the student, from the individual, to myself. Build once, deploy everywhere as they used to say. To do digital archaeology should require only a browser. mitigate sunk costs&lt;/p&gt;
-
-&lt;p&gt;Taking our cue from OpenContext, we will include recipes for different kinds of tasks alongside the more formal learning activities.&lt;/p&gt;
-
-&lt;p&gt;Want to use ODATE for purely research purposes? No problem. Just use it.&lt;/p&gt;
-
-&lt;p&gt;Everything will be hashed properly so that you’ll know that, should you install it locally for yourself, you’ve got the true copy.&lt;/p&gt;
-
-&lt;p&gt;—
-What I need now are case studies. Data sets to work with. Reproducible research. Help?&lt;/p&gt;
-
-&lt;p&gt;—
-Digital archae is an opportunity to rethink how we do things, to put a positive hash on rehashing the past.&lt;/p&gt;
-
-&lt;p&gt;—
-This is what rehashing digital archaeology really means. we have to enable people to reuse our data for themselves, so at least the possibility will exist that they can see the truth of what is argued.&lt;/p&gt;
-
-&lt;p&gt;Rehashing is going to take a lot of work. But the results will be delicious.&lt;/p&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-&lt;p&gt;Thank you.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Feb 2017 12:02:00 -0500</pubDate>
-        <link>http://smgprojects.github.io/rehashing-archaeology/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/rehashing-archaeology/</guid>
-        
-        <category>code</category>
-        
-        <category>re-use</category>
-        
-        
-        <category>Essays</category>
         
       </item>
     

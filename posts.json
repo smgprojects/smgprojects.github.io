@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "using hugo academic to make shawngraham.github.io",
+            "url": "http://smgprojects.github.io/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/",
+            "date": "2017-06-23T12:33:00-04:00"
+        },
+        
+        {
             "title": "getting data out of opencontext",
             "url": "http://smgprojects.github.io/getting-data-out-of-opencontext/",
             "date": "2017-06-23T12:19:00-04:00"
