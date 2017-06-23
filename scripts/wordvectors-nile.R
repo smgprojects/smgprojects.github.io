@@ -74,22 +74,22 @@ plot(as.dendrogram(hclust(group_distances)),horiz=F,cex=1,main="Cluster dendrogr
 ###some tsne plots
 plot(model)
 
-some_groups = nearest_to(model,model[[c("Egypt", "Mali", "Nigeria")]],150)
+some_groups = nearest_to(model,model[[c("church", "Museum")]],150)
 plot(filter_to_rownames(model,names(some_groups)))
 
 ##binaries?
-nearest_to(model,model[["they"]])
+nearest_to(model,model[["Museum"]])
 
 ## there is no 'bad' in these documents, so going to use 'problem' instead
 
-##moral
+##church - museum
 library(ggplot2)
 
-moral_vector = model[["me"]] - model[["they"]]
+moral_vector = model[["Museum"]] - model[["church"]]
 word_scores = data.frame(word=rownames(model))
 word_scores$moral_score = model %>% cosineSimilarity(moral_vector) %>% as.vector
 
-ggplot(word_scores %>% filter(abs(moral_score)>.7)) + geom_bar(aes(y=moral_score,x=reorder(word,moral_score),fill=moral_score<0),stat="identity") + coord_flip()+scale_fill_discrete("moral?",labels=c("good","bad")) + labs(title="The words showing the strongest skew along the good-bad continuum")
+ggplot(word_scores %>% filter(abs(moral_score)>.99)) + geom_bar(aes(y=moral_score,x=reorder(word,moral_score),fill=moral_score<0),stat="identity") + coord_flip()+scale_fill_discrete("moral?",labels=c("good","bad")) + labs(title="The words showing the strongest skew along the good-bad continuum")
 
 ##archaeologists
 nearest_to(model,model[["valued"]])

@@ -5,9 +5,69 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Jul 2016 15:26:18 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 15:26:18 -0400</lastBuildDate>
+    <pubDate>Fri, 23 Jun 2017 11:36:31 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Jun 2017 11:36:31 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>running torch-rnn in docker on my mac</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#experimenting-with-a-recurrent-neural-network-package&quot; id=&quot;markdown-toc-experimenting-with-a-recurrent-neural-network-package&quot;&gt;experimenting with a recurrent neural network package&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#what-i-was-trying-to-do&quot; id=&quot;markdown-toc-what-i-was-trying-to-do&quot;&gt;what I was trying to do&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#what-i-did&quot; id=&quot;markdown-toc-what-i-did&quot;&gt;what I did&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#things-that-were-hard&quot; id=&quot;markdown-toc-things-that-were-hard&quot;&gt;things that were hard&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#thoughts-on-where-to-go-next&quot; id=&quot;markdown-toc-thoughts-on-where-to-go-next&quot;&gt;thoughts on where to go next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;experimenting-with-a-recurrent-neural-network-package&quot;&gt;experimenting with a recurrent neural network package&lt;/h1&gt;
+
+&lt;h2 id=&quot;what-i-was-trying-to-do&quot;&gt;what I was trying to do&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;I was curious to figure out if I could train the computer to write an Indiana Jones script. To do this, you put together a file to show the computer what such a script looks like. This is the ‘training’ file, or the input.txt&lt;/li&gt;
+  &lt;li&gt;I googled until I found the scripts. I used Raiders, Temple of Doom, and Last Crusade&lt;/li&gt;
+  &lt;li&gt;reading the documentation for &lt;a href=&quot;https://github.com/karpathy/char-rnn&quot;&gt;char-rnn&lt;/a&gt; I realized that was too small, so I added Goonies and the Brendan Frasier Mummy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-i-did&quot;&gt;what I did&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;I followed the instructions at https://github.com/karpathy/char-rnn to download and install the char-rnn package&lt;/li&gt;
+  &lt;li&gt;the last instruction, about sourcing, I had to re-run when I logged back into dhbox&lt;/li&gt;
+  &lt;li&gt;today’s history.txt file is &lt;a href=&quot;june21-todays-history-file.txt&quot;&gt;june21-todays-history-file.txt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;things-that-were-hard&quot;&gt;things that were hard&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;getting the data. I went to gist.github.com and made a file, &lt;a href=&quot;https://gist.github.com/shawngraham/af1edaa5b40be09d643a4700bb2150af&quot;&gt;input.txt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I used curl to download it to the data folder, but had to find the ‘raw’ version, otherwise i just got the html that wraps the gist page. Raw version is behind the raw button on the page, [here](https://gist.githubusercontent.com/shawngraham/af1edaa5b40be09d643a4700bb2150af/raw/14c6a48715f20725256b9b2ccd13eeb3a3372fcd/input.txt]&lt;/li&gt;
+  &lt;li&gt;trained the rnn with this command: &lt;code&gt;th train.lua -data_dir data/input.txt -rnn_size 512 -num_layers 2 -dropout 0.5&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;came back the next day, when it finished running (which is today). Had to enter the source command again before dhbox remembered where torch was installed - i cd’d into the torch folder to do that&lt;/li&gt;
+  &lt;li&gt;‘sampled’ the model - this runs the generate-a-new-script thing &lt;code&gt;th sample.lua cv/some_checkpoint.t7 -gpuid -1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;had to ls the cv folder so I would know the file name for the last checkpoint.&lt;/li&gt;
+  &lt;li&gt;this printed the result to the screen; to do it to a file I added the &amp;gt; filename thing: &lt;code&gt;th sample.lua cv/some_checkpoint.t7 -gpuid -1 &amp;gt; script.txt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;thoughts-on-where-to-go-next&quot;&gt;thoughts on where to go next&lt;/h2&gt;
+
+&lt;p&gt;this ends the example. You could link to annotations you made, things you’ve seen, work that this entry is in dialog with, and so on.&lt;/p&gt;
+
+&lt;p&gt;Note what is in this repo: a description of what I was up to; the results of my &lt;code&gt;$ history &amp;gt; todayshistory.txt&lt;/code&gt; command, the output of what I was trying to do, links to other things I used/created in the course of the experiment. You can make one repo with many folders, or many repos of just one folder, but whatever you do, try to keep everything together in a logical manner.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 11:35:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/</guid>
+        
+        <category>experiment</category>
+        
+        <category>rnn</category>
+        
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>nile diary plan</title>
@@ -725,31 +785,6 @@ th { padding: 6px; background-color: lightgrey}
         
         
         <category>Readings</category>
-        
-      </item>
-    
-      <item>
-        <title>Tags and Subtags in Hypothesis</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#tags&quot; id=&quot;markdown-toc-tags&quot;&gt;tags&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;tags&quot;&gt;tags&lt;/h1&gt;
-
-&lt;p&gt;When using the &lt;a href=&quot;https://github.com/smgprojects/notebook/tree/master/source/scripts&quot;&gt;tagging script&lt;/a&gt; &lt;code&gt;getannotations.py&lt;/code&gt; the tags in hypothesis have to be structured. The diagram below shows the current structure I am trying to use. See the &lt;a href=&quot;http://smgprojects.github.io/demo-of-reading-report-from-hypothesis-script/&quot; title=&quot;demo of reading report from hypothesis script&quot;&gt;demo output&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/BB_00085.pdf.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 May 2016 11:21:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/tags-and-subtags-in-hypothesis/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/tags-and-subtags-in-hypothesis/</guid>
-        
-        <category>workflow</category>
-        
-        <category>annotations</category>
-        
-        
-        <category>Meta</category>
         
       </item>
     

@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "running torch-rnn in docker on my mac",
+            "url": "http://smgprojects.github.io/running-torch-rnn-in-docker-on-my-mac/",
+            "date": "2017-06-23T11:35:00-04:00"
+        },
+        
+        {
             "title": "nile diary plan",
             "url": "http://smgprojects.github.io/nile-diary-plan/",
             "date": "2016-06-30T10:20:00-04:00"
