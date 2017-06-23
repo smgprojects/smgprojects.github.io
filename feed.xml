@@ -5,9 +5,229 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Jun 2017 12:54:17 -0400</pubDate>
-    <lastBuildDate>Fri, 23 Jun 2017 12:54:17 -0400</lastBuildDate>
+    <pubDate>Fri, 23 Jun 2017 16:19:35 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Jun 2017 16:19:35 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>using shaffer&#39;s hypothesis to markdown script</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#usage&quot; id=&quot;markdown-toc-usage&quot;&gt;usage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#script&quot; id=&quot;markdown-toc-script&quot;&gt;script:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;usage&lt;/h2&gt;
+
+&lt;p&gt;to use shaffer’s hypothesis script:&lt;/p&gt;
+
+&lt;p&gt;1 - has to run in python 3
+2 - uncomment &lt;code&gt;d = json.loads(h.text)&lt;/code&gt; and comment out the &lt;code&gt;d = ast.literal_eval(h.text)&lt;/code&gt;
+3 - i pasted the &lt;code&gt;pypothesis.py&lt;/code&gt; into my &lt;code&gt;grabH.py&lt;/code&gt; script
+4 - had to run a virtualenv: &lt;code&gt;virtualenv -p python3 grabH&lt;/code&gt;
+5 - activate: &lt;code&gt;source env/bin/grabH&lt;/code&gt;
+6 - run the script: ‘python grabH.py’
+7 - copy the result to the notebook posts folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;script&quot;&gt;script:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+import requests
+import json
+import ast
+
+# pypothesis.py script pasted here cause frustrated
+class Annotation():
+
+    def __init__(self, jsondata):
+        self.jsondata = jsondata
+
+        # title of annotated article
+        self.title = self.jsondata[&#39;document&#39;][&#39;title&#39;][0].replace(&#39;\n&#39;, &#39;&#39;).replace(&#39;\r&#39;, &#39;&#39;)
+
+        # uri of annotated article
+        self.uri = self.jsondata[&#39;uri&#39;]
+
+        # highlighted text in annotated article
+        if &#39;selector&#39; in self.jsondata[&#39;target&#39;][0].keys():
+            selector = self.jsondata[&#39;target&#39;][0][&#39;selector&#39;]
+            for entry in selector:
+                if &#39;exact&#39; in entry.keys():
+                    self.highlight = entry[&#39;exact&#39;].replace(&#39;\n&#39;, &#39; &#39;).replace(&#39;\r&#39;, &#39; &#39;)
+                else:
+                    self.highlight = &#39;No highlighted text found.&#39;
+        else:
+            self.highlight = &#39;No highlighted text found.&#39;
+
+        # annotation comment
+        if self.jsondata[&#39;text&#39;]:
+            self.comment = self.jsondata[&#39;text&#39;]
+        else:
+            self.comment = &#39;No comment found.&#39;
+
+        # user that generated the annotation
+        self.user = self.jsondata[&#39;user&#39;].split(&#39;:&#39;)[1].split(&#39;@&#39;)[0]
+
+        # date/time created and updated
+        self.created = self.jsondata[&#39;created&#39;]
+        self.updated = self.jsondata[&#39;updated&#39;]
+
+        # hypothesis ID &amp;amp; annotation URL
+        self.id = self.jsondata[&#39;id&#39;]
+        self.hypothesisurl = &#39;https://hyp.is/&#39; + self.jsondata[&#39;id&#39;]
+
+def retrieve(apiurl):
+    # takes the hypothes.is API URL for an annotation and returns JSON data
+    h = requests.get(apiurl)
+    d = json.loads(h.text)
+    return d
+
+def retrievelist(searchurl):
+    # takes a hypothes.is API search URL returns JSON data for each element as a list of individual annotations
+    h = requests.get(searchurl)
+    d = json.loads(h.text)
+    jsonlist = []
+    for entry in d[&#39;rows&#39;]:
+        jsonlist.append(entry)
+    return jsonlist
+
+def apiurl(hypurl):
+    # takes the hyp.is URL provided in an annotation and returns the API URL (for use elsewhere in this module)
+    hypid = hypurl.split(&#39;.is/&#39;)[1].split(&#39;/&#39;)[0]
+    url = &#39;https://hypothes.is/api/annotations/&#39; + hypid
+    return url
+
+def searchurl(user = &#39;&#39;, tag = &#39;&#39;, tags = []):
+    &quot;&quot;&quot;
+    Returns a well-formed URL for querying the hypothes.is API.
+    A hypothes.is username is optional.
+    Use *either* tag or tags, not both. You can also use neither if a username is provided.
+    Use tag for a single tag, and put the tag in quotes.
+    Use tags for multiple tags, and enclose them in a list: [&#39;tag1&#39;, &#39;tag2&#39;, &#39;tag3&#39;].
+    searchurl() only works if at least once term (user, tag, or tags) is provided.
+    &quot;&quot;&quot;
+
+    source = &#39;https://hypothes.is/api/search?&#39;
+    conn = &#39;&amp;amp;&#39;
+    usercall = &#39;user=&#39;
+    tagcall = &#39;tags=&#39;
+    if tags == []:
+        if user != &#39;&#39; and tag != &#39;&#39;:
+            return source + usercall + user + conn + tagcall + tag
+        if user == &#39;&#39; and tag != &#39;&#39;:
+            return source + tagcall + tag
+        if user != &#39;&#39; and tag == &#39;&#39;:
+            return source + usercall + user
+        if user == &#39;&#39; and tag == &#39;&#39;:
+            print(&#39;No search parameters included.&#39;)
+    if tags != []:
+        if user != &#39;&#39;:
+            sourcestring = source + usercall + user
+            for entry in tags:
+                sourcestring += (conn + tagcall + entry)
+            return sourcestring
+        if user == &#39;&#39;:
+            sourcestring = source + tagcall + tags.pop(0)
+            while tags != []:
+                sourcestring += (conn + tagcall + tags.pop(0))
+            return sourcestring
+###
+
+source = &#39;https://hypothes.is/api/search?&#39;
+conn = &#39;&amp;amp;&#39;
+usercall = &#39;user=&#39;
+tagcall = &#39;tags=&#39;
+
+# adjust these variables for different searches
+# also be sure to adjust the page title in the YAML header section
+user = &#39;shawn.graham@hypothes.is&#39;
+tags = &#39;&#39;
+# search string for fetching annotations from a specific user using a specific tag:
+#     searchstring = source + usercall + user + conn + tagcall + tags
+# search string for fetching all annotations from a specific user:
+searchstring = source + usercall + user
+# search string for fetching all annotations from any user, but limited to a specific tag (a class hashtag, for example):
+#     searchstring = source + tagcall + tags
+filename = &#39;2017-06-23-hypothesis-annotations.md&#39;
+
+# YAML header
+headerinfo = &#39;---\n&#39;
+headerinfo += &#39;layout: post\n&#39;
+headerinfo += &#39;title: &quot;Hypothes.is annotations&quot;\n&#39;
+headerinfo += &#39;date: 2017-06-23 13:37:00 -0500\n&#39; # need to make this automatic
+headerinfo += &#39;categories:\n&#39;
+headerinfo += &#39;- Reading Notes&#39;
+headerinfo += &#39;---\n\n&#39;
+
+# don&#39;t edit anything below this line unless you know what you&#39;re doing :)
+def writeMarkdown(header, data, filename):
+    f = open(filename, &#39;w&#39;)
+    f.write(header)
+    for line in data:
+        f.write(str(line) + &#39;\n&#39;)
+
+def markdown(annotation):
+    # title of post with link to original post
+    textout = &#39;[&#39;
+    textout += annotation[&#39;document&#39;][&#39;title&#39;][0].replace(&#39;\n&#39;, &#39;&#39;).replace(&#39;\r&#39;, &#39;&#39;)
+    textout += &#39;](&#39;
+    textout += annotation[&#39;uri&#39;]
+    textout += &#39;)\n\n&#39;
+
+    # grab highlighted portion of post
+    if &#39;selector&#39; in annotation[&#39;target&#39;][0].keys():
+        selector = annotation[&#39;target&#39;][0][&#39;selector&#39;]
+        for entry in selector:
+            if &#39;exact&#39; in entry.keys():
+                targetInfo = entry[&#39;exact&#39;].replace(&#39;\n&#39;, &#39; &#39;).replace(&#39;\r&#39;, &#39; &#39;)
+            else:
+                targetInfo = &#39;No highlighted text found.&#39;
+    else:
+        targetInfo = &#39;No highlighted text found.&#39;
+
+    # highlighted portion of post as blockquote
+    textout += &#39;&amp;gt; &#39;
+    textout += targetInfo
+    textout += &#39;\n\n&#39;
+
+    # annotation comment, with username and link to stream
+    if annotation[&#39;text&#39;]:
+        textout += annotation[&#39;text&#39;]
+        textout += &#39;\n&#39;
+    textout += &#39;(Curated by [&#39;
+    useracct = annotation[&#39;user&#39;].split(&#39;:&#39;)[1].split(&#39;@&#39;)[0]
+    textout += useracct
+    textout += &#39;](&#39;
+    textout += &#39;https://hypothes.is/stream?=user:&#39;
+    textout += useracct
+    textout += &#39;))\n\n&amp;lt;hr/&amp;gt;\n&#39;
+    return textout
+
+# run
+h = requests.get(searchstring)
+#retained in case needed for valid unicode in JSON
+d = json.loads(h.text)
+# d = ast.literal_eval(h.text)
+
+
+dataToWrite = []
+i = 0
+for row in d[&#39;rows&#39;]:
+    dataToWrite.append(markdown(d[&#39;rows&#39;][i]))
+    i += 1
+writeMarkdown(headerinfo, dataToWrite, filename)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 16:18:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/using-shaffers-hypothesis-to-markdown-script/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/using-shaffers-hypothesis-to-markdown-script/</guid>
+        
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>using hugo academic to make shawngraham.github.io</title>
@@ -611,6 +831,274 @@ utility&lt;/p&gt;
       </item>
     
       <item>
+        <title>Hypothesis Annotations</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: “Hypothes.is annotations”
+date: 2017-06-23 13:37:00 -0500
+categories:
+- Reading Notes—&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://site.craftingdigitalhistory.ca/&quot;&gt;Course Manual for Crafting Digital History HIST3814 @ Carleton U Summer 2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Flickr stream&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;a lot of really interesting things are available via the British Library Flickr stream
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://site.craftingdigitalhistory.ca/first-things-first.html&quot;&gt;Course Manual for Crafting Digital History HIST3814 @ Carleton U Summer 2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dr. Graham&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a test annotation.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programminghistorian.github.io/ph-submissions/lessons/intro-to-twitterbots&quot;&gt;An Introduction to Twitterbots with Tracery&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, you’re quite right. I guess I had the news on as I was writing… ‘black hat hackers’ shall be the change I make. Thank you!
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://programminghistorian.org/lessons/topic-modeling-and-mallet&quot;&gt;Getting Started with Topic Modeling and MALLET&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;While there is currently a preview release of MALLET 2.0.8 available, this lesson uses the official release of MALLET 2.0.7. If you are following along with our instructions, please be sure to download the correct version.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On the Mallet website, the download button automatically grabs 2.0.8. To get 2.0.7, just change the 8 to a 7 in your browser when you click on it - or click this link &lt;a href=&quot;http://mallet.cs.umass.edu/dist/mallet-2.0.7.zip&quot;&gt;http://mallet.cs.umass.edu/dist/mallet-2.0.7.zip&lt;/a&gt;
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.theglobeandmail.com/technology/i-didnt-create-the-twitter-essay-genre-i-just-made-it-popular/article21501315/&quot;&gt;I didn’t create the Twitter essay genre. I just made it popular&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Protip: A Twitter essay is performative writing.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;an important point to remember
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[How to Read for History&lt;/td&gt;
+      &lt;td&gt;W. Caleb McDaniel](http://wcm1.web.rice.edu/howtoread.html)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Do not get hung up on things you do not understand&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ditto for digital history’s tech curve
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[Looking Back on the Backwards Survey&lt;/td&gt;
+      &lt;td&gt;W. Caleb McDaniel](http://wcm1.web.rice.edu/looking-back-on-backwards-survey.html)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;also helped me refine the rubric slightly by revealing phrases that were difficult for students to understand and suggesting places where I needed to say more explicitly things I had taken for granted&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I really like this idea of iterating through the rubric with the students. Pulling this off not for the faint of heart I suspect.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[Looking Back on the Backwards Survey&lt;/td&gt;
+      &lt;td&gt;W. Caleb McDaniel](http://wcm1.web.rice.edu/looking-back-on-backwards-survey.html)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;devising original historical questions and thinking about existing historical questions are two fundamentally different skills for novice historians.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;extremely important point.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://digitalpressatund.files.wordpress.com/2016/09/4_1_caraher.pdf&quot;&gt;introduction.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;y position as a tenured, academic archaeologist provides a distinct professional context for slow archaeology. My efforts to develop slow archaeology come from a position of privilege. As an academic archae-ologist, I rely on his research for professional advancement, but not professional survival. Tenure provides opportunities for a more delib-erate pace toward publication&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;while this is good to recognize, I think it underplays the rhetorical weapon we hand folks by insisting on ‘slow’ archaeology. Oh those out-of-touch professors! Also, the vast majority of archaeologists do not have this luxury.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://digitalpressatund.files.wordpress.com/2016/09/4_1_caraher.pdf&quot;&gt;introduction.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;to recent trends in archaeology that emphasizing digital tools as a way to improve efficiency in fieldwork&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;those who emphasize ‘efficiency’ are often of the computational archaeological type. If we accept or imagine that there is a difference between comp.archae and digiarch then we are here charging at the wrong target?
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electricarchaeology.ca/2017/03/14/what-is-digital-archaeology/&quot;&gt;What is Digital Archaeology?&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;the elephant here I guess is that we don’t discuss archaeology’s long history with spatial computing, which is where folks like Huggett see a point of intersection. https://www.jstor.org/stable/pdf/41636599.pdf&lt;/p&gt;
+
+&lt;p&gt;(also:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sicists are not so distinctive as to warrant a separate “classical informatics”.  Both Terras (2010, 187) and Rabinowitz (2011) see digital classics as more of an emergent field still in its early stages, while Cayless (2011) describes it as  an underground movement, with some very high-profile projects and practitioners operating within a more generally hostile attitude towards digital ways of knowing
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electricarchaeology.ca/2017/03/15/open-notebook-research-in-digital-archaeology/&quot;&gt;Open Notebook Research in Digital Archaeology&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I welcome your comments.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electricarchaeology.ca/2017/03/15/an-introduction-to-github-and-version-control/&quot;&gt;An introduction to github and version control&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Comments welcome.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sketchfab.com/models/def84c5577c143dcb10aaec1549188db&quot;&gt;Room 035 by Eric Poehler - 3D model&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;File System                     A 3-D Model is a perfectly intuitive image file system. For example, this room has 45 images in it. Compare to this: https://goo.gl/HiUh1U                                                                                                              + more info&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Did this work? Did I annotate the internal annotation?
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electricarchaeology.ca/2017/03/14/failing-productively-in-digital-archaeology/&quot;&gt;Failing Productively in Digital Archaeology&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I welcome constructive comments on this piece.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electricarchaeology.ca/2017/03/14/what-is-digital-archaeology/&quot;&gt;What is Digital Archaeology?&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I welcome constructive comments on this essay.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archaeogaming.com/2017/03/06/open-world-peer-review-leveling-a-lowbie-phd-thesis/&quot;&gt;Open (World) Peer Review: Leveling a Lowbie PhD Thesis&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;open context maybe? 
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archaeogaming.com/2017/03/06/open-world-peer-review-leveling-a-lowbie-phd-thesis/&quot;&gt;Open (World) Peer Review: Leveling a Lowbie PhD Thesis&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No highlighted text found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ouch. sounds awful.
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://elib.suub.uni-bremen.de/edocs/00105656-1.pdf&quot;&gt;00105656-1.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;has not been addressed in the same depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;classicists, archaeologist have been in this space for a while. eg Watrall Interactive Entertainment as Public Archaeology 2002 SAA Archaeological Record,&lt;/p&gt;
+
+&lt;p&gt;Fugawiland in the 90s, etc
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://elib.suub.uni-bremen.de/edocs/00105656-1.pdf&quot;&gt;00105656-1.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Historical computer games are a relatively young medium but they have a great potential to influence popular perceptions of history.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;see also http://Playthepast.org, Pastplay ed Kee, http://quod.lib.umich.edu/cgi/t/text/text-idx?cc=dh;c=dh;idno=12544152.0001.001;rgn=full%20text;view=toc;xc=1;g=dculture 
+(Curated by &lt;a href=&quot;https://hypothes.is/stream?=user:shawn.graham&quot;&gt;shawn.graham&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Fri, 23 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/hypothesis-annotations/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/hypothesis-annotations/</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>cradle</title>
         <description>
 &lt;p&gt;Storytelling does a lot of work in ABM, although we don’t really acknowledge it as such. When you insert a player into the middle of an ABM, storytelling is your way of equipping the player with what she needs to know in order to survive, much like Sweeper tells Sam Vimes. So, I’m experimenting with Cradle which enables Twine and Twine-like storytelling within Unity.&lt;/p&gt;
@@ -633,94 +1121,6 @@ Export as package, and select the relevant files (ie, you don’t need all of th
         
         
         <category>Code</category>
-        
-      </item>
-    
-      <item>
-        <title>tracery to write music</title>
-        <description>
-&lt;p&gt;I came across this short piece by &lt;a href=&quot;http://www.codingblocks.net/videos/generating-music-in-javascript/&quot;&gt;Joe Zach&lt;/a&gt; where he uses tracery to generate a sequence of chords (the names of chords) which he then feeds into another library, &lt;a href=&quot;https://www.npmjs.com/package/scribbletune&quot;&gt;scribbletune&lt;/a&gt; to write those chords to a midi file.&lt;/p&gt;
-
-&lt;p&gt;https://github.com/shawngraham/mini-code-adventures-generate-music-with-js/blob/master/index.js&lt;/p&gt;
-
-&lt;p&gt;Give it a listen: https://soundcloud.com/shawn-graham-60451318/sand&lt;/p&gt;
-
-&lt;p&gt;I’m thinking that this could be plumbed into a twitter bot somehow, write the midi overtop of an autoplaying video…? I dunno.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Apr 2017 11:51:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/tracery-to-write-music/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/tracery-to-write-music/</guid>
-        
-        <category>tracery</category>
-        
-        <category>procedural generation</category>
-        
-        <category>music</category>
-        
-        
-        <category>Experiments</category>
-        
-        <category>Code</category>
-        
-      </item>
-    
-      <item>
-        <title>writing with bookdown</title>
-        <description>
-&lt;p&gt;For my current project, the Open Digital Archaeology Textbook Environment (ODATE for short; I’m rubbish at a) names and b) acronyms) Neha, Michael, Beth and I are trying to use Slack to manage our conversations, and writing instead in a series of markdown files, and use a repo to manage the collaboration, resolve conflicts, etc. Right now this is going swimmingly because for various reasons the rest of the gang can’t devote any time to this project. For my part, I’m trying to get the infrastructure and preliminary writing set up so we can hit the ground running in around mid march.&lt;/p&gt;
-
-&lt;p&gt;Given our requirements outlined above, I looked around at a couple of different platforms, settling eventually on Bookdown . I like Bookdown because I can write in whatever editor strikes my fancy (switching into R to do the build) and it will give me a complete flat website (&lt;em&gt;with&lt;/em&gt; search), an epub, and a PDF, grabbing my citations from a Bibtext file and formatting appropriately (we have a collaborative Zotero library for adding to while we write/research; export to Bibtext, boom!). Right now, I’m writing within RStudio. With some minimal tweaking, it also allows me to build in Hypothes.is collaborative annotation (and via the Hypothesis API, I plan on collating annotations periodically to guid revisioning and also perhaps to build into the book user appendices, but that idea is still nebulous at the moment). I’ve also run the resulting website from Bookdown through various web accessibility tools, and the report comes back fairly positive. With some more tweaking, I think I can make the final product super-accessible, or at the very least, produce PDFs that screenreaders and so on can work with.&lt;/p&gt;
-
-&lt;p&gt;Getting Bookdown set up was not without its idiosyncracies. The RStudio version has to be the preview release. Then:&lt;/p&gt;
-
-&lt;p&gt;create a new project in RStudio (do this in a brand new folder)
-run the following script to install Bookdown:
-&lt;code&gt;
-install.packages(&quot;devtools&quot;)
-devtools::install_github(&quot;rstudio/bookdown&quot;)
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;create a new textfile with metadata that describe how the book will be built. The metadata is in a format called YAML (‘yet another markup language’) that uses keys and values that get passed into other parts of Bookdown:
-&lt;code&gt;
-title: &quot;The archaeology of spoons&quot;
-author: &quot;Graham, Gupta, Carter, &amp;amp; Compton&quot;
-date: &quot;July 1 2017&quot;
-description: &quot;A book about cocleararchaeology.&quot;
-github-repo: &quot;my-github-account/my-project&quot;
-cover-image: &quot;images/cover.png&quot;
-url: &#39;https\://my-domain-ex/my-project/&#39;
-bibliography: myproject.bib
-biblio-style: apa-like
-link-citations: yes
-&lt;/code&gt;
-This is the only thing you need to have in this file, which is saved in the project folder as index.Rmd.&lt;/p&gt;
-
-&lt;p&gt;Write! We write the content of this book as text files, saving the parts in order. Each file should be numbered 01-introduction.Rmd, 02-a-history-of-spoons.Rmd, 03-the-spoons-of-site-x.Rmd and so on.
-Build the book. With Bookdown installed, there will be a ‘Build Book’ button in the R Studio build pane. This will generate the static html files for the book, the pdf, and the epub. All of these will be found in a new folder in your project, &lt;code&gt;_book&lt;/code&gt;. There are many more customizations that can be done, but that is sufficient to get one started.
-To get Hypothesis working, we have to modify the &lt;code&gt;_output.yml&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;bookdown::gitbook:
-  includes:
-      in_header: hypothesis.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That html file is just a file with a single line, where you add the script src line for embedding hypothesis (see this guidance).&lt;/p&gt;
-
-&lt;p&gt;You end up with a Gitbook-looking site.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 27 Feb 2017 11:56:00 -0500</pubDate>
-        <link>http://smgprojects.github.io/writing-with-bookdown/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/writing-with-bookdown/</guid>
-        
-        <category>ODATE</category>
-        
-        <category>writing</category>
-        
-        <category>platform</category>
-        
-        <category>static site generator</category>
-        
-        
-        <category>Meta</category>
         
       </item>
     

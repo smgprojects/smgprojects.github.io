@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Categories</title>
+    <title>using shaffer's hypothesis to markdown script</title>
     <meta name="description" content="An open history notebook forked from Jason Heppler">
     <meta name="author" content="Shawn Graham"/>
 
@@ -14,33 +14,33 @@
     
 
     <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
-     <!-- If we don't have a page.date, then use modified time (pages) -->
-      
     
+      
+      
 
     <!-- RDFa Metadata (in DublinCore) -->
-    <meta property="dc:title" content="Categories" />
+    <meta property="dc:title" content="using shaffer's hypothesis to markdown script" />
     <meta property="dc:creator" content="Shawn Graham" />
-    <meta property="dc:date" content="1969-12-31T19:00:00-05:00" />
+    <meta property="dc:date" content="2017-06-23T16:18:00-04:00" />
     <meta property="dc:format" content="text/html" />
     <meta property="dc:language" content="en" />
-    <meta property="dc:identifier" content="/categories/" />
+    <meta property="dc:identifier" content="/using-shaffers-hypothesis-to-markdown-script/" />
     <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
     <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
     <meta property="dc:subject" content="History" />
     <meta property="dc:type" content="website" />
 
     <!-- RDFa Metadata (in OpenGraph) -->
-    <meta property="og:title" content="Categories" />
+    <meta property="og:title" content="using shaffer's hypothesis to markdown script" />
     <meta property="og:author" content="/bio.html" />
     <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
-    <meta property="og:url" content="/categories/" />
+    <meta property="og:url" content="/using-shaffers-hypothesis-to-markdown-script/" />
     <meta property="og:type" content="website" />
 
     <!-- Google Scholar Metadata -->
     <meta name="citation_author" content="Shawn Graham"/>
-    <meta name="citation_date" content="1969-12-31T19:00:00-05:00"/>
-    <meta name="citation_title" content="Categories"/>
+    <meta name="citation_date" content="2017-06-23T16:18:00-04:00"/>
+    <meta name="citation_title" content="using shaffer's hypothesis to markdown script"/>
     <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
 
     <!-- Twitter cards -->
@@ -69,7 +69,7 @@
     <!-- <link rel="stylesheet" href="/css/custom.css"> -->
     <link rel="stylesheet" href="/css/bigfoot-default.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <link rel="canonical" href="http://smgprojects.github.io/categories/">
+    <link rel="canonical" href="http://smgprojects.github.io/using-shaffers-hypothesis-to-markdown-script/">
 
     <!-- Initialize Bigfoot.js -->
     <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
@@ -165,332 +165,241 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Categories</h1>
+    <h1 class="post-title">using shaffer's hypothesis to markdown script</h1>
+    <p class="post-meta">Jun 23, 2017</p>
   </header>
 
   <article class="post-content">
-    <p>Notes organized by category.</p>
-
-<h3 id="readings">Readings</h3>
-
-<ul>
-
-  
-    
-  
-
-  
-    
-    <li><a href="/portable-makerspaces/">portable makerspaces?</a></li>
-    
-  
-    
-    <li><a href="/teaching-tech-in-a-group/">Teaching tech in a group</a></li>
-    
-  
-    
-    <li><a href="/reilly2015/">reilly2015</a></li>
-    
-  
-    
-    <li><a href="/demo-of-reading-report-from-hypothesis-script/">demo of reading report from hypothesis script</a></li>
-    
-  
-    
-    <li><a href="/beacons-and-programming-the-city/">Beacons and Programming the City</a></li>
-    
-  
-    
-    <li><a href="/lupton2014/">lupton2014</a></li>
-    
-  
-    
-    <li><a href="/web-annotations/">Web Annotations</a></li>
-    
-  
-    
-    <li><a href="/items-to-read-re-glitch/">Items to Read concerning Glitch</a></li>
-    
-  
-    
-    <li><a href="/items-to-read-archaeogaming/">items to Read - archaeogaming</a></li>
-    
-  
-    
-    <li><a href="/clement2013/">clement2012</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-2009/">tan_virtual_2009</a></li>
-    
-  
-    
-    <li><a href="/tan-how-the-user-is-lost/">tan - how the user is lost</a></li>
-    
-  
-    
-    <li><a href="/tan-virtual-heritage-reality-and-criticism/">tan- virtual heritage reality and criticism</a></li>
-    
-  
-    
-    <li><a href="/tan-fixing-virtual-heritage/">tan - Fixing Virtual Heritage</a></li>
-    
-  
-
+    <ul id="markdown-toc">
+  <li><a href="#usage" id="markdown-toc-usage">usage</a></li>
+  <li><a href="#script" id="markdown-toc-script">script:</a></li>
 </ul>
 
-<h3 id="code">Code</h3>
+<h2 id="usage">usage</h2>
 
-<ul>
+<p>to use shaffer’s hypothesis script:</p>
 
-  
-    
-  
+<p>1 - has to run in python 3
+2 - uncomment <code>d = json.loads(h.text)</code> and comment out the <code>d = ast.literal_eval(h.text)</code>
+3 - i pasted the <code>pypothesis.py</code> into my <code>grabH.py</code> script
+4 - had to run a virtualenv: <code>virtualenv -p python3 grabH</code>
+5 - activate: <code>source env/bin/grabH</code>
+6 - run the script: ‘python grabH.py’
+7 - copy the result to the notebook posts folder.</p>
 
-  
-    
-    <li><a href="/getting-data-out-of-opencontext/">getting data out of opencontext</a></li>
-    
-  
-    
-    <li><a href="/notes-on-running-the-dh-usb/">notes on running the dh usb</a></li>
-    
-  
-    
-    <li><a href="/tracery-on-glitch/">tracery on glitch</a></li>
-    
-  
-    
-    <li><a href="/running-torch-rnn-in-docker-on-my-mac/">running torch-rnn in docker on my mac</a></li>
-    
-  
-    
-    <li><a href="/cradle/">cradle</a></li>
-    
-  
-    
-    <li><a href="/tracery-to-write-music/">tracery to write music</a></li>
-    
-  
-    
-    <li><a href="/textreuse-package-for-r/">textreuse package for R</a></li>
-    
-  
-    
-    <li><a href="/sonification-of-john-adams/">sonification of john adams</a></li>
-    
-  
+<h2 id="script">script:</h2>
 
-</ul>
+<pre><code>
 
-<h3 id="essays">Essays</h3>
+import requests
+import json
+import ast
 
-<ul>
+# pypothesis.py script pasted here cause frustrated
+class Annotation():
 
-  
-    
-  
+    def __init__(self, jsondata):
+        self.jsondata = jsondata
 
-  
-    
-    <li><a href="/romans-must-die/">romans must die</a></li>
-    
-  
-    
-    <li><a href="/rehashing-archaeology/">rehashing archaeology</a></li>
-    
-  
-    
-    <li><a href="/ethics-of-video-games-in-archaeology/">ethics of video games in archaeology</a></li>
-    
-  
-    
-    <li><a href="/the-archaeologist-and-the-video-game/">The Archaeologist and the Video Game</a></li>
-    
-  
+        # title of annotated article
+        self.title = self.jsondata['document']['title'][0].replace('\n', '').replace('\r', '')
 
-</ul>
+        # uri of annotated article
+        self.uri = self.jsondata['uri']
 
-<h3 id="observations">Observations</h3>
+        # highlighted text in annotated article
+        if 'selector' in self.jsondata['target'][0].keys():
+            selector = self.jsondata['target'][0]['selector']
+            for entry in selector:
+                if 'exact' in entry.keys():
+                    self.highlight = entry['exact'].replace('\n', ' ').replace('\r', ' ')
+                else:
+                    self.highlight = 'No highlighted text found.'
+        else:
+            self.highlight = 'No highlighted text found.'
 
-<ul>
+        # annotation comment
+        if self.jsondata['text']:
+            self.comment = self.jsondata['text']
+        else:
+            self.comment = 'No comment found.'
 
-  
-    
-  
+        # user that generated the annotation
+        self.user = self.jsondata['user'].split(':')[1].split('@')[0]
 
-  
-    
-    <li><a href="/ldavis-of-the-nile-diary-test/">LDAvis of the Nile Diary - test</a></li>
-    
-  
-    
-    <li><a href="/nile-diary/">Nile Diary</a></li>
-    
-  
-    
-    <li><a href="/a-twitter-conversation-re-soundbashing/">a twitter conversation re soundbashing</a></li>
-    
-  
-    
-    <li><a href="/archaeogaming-map/">archaeogaming map</a></li>
-    
-  
-    
-    <li><a href="/evolving-planet-play-observations/">Evolving Planet Play Observations</a></li>
-    
-  
+        # date/time created and updated
+        self.created = self.jsondata['created']
+        self.updated = self.jsondata['updated']
 
-</ul>
+        # hypothesis ID &amp; annotation URL
+        self.id = self.jsondata['id']
+        self.hypothesisurl = 'https://hyp.is/' + self.jsondata['id']
 
-<h3 id="meta">Meta</h3>
+def retrieve(apiurl):
+    # takes the hypothes.is API URL for an annotation and returns JSON data
+    h = requests.get(apiurl)
+    d = json.loads(h.text)
+    return d
 
-<ul>
+def retrievelist(searchurl):
+    # takes a hypothes.is API search URL returns JSON data for each element as a list of individual annotations
+    h = requests.get(searchurl)
+    d = json.loads(h.text)
+    jsonlist = []
+    for entry in d['rows']:
+        jsonlist.append(entry)
+    return jsonlist
 
-  
-    
-  
+def apiurl(hypurl):
+    # takes the hyp.is URL provided in an annotation and returns the API URL (for use elsewhere in this module)
+    hypid = hypurl.split('.is/')[1].split('/')[0]
+    url = 'https://hypothes.is/api/annotations/' + hypid
+    return url
 
-  
-    
-    <li><a href="/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/">using hugo academic to make shawngraham.github.io</a></li>
-    
-  
-    
-    <li><a href="/the-workflow-in-this-notebook/">the workflow in this notebook</a></li>
-    
-  
-    
-    <li><a href="/writing-with-bookdown/">writing with bookdown</a></li>
-    
-  
-    
-    <li><a href="/nile-diary-plan/">nile diary plan</a></li>
-    
-  
-    
-    <li><a href="/test/">testing Kris Shaffer's script for extracting Hypothes.is annotations to Jekyll</a></li>
-    
-  
-    
-    <li><a href="/tags-and-subtags-in-hypothesis/">Tags and Subtags in Hypothesis</a></li>
-    
-  
-    
-    <li><a href="/imageplot-opencontext/">Imageplot and Opencontext</a></li>
-    
-  
-    
-    <li><a href="/a-test-of-pdf/">a test of pdf</a></li>
-    
-  
-    
-    <li><a href="/a-single-open-notebook-for-a-class/">a single open notebook for a class?</a></li>
-    
-  
-    
-    <li><a href="/kanban-style-board-in-atom-and-this-notebook/">Kanban Style Board in Atom &amp; this Notebook</a></li>
-    
-  
-    
-    <li><a href="/getting-mdwriter-links-to-work/">getting mdwriter links to work</a></li>
-    
-  
+def searchurl(user = '', tag = '', tags = []):
+    """
+    Returns a well-formed URL for querying the hypothes.is API.
+    A hypothes.is username is optional.
+    Use *either* tag or tags, not both. You can also use neither if a username is provided.
+    Use tag for a single tag, and put the tag in quotes.
+    Use tags for multiple tags, and enclose them in a list: ['tag1', 'tag2', 'tag3'].
+    searchurl() only works if at least once term (user, tag, or tags) is provided.
+    """
 
-</ul>
+    source = 'https://hypothes.is/api/search?'
+    conn = '&amp;'
+    usercall = 'user='
+    tagcall = 'tags='
+    if tags == []:
+        if user != '' and tag != '':
+            return source + usercall + user + conn + tagcall + tag
+        if user == '' and tag != '':
+            return source + tagcall + tag
+        if user != '' and tag == '':
+            return source + usercall + user
+        if user == '' and tag == '':
+            print('No search parameters included.')
+    if tags != []:
+        if user != '':
+            sourcestring = source + usercall + user
+            for entry in tags:
+                sourcestring += (conn + tagcall + entry)
+            return sourcestring
+        if user == '':
+            sourcestring = source + tagcall + tags.pop(0)
+            while tags != []:
+                sourcestring += (conn + tagcall + tags.pop(0))
+            return sourcestring
+###
 
-<h3 id="videos">Videos</h3>
+source = 'https://hypothes.is/api/search?'
+conn = '&amp;'
+usercall = 'user='
+tagcall = 'tags='
 
-<ul>
+# adjust these variables for different searches
+# also be sure to adjust the page title in the YAML header section
+user = 'shawn.graham@hypothes.is'
+tags = ''
+# search string for fetching annotations from a specific user using a specific tag:
+#     searchstring = source + usercall + user + conn + tagcall + tags
+# search string for fetching all annotations from a specific user:
+searchstring = source + usercall + user
+# search string for fetching all annotations from any user, but limited to a specific tag (a class hashtag, for example):
+#     searchstring = source + tagcall + tags
+filename = '2017-06-23-hypothesis-annotations.md'
 
-  
-    
-  
+# YAML header
+headerinfo = '---\n'
+headerinfo += 'layout: post\n'
+headerinfo += 'title: "Hypothes.is annotations"\n'
+headerinfo += 'date: 2017-06-23 13:37:00 -0500\n' # need to make this automatic
+headerinfo += 'categories:\n'
+headerinfo += '- Reading Notes'
+headerinfo += '---\n\n'
 
-  
-    
-    <li><a href="/linguistics-and-ubisoft/">linguistics and ubisoft</a></li>
-    
-  
+# don't edit anything below this line unless you know what you're doing :)
+def writeMarkdown(header, data, filename):
+    f = open(filename, 'w')
+    f.write(header)
+    for line in data:
+        f.write(str(line) + '\n')
 
-</ul>
+def markdown(annotation):
+    # title of post with link to original post
+    textout = '['
+    textout += annotation['document']['title'][0].replace('\n', '').replace('\r', '')
+    textout += ']('
+    textout += annotation['uri']
+    textout += ')\n\n'
 
-<h3 id="experiments">Experiments</h3>
+    # grab highlighted portion of post
+    if 'selector' in annotation['target'][0].keys():
+        selector = annotation['target'][0]['selector']
+        for entry in selector:
+            if 'exact' in entry.keys():
+                targetInfo = entry['exact'].replace('\n', ' ').replace('\r', ' ')
+            else:
+                targetInfo = 'No highlighted text found.'
+    else:
+        targetInfo = 'No highlighted text found.'
 
-<ul>
+    # highlighted portion of post as blockquote
+    textout += '&gt; '
+    textout += targetInfo
+    textout += '\n\n'
 
-  
-    
-  
+    # annotation comment, with username and link to stream
+    if annotation['text']:
+        textout += annotation['text']
+        textout += '\n'
+    textout += '(Curated by ['
+    useracct = annotation['user'].split(':')[1].split('@')[0]
+    textout += useracct
+    textout += ']('
+    textout += 'https://hypothes.is/stream?=user:'
+    textout += useracct
+    textout += '))\n\n&lt;hr/&gt;\n'
+    return textout
 
-  
-    
-    <li><a href="/tracery-on-glitch/">tracery on glitch</a></li>
-    
-  
-    
-    <li><a href="/tracery-to-write-music/">tracery to write music</a></li>
-    
-  
-    
-    <li><a href="/distantly-reading-digital-archaeology-mobilizing-the-past/">distantly reading digital archaeology mobilizing the past</a></li>
-    
-  
-    
-    <li><a href="/experiment-determining-bad-ocr-via-automated-spellcheck/">Experiment - Determining Bad OCR via Automated Spellcheck</a></li>
-    
-  
-    
-    <li><a href="/experiment-bad-equity/">Experiment - Bad Equity</a></li>
-    
-  
+# run
+h = requests.get(searchstring)
+#retained in case needed for valid unicode in JSON
+d = json.loads(h.text)
+# d = ast.literal_eval(h.text)
 
-</ul>
 
-<p>###</p>
-
-<ul>
-
-  
-
-  
-    
-    <li><a href="/using-shaffers-hypothesis-to-markdown-script/">using shaffer's hypothesis to markdown script</a></li>
-    
-  
-
-</ul>
-
-<p>###</p>
-
-<ul>
-
-  
-
-  
-    
-    <li><a href="/using-shaffers-hypothesis-to-markdown-script/">using shaffer's hypothesis to markdown script</a></li>
-    
-  
-
-</ul>
-
+dataToWrite = []
+i = 0
+for row in d['rows']:
+    dataToWrite.append(markdown(d['rows'][i]))
+    i += 1
+writeMarkdown(headerinfo, dataToWrite, filename)
+</code></pre>
 
   </article>
 
-</div>
-
-<p class="text-info">
+  <p class="text-info">
     <table class="table table-condensed" id="post-info">
       <tr class="info">
-        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 31 Dec 1969</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 23 Jun 2017</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 23 Jun 2017</small></td>
         <td><small><i class="fa fa-github-square"></i>&nbsp;<a
-              href="https://github.com/smgprojects/notebook/commits/master/source/categories.md">History</a></small></td>
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2017-06-23-using-shaffers-hypothesis-to-markdown-script.md">History</a></small></td>
         <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
-        <td><small><a href="/categories/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+        <td><small><a href="/using-shaffers-hypothesis-to-markdown-script/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
       </tr>
     </table>
     </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+  </ul>
+</div>
+
+</div>
 
         </div>
       </div>
