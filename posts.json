@@ -2,6 +2,18 @@
     "posts": [
         
         {
+            "title": "getting data out of opencontext",
+            "url": "http://smgprojects.github.io/getting-data-out-of-opencontext/",
+            "date": "2017-06-23T12:19:00-04:00"
+        },
+        
+        {
+            "title": "romans must die",
+            "url": "http://smgprojects.github.io/romans-must-die/",
+            "date": "2017-06-23T12:18:00-04:00"
+        },
+        
+        {
             "title": "notes on running the dh usb",
             "url": "http://smgprojects.github.io/notes-on-running-the-dh-usb/",
             "date": "2017-06-23T11:59:00-04:00"

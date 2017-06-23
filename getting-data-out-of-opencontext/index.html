@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>getting data out of opencontext</title>
+    <meta name="description" content="An open history notebook forked from Jason Heppler">
+    <meta name="author" content="Shawn Graham"/>
+
+    <!-- Get date last modified from git log. (Uses current time if file entry not found, e.g. projects/)  -->
+    
+
+    <!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
+    
+      
+      
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="getting data out of opencontext" />
+    <meta property="dc:creator" content="Shawn Graham" />
+    <meta property="dc:date" content="2017-06-23T12:19:00-04:00" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/getting-data-out-of-opencontext/" />
+    <meta property="dc:rights" content="CC BY-NC-SA 3.0" />
+    <meta property="dc:source" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="dc:subject" content="History" />
+    <meta property="dc:type" content="website" />
+
+    <!-- RDFa Metadata (in OpenGraph) -->
+    <meta property="og:title" content="getting data out of opencontext" />
+    <meta property="og:author" content="/bio.html" />
+    <meta property="og:site_name" content="Shawn Graham's Open Digital Humanities Notebook 2016-17" />
+    <meta property="og:url" content="/getting-data-out-of-opencontext/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Shawn Graham"/>
+    <meta name="citation_date" content="2017-06-23T12:19:00-04:00"/>
+    <meta name="citation_title" content="getting data out of opencontext"/>
+    <meta name="citation_journal_title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17"/>
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Shawn Graham's Open Digital Humanities Notebook 2016-17">
+    <meta name="twitter:description" content="An open history notebook forked from Jason Heppler">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/wak0qrc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Custom Styling -->
+    <!-- <link rel="stylesheet" href="/css/lmullen.css"> -->
+    <link rel="stylesheet" href="/css/main.css"> 
+    <!-- <link rel="stylesheet" href="/css/search.css"> -->
+    <!-- <link rel="stylesheet" href="/css/custom.css"> -->
+    <link rel="stylesheet" href="/css/bigfoot-default.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="canonical" href="http://smgprojects.github.io/getting-data-out-of-opencontext/">
+
+    <!-- Initialize Bigfoot.js -->
+    <script type="text/javascript" src="/components/bigfoot/bigfoot.js"></script>
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+
+    <!-- Todo lists (via Lincoln Mullen) -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      $(document).ready(function() {
+        $("li:contains('[ ]')").html(function(_, html) {
+          return html.replace('[ ]', '<span style="color:red;">☐</span>');
+        });
+        $("li:contains('[s]')").html(function(_, html) {
+          return html.replace('[s]', '<span style="color:gold;">☐</span>');
+        });
+        $("li:contains('[x]')").html(function(_, html) {
+          return html.replace('[x]', '<span style="color:green;">☑</span>');
+        });
+      });
+      /* ]]> */
+    </script>
+    <script defer async src="//hypothes.is/embed.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Shawn Graham's Open Digital Humanities Notebook 2016-17</a>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/essays/">Essays</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+  <div class="well sidebar-nav">
+
+<!--- <center><img src="/images/logo.png" class="img-responsive" alt="Shawn Graham's Notebook"/><br/>
+  <a href="http://electricarchaeology.ca">Shawn Graham</a>
+  </center>
+--->
+  <br/>
+
+  <div id="search">
+    <form action="http://duckduckgo.com/" method="get">
+    <input type="hidden" name="sites" value="smgprojects.github.io" />
+      <input type="text" id="search_input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+  </div>
+
+    <ul class="nav nav-list">
+      <li class="nav-header">General</li>
+      <li><a href="/tagged/">Notes by Tag</a></li>
+      <li><a href="/archive/">All Notes by Date</a></li>
+      <li><a href="/archive-alphabetical/">All Notes Alphabetically</a></li>
+      <li><a href="/essays/">Essays and General Writing</a></li>
+      <li><a href="/categories/">Categories</a></li>
+
+      <li class="nav-header">Topics and Projects</li>
+      <li><a href="/reading-notes/">Reading Notes</a></li>
+      <li><a href="/archaeogaming/">Archaeogaming</a></li>
+      <li><a href="/design-studio/">Design Studio in DH</a></li>
+      <li><a href="/soundbashing-history/">Soundbashing History</a></li>
+      <li class="nav-header">Meta</li>
+      <li><a href="/project-news/">Notebook News</a></li>
+      <li><a href="/about/">About Me</a></li>
+      <li><a href="/notebook/">About This Notebook</a></li>
+    </ul>
+  </div>
+
+</div> <!-- / span3 -->
+
+
+        <div class="span9">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">getting data out of opencontext</h1>
+    <p class="post-meta">Jun 23, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <ul id="markdown-toc">
+  <li><a href="#couple-of-ways-one-could-grab-it" id="markdown-toc-couple-of-ways-one-could-grab-it">COUPLE OF WAYS ONE COULD GRAB IT:</a></li>
+  <li><a href="#congratulations" id="markdown-toc-congratulations">CONGRATULATIONS</a></li>
+  <li><a href="#json" id="markdown-toc-json">json</a></li>
+  <li><a href="#jqplay" id="markdown-toc-jqplay">JQPLAY</a></li>
+  <li><a href="#get-jq-and-run-the-query-from-the-terminal-or-command-line" id="markdown-toc-get-jq-and-run-the-query-from-the-terminal-or-command-line">GET JQ AND RUN THE QUERY FROM THE TERMINAL OR COMMAND LINE</a></li>
+  <li><a href="#combining-wget--jq" id="markdown-toc-combining-wget--jq">COMBINING WGET &amp; JQ</a></li>
+</ul>
+
+<p>a walkthrough for extracting and manipulating data from opencontext.org</p>
+
+<p>Search for something interesting. I put ‘poggio’ in the search box, and then clicked on the various options to get the architectural fragments. Look at the URL:
+https://opencontext.org/subjects-search/?prop=oc-gen-cat-object&amp;q=Poggio#15/43.1526/11.4090/19/any/Google-Satellite
+See all that stuff after the word ‘Poggio’? That’s to generate the map view. We don’t need it.</p>
+
+<p>We’re going to ask for the search results w/o all of the website extras, no maps, no shiny interface. To do that, we take advantage of the API. With open context, if you have a search with a ‘?’ in the URL, you can put .json in front of the question mark, and delete all of the stuff from the # sign on, like so:</p>
+
+<p>https://opencontext.org/subjects-search/.json?prop=oc-gen-cat-object&amp;q=Poggio</p>
+
+<p>Put that in the address bar. Boom! lots of stuff! But only one page’s worth, which isn’t lots of data. To get a lot more data, we have to add another parameter, the number of rows: ?rows=100&amp;. Slot that in just before the p in prop= and see what happens.</p>
+
+<p>Now, that isn’t all of the records though. Remove the .json and see what happens when you click on the arrows to page through the NEXT 100 rows. You get a URL like this:</p>
+
+<p>https://opencontext.org/subjects-search/?rows=100&amp;prop=oc-gen-cat-object&amp;start=100&amp;q=Poggio#15/43.1526/11.4090/19/any/Google-Satellite</p>
+
+<p>So – to recap, the URL is searching for 100 rows at a time, in the general object category, starting from row 100, and grabbing materials from Poggio. We now know enough about how open context’s api works to grab material.</p>
+
+<h2 id="couple-of-ways-one-could-grab-it">COUPLE OF WAYS ONE COULD GRAB IT:</h2>
+<p>You could copy n’ paste -&gt; but that will only get you one page’s worth of data (and if you tried to put, say, 10791 into the ‘rows’ parameter, you’ll just get a time-out error). You’d have to go back to the search page, hit the ‘next’ button, reinsert the .json etc over and over again.
+automatically. We’ll use a program called wget to do this. (To install wget on your machine, see the programming historian Wget will interact with the Open Context site to retrieve the data. We feed wget a file that contains all of the urls that we wish to grab, and it saves all of the data into a single file. So, open a new text file and paste our search URL in there like so:</p>
+
+<p>https://opencontext.org/subjects-search/.json?rows=100&amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;q=Poggio
+https://opencontext.org/subjects-search/.json?rows=100&amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;start=100&amp;q=Poggio
+https://opencontext.org/subjects-search/.json?rows=100&amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;start=200&amp;q=Poggio</p>
+
+<p>…and so on until we’ve covered the full 4000 objects. Tedious? You bet. So we’ll get the computer to generate those URLS for us. Open a new text file, and copy the following in:</p>
+
+<pre><code class="language-#URL-Generator.py">
+urls = '';
+f=open('urls.txt','w')
+for x in range(1, 4000, 100):
+    urls = 'https://opencontext.org/subjects-search/.json?rows=100&amp;prop=oc-gen-cat-object---oc-gen-cat-arch-element&amp;start=%d&amp;q=Poggio/\n' % (x)
+    f.write(urls)
+f.close
+</code></pre>
+<p>and save it as url-generator.py. This program is in the python language. If you’re on a Mac, it’s already installed. If you’re on a Windows machine, you’ll have to download and install it. To run the program, open your terminal (mac) or command prompt (windows) and make sure you’re in the same folder where you saved the program. Then type at the prompt:</p>
+
+<p><code>python url-generator.py</code></p>
+
+<p>This little program defines an empty container called ‘urls’; it then creates a new file called ‘urls.txt’; then we tell it to write the address of our search into the urls container. See the %d in there? The program writes a number between 1 and 4000; each time it does that, it counts by 100 so that the next time it goes through the loop, it adds a new address with the correct starting point! Then it saves that container of URLs into the file urls.txt. Go ahead, open it up, and you’ll see.</p>
+
+<p>Now we’ll feed it to wget like so. At the prompt in your terminal or command line, type:</p>
+
+<p><code>wget -i urls.txt -r --no-parent -nd –w 2 --limit-rate=10k</code></p>
+
+<p>You’ll end up with a lot of files that have no file extension in your folder, eg,</p>
+
+<p><code>.json?rows=100&amp;prop=oc-gen-cat-object---oc-gen-cat-arch-element&amp;start=61&amp;q=Poggio%2F</code></p>
+
+<p>Select all of these and rename them in your finder (instructions) or windows explorer (instructions), such that they have a sensible file name, and that the extension is .json. We are now going to concatenate these files into a single, properly formatted, .json file. (Note that it is possible for wget to push all of the downloaded information into a single json file, but it won’t be a properly formatted json file – it’ll just be a bunch of lumps of difference json hanging out together, which we don’t want).</p>
+
+<p>We are going to use a piece of software written for NodeJS to concatenate our json files (this enables us to develop in javascript; it’s useful for lots of other things too). Go to the NodeJS download page and download and install for your machine. (Windows users, make sure you select the npm package manager as well during the install procedure). Once it’s installed, open a terminal or command prompt and type</p>
+
+<p><code>npm install -g json-concat (mac users, you might need sudo npm install -g json-concat)</code></p>
+
+<p>This installs the json-concat tool. We’ll now join our files together:</p>
+
+<pre><code># As simple as this. Output file should be last
+$ json-concat file1.json file2.json file3.json file4.json ouput.json
+</code></pre>
+
+<p>… for however many json files you have.</p>
+
+<h2 id="congratulations">CONGRATULATIONS</h2>
+<p>You now have downloaded data from Open Context as json, and you’ve compiled that data into a single json file. This ability for data to be called and retrieved programmaticaly also enables things like the Open Context package for the R statistical software environment. If you’re feeling adventurous, take a look at that.</p>
+
+<p>In Part Two I’ll walk you through using JQ to masage the json into a csv file that can be explored in common spreadsheet software. (For a detailed lesson on JQ, see the programming historian, which also explains why json in the first place). Of course, lots of the more interesting data viz packages can deal with json itself, but more on that later.</p>
+
+<p>And of course, if you’re looking for some quick and dirty data export, Open Context has recently implemented a ‘cloud download’ button that will export a simplified version of the data direct to csv on your desktop. Look for a little cloud icon with a down arrow at the bottom of your search results page. Now, you might wonder why I didn’t mention that at the outset, but look at it this way: now you know how to get the complete data, and with this knowledge, you could even begin building far more complicated visualizations or websites. It was good for you, right? Right? Right.</p>
+
+<p>PS Eric adds: “Also, you can request different types of results from Open Context (see: https://opencontext.org/about/services#tab_query-meta). For instance, if you only want GeoJSON for the results of a search, add “response=geo-record” to the request. That will return just a list of geospatial features, without the metadata about the search, and without the facets. If you want a really simple list of URIs from a search, then add “response=uri”. Finally, if you want a simple list of search results with some descriptive attributes, add “response=uri-meta” to the search result.”</p>
+
+<h2 id="json">json</h2>
+
+<p>Json is not easy to work with. Fortunately, Matthew Lincoln has written an excellent tutorial on json and jq over at The Programming Historian which you should go read now. Read the ‘what is json?’ part, at the very least. In essence, json is a text file where keys are paired with values. JQ is a piece of software that enables us to reach into a json file, grab the data we want, and create either new json or csv. If you intend to visualize and explore data using some sort of spreadsheet program, then you’ll need to extract the data you want into a csv that your spreadsheet can digest. If you wanted to try something like d3 or some other dynamic library for generating web-based visualizations (eg p5js), you’ll need json.</p>
+
+<h2 id="jqplay">JQPLAY</h2>
+
+<p>JQ lets us do some fun filtering and parsing, but we won’t download and install it yet. Instead, we’ll load some sample data into a web-toy called jqplay. This will let us try different ideas out and see the results immediately. In the this file  called sample.json I have the query results from Open Context – Github recognizes that it is json and that it has geographic data within it, and turns it automatically into a map! To see the raw json, click on the &lt; &gt; button. Copy that data into the json box at jqplay.org.</p>
+
+<p>JQPlay will colour-code the json. Everything in red is a key, everything in black is a value. Keys can be nested, as represented by the indentation. Scroll down through the json – do you see any interesting key:value pairs? Matthew Lincoln’s tutorial at the programming historian is one of the most cogent explanations of how this works, and I do recommend you read that piece. Suffice to say, for now, that if you see an interesting key:value pair that you’d like to extract, you need to figure out just how deeply nested it is. For instance, there is a properties key that seems to have interesting information within it about dates, wares, contexts and so on. Perhaps we’d like to build a query using JQ that extracts that information into a csv. It’s within the features key pair, so try entering the following in the filter box:</p>
+
+<p><code>.features [ ] | .properties</code>
+You should get something like this:</p>
+
+<pre><code>{
+  "id": "#geo-disc-tile-12023202222130313322",
+  "href": "https://opencontext.org/search/?disc-geotile=12023202222130313322&amp;prop=oc-gen-cat-object&amp;rows=5&amp;q=Poggio",
+  "label": "Discovery region (1)",
+  "feature-type": "discovery region (facet)",
+  "count": 12,
+  "early bce/ce": -700,
+  "late bce/ce": -535
+}
+{
+  "id": "#geo-disc-tile-12023202222130313323",
+  "href": "https://opencontext.org/search/?disc-geotile=12023202222130313323&amp;prop=oc-gen-cat-object&amp;rows=5&amp;q=Poggio",
+  "label": "Discovery region (2)",
+  "feature-type": "discovery region (facet)",
+  "count": 25,
+  "early bce/ce": -700,
+  "late bce/ce": -535
+}
+</code></pre>
+<p>For the exact syntax of why that works, see Lincoln’s tutorial. I’m going to just jump to the conclusion now. Let’s say we wanted to grab some of those keys within properties, and turn into a csv. We tell it to look inside features and find properties; then we tell it to make a new array with just those keys within properties we want; and then we tell it to pipe that information into comma-separated values. Try the following on the sample data:</p>
+
+<pre><code>.features [ ] | .properties | [.label, .href, ."context label", ."early bce/ce", ."late bce/ce", ."item category", .snippet] | @csv
+</code></pre>
+<p>…and make sure to tick the ‘raw output’ box at the top right. Ta da! You’ve culled the information of interest from a json file, into a csv. There’s a lot more you can do with jq, but this will get you started.</p>
+
+<h2 id="get-jq-and-run-the-query-from-the-terminal-or-command-line">GET JQ AND RUN THE QUERY FROM THE TERMINAL OR COMMAND LINE</h2>
+
+<p>Install on OS – instructions from Lincoln http://programminghistorian.org/lessons/json-and-jq#installation-on-os-x</p>
+
+<p>Install on PC – instructions from Lincoln http://programminghistorian.org/lessons/json-and-jq#installation-on-windows</p>
+
+<p>Got JQ installed? Good. Open your terminal or command prompt in the directory where you’ve got your json file with the data you extracted in part 1. Here we go:</p>
+
+<pre><code>jq -r '.features [ ] | .properties | [.label, .href, ."context label", ."early bce/ce", ."late bce/ce", ."item category", .snippet] | @csv' data.json &gt; data.csv
+</code></pre>
+<p>So, we invoke jq, we tell it we want the raw output (-r), we give it the filter to apply, we give it the file to apply it to, and we tell it what to name the output.</p>
+
+<p>Take a look at how Lincoln pipes the output of a wget command into jq at the end of the section on ‘invoking jq’. Do you see how we might accelerate this entire process the next time you want data out of Open Context?</p>
+
+<h2 id="combining-wget--jq">COMBINING WGET &amp; JQ</h2>
+
+<p>Assuming you’ve got a list of urls (generated with our script from part 1), you point your firehose of downloaded data directly into jq. The crucial thing is to flag wget with <code>-qO-</code> to tell it that the output will be <em>piped</em> to another program. In which case, you would type at the terminal prompt or command line:</p>
+
+<pre><code>wget -qO- -i urls2.txt | jq -r '.features [ ] | .properties | [.label, .href, ."context label", ."early bce/ce", ."late bce/ce", ."item category", .snippet] | @csv' &gt; out.csv
+</code></pre>
+<p>Which in Human says, ” hey wget, grab all of the data at the urls in the list at urls2.txt and pipe that information into jq. JQ, you’re going to filter for raw output the information within properities (which is within features), in particular these fields. Split the information fields up via commas, and write everything to a new file called out.csv.”</p>
+
+<p>…Extremely cool, eh? (Word to the wise: read Ian’s tutorial on wget to learn how to form your wget requests politely so that you don’t overwhelm the servers. Wait a moment between requests – look at how the wget was formed in the open context part 1 post).</p>
+
+  </article>
+
+  <p class="text-info">
+    <table class="table table-condensed" id="post-info">
+      <tr class="info">
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Created: 23 Jun 2017</small></td>
+        <td><small><i class="glyphicon glyphicon-calendar"></i>&nbsp;Modified: 23 Jun 2017</small></td>
+        <td><small><i class="fa fa-github-square"></i>&nbsp;<a
+              href="https://github.com/smgprojects/notebook/commits/master/source/_posts/2017-06-23-getting-data-out-of-opencontext.md">History</a></small></td>
+        <td><small><a href="javascript:window.print()"><i class="glyphicon glyphicon-print"></i>&nbsp;Print</a></small></td>
+        <td><small><a href="/getting-data-out-of-opencontext/"><i class="glyphicon glyphicon-link"></i>Permalink</a></small></td>
+      </tr>
+    </table>
+    </p>
+
+<div class="tag-area alert-primary">
+  <ul id="post-categories">
+    <li><i class="glyphicon glyphicon-tags"></i>&nbsp;Tags: </li>
+  
+    <li class="categorylist"><a href='/tagged/#how-to'>how-to</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#opencontext'>opencontext</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#json'>json</a></li>
+  
+    <li class="categorylist"><a href='/tagged/#data'>data</a></li>
+  
+  </ul>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="footer-wrapper">
+
+    <h2 class="footer-heading">Shawn Graham's Open Digital Humanities Notebook 2016-17</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <figure class="image-left">
+            <img class="avatar" src="/images/minionme.jpeg" height="120" width="120"/>
+          </figure>
+          <p class="text">I'm at Carleton University in Ottawa Canada.</p>
+
+          <form method="get" action="http://duckduckgo.com/">
+            <input type="search" name="q" maxlength="255" placeholder="Search">
+            <input type="hidden" names="sites" value="smgprojects.github.io">
+            <input type="hidden" name="k7" value="#faf8f8">
+            <input type="hidden" name="kj" value="#b33">
+            <input type="hidden" name="ky" value="#fafafa">
+            <input type="hidden" name="kx" value="b">
+            <input type="hidden" name="ko" value="-1">
+            <input type="hidden" name="k1" value="-1">
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+          </form>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <i class="fa fa-globe"></i> <a href="http://electricarchaeology.ca">electricarchaeology.ca</a>
+          </li>
+          
+          <li>
+              <i class="fa fa-github-square"></i> <a href="https://github.com/shawngraham"><span class="username">shawngraham</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+              <i class="fa fa-twitter-square"></i> <a href="https://twitter.com/electricarchaeo"><span class="username">electricarchaeo</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        Shawn Graham<br/>
+        <ul class="social-media-list">
+          <li><i class="fa fa-university"></i> Department of History, 406 Paterson Hall, Carleton University, Ottawa Canada</li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:shawn.graham@carleton.ca">shawn.graham@carleton.ca</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75211414-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

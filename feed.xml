@@ -5,9 +5,278 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Jun 2017 12:17:15 -0400</pubDate>
-    <lastBuildDate>Fri, 23 Jun 2017 12:17:15 -0400</lastBuildDate>
+    <pubDate>Fri, 23 Jun 2017 12:25:18 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Jun 2017 12:25:18 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>getting data out of opencontext</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#couple-of-ways-one-could-grab-it&quot; id=&quot;markdown-toc-couple-of-ways-one-could-grab-it&quot;&gt;COUPLE OF WAYS ONE COULD GRAB IT:&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#congratulations&quot; id=&quot;markdown-toc-congratulations&quot;&gt;CONGRATULATIONS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#json&quot; id=&quot;markdown-toc-json&quot;&gt;json&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jqplay&quot; id=&quot;markdown-toc-jqplay&quot;&gt;JQPLAY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#get-jq-and-run-the-query-from-the-terminal-or-command-line&quot; id=&quot;markdown-toc-get-jq-and-run-the-query-from-the-terminal-or-command-line&quot;&gt;GET JQ AND RUN THE QUERY FROM THE TERMINAL OR COMMAND LINE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#combining-wget--jq&quot; id=&quot;markdown-toc-combining-wget--jq&quot;&gt;COMBINING WGET &amp;amp; JQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;a walkthrough for extracting and manipulating data from opencontext.org&lt;/p&gt;
+
+&lt;p&gt;Search for something interesting. I put ‘poggio’ in the search box, and then clicked on the various options to get the architectural fragments. Look at the URL:
+https://opencontext.org/subjects-search/?prop=oc-gen-cat-object&amp;amp;q=Poggio#15/43.1526/11.4090/19/any/Google-Satellite
+See all that stuff after the word ‘Poggio’? That’s to generate the map view. We don’t need it.&lt;/p&gt;
+
+&lt;p&gt;We’re going to ask for the search results w/o all of the website extras, no maps, no shiny interface. To do that, we take advantage of the API. With open context, if you have a search with a ‘?’ in the URL, you can put .json in front of the question mark, and delete all of the stuff from the # sign on, like so:&lt;/p&gt;
+
+&lt;p&gt;https://opencontext.org/subjects-search/.json?prop=oc-gen-cat-object&amp;amp;q=Poggio&lt;/p&gt;
+
+&lt;p&gt;Put that in the address bar. Boom! lots of stuff! But only one page’s worth, which isn’t lots of data. To get a lot more data, we have to add another parameter, the number of rows: ?rows=100&amp;amp;. Slot that in just before the p in prop= and see what happens.&lt;/p&gt;
+
+&lt;p&gt;Now, that isn’t all of the records though. Remove the .json and see what happens when you click on the arrows to page through the NEXT 100 rows. You get a URL like this:&lt;/p&gt;
+
+&lt;p&gt;https://opencontext.org/subjects-search/?rows=100&amp;amp;prop=oc-gen-cat-object&amp;amp;start=100&amp;amp;q=Poggio#15/43.1526/11.4090/19/any/Google-Satellite&lt;/p&gt;
+
+&lt;p&gt;So – to recap, the URL is searching for 100 rows at a time, in the general object category, starting from row 100, and grabbing materials from Poggio. We now know enough about how open context’s api works to grab material.&lt;/p&gt;
+
+&lt;h2 id=&quot;couple-of-ways-one-could-grab-it&quot;&gt;COUPLE OF WAYS ONE COULD GRAB IT:&lt;/h2&gt;
+&lt;p&gt;You could copy n’ paste -&amp;gt; but that will only get you one page’s worth of data (and if you tried to put, say, 10791 into the ‘rows’ parameter, you’ll just get a time-out error). You’d have to go back to the search page, hit the ‘next’ button, reinsert the .json etc over and over again.
+automatically. We’ll use a program called wget to do this. (To install wget on your machine, see the programming historian Wget will interact with the Open Context site to retrieve the data. We feed wget a file that contains all of the urls that we wish to grab, and it saves all of the data into a single file. So, open a new text file and paste our search URL in there like so:&lt;/p&gt;
+
+&lt;p&gt;https://opencontext.org/subjects-search/.json?rows=100&amp;amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;amp;q=Poggio
+https://opencontext.org/subjects-search/.json?rows=100&amp;amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;amp;start=100&amp;amp;q=Poggio
+https://opencontext.org/subjects-search/.json?rows=100&amp;amp;prop=oc-gen-cat-object—oc-gen-cat-arch-element&amp;amp;start=200&amp;amp;q=Poggio&lt;/p&gt;
+
+&lt;p&gt;…and so on until we’ve covered the full 4000 objects. Tedious? You bet. So we’ll get the computer to generate those URLS for us. Open a new text file, and copy the following in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-#URL-Generator.py&quot;&gt;
+urls = &#39;&#39;;
+f=open(&#39;urls.txt&#39;,&#39;w&#39;)
+for x in range(1, 4000, 100):
+    urls = &#39;https://opencontext.org/subjects-search/.json?rows=100&amp;amp;prop=oc-gen-cat-object---oc-gen-cat-arch-element&amp;amp;start=%d&amp;amp;q=Poggio/\n&#39; % (x)
+    f.write(urls)
+f.close
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and save it as url-generator.py. This program is in the python language. If you’re on a Mac, it’s already installed. If you’re on a Windows machine, you’ll have to download and install it. To run the program, open your terminal (mac) or command prompt (windows) and make sure you’re in the same folder where you saved the program. Then type at the prompt:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python url-generator.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This little program defines an empty container called ‘urls’; it then creates a new file called ‘urls.txt’; then we tell it to write the address of our search into the urls container. See the %d in there? The program writes a number between 1 and 4000; each time it does that, it counts by 100 so that the next time it goes through the loop, it adds a new address with the correct starting point! Then it saves that container of URLs into the file urls.txt. Go ahead, open it up, and you’ll see.&lt;/p&gt;
+
+&lt;p&gt;Now we’ll feed it to wget like so. At the prompt in your terminal or command line, type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wget -i urls.txt -r --no-parent -nd –w 2 --limit-rate=10k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll end up with a lot of files that have no file extension in your folder, eg,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.json?rows=100&amp;amp;prop=oc-gen-cat-object---oc-gen-cat-arch-element&amp;amp;start=61&amp;amp;q=Poggio%2F&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Select all of these and rename them in your finder (instructions) or windows explorer (instructions), such that they have a sensible file name, and that the extension is .json. We are now going to concatenate these files into a single, properly formatted, .json file. (Note that it is possible for wget to push all of the downloaded information into a single json file, but it won’t be a properly formatted json file – it’ll just be a bunch of lumps of difference json hanging out together, which we don’t want).&lt;/p&gt;
+
+&lt;p&gt;We are going to use a piece of software written for NodeJS to concatenate our json files (this enables us to develop in javascript; it’s useful for lots of other things too). Go to the NodeJS download page and download and install for your machine. (Windows users, make sure you select the npm package manager as well during the install procedure). Once it’s installed, open a terminal or command prompt and type&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;npm install -g json-concat (mac users, you might need sudo npm install -g json-concat)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This installs the json-concat tool. We’ll now join our files together:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# As simple as this. Output file should be last
+$ json-concat file1.json file2.json file3.json file4.json ouput.json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;… for however many json files you have.&lt;/p&gt;
+
+&lt;h2 id=&quot;congratulations&quot;&gt;CONGRATULATIONS&lt;/h2&gt;
+&lt;p&gt;You now have downloaded data from Open Context as json, and you’ve compiled that data into a single json file. This ability for data to be called and retrieved programmaticaly also enables things like the Open Context package for the R statistical software environment. If you’re feeling adventurous, take a look at that.&lt;/p&gt;
+
+&lt;p&gt;In Part Two I’ll walk you through using JQ to masage the json into a csv file that can be explored in common spreadsheet software. (For a detailed lesson on JQ, see the programming historian, which also explains why json in the first place). Of course, lots of the more interesting data viz packages can deal with json itself, but more on that later.&lt;/p&gt;
+
+&lt;p&gt;And of course, if you’re looking for some quick and dirty data export, Open Context has recently implemented a ‘cloud download’ button that will export a simplified version of the data direct to csv on your desktop. Look for a little cloud icon with a down arrow at the bottom of your search results page. Now, you might wonder why I didn’t mention that at the outset, but look at it this way: now you know how to get the complete data, and with this knowledge, you could even begin building far more complicated visualizations or websites. It was good for you, right? Right? Right.&lt;/p&gt;
+
+&lt;p&gt;PS Eric adds: “Also, you can request different types of results from Open Context (see: https://opencontext.org/about/services#tab_query-meta). For instance, if you only want GeoJSON for the results of a search, add “response=geo-record” to the request. That will return just a list of geospatial features, without the metadata about the search, and without the facets. If you want a really simple list of URIs from a search, then add “response=uri”. Finally, if you want a simple list of search results with some descriptive attributes, add “response=uri-meta” to the search result.”&lt;/p&gt;
+
+&lt;h2 id=&quot;json&quot;&gt;json&lt;/h2&gt;
+
+&lt;p&gt;Json is not easy to work with. Fortunately, Matthew Lincoln has written an excellent tutorial on json and jq over at The Programming Historian which you should go read now. Read the ‘what is json?’ part, at the very least. In essence, json is a text file where keys are paired with values. JQ is a piece of software that enables us to reach into a json file, grab the data we want, and create either new json or csv. If you intend to visualize and explore data using some sort of spreadsheet program, then you’ll need to extract the data you want into a csv that your spreadsheet can digest. If you wanted to try something like d3 or some other dynamic library for generating web-based visualizations (eg p5js), you’ll need json.&lt;/p&gt;
+
+&lt;h2 id=&quot;jqplay&quot;&gt;JQPLAY&lt;/h2&gt;
+
+&lt;p&gt;JQ lets us do some fun filtering and parsing, but we won’t download and install it yet. Instead, we’ll load some sample data into a web-toy called jqplay. This will let us try different ideas out and see the results immediately. In the this file  called sample.json I have the query results from Open Context – Github recognizes that it is json and that it has geographic data within it, and turns it automatically into a map! To see the raw json, click on the &amp;lt; &amp;gt; button. Copy that data into the json box at jqplay.org.&lt;/p&gt;
+
+&lt;p&gt;JQPlay will colour-code the json. Everything in red is a key, everything in black is a value. Keys can be nested, as represented by the indentation. Scroll down through the json – do you see any interesting key:value pairs? Matthew Lincoln’s tutorial at the programming historian is one of the most cogent explanations of how this works, and I do recommend you read that piece. Suffice to say, for now, that if you see an interesting key:value pair that you’d like to extract, you need to figure out just how deeply nested it is. For instance, there is a properties key that seems to have interesting information within it about dates, wares, contexts and so on. Perhaps we’d like to build a query using JQ that extracts that information into a csv. It’s within the features key pair, so try entering the following in the filter box:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.features [ ] | .properties&lt;/code&gt;
+You should get something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &quot;id&quot;: &quot;#geo-disc-tile-12023202222130313322&quot;,
+  &quot;href&quot;: &quot;https://opencontext.org/search/?disc-geotile=12023202222130313322&amp;amp;prop=oc-gen-cat-object&amp;amp;rows=5&amp;amp;q=Poggio&quot;,
+  &quot;label&quot;: &quot;Discovery region (1)&quot;,
+  &quot;feature-type&quot;: &quot;discovery region (facet)&quot;,
+  &quot;count&quot;: 12,
+  &quot;early bce/ce&quot;: -700,
+  &quot;late bce/ce&quot;: -535
+}
+{
+  &quot;id&quot;: &quot;#geo-disc-tile-12023202222130313323&quot;,
+  &quot;href&quot;: &quot;https://opencontext.org/search/?disc-geotile=12023202222130313323&amp;amp;prop=oc-gen-cat-object&amp;amp;rows=5&amp;amp;q=Poggio&quot;,
+  &quot;label&quot;: &quot;Discovery region (2)&quot;,
+  &quot;feature-type&quot;: &quot;discovery region (facet)&quot;,
+  &quot;count&quot;: 25,
+  &quot;early bce/ce&quot;: -700,
+  &quot;late bce/ce&quot;: -535
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the exact syntax of why that works, see Lincoln’s tutorial. I’m going to just jump to the conclusion now. Let’s say we wanted to grab some of those keys within properties, and turn into a csv. We tell it to look inside features and find properties; then we tell it to make a new array with just those keys within properties we want; and then we tell it to pipe that information into comma-separated values. Try the following on the sample data:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.features [ ] | .properties | [.label, .href, .&quot;context label&quot;, .&quot;early bce/ce&quot;, .&quot;late bce/ce&quot;, .&quot;item category&quot;, .snippet] | @csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;…and make sure to tick the ‘raw output’ box at the top right. Ta da! You’ve culled the information of interest from a json file, into a csv. There’s a lot more you can do with jq, but this will get you started.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-jq-and-run-the-query-from-the-terminal-or-command-line&quot;&gt;GET JQ AND RUN THE QUERY FROM THE TERMINAL OR COMMAND LINE&lt;/h2&gt;
+
+&lt;p&gt;Install on OS – instructions from Lincoln http://programminghistorian.org/lessons/json-and-jq#installation-on-os-x&lt;/p&gt;
+
+&lt;p&gt;Install on PC – instructions from Lincoln http://programminghistorian.org/lessons/json-and-jq#installation-on-windows&lt;/p&gt;
+
+&lt;p&gt;Got JQ installed? Good. Open your terminal or command prompt in the directory where you’ve got your json file with the data you extracted in part 1. Here we go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jq -r &#39;.features [ ] | .properties | [.label, .href, .&quot;context label&quot;, .&quot;early bce/ce&quot;, .&quot;late bce/ce&quot;, .&quot;item category&quot;, .snippet] | @csv&#39; data.json &amp;gt; data.csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, we invoke jq, we tell it we want the raw output (-r), we give it the filter to apply, we give it the file to apply it to, and we tell it what to name the output.&lt;/p&gt;
+
+&lt;p&gt;Take a look at how Lincoln pipes the output of a wget command into jq at the end of the section on ‘invoking jq’. Do you see how we might accelerate this entire process the next time you want data out of Open Context?&lt;/p&gt;
+
+&lt;h2 id=&quot;combining-wget--jq&quot;&gt;COMBINING WGET &amp;amp; JQ&lt;/h2&gt;
+
+&lt;p&gt;Assuming you’ve got a list of urls (generated with our script from part 1), you point your firehose of downloaded data directly into jq. The crucial thing is to flag wget with &lt;code&gt;-qO-&lt;/code&gt; to tell it that the output will be &lt;em&gt;piped&lt;/em&gt; to another program. In which case, you would type at the terminal prompt or command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -qO- -i urls2.txt | jq -r &#39;.features [ ] | .properties | [.label, .href, .&quot;context label&quot;, .&quot;early bce/ce&quot;, .&quot;late bce/ce&quot;, .&quot;item category&quot;, .snippet] | @csv&#39; &amp;gt; out.csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which in Human says, ” hey wget, grab all of the data at the urls in the list at urls2.txt and pipe that information into jq. JQ, you’re going to filter for raw output the information within properities (which is within features), in particular these fields. Split the information fields up via commas, and write everything to a new file called out.csv.”&lt;/p&gt;
+
+&lt;p&gt;…Extremely cool, eh? (Word to the wise: read Ian’s tutorial on wget to learn how to form your wget requests politely so that you don’t overwhelm the servers. Wait a moment between requests – look at how the wget was formed in the open context part 1 post).&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 12:19:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/getting-data-out-of-opencontext/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/getting-data-out-of-opencontext/</guid>
+        
+        <category>how-to</category>
+        
+        <category>opencontext</category>
+        
+        <category>json</category>
+        
+        <category>data</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>romans must die</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#romans-must-die&quot; id=&quot;markdown-toc-romans-must-die&quot;&gt;ROMANS MUST DIE&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heads-will-roll&quot; id=&quot;markdown-toc-heads-will-roll&quot;&gt;HEADS WILL ROLL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-seductive-lure-of-the-digital-landscape&quot; id=&quot;markdown-toc-the-seductive-lure-of-the-digital-landscape&quot;&gt;THE SEDUCTIVE LURE OF THE DIGITAL LANDSCAPE&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#perspectives-on-space-and-time&quot; id=&quot;markdown-toc-perspectives-on-space-and-time&quot;&gt;PERSPECTIVES ON SPACE AND TIME&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#archaeogaming--simulation-as-a-kind-of-digital-public-archaeology&quot; id=&quot;markdown-toc-archaeogaming--simulation-as-a-kind-of-digital-public-archaeology&quot;&gt;ARCHAEOGAMING &amp;amp; SIMULATION AS A KIND OF DIGITAL PUBLIC ARCHAEOLOGY&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-useful-deaths-of-digital-romans&quot; id=&quot;markdown-toc-the-useful-deaths-of-digital-romans&quot;&gt;THE USEFUL DEATHS OF DIGITAL ROMANS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#references-cited&quot; id=&quot;markdown-toc-references-cited&quot;&gt;REFERENCES CITED&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;romans-must-die&quot;&gt;ROMANS MUST DIE&lt;/h1&gt;
+&lt;p&gt;Shawn Graham Carleton University&lt;/p&gt;
+
+&lt;p&gt;Archaeologists have been simulating past societies via computation for decades (cf Wurzer et al 2015; Costopoulos and Lake 2010 for recent overviews). It is nothing new for us to perform a kind of practical necromancy to raise the dead to see what they can tell us. Archaeogaming introduces a new actor into these artificial societies: living humans. There are dangers to guard against, and opportunities to seize, when we co-write the past with our digital homunculi. In this chapter I draw on some of my own experiences to suggest a path forward on this quest.&lt;/p&gt;
+
+&lt;h2 id=&quot;heads-will-roll&quot;&gt;HEADS WILL ROLL&lt;/h2&gt;
+&lt;p&gt;Consider life in a small society run along patriarchal lines. The head of household’s word is law; perhaps even your household looks up to Him as well, in a chain of lesser families connected by kith and kin. All depends on your relationship with Him. Now consider a situation where He is suddenly removed – perhaps He has died suddenly. Your world wobbles a little bit, but succession rules quickly allow us to figure out who is now in charge. It is a rigid structure, yet it works. Most of the time.&lt;/p&gt;
+
+&lt;p&gt;For now.&lt;/p&gt;
+
+&lt;p&gt;But what would happen if many Heads rolled, all at once? If the Heads died in infamy and shame? How much damage can such a social world sustain before it collapses, recovers, or transforms? I am thinking now of the social world of the Romans in the late Republic or the early days of Empire, a world self-consciously rigid in the way I described, but yet, one that manages to carry on regardless. Let us, then, kill some Romans. It is perhaps one of the best way to understand the ways in which Roman society was resilient to the frequent pogroms and proscriptions of the late Republic and other eras because we can see what happens next.&lt;/p&gt;
+
+&lt;p&gt;Romans must die for me to explore the ways Rome’s social network reacted under stress. This does of course present some obvious practical issues, but through simulation, one that is tractable. The kind of simulation I used was an ‘agent based simulation’ (ABM) (Graham, 2009 for the actual publication of this particular simulation). Think of an ABM as a kind of giant self-running, self-organizing petri dish. Each ‘agent’ is its own program, coded to react to its environment and/or the presence of other ‘agents’ (Lake 2015). Agent based modeling allows me to raise Romans from the dead over and over, and give them patterns of interaction known from the archaeology (for instance the stamps on Roman bricks in and around Rome fossilize nodes of social interaction, as it happens). I raise these digital Romans up; I give them artificial life; and then I kill them. Since the agents are programmed to interact based on social networks known to have existed in the past, aspects of their emergent behaviour are necessarily tied to that past (cf Epstein 2006: 31-33). Thus, since I wish to know under what circumstances this society might collapse, I have them interact in an economic and social world as known from the scholarly literature. My agents harbour grudges; they nurse wounds and social slights. Their primary motivation is to find chains of patrons and clients to whom they can attach in order to obtain resources; that is, a classic rich-get-richer effect is in play. Those who have not, get shut out. They take their revenge. And then I start to put this world under stress to see what happens next.&lt;/p&gt;
+
+&lt;p&gt;There is something mesmerizing as I watch this artificial life creep and fight its way across the screen. As described, it is a giant petri dish, where my intervention is limited to setting up the pieces, writing the rules, and flipping the ‘on’ switch. But… wouldn’t you want to play this game? Climb the social ladder in Rome! Help your clients and find yourself better patrons – but make sure you don’t make too many enemies along the way or you too will lose… Game of Togas. It doesn’t take much to flip an agent model into a video game; it simply is a matter of whether or not the player/researcher has any active agency in what happens on the screen. In this regard then, archaeologists are already gamers. They use ABM to explore the past, but remove themselves from the action: thus an ABM is just a species of video game that plays itself. In which case, there is little reason why games-qua-games should not also be another kind of experimental petri dish for archaeologists to write the past.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-seductive-lure-of-the-digital-landscape&quot;&gt;THE SEDUCTIVE LURE OF THE DIGITAL LANDSCAPE&lt;/h2&gt;
+&lt;p&gt;As I watch the screen and tell the story of what my digital Romans are up to, as they live and die, it becomes easier and easier to believe that I’m actually watching something true about the past…&lt;/p&gt;
+
+&lt;p&gt;In Foucault’s Pendulum, Umberto Eco tells a story where the protagonists feed a computer with vast amounts of information, to devise a conspiracy theory, for their own entertainment, to determine a ‘truer’ story of European history. Things take a turn for the worse when the men begin to believe that the simulation is mapping out an actual ‘real’ truth – and even more dangerously, others come to believe in it too.&lt;/p&gt;
+
+&lt;p&gt;This, it strikes me is a problem common both to gaming and to simulation. It is all too easy to succumb to the beauty of the digital landscape, a world that turns around me the player, me the creator. In both video games and agent simulations, we have a kind of control, an agency, we do not have in other aspects of our lives. This seductive power blinds us. When we are very good at a game, when we can anticipate what happens next and hit that state where the game is just challenging enough to keep us pushing forward, we have internalized the rules that govern the game and its story. To be ‘good’ at a game is to perform (uncritically) the vision of the world that its creators have encode in the rules, in the mechanics. When we are very good at simulation, we similarly have internalized the ways in which code can be used to tell stories of the world. In which case, if we are interested in archaeogaming, it might be worth thinking about the methods that have evolved to guard against this tendency in modelers. If we are interested in mere simulation, it might be worth thinking about the methods used to understand games to guard against this tendency in gamers.&lt;/p&gt;
+
+&lt;p&gt;In which case it is useful to expand therefore on some of the ways agent modeling and video gaming might intersect, particularly in terms of how we evaluate the success or failure of both to ‘do good history’, as a contribution towards the methods of archaeogaming. After all, archaeology has always been concerned with understanding virtual worlds, whether those worlds are built from stone, wood, or concrete; it’s just that now we must understand the worlds built from sand and electricity as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;perspectives-on-space-and-time&quot;&gt;PERSPECTIVES ON SPACE AND TIME&lt;/h2&gt;
+&lt;p&gt;The difference between games and agent simulations is not so vast. An agent based model in fact is a special class of video game where the player, does not, in fact, play. She sets it all up, and she watches to see how that world reacts. She’s interested in the whole-world interrelationships; the player of games on the other hand is necessarily interested in the reactions to his own actions. In some respects, one could make the analogy to social network analysis: simulation is to whole-network analysis as a video game is to ego-analysis (cf Weingart 2011-2012 on network analysis). That is to say, the difference is one of perspective.&lt;/p&gt;
+
+&lt;p&gt;If archaeogaming is going to be a serious pursuit, then the first lesson we can take from agent modeling concerns time and space. The way that time is treated in agent models is critical; time is malleable so that there is time for something to take place. It makes a difference to your model whether or not your agents update themselves one-at-a-time, each one running its procedures sequentially, versus in parallel. Emergent effects that can seem profound or meaningful might only be an artefact of how ‘time’ is imagined. Then there is the time within which something might take place. Terry Pratchett’s ‘Thief of Time’ (2001) calls this the ‘universal tick’, or the time it takes for now to become then. Agent models tick in time with the computer’s clock: does processor-clock time have any meaningful analogy to ‘historical time’? Similarly, agent models happen in a kind of space. This space can be a flat two dimensional world subject to edge effects that can muddy the waters; in some models, the left hand side of the world connects to the right hand side, and the top connects to the bottom, which gives us a torus. In others, the space is the gaps between social actors, that is, a network. How does space work in the games we are analyzing from an archaeogamer perspective?&lt;/p&gt;
+
+&lt;p&gt;Aarseth et al. years ago devised a typology for video games that depended upon considering several axes of analysis – space, time, player-structure, control, and rules (2003). As we begin to devise the methods for archaeogaming, I want to suggest that we pay attention to space and time in their formulation: Space contains ‘perspective, topography, and environment’; Time contains ‘pace, representation’ and ‘teleology’. Whether the virtual world we are analyzing is in ‘meatspace’ or cyberspace, these categories usefully force us to concentrate on what space and time are doing in the game/simulation in meaningful ways. Consider my simulation of Roman social life where the Romans must die. In terms of ‘space’, the simulation has an omni-present perspective: I see all, I can peer into each agent’s life at will. The environment is geometric; the world in which these Romans move is static, the conditions do not change during the run. In terms of ‘time’, the pace is turn-based (each Roman updates in turn), time is mimetic (it takes time for the Roman to achieve something), time is teleological in that the Romans have clear goals and ambitions in mind. As table 1 shows, my simulation occupies an interesting space between ‘Caesar IV’ ref,link and ‘Civilization IV’ ref, link , two games that also contain useful simulations of Roman society.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                              Caesar IV     Civilization IV     RmD
+Space           Perspective     Omni-Present    Vagrant             Omni-Present
+              Topography      Topological     Geometrical         Geometric
+              Environment       Dynamic       Dynamic             Static
+Time            Pace              Real-Time     Turn-Based          Turn-Based
+              Representation    Arbitrary       Mimetic             Mimetic
+              Teleology       Finite          Finite              Finite Table 1 Comparing time and space in games and an agent based model. An expansion of Kee and Graham (2014) Table 13.2.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let’s put the shoe on the other foot. How do Caesar IV and CiV hold up against the standards used to understand agent based models? Let us use Iza Romanowska’s framework (2014; see also her longer discussion 2015) for evaluating agent models. For Romanowska, the key elements to usefully evaluating the success of an agent based model are:&lt;/p&gt;
+
+&lt;p&gt;scope
+appropriateness
+resolution
+how complicated is it?
+parsimonious parameters
+utility&lt;/p&gt;
+
+&lt;p&gt;Scope and appropriateness deal with research questions. Are we building a model to explore a hypothetical or to understand patterns in the data? Caesar IV clearly has a research question at its heart: how does experience in the provinces make a man fit to govern in Rome? When I reframed ‘Romans must die’ as a game in my opening, – help your clients succeed, find a patron to help you succeed – I was framing a question about the role of patronage in generating social structure in Rome. Appropriateness: is a resource management sim an appropriate tool for answering the question about governance? Resolution: Caesar IV shows me individual Romans, with whom I have to interact. That may be too low a level given the scope &amp;amp; appropriateness. Parsimonious parameters – how many knobs and dials can I twiddle? What and where are the feedback loops? Complexity theory here teaches that simpler is better (Romanowska, 2015). Utility: not, is this a ‘fun’ game, but rather, ‘what have we learned?’ How are we changed?&lt;/p&gt;
+
+&lt;h2 id=&quot;archaeogaming--simulation-as-a-kind-of-digital-public-archaeology&quot;&gt;ARCHAEOGAMING &amp;amp; SIMULATION AS A KIND OF DIGITAL PUBLIC ARCHAEOLOGY&lt;/h2&gt;
+&lt;p&gt;Finally, I put it to you that one of the most powerful ways that archaeogaming could intersect with a digital public archaeology becomes evident if we consider the original purpose of the Netlogo agent based modeling environment (currently, the most widely used ABM tool in archaeology). Netlogo was originally designed to teach students about complex phenomena by getting them to observe the ways small parameter changes could affect the global behaviour of the complex system (Wilensky, 1999). The ‘Evolving Planet’ archaeogame (Rubio et al, this volume) takes this approach. But we could go further. What if we put the players into our agent-based models? Not just tweaking the global, but engaging the first-person? Holistic and Ego-centric at the same time. Netlogo comes with an extension called ‘hubnet’, which allows individuals to take on the role of a single agent within an otherwise fully digital simulation. The Netlogo developers call this ‘participatory’ simulation’. Is there room in archaeogaming to merge humans and machine-made societies? That tools change us and what it means to be human is a truism of archaeology: archaegaming perhaps is a way to understand what this digital moment is doing to our humanity.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-useful-deaths-of-digital-romans&quot;&gt;THE USEFUL DEATHS OF DIGITAL ROMANS&lt;/h2&gt;
+&lt;p&gt;Archaeologists are naturally gamers already. Archaeologists have been building virtual worlds long before video games emerged. We have already developed methods and techniques for understanding the virtual worlds of the past; the things we see as archaeologists in the virtual worlds of the present accordingly can be grounded in the methods and techniques of archaeology. This small essay has suggested a framework based on typologies of time and space coupled with perspectives on agent modeling validation techniques to help guard against the seductive lure of the digital, so that when Romans must die, the die usefully.&lt;/p&gt;
+
+&lt;h2 id=&quot;references-cited&quot;&gt;REFERENCES CITED&lt;/h2&gt;
+&lt;p&gt;Costopoulos, A., M.W. Lake (editors) 2010 Archaeological Simulation: Into the 21st Century. University of Utah Press, Salt Lake City.&lt;/p&gt;
+
+&lt;p&gt;Epstein, J. 2006 Agent-based computational models and generative social science. In Generative Social Science: Studies in Agent-Based Computational Modeling, edited by J. M. Epstein, pp. 4-46. Princeton UP, Princeton, NJ.&lt;/p&gt;
+
+&lt;p&gt;Espen Aarseth, Solveig M. Smedstad, and Lise Sunnana 2003 A Multi-Dimensional Typology of Games._ Proceedings of the Level Up Games Conference_. pp 48-53. Netherlands Digital Games Research Association, Utrecht.&lt;/p&gt;
+
+&lt;p&gt;Graham, Shawn 2009 Behaviour Space: Simulating Roman Social Life and Civil Violence. Digital Studies / Le champ numÃ©rique 1.2 http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/172/214&lt;/p&gt;
+
+&lt;p&gt;Kee, Kevin and Shawn Graham 2014 Teaching history in an age of pervasive computing: the case for games in the high school and undergraduate classroom in Pastplay: Teaching and Learning History with Technology, edited by Kevin Kee, pp337-366. University of Michigan Press, Ann Arbor MI.&lt;/p&gt;
+
+&lt;p&gt;Lake, M.W. 2015 Explaining the past with ABM: On modelling philosophy. In Agent-based modeling and simulation in archaeology, edited by G. Wurzer, Kerstin Kowarik, and Hans Reschreiter, pp. 3-35. Springer, Vienna.&lt;/p&gt;
+
+&lt;p&gt;Romanowska, Iza 2014 How to evaluate a simulation: a quick guide for non-modellers Simulating Complexity https://simulatingcomplexity.wordpress.com/2014/10/06/how-to-evaluate-a-simulation-a-quick-guide-for-non-modellers/&lt;/p&gt;
+
+&lt;p&gt;Romanowska, Iza 2015 So You Think You Can Model? A Guide to Building and Evaluating Archaeological Simulation Models of Dispersals Human Biology 87(3):169-192. http://www.bioone.org/doi/full/10.13110/humanbiology.87.3.0169&lt;/p&gt;
+
+&lt;p&gt;Weingart, Scott. 2011-12 Demystifying Networks, Parts I &amp;amp; II. Journal of Digital Humanities http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/&lt;/p&gt;
+
+&lt;p&gt;Wurzer, G, Kerstin Kowarik, and Hans Reschreiter (editors) 2015 Agent-based modeling and simulation in archaeology. Springer, Vienna.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 12:18:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/romans-must-die/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/romans-must-die/</guid>
+        
+        <category>agent based modeling</category>
+        
+        <category>archaeogaming</category>
+        
+        
+        <category>Essays</category>
+        
+      </item>
     
       <item>
         <title>notes on running the dh usb</title>
@@ -544,171 +813,6 @@ This is what rehashing digital archaeology really means. we have to enable peopl
         <category>code</category>
         
         <category>re-use</category>
-        
-        
-        <category>Essays</category>
-        
-      </item>
-    
-      <item>
-        <title>textreuse package for R</title>
-        <description>
-&lt;p&gt;Lincoln Mullen has a wonderful R package on rOpenSci for detecting and measuring text reuse in a corpus of material (the kind of thing that is enormously useful if you’re interested in 19th century print culture, for instance). [https://github.com/ropensci/textreuse] I wondered to myself what I would find if I fed it the corpus of material I’ve collected (see this gist) concerning the trade in human remains on Instagram (It’s looking for ngrams 5 words long, which means that I end up looking at 3k posts from my initial corpus of 13k). We’re writing all of this up for submission shortly, so this textreuse isn’t in our paper, yet; but anyway, a preview…&lt;/p&gt;
-
-&lt;p&gt;A score of ‘1’ indicates a perfect match. After running my materials through, I found many posts scoring 1. I thought, hmm, probably an error? Or perhaps, duplicate entries had found their way into my corpus? But after hand checking several I realized, no, the image is always different. So that’s interesting: people selling this material use the same language time and time again. Let’s consider some of it. We’ll start with this post:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Real human skull for sale, message me for more info. #skull #skulls #skullforsale #humanskull #humanskullforsale #realhumanskull #realhumanskullforsale #curio #curiosity&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A post that scored 1 for similarity has the exact same text but a vastly different photograph. I’m not going to link to the photos or posts here because I don’t want to encourage this. A post at .9375 similarity has one extra hashtag appended to the text (and of course, a different photo):&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Real human skull for sale, message me for more info. #skull #skulls #skullforsale #humanskull #humanskullforsale #realhumanskull #realhumanskullforsale #curio #curiosity #dead&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We continue so on until we’re at arond .5 for our score:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Skull and arm £400 for the pair. One of the fingers on the hand is missing it’s tip and the whole arm needs glue removing and tidying up a bit. Real human skull for sale, message me for more info. #skull #skulls #skullforsale #humanskull #humanskullforsale #realhumanskull #realhumanskullforsale #curio #curiosity #dead&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;These posts are all by the same individual. That one phrase, ‘Real human skull for sale, message me for more info’, and that sequence of hashtags is as good an identifier for this individual as any username I’m thinking. I’m still going through these results, but the thought occurs that perhaps I might find &lt;em&gt;different&lt;/em&gt; users using very similar language. If I found that, that would be very interesting indeed – a sign of influence between users? A sign of community? A kind of shibboleth, a marker of belonging?&lt;/p&gt;
-
-&lt;p&gt;Other implications?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-r&quot;&gt;library(textreuse)
-dir &amp;lt;- (&quot;posts&quot;, package = &quot;textreuse&quot;)
-minhash &amp;lt;- minhash_generator(200, seed = 235)
-ats &amp;lt;- TextReuseCorpus(dir = dir,
-                       tokenizer = tokenize_ngrams, n = 5,
-                       minhash_func = minhash)
-buckets &amp;lt;- lsh(ats, bands = 50, progress = FALSE)
-candidates &amp;lt;- lsh_candidates(buckets)
-scores &amp;lt;- lsh_compare(candidates, ats, jaccard_similarity, progress = FALSE)
-scores
-write.csv(scores, file=&quot;textreusescores.csv&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Mon, 16 Jan 2017 12:04:00 -0500</pubDate>
-        <link>http://smgprojects.github.io/textreuse-package-for-r/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/textreuse-package-for-r/</guid>
-        
-        <category>instagram</category>
-        
-        <category>R</category>
-        
-        
-        <category>Code</category>
-        
-      </item>
-    
-      <item>
-        <title>ethics of video games in archaeology</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#a-playthrough-of-minecraft-as-an-archaeologist&quot; id=&quot;markdown-toc-a-playthrough-of-minecraft-as-an-archaeologist&quot;&gt;A Playthrough of Minecraft as an Archaeologist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#provocations&quot; id=&quot;markdown-toc-provocations&quot;&gt;Provocations&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Archaeology and video games share a number of affinities, not least of which because they are both procedurally generated. There is a method for field archaeology; follow the method, and you will have correctly excavated the site/surveyed the landscape/recorded the standing remains/etc. These procedures contain within them various ways of looking at the world, and emphasize certain kinds of values over others, which is why it is possible to have a marxist archaeology, or a gendered archaeology, or so on. Thus, it also seems obvious to me that you can have an archaeology within video games (not to be confused with media archaeology, or an archaeology of video games). Just as you can have ethics of archaeology, you can have an ethics of video games. What is interesting for us in the present moment is how these ethical perspectives intersect.&lt;/p&gt;
-
-&lt;p&gt;The obvious starting point in a discussion of the digital ethics of video games insofar as they intersect with archaeological ethics is of course the depiction of ‘looting’ as a game mechanic. Looting happens in a variety of games as a way of enabling the player to improve his or her character’s abilities by the performance of an otherwise meaningless task in the game environment. In games that explicitly frame their narrative in a way that intersects with cultural heritage, this looting is demonstrably archaeological looting, in that the objects collected represent the actual material culture of an in-game culture (or more commonly, uses a ‘real-world’ object as the model for the in-game object). Thus, the depiction of looting in games can be seen to normalize the activity of looting in the real world.&lt;/p&gt;
-
-&lt;p&gt;This is true, and is a serious issue. But the ethical dimension of video games, especially as they pertain to archaeological ethics, goes much deeper. In what follows, I am heavily influenced by the work of Miguel Sicart (2009), who draws attention to two extremely important aspects that seem obvious but are actually rather subtle:&lt;/p&gt;
-
-&lt;p&gt;1 – that the player is an ethical agent in the world&lt;/p&gt;
-
-&lt;p&gt;2 – that the game is both a designed object and a player experience in this world, and hence ethical.&lt;/p&gt;
-
-&lt;p&gt;In which case, ‘the experience of a computer game is the experience of a moral object by an ethical subject’ (5).  Too often, in discussions of video games, the player is depicted as some sort of secondary thing that is merely influence (ethically) by the game. But for Sicart, the player is an ethical creature and can make moral judgements about the experience within which she is immersed (11). So while a game that depicts unlawful acts – like looting – under a virtues-ethics perspective would be unethical, Sicart reminds us that this account does not take into account the player-agent’s ability to reflect on this (or indeed, to play in a manner that subverts it). A game that permits looting but also allows for such an act to have meaningful game play consequences for the player to act upon would be ethical, per Sicart (160). A game that permits looting, but has no meaningful consequences, is unethical (159). Sicart uses the example of Bioshock and the Little Sisters. Kill the Little Sister, and the player collects a certain amount of ‘Adam’ from the corpse, a valuable in-game resource; let the Little Sister live, and the Little Sister gives you very nearly the same amount of ‘Adam’ anyways. There is no in-game consequence, and for Sicart, this means that the game design is being unethical (160).  ‘A good computer game is that which fosters virtuous players, a game designed to create player-subjects who can understand and develop their ethical values, and where those values can be reflected. The player is responsible…’ (126). A game that features looting as a mechanic, from an archaeological perspective therefore, would be ethical if the consequences of that decision to loot gave the player a meaningful opportunity to decide whether or not to do so. It need not necessarily make the equation that looting = bad; but the consequences have to meaningful within the ludic narrative of the game so that the player can reflect on those consequences. We read novels to experience the world from another’s perspective – every decision within the novel is meaningful. So too should games be replete with opportunities for meaningful interactions and choices. The genius of Bioshock – where it is at its most ethical – is where it reveals at the end that the player never had any real choice in events anyway; that the designers have been puppet masters all along (163).&lt;/p&gt;
-
-&lt;p&gt;The second part of Sicart’s ethics (the first being the subtle interplay between virtue ethics and the player’s own moral agency) is drawn from informational ethics (as he interprets the work of Floridi and Sanders). In this perspective, beings are data entities. Not all beings are biological. The materiality of a pawn in a game of chess is not what is important; rather it is in its relational situation on the board and the contingent interplay of that situation within the rules for movement for pawns (Sicart, quoting Floridi 2003). Data entities make meaning, or have meaning, in terms of their relationships with other data entities. Thus, data entities exist in an ecology of relationships – the Infosphere. The practical import of this is to extend agency to the game, or to objects within the game, and to situate them at the same level as the player agent. What constitutes an ‘agent’ in this perspective depends on how the Infosphere is abstracted (128-130; see also Morgan 2009 where she argues that non-player characters are non-human manifestations of a network of computation). Informational ethics sounds rather similar, to the archaeological ear, to ideas drawn from complexity theory or actor-network theory. Objects actually do want things (Gosden xxxxx).&lt;/p&gt;
-
-&lt;p&gt;‘Information ethics describes a moral universe in which not only is no being alone, but every being is indeed related, morally related to other beings, because in their well-being is connected the welfare of the whole system. Agents are systems that affect larger systems with their actions, affecting themselves as well, since other systems are procedurally and informationally related to them… Information ethics considers moral actions an information process’. (130). Emphasis in the original.&lt;/p&gt;
-
-&lt;p&gt;The point of considering the ethics of games from Sicart’s perspective is to explore an issue – like looting, for instance – and to situate it within the the web of interrelated elements and agents to develop a weighted network. While he does not mean an actual network-analytic approach to measuring things like centrality or degree within such a representation (he is more metaphorical than formal here), Sicart provides us with a way of operationalizing our ethical analysis of games. The locus of ethical responsibility within a game (whether it is with the player, the designers, the labor system, the market, the player community structure, the non-player characters, or what have you) can be read from this weighted  network.&lt;/p&gt;
-
-&lt;p&gt;Let’s consider for a moment the moral agency of the player.  Sicart points out games and their narrative layer, their ludic layer can be damaging to a player’s virtue when the player is not sufficient mature (201). That is to say, if we play games for which are own moral compass is not yet completely formed or developed, then these games can be a source of harm for the player. The obligation then rests on the game designer to create games where the ethical choices in the game have meaningful consequences. Then we as ethical agents ourselves can play the game to explore and probe the limits of our own ethical understandings (205). For archaeology, this means that our codes of archaeological ethics can be operationalized, made real and consequent, and testable in the sense that a player can begin to explore the consequences for herself.  Are our archaeological ethics deontological, rule-bound and duty-bound, and not necessarily meaningful for us as individual archaeologists? In which case, how do these intersect with the ethics of games as Sicart imagines them? A game should be a safe space to explore this contrast.&lt;/p&gt;
-
-&lt;p&gt;This I think is one of the main avenues for exploration in the nascent area of ‘archaeogaming’. Instead of concerning ourselves with visual fidelity to an imagined past (for instance), we should actually be making games that embody our codes of archaeological ethics. When we play games as archaeologists (when we are consciously thinking as an archaeologists and using the morals and ethics of our profession) we should therefore be reflecting on what the game as a designed object is doing to how we think about the world.&lt;/p&gt;
-
-&lt;p&gt;In what follows, I recount a play through of Minecraft, trying to behave as ‘archaeologically’ and ethically as I can. I then follow up with some more questions about where an ethically informed ‘archaeogaming’ might usefully proceed. When I write about video games, I am the player-subject I know best (and for whom I do not need to obtain ethics research board clearance). What are the web of weighted relationships in the games that I play most often? Are they ethical games? Am I an ethical player? How can we design games where the ethics of games (as described by Sicart) intersect with the ethics of archaeology?&lt;/p&gt;
-
-&lt;h2 id=&quot;a-playthrough-of-minecraft-as-an-archaeologist&quot;&gt;A Playthrough of Minecraft as an Archaeologist&lt;/h2&gt;
-
-&lt;p&gt;Video games are simply the latest incarnation of humanity’s long history of creating virtual worlds. Whether the virtual world are the Caves of Lascaux, or the play-world of Hadrian’s Villa, one of humanity’s defining abilities is its ability to construct worlds removed from the everyday. What is perhaps unique about the current incarnation of virtual worlds is their accessibility: the ability for the virtual world I create to be shared with you; the ability for both of us to enjoy/explore/engage with that virtual world; the ability to be changed by that virtual world (provided that this virtual world is designed ethically: that is, &lt;em&gt;not&lt;/em&gt; in its representation of a/the world, but rather in providing meaningful choices in how that world is experienced).&lt;/p&gt;
-
-&lt;p&gt;Roger Travis has argued that the playing of video games bears deep affinities to epic oral tradition, that through play and reporting on what happened, we enter into a bardic mode of making meaning from the set pieces and action of games. Note that this is very similar to how Sicart defines the ethical player: one who has a mature reflection on the nature of the game; the moral presence of a player matters (Sicart, 201-2). For Travis, how those set pieces are encountered, in what order, and in what circumstances, are defined by the game’s mechanics and story – that is, its rules. The rules of a game encode the worldview of the game’s designers. You’re good at the game? You’re performing the worldview of the game’s creators (note again the way Bioshock plays with this at the end of that game). What’s interesting is the way the player’s moral compass, and her agency in the game intersects with those rules, and merges with the player’s own story, the story the player tells to make sense of the action within the world.  Play is the act of discovery. The story we tell about that play sits at the intersection between the player’s own agency, and the god-like agency of the game’s creators to specify the rules. What happens at this intersection is emergent, and if we examine that point, we will understand something of what it means to explore a game ethically; and to see that some ethical points of view are hard-coded and cannot be challenged.&lt;/p&gt;
-
-&lt;p&gt;Imagine then that Minecraft is a real place. After all, if I tell you that the seed I used in Minecraft 1.64 was Double Village with default biomes, you can travel to the exact same place that I visit, a parallel world in a multiverse that has suffered my interventions, but as of yet, not yours. What story shall you tell? Here is mine. I initially told it in a series of tweets, and so added another layer of performance to the game.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The texts all say the same thing. Set the portal to ‘Double Village’ and soon you’ll find the exotic and lost desert villages. I put on the archaeotrancerebretron, grabbed my kit bag, and gritted my teeth. My companions all had theirs on too. We stepped into the charmed circle…&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;…desert sand gives way to a compacted sedimentary stone. Is it natural? Or is it built? I had to stop myself &amp;amp; remember my training.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… The next day we found the village. Much of it was above ground, including what looks to be the tower of a temple. We arrived on what appeared to be a market day. The locals go about their business, unconcerned about the ruined temple in their midst. No one stops us; but no one helps us either. Our ways are as alien to them as theirs to us; so long as they don’t get in way of Scientific Exploration!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I considered the temple, and began trying to record stratigraphically what I observed while I dug. The different kinds of blocks do help differentiate context – sand fill is quite different from the sandstone blocks the temple was built with. Unfortunately, sandstone is also part of the geology of Minecraft, and typically happens around 3 or 4 blocks down from the surface in this biome. So it became difficult to figure out where the temple ended and the local geology began. Since the temple is of a common ‘type’ in Minecraft (while the environment is procedurally generated and varied, the generated architecture conforms to a limited number of ideal-types),  and I was already familiar with it, I could just dig to exhume what I already believed to be there already: my ideas about the architecture of the place dictated what I would find. The act of excavation creates the archaeology in more ways than one, it seems.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As I dug, the sand shifted underneath me &amp;amp; I stumbled into the tower, breaking part of its friable decoration. “What do you see?” “…. beautiful things!” I replied&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Shortly thereafter, an armed skeleton began firing arrows at me. But – in this world with no ‘rules’, no overarching ‘story’, deciding to go an an archaeological expedition forces a story on us.  Temples in Minecraft invariable contain ‘loot’, with booby-traps and revenants protecting it. Here, the influence of pulp fiction (and in particular, Indiana Jones) is clearly evident (the archaeologist-as-tomb-raider trope litters video games. The rules of interaction force me, an archaeologist trying to perform a facsimile of reasonable archaeological investigation, into the trope whether I liked it or not).  Killing the skeleton and looting the temple makes no meaningful difference in the story of the game, insofar as it gave me new materials to work with and to construct my own story. Given the Indiana Jones vibe, the moral action here is to kill the skeleton and obtain the material. After all, it “belongs in a museum!”&lt;/p&gt;
-
-&lt;p&gt;It’s impossible, without seriously modifying the game, to excavate in anything other than a brute-force manner. While the NPCs will gather round to watch me work, they communicate with each other in an unintelligible murmur. As night falls, they respond to their own instincts and return to the village. They are Other. The information ethics that Sicart describes means that their agency within the game is as important as my own, and yet, my interaction with the NPCs, and the crude excavation tools that Minecraft gives me, pushes me towards a 19th century frame of mind, a colonialist discourse of ignoring as less important anyone who doesn’t look like me (one wonders at the consequence of this in other games, and in the wider demographics of game players). The archaeologist-as-better-class-of-looter trope seems to emerge naturally out of my interaction with the game mechanics.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Truly surprising. As night fell, gunshots rang out over this sleepy village on the desert’s edge. We set out to investigate. The villagers were congregated in a single home, discussing amongst themselves. ‘Let us in!’ we cried. We forced the door. Their conversation and shouts stopped. We all stared. The door was broken.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The NPCs, responding to their own desires and needs, gather together inside a building to protect themselves against the game’s monsters, against whom they have no other defence. My desire to wander amongst them and my clumsiness at working the controls meant that I broke down the door. My decision to intrude – an ethical decision – has meaningful consequences for the other data entities in this game.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;‘Back, men, to the camp!’ And we abandoned them to their fate.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;From above, I watched the zombies and creepers and who knows what else hunt each NPC down and kill them.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Throughout the night, we heard their cries. Part of the men wanted to go help, the others huddled together in fear. As the sun rose upon my reentry to the village, I found no traces. It was as if the villagers had not existed.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;My one attempt to engage the locals led to their annihilation.&lt;/p&gt;
-
-&lt;h2 id=&quot;provocations&quot;&gt;Provocations&lt;/h2&gt;
-
-&lt;p&gt;I will close with a list of provocations on the ethics of video games constructed or explored by archaeologists. I will offer no answers, but rather try to frame what I see as some of the more provocative ideas that are emerging around the idea of ‘archaeogaming’. If there is anything that truly defines ‘archaeogaming’ (see Dennis, Reinhard), then it must be the act of playing where the player’s ethical being is situated in the professional ethics of archaeology. Games do not have ‘ethics’ on their own, but their ethical nature emerges at the intersection of play and design. I expect to be wrong, to be challenged, and to be overcome. This too is in the nature of playing games: games challenge us, and provoke us, because they enhance or alter our abilities to inhabit another space, which is all the more reason to consider them ethically.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provocation 1: Video games are built environments and thereby invite archaeological study. In which case professional archaeological ethics apply.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If video games are built places, and we are thinking like an archaeologist (as per Sicart’s ethically-informed player), then we have to treat them as we would any other site. Given that games are a designed experience and that they are part of an informational ethics, we also have to treat other data entities with the respect that our archaeological ethics accord them. How did my play conform to accepted ethical practice? How did it break it? What are the implications?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provocation 2: Games about the past/material culture exist in the world and draw their associations from the past and material culture of that world and so are entangled in the ethics of that world.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When a game draws on the artwork or the cultural heritage of a people in the ‘real-world’, the designers have an ethical obligation to consider how their instantiation of a looting mechanic (should they use it) has meaningful consequences in the game and for the people whose material culture is now being looted again.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provocation 3: the ethics of making games are the ethics of labour, and power, and control.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The components that go into our electronics, that make game playing possible, are at the end of a long chain of exploitation, social and environmental damage. One need only think about the illegal and dangerous mining of rare earths in central Africa, the profits from which continue to support and prolong civil war and violence. Closer to home (as I write as a white North American academic comfortably ensconced in an ivory tower), labour laws permit exemption to number of hours of work per week in the special case of ‘information work’. If you make video games in Ontario, you can be made to work as many hours in a day as your employer desires.  Given this, should we, as ethically informed archaeologists, make games or play games at all? How do these conditions of exploitation and control of workers and resources square with our ethical codes of practice?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provocation 4: Performance and adherence to the rules of the game are an act of submission&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Urrichio (2005) and Bogost (2007) convincingly argue that the mechanics and rules of a game can be thought of as the historiography of the game, the argument itself about the past that gets performed by playing a game. If we play games not as ethically informed archaeologists, if we do not write about games or critique games from an archaeological perspective, we are submitting to the power of the game publisher and the game maker to set the terms of reference about the past.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Provocation 5 Modding and Fan Forums are an act of resistance&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The most ethical act we can perform as archaeologists confronting video games is to mod them. Very few of us have the skills, time, or safety to build and release a game from scratch. But we can use the tools of the commercial games themselves to literally reprogram their message, to add that ethical dimension of meaningful consequences, to confront games not just as designed objects but rather as a shared experience that can be ameliorated. We can and must be active in fan forums, Reddit threads, Twitch streams, Youtube ‘let’s play’ videos, blogs, journals, conferences, and teaching.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;My final provocation&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Ultimately, the ethics of archaeogaming are the ethics of digital public archaeology.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Oct 2016 12:09:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/ethics-of-video-games-in-archaeology/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/ethics-of-video-games-in-archaeology/</guid>
-        
-        <category>archaeogaming</category>
         
         
         <category>Essays</category>
