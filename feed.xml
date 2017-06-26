@@ -5,9 +5,428 @@
     <description>An open history notebook forked from Jason Heppler</description>
     <link>http://smgprojects.github.io/</link>
     <atom:link href="http://smgprojects.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 26 Jun 2017 14:25:03 -0400</pubDate>
-    <lastBuildDate>Mon, 26 Jun 2017 14:25:03 -0400</lastBuildDate>
+    <pubDate>Mon, 26 Jun 2017 14:30:42 -0400</pubDate>
+    <lastBuildDate>Mon, 26 Jun 2017 14:30:42 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>searching the equity for first nations</title>
+        <description>
+&lt;p&gt;corpus here: &lt;a href=&quot;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;prompted by:
+Journal of Archaeological Method and Theory
+June 2017, Volume 24, Issue 2, pp 451–465
+Extra! Extra! Read All About It: Newspaper Archives as Archaeological Site Survey
+&lt;a href=&quot;https://link.springer.com/article/10.1007/s10816-016-9273-3&quot;&gt;https://link.springer.com/article/10.1007/s10816-016-9273-3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;no text cleaning or regularization has been performed&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;terms over time&lt;/p&gt;
+
+&lt;!--	Exported from Voyant Tools (voyant-tools.org).
+The iframe src attribute below uses a relative protocol to better function with both
+http and https sites, but if you&#39;re embedding this into a local web page (file protocol)
+you should add an explicit protocol (https if you&#39;re using voyant-tools.org, otherwise
+it depends on this server.
+Feel free to change the height and width values or other styling below: --&gt;
+&lt;iframe style=&quot;width: 100%; height: 800px&quot; src=&quot;//voyant-tools.org/?view=Bubblelines&amp;amp;corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;scatterplot&lt;/p&gt;
+
+&lt;!--	Exported from Voyant Tools (voyant-tools.org).
+The iframe src attribute below uses a relative protocol to better function with both
+http and https sites, but if you&#39;re embedding this into a local web page (file protocol)
+you should add an explicit protocol (https if you&#39;re using voyant-tools.org, otherwise
+it depends on this server.
+Feel free to change the height and width values or other styling below: --&gt;
+&lt;iframe style=&quot;width: 100%; height: 800px&quot; src=&quot;//voyant-tools.org/?view=ScatterPlot&amp;amp;corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;topics&lt;/p&gt;
+
+&lt;!--	Exported from Voyant Tools (voyant-tools.org).
+The iframe src attribute below uses a relative protocol to better function with both
+http and https sites, but if you&#39;re embedding this into a local web page (file protocol)
+you should add an explicit protocol (https if you&#39;re using voyant-tools.org, otherwise
+it depends on this server.
+Feel free to change the height and width values or other styling below: --&gt;
+&lt;iframe style=&quot;width: 100%; height: 800px&quot; src=&quot;//voyant-tools.org/?view=Topics&amp;amp;corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 26 Jun 2017 12:32:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/searching-the-equity-for-first-nations/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/searching-the-equity-for-first-nations/</guid>
+        
+        <category>voyant</category>
+        
+        <category>first nations</category>
+        
+        <category>experiments</category>
+        
+        
+        <category>Experiments</category>
+        
+      </item>
+    
+      <item>
+        <title>grep results searching the equity for first nations</title>
+        <description>
+&lt;p&gt;search commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep &quot;indian&quot; *.txt
+grep &quot;1ndian&quot; *.txt
+grep &quot;algonq&quot; *.txt
+grep &quot;huron&quot; *.txt
+grep &quot;mohawk&quot; *.txt
+grep &quot;aborig&quot; *.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;’ cree ‘ returns nothing&lt;/p&gt;
+
+&lt;p&gt;voyant corpus: &lt;a href=&quot;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;results, appended together for safekeeping:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;83471_1883-08-02.txt:sided p il icy that would t upon Amerivnns favors w liivli they refused tin* t&#39;aindians. But tli.it was before the North Wont trade lmd develo ml, and as tl
+83471_1899-02-16.txt:field peas, indian corn and potatoes.
+83471_1903-04-30.txt:Ujindians. Mr. Clancy called for a po-j I icy for all Canadians, and the abolition | of sectionalism.
+83471_1903-09-17.txt:of digestion their number reached the gunR to tho 8Ame num))cr n8 B ruling service is Sir Ferdinand von Mueller, &amp;lt;&quot;d place, a man has been made to great delight was to startle people, amazing	total of 2.000 succeeding	indian native prince, with whom he K.C.M.O. Be has been the head of	carry an enormous spitoon suspend- and he often said things simply be-
+83471_1911-11-16.txt:that particular corner. No person indian.A, au^^tho10Canadian ? c&#39;??? is K?ving universal satisfaction ua
+83471_1920-01-22.txt:T)ie price of sugar is advancing. The ( -Aiindian Hoard of Coiiimcrc* has set the price of stipar at lit cents per lb., but &amp;lt;li&amp;lt;l not guarantee for how long. Our price for Sugar |&amp;gt;er Ih. is ........ eeM
+83471_1923-11-22.txt:Owing to the tact that with the ex- tion, since she showed a slight gain in c&amp;lt; ption of one in Lot 3, the sows were weight. However, while Lot 2 showed all pregnant, gains in weight were not a cost of .8 cents less per day, indian accurate indication and the powers cations were that Lot 3 were in by of observation had to be relied upon, far the best breeding condition.
+83471_1973-08-29.txt:This summer has been a busy one for at least twelve high school students in Ot Last May 28th this group began an interesting ject with a great deal of co-operation between these girls and boys. They have created a replica of an Indian Village, consisting of teepee s , an old Indian Fort which will have medicines and indian costumes on display.
+83471_1975-03-05.txt:Ron Sparling of Ontario may not have counted on the depth The latest statistics on unemployment show the most to 0f the ditch in the shoulder of the Eardley Road when he be in the unorganized territories and indian reserves for slid into this situation last weekend. With spring right 29%. In the municipalities the unemployment rates are as around the corner and a new road in the works the above follows: Bryson 17%. Campbell&#39;s Bay 16.7%, Fort Coulonge all too frequent occurance should become nothing but a bad 12.7%, Portage du Fort 10%, Chapeau 8.3%, Quyon 7.1%, memory before long. The photo was taken on Saturday Shawville .7%.	morning, the first day of March, 1975.
+83471_1975-04-09.txt:Lynn Pirie, standing left, was the leader of this delightful band of indians and clowns, left to right, De si Keon, Julie Armstrong, Angela Towed, Sherry Graham, Jody Caldwell,
+83471_1977-11-23.txt:Our first snowfall of the season came on Saturday morning when about 2 inches had fallen. It has almost all disappeared now and not it is indian summer coming up ...
+83471_1979-03-21.txt:primarily Amerindians (Cree
+83471_1988-05-04.txt:other way.	mean	he agreed	with	Zac-	present	confusion over ho-	should be seen as accepta-	a band of indians that	horses	and ourselves.	vert	et blanc.
+83471_1988-06-01.txt:what they should call their may	call	a	&quot;style &quot;.	So	start.	The	usual	title	for	verend	Smith&quot;	than	it	is	what about Father.	correctly.	rindian	paintings by	For every	listing	in	this
+83471_1988-11-23.txt:real indian summer.	Obituary rvllUy iY?tlllGGn otOTGy
+83471_1991-07-17.txt:when the feeling grew on	stealth of an indian track-	accentuate this distortion,	coming unbearable. I	Radford or the bhawvilie
+83471_1991-08-28.txt:The Native Alliance the kids, horseshoes for all The Alliance made sev-meets on the second Sun- and a dance featuring eral draws throughout the day of every month and Don Stanley and his evening, of restaurant actively encourages com- Band.	meals, a indian head wall
+83471_1991-10-23.txt:Kappes, Marlyn Grodde, about one inch of snow fell Mrs Genevieve Bretzlaff. here but melted in the af-This special event was ternoon. So we can expect also a celebration for Mr indian summer now after and Mrs Walter Yach s this first snowfall, anniversary and Pastor We send happy birthday Kappes&#39; birthday who re- wishes to Mrs Margaret ceived gifts and good Mielke of Arnprior who to her mother, Alice Wilson, wjshes A full course sup- will be celebrating a - who had the misfortune to
+83471_1994-10-12.txt:and evening grosbeaks, juncos, tree indian summer. And please don&#39;t use	**	****** *** *f*****^^
+83471_1995-09-27.txt:ac, Chief of the Ottawa Amerindian tribe, who lived invested from 1720 to 1769.
+83471_1997-10-08.txt:A quick scan of the table of contents reveals the scope of the book Part 1 covers the Amerindian presence up to 1791; Part 2 covers the transformation of the territory, covering settlement, lumbering and cultural
+83471_2000-08-23.txt:Carrol gave the answer to the number of lakes in Pontiac while Dave knew the nickname the Amerindian people had for the Ottawa River (Great River).
+83471_2003-01-29.txt:Where were bones discovered?	mented by archaeologists such as T.	racism. Is it an issue that Amerindians of
+83471_2003-01-29.txt:implements and bones found along the	hie that the native Amerindians living	bones is a contentious issue.	a society, as individuals?
+83471_2007-01-31.txt:old prehistoric Amerindian every year,&quot; said O&#39;Brien. The Town Pants, whose artifacts that were found on &quot;But people enjoyed it last
+83471_2007-08-29.txt:dosage. The information presented in this	Amerindians used it as a purgative because	ment, so further research is key.&quot;And they never ever had to eat a salad.	a room listening to this man tell his story of the betrayal
+83471_2007-10-24.txt:who visit the Dumoine for canoe-camping, ^e Algonquin communities check out Jim Coffey, Esprit Rafting Adventures: kayaking, hiking, fishing and hunting. We could vvww.indianamarketing.com/anglais/nations/a (Please note: this is a paraphrase of part of easily add winter activities to this list such as igonq.htm	and	also Coffey&#39;s talk.) I challenge you to not only think
+83471_1894-09-13.txt:(hlleml 11ndian* Supplied With
+83471_1982-04-21.txt:algonquins, et
+83471_1982-04-21.txt:algonquins) et Reetigouche
+83471_2000-12-06.txt:www.algonqulncollege.com
+83471_2000-12-13.txt:www.algonqutncollege.com
+83471_2001-08-22.txt:Commonwealth Plywood), Les tentatives du goule Chef algonquin Harry vernement f?d?ral de briser Wawatie souligne les l&#39;Entente trilat?rale et de int?r?ts communs Algonquins et des compagnies foresti?res.
+83471_2003-04-16.txt:E-mail: myfuture@algonquincollege.com
+83471_2003-04-16.txt:Visit us at: www.algonquinonline.com
+83471_2004-02-25.txt:Amprior and Adam Blair, son of Paul and Betty Cockhum, of Kanata, were united in marriage August 2, 2003 at pm. Info can he obtained at Robert Simpson Park, Amprior, Ontario. Thank you to our wwwalgonquincollegc.com /pembrokc or by contacting the admissions office at
+83471_2004-08-18.txt:School of Part-time Studies check out our website at www.algonquincollege.com/distance/mdex.htm
+83471_2004-08-18.txt:E-mail: myfuture@algonquincollege.com
+83471_2004-08-25.txt:School of Part-time Studies check out our website at www.algonquincollege.com/distance/index.htm
+83471_2004-08-25.txt:E-mail: myfuture@algonqumcollege.com
+83471_2004-11-10.txt:2204 for your quote today, tenance. perryg@algonquin-Pontiac Printshop Ltd. 133 college.com 613-324-0347.
+83471_2005-01-19.txt:for more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at www.algonquincollege.com/disttnce/indejLhtm
+83471_2005-01-19.txt:I385 Woodroffe Avenue, Ottawa, ON K2G IV8 (6I3) 727-7655 or I-888484-4444 (Toll free) E-mail: myfuture@algonquincollege.com
+83471_2005-01-26.txt:for more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at www.algonquincollege.com/disunce/index.htm
+83471_2005-01-26.txt:E-mail: myfuture@algonquincollege.com
+83471_2005-05-25.txt:For more information on the wide variety w Distance Education courses available through the School of Part-time Studies, check o#t our website at www.algonquincollege.com/distanc
+83471_2005-05-25.txt:Or email: myfuture@algonquincollegeco#W; Algonquin College Off-Campus Learning * 1 1385 Woodroffe Avenue, Ottawa, ON K2G1V8 (613) 727-7655 or 1-800-565-4723 (Toll Free)
+83471_2005-06-01.txt:For more information on the wide variety of Distance Education courses available through the School of Part-time Studies, check oat our website at www.algonquincollege.com/distance
+83471_2005-09-14.txt:For more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website I http //www algonquincollege. com/d istance/indmh?
+83471_2005-09-14.txt:(613) 727-7655 or 1-800-565-4723 (Toll Free) E-mail: myfuture^algonquincollege.com
+83471_2005-09-21.txt:For more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at httpV/www. algonquincollege com/distance/indeJitm
+83471_2005-09-21.txt:(613) 727-7655 or 1-800-565-4723 (Toll Free) E-mail: myfutureealgonquincollege com
+83471_2006-05-03.txt:www.algonquincollege.com/pembroke
+83471_2007-01-03.txt:www.algonqulncollege.com/pembroke
+83471_2007-04-25.txt:or visit our website at algonquincollege.com/pembroke
+83471_2007-05-02.txt:Apply at www.ontarlocollegas.ca or visit our website at algonqulncollege.com/pembroke
+83471_2007-05-09.txt:or visit our website at algonqulncoUege.com/pembroke
+83471_2007-05-16.txt:or visit our website at algonqulncollege.com/pembroke
+83471_2007-09-12.txt:e-mail us at flexibility@algonquincollege.com or visit www.algonquincollege.com/flexibility
+83471_2007-09-26.txt:e-mail us at flexibility@algonquincollege.com or visit www.algonquincollege.com/flexiblllty
+83471_2007-11-28.txt:contact Sharon at 613.727.4723 ext 3330, e-mail us at flexibility@algonquincollege.com
+83471_2007-12-05.txt:e-mail us at choice@algonquincollege.com
+83471_2007-12-05.txt:or visit algonquincollege.com/choice
+83471_2008-03-12.txt:A formal Invitation will be mailed to graduates For more information, please contact Brenda Chartrand at 613-735-4700, ext. 2702 or email: chartrb@algonquincollege.com
+83471_2008-03-26.txt:or email us at flexibility@algonquincollege.com or visit algonquincollege.com/flexibility
+83471_2008-03-26.txt:algonquincollge.com/PartTimeStudies
+83471_2008-05-07.txt:For more information, please contact Brenda Chartrand at 613-735-4700, ext. 2702 or email: chartrb@algonquincollege.com
+83471_2008-05-28.txt:email us at flexibility@algonquincollege.com or visit algonquincollege.com/flexibillty
+83471_2008-08-20.txt:www.algonquincollege.com/PartTime
+83471_2008-08-20.txt:contact Alicia at 613-727-4723, ext.3330 or visit algonquincollege.com/flexibilrty
+83471_2009-04-29.txt:www.algonquincollego.com/pem broke
+83471_2009-05-20.txt:www.algonquincoHege.com/pembroke
+83471_2009-05-27.txt:www algonquincollege com/pembroke ^SONOyiN
+83471_2009-05-27.txt:algonquin co llege, com/DE
+83471_2009-07-01.txt:www.algonquincollege.com/pembroke
+83471_2009-07-08.txt:www.algonquincollege.com/pembroke	C*1S*
+83471_2009-07-15.txt:www.algonquincollege.com/pembroke
+83471_2009-07-22.txt:www algonquincollege.com/pembroke
+83471_2009-07-29.txt:www algonquincollege.com/pembroke
+83471_2009-08-12.txt:www.algonquincollege.com/pembroke
+83471_2009-08-19.txt:www.algonqumcollege.com/pembroke
+83471_2009-08-26.txt:www.algonqumcollege.com/pembroke
+83471_2009-08-26.txt:algonquincollege.com/onCourse
+83471_2009-09-02.txt:algonquincollege.com/onCourse
+83471_2009-10-21.txt:SPECIAL FALL YEARLING SALES starting at 11 am | algonquincollege.com/DE
+83471_2009-10-21.txt:www algonquincollege com/pembroke AG0NQUIN
+83471_2009-12-02.txt:algonquincollege.com/onCourse
+83471_2009-12-02.txt:algonquincollege.com/onCourse
+83471_2010-01-06.txt:www.algonquincoliege.com/DE
+83471_2010-01-20.txt:www.algonquincollege.com/DE
+83471_2010-04-28.txt:www. algonquincoUege. com/DE
+83471_2010-10-20.txt:algonquin Park we met 12 tour buses and three school buses loaded with sightseers on Sunday. There were people, cars and buses every where and driving was very-slow We didn&#39;t see any moose this time
+83471_2010-10-20.txt:algonquincollege.com/DE
+83471_2010-10-27.txt:x web. algonquincollege. com/Pembroke
+83471_2010-10-27.txt:Call for more information: 613-735-4700 x 2735 or email LifeiongLearning@ algonquincollege.com
+83471_2010-11-17.txt:algonquincollege.com/DE
+83471_1894-03-22.txt:Some little way above Uhuron-ilai i 1	44 She usually comos into the garden at he now brought them more frequently, ae
+83471_1903-03-19.txt:Brandon, represented by T. E (,.rden* apj hure and dumfounded silence mi the like huronir h nliee.	Winnipeg, March	Siswart,
+83471_1948-06-10.txt:unmerited tag of Bone,lead . As hurondale chick hatchery, lon-usual, some who took part in the don. Ontario._________________________________
+83471_1965-02-11.txt:NEW 1965 VALIANT V-200, Hardtop V-8, automatic, padded dash, deluxe wheel covers, huron blue
+83471_2003-10-22.txt:farm house (at Village) 648- scott@huronwebgraphics.coM. pm.	P?s,es c&#39;&quot;aPres men&quot; Nancheng, Jiangxi, China).
+83471_2004-10-06.txt:o argen p esc	i pa	e eg e	of Inverhuron. Son and daugh-	For memory is the	only thing	Grandpa &amp;amp; Granny,	Aunts and
+83471_2008-02-06.txt:with a mohawk in a show of solidarity, has posted a 9-4-1 record so far in their Midget ?A? Outaouais Metro league and are in the thick of the championship hunt.
+83471_2008-04-09.txt:MacDougall made a deal with his players earlier in the season that if they won the provincial tournament he would style his hair in a mohawk and the youngsters could choose the colour
+83471_2008-04-09.txt:The offer from their head coach stemmed from earlier in the season when all the players got mohawks but MacDougall was unable to.
+83471_1883-11-22.txt:accordance with the statements made in Kiwis.* The mai ket retain* the lirai condition,anil advance colonization among the semi-official journals m Canada. Mill ; t,)llv noticed for some time past ; receipt* the aborigine?, there has boon a-i.remise of alitement | nvv R|na|, prices range from 25 to 20 by tho Premier, Mr John Macdonald, cvnts j? Vlih0ji, Kor stiietlv fresh stock which will doubtless appear in a day or higher prices arc obtained. Account two. The miHle of plmn.g tho stock has ^ fnilll American Markets have been been by giving options to syndicate? of capitalists. The amount placed including
+83471_1883-12-06.txt:homa Mrs. Ilyen, was able to ..and upright performance with aboriginal dances and ^ ^n where the deer was to be
+83471_1884-09-18.txt:It is not a long circuit from the gate of the Captain&#39;s garden to that of t he famous temple, but oven that short distance shows us a few sights which would be sufficiently amazing in any other part of the world. A native house is gravely coming up the river by itself, the father steering it with a long oar, while the children watch its progress from the steps of the ladder leading down into the water from the verandah. Under the shade of a huge banyan tree, half a dozen dusky Siamese boatmen are playing a kind of aboriginal lawn-tennis, using their feet instead of their hands to keep up the ball. Just beyond them, a small native child, with nothing on but the ornamental wreath which encircles the bristly tuft of black hair surmounting its otherwise shaven head, is admiring a magnificent butterfly, almost as large as a sparrow. A little farther on. a group of amphibious youngsters are playing in the thick, greasy, soap colored water, as Western children might play on land, while just across the river we espy a flotilla of light canoes, laden with fruit and vegetables, and manned by Siamese market women, who keep up a perpetual clamer of bargaining as shrill as a chorus of angry par-lute.
+83471_1886-04-15.txt:March, together with seven or eight men, lie tier as he looked up and down rime upon a party of the aborigines &amp;lt; n a am, I didn t &#39;zactly &#39;speet he would tv Sar frozen lake. By making signs and throwing tin events hev occurred to render his absence away his arms, he induced one of them a necessity. De Seckretary will turn to his (a woman) to stop. The rest of the Indians, name on de roll an scratch it off, and write however, approached with more hostile dis across it in red ink the word ?expelled.? positions, aud it Is said that one of them When the Srcrctary had carried out the seized Peyton by the throat with the intent request the President continued : tlon of killing him. This action on the part of ?Up to a y?ar ago Prof. Johnson was an the Indian caused some confusion, wh ch active, ?eeptcted member of dis club ended by one of the Indians beivg shot, was not only a worker in our cause, but he The woman wat- secured, but her husband was industrious as a man If he couldn&#39;t and on other Indian re luting, they were both get work at a dollar an? a half a day he got it
+83471_1888-12-06.txt:again restored by a Deer proposing to care	ernor marveled.	them, was the summit of the	spire, with the	I are interesting relics of aboriginal skill.	&quot;Speak up 1? roared an old foxhunting
+83471_1888-12-06.txt:them, was the summit of the spire, with the are interesting relics of aboriginal skill.
+83471_1889-05-02.txt:behind some buttress or in some dark recess j strong, brownbodied aborigines with terribly sharp spears, standing poised, still as dead stamps % rain pattering down on yon every other day In the year ; an impure atmosphere, with its dread oonseo ne nose, fever and dysentery ; gloom throughout the day, end darkness almost palpable throughout the night | and thee, if you will imagine such a forest extending the entire distance from Plymouth to Peterhead, you will have a fair Idea of some of the inconveniences endured by ns from June 28 to Deo. 6, 1887, and from Jane 1, 1888, to the present date, to continue again from the present date till aoout Deo. 10, 1888, when I hope to pay
+83471_1889-05-16.txt:aands began to crowd around the tables, | perhaps the moet unpleasant soere of the shore with settlements, aeparatlngt hi whites, j Christ, true Christian brotherhood. Hut il I under the b&amp;gt;ats without injuring them&quot;. The each man tryirg to git ahead of the others i night There was but one coat room, and while the Jesuits, who made the Indians the antagonism between capitalists and lab- bridge Is built V shaped at the channel, and in reaching a place where he could enter five cr six hundred men tried to get to it at their peculiar charge, were allowed to pick onrere continues and beet mes Scarcer, h is a draw allows shipping to pass through, the game of grab. Bat the worst did not Onoe. It took twenty five or thirty police- 0nt the fertile epote, and cluster the Indian# I much to be dreaded that, In Karope at least, come until the majority had succeeded In mcn to keep anything like order. In the upon them. Justice, of comes, should be democracy will end In Oserletn. Nation#, capturing food ana wine A crowded room crush few hate were saved uncrushed, over- done to the aborigines, but the Indian here tired of endless and issueleee struggle* is bad enough, but here wa# a crowded ooate were torn and umbrellas were broken, has ceased to exist There is scarcely a I would sacrifice their liberty and seek rest
+83471_1891-01-29.txt:take into no lands sf the aborigines
+83471_1891-07-30.txt:Sea, some of thi n, of a tonnage exceeding | on the onlsi.ie. when they are, in fact, the The aborigines of the w ilder parts of ?D?	_-?	the l&amp;gt;arley industry, in the growth of which
+83471_1892-09-29.txt:The last Irish census show# a decline of t)ie Wasanpa, the aboriginal inhabitants of population since 1881 of 470,000. The num- the country, who had lived there long be-her of foreigners has increased, chiefly ow fore Msiri made the land hie own and in-ing to the large immigration of Russian troduced many foreign element# into the Jews. The Methodists have increased population. A great many of the natives about 13 per cent. The Roman Catholics had fled for their lives beyond reach of the have decreased 10 per cent., the Episcopal- JespoU Scores of villages had been burned, iane 0 par cent., and the Presbyterians 5 and as the country was in a chaotic stato per cent. The Irish language is also dying cropi were not planted and famine had re-out. Ten years ago 64,000 people spoke BUited. The origin of the war was due to Irish only. In 1891 these were 38,000. In the King, who, j retending that he had a 1881 there were 885,000 who could apeak complete monopoly of the ivory trade, re-Irish and English, and last year there were ^sed to permit any of hie subject# to hold only 642,000.	? tusk of ivory as his own property. That
+83471_1892-11-03.txt:aborigine, knownjaa the &#39;Ottawa Pnncesa&#39;	may checks,_________ THEN	BY	all	means	gO to
+83471_1893-01-26.txt:the barren with those marvelous aboriginal	Carefully I raised to my knees and waited	,	.	it a person is telling an interesting story,
+83471_1894-02-15.txt:known to the aborigines in Northern Mexi- sound and I can do a day?s work alongside to he one-if you want to make money send oo. One giant kind is regarded by the In- of anybody. Dr. Williams&#39; Pink Pills for our illustrated list. William Briggs, pub-dians in that part of the country as their under Providence did it all. Pink Pills Usher, Toronto. greatest medicine, being much more power- should be kept in every house. Since they iul than the plant employed by the Klowas. cured me I have recommended them to my They can drink any amount of corn beer, friends everywhere,and I shall continue to and this remedy will take away all ill recommended them. ? effects. The name in use among them for
+83471_1894-05-31.txt:of the aboriginal tribes of Chota Nag pore, or 1 India. It ie observed whenever any calamity falls upon the community?such as, perhaps, a visitation of cholera. The wo-
+83471_1895-05-30.txt:money. Aunt C arrle has often spoken	not seen	him or heard from him for	as quietly as she had entered. So pass-	worshipped by the aborigines, who held a
+83471_1896-08-06.txt:ttuir party is evidently strong among cessors in the Colony and the aboriginal Liberal writers. As a matter of fact the Indians, has been progressing in the Gov-address contained nothing to evoke en- ernment buildings. The archives at the
+83471_1899-06-22.txt:in love with her	as if she had known ! with hcr f ce flushed with excitement, |	put Ln the cave of the Cumberland.	. ^ke increase of alcoholism- in France	, ,lle aboriginal Indians of our own
+83471_1899-10-05.txt:Prof. Spencer gave an interesting lecture on this fascinating but little understood subject at Melbourne university last month. Every aboriginal, said the lecturer, possessed in additios to his own name, that of some animal, such as a kangaroo, bandicoot, emu, 01 wild oat
+83471_1900-08-09.txt:to be the substance with which the Malays poison their kreeses and dag-fgera, and also the &quot; finger-nail poison formerly in use among aboriginal
+83471_1901-03-28.txt:&quot;It is a fact as big a* Table Mo un tain, that the vast majority of the ab original and the colored races are oi the British side in sentiment during the struggle which has been going on for a year and a hlaf. By the col* ored race I mean the mixed people in the colonies and sometime* Republics, beginning with full-blooded Hottentots and the imported aborigines up to the almost white, whose fathers, whatever their motives may have been, were Dutch or English.&quot;
+83471_1901-04-04.txt:He made bis request In plain, straight- the aborigines.	back, say, $5 per head. Indicating thn, over your door?&quot;.I	to
+83471_1901-05-02.txt:from the fact that his right foot was! luggage have been smuggled out of census of 18/1 only 38,87&#39;J aborigines resting on a sort of small trestle, 1	the house to-night without the know-	wore	enumerated,	of whom 8,280 were ncr.?
+83471_1901-05-02.txt:tribo in that colony having died in 1 &#39; 70. It is j ecoi d&amp;lt; d Philip estimated the aboriginal population about Urn close of the last century at on between.
+83471_1901-05-02.txt:the case of liotill. Australia, a large Tk&amp;lt;1 srojnd (U, l smoked all f iv lx- The \&amp;gt;k*U number of the aborigines in the f&amp;lt;m. lllnch and f?,t vcry m , Northern Territory are entirely out-I (lu.rCng lhv rest ot tll? ,Uy. Thc tbird
+83471_1901-05-02.txt:her of aborigines enumerated was very.	t here	wmild 1&amp;gt;;&amp;gt; of reform and econo-	rd in &#39; ,1, a
+83471_1901-05-02.txt:number of aborigines under the con- smoking.&quot;	&#39; TJ?-	close it has a
+83471_1901-05-02.txt:the aboriginals passed over as being
+83471_1901-05-09.txt:chicken, stir constantly until it boils, ! -00,000 arc aborigines, and these not add stiffly beaten whites of two | because of hostility on the part of
+83471_1902-08-07.txt:ingly frequent during the hot moist of aVowing pig8 10 graze&#39; or shut-1 At last he became bo low that his aboriginal peoples, and that it is	to till i cold in exr. saw.
+83471_1903-03-19.txt:The aborigines of the Malabar Islands employ a perfect whistling language by means of which they can communicate with each other over long distances. A stranger wandering over the Islands is frequently surprised to hear from a hill top tho sound of loud whistling, which is quickly repeated on the next hill, and ho is carried from summit to summit, until ft dies away in the distance. But perhaps the most curious means of communication in the world is the druin-languagc of a Congo tribe. These queer people can talk to each other with largo drums made of bamboo hoops, over which the skin of some animal is stretched. The drum, however, is used only on important occasions.
+83471_1903-05-21.txt:ough, but the old lacrosse, us played except those occupied by these Moby the magnificent aborigine riors of a Century akin to
+83471_1903-09-10.txt:Riverside,, and pitched a lorty-foot Wall tent under tho trees. Then ho moved his brass bods and other indispensable furniture into it and sol up housekeeping for the summer. The beds, a gasoline stove, a few easy chairs, and a portable Russian bath were the only luxuries he took with him upon his return to aboriginal existence. With his wife and five children he has inhabited his tent
+83471_1903-11-26.txt:aborigines, who is, perhaps, familiar tvitli aboriginal lift ; character than is any other individual in the Commonwealth, and Mr. Charles lloclley. conchologist of the
+83471_1903-11-26.txt:m n knowledge of cv&amp;lt;&amp;gt;O Nhat staff officers and others in tho the rudest aboriginal appliances, military service are In the They have, however, a stringent *&amp;gt;&#39;*? | striking tern of tribal classification, intended to represent different degrees of relationship and to assist in preventing mount a great many obstacles, he
+83471_1903-11-26.txt:too close inteimarriagi of this system, so prevalent among all classes of Australian aboriginals, | umpire staff remains an unsolved mystery
+83471_1903-12-03.txt:ister	who	has	a	stipend	of	between	interior	many	of the	aboriginal	In-	?	?	makf,s no	dirfercnce if	he only	properly completed, the &quot;check-lock&quot;	Dawson	isn&#39;t like	Crecdc, where it
+83471_1904-01-28.txt:Anyhow, we arc ready for anything or anybody, from n pious ecclesiastical visitation to a regular influx of tho aborigines
+83471_1905-11-23.txt:theory was seriously urged that it was impapMhle to work the mines of tho Tramivaal effectively with 8Uj&amp;gt;* plies of labor drawn from tho aboriginal races of Southern Africa j thoughtful ( hows that they might There was a difficulty in getting the as well seek fortune
+83471_1906-04-19.txt:When tho Australian aborigine ls push-?? I tin ] n And no catches snakes for food. With his won iVrful brown eyes ho ran see tho faintest trail wliere a snake has r.ig-zagged through the dry moss and leaves^ night-time his broad nuslrils take up tin chase, and, stooping down among J* bushes, with a tough forked stick in hit hand to support him, he follows the track as unerringly as a bloodhound When tie runs a snake to earth, if h# cannot surprise it in the open and Kill il by a sudden blow of Ills stick, hi squats over Its hole, making a low his-S&#39;iig or whistling sound with his Ups. Soon the snake puts its head out of ?he nnd peers round. In an Instant ll#U forked ?1 ink descends and fixes it to tM ground by Hie neck, and th&amp;lt; low, &amp;lt;?	, if !sihii. I Hu
+83471_1906-04-26.txt:daring that lie had lived for thirty alone among the aborigine? of
+83471_1906-12-13.txt:Austrian aborigines are the lowest known epee e* nf humanity. They have little or no reasoning faculties, and their only idee of a H gher Power is through . fear. They are chocolate colored, wear little clothing, and their weapons are of wood.
+83471_1910-03-10.txt:tag at a meeting of the Sydney Natural History society, A. Meston, forI merly protector of aborigines in north-I era Queensland, says that when In fall foliage it la one of the moat beautiful trees In the world. The wood la elegantly grained and marked by colors and peculiar streaks which readily I distinguish It from any other known timber. It la extremely hard and tough, and the blacks of the Cape York peninsula use It for making their woomeras, with which they throw the ?pear. The tree bears long rods containing beans, which, like tbe leaves,
+83471_1910-09-01.txt:hunt?&quot; demanded Ashby Vrawlor, f.u.0&amp;lt;| turbaned aborigines with try.&quot;	mcn- You could not say they were Another hour sc eat eating, then
+83471_1910-11-10.txt:In addition to gold miners, backwoodsmen and other pioneers of the empire there will lx? aborigines from Australia, Maoris from Zealand, Red Indians from the Far West, the semi-civilized tribes from the Fiji Islands, colored people from the Mata be le and Bechu&amp;amp;ua-land. Eskimos froji the frozen north and Chinamen from tho Malay Peninsula. The homes and habit* of there people with their work will be shown,.
+83471_1910-11-24.txt:Always the Australian boomerang has been interesting to the civilized general public. Many persons unfamiliar with the fact that the boomerangs of these aborigines of the far off island continent have been of various shapes and patterns. Most of those former experimenters in civilization have made a particular type of the boomerang, deciding finally for themselves that ?the blamed thing will fly, but it won?t come back.? It has remained for an Englishman so to improve the Australian cross shaped wea-that it is no more than a cross
+83471_1910-12-01.txt:C7 Pacific coast will he memorable for what will undoubtedly be the best of I j the extraordinary series of passion ____________________________I 1 plays given by the aborigines of Can-
+83471_1911-02-02.txt:at the same time, until the discovery work of some aborigines of the Island. **P&#39;Hlg SLOCK, SO II j Oil A\?Ult a pOOtl Mil t fit
+83471_1912-05-09.txt:He went from her presence with quarrel between Gordon and hi* doctor must earn about $L&amp;lt;00 an- hair dressing, for it follows the the cruel, terrible fever of disap- willful little Ruby, and that Gordon	m or&amp;lt;,vr to. cover expenses aboriginal style in vogue in the
+83471_1913-10-09.txt:trations AjVwork is lxsii&amp;gt;g sent r^Pli Broochesf Links, etc., oto. did th# aborigines themselves ever
+83471_1914-02-12.txt:the aborigines, in * thev aaid. to frighten awav tl ? i &#39; dehi!
+83471_1914-03-05.txt:tuesc aboriginal tribes reflects ac that tribes more or les* allied in	DANGEROUS PLEURISY ALWAYS IoU,er rnd tbr The irnnof middle
+83471_1915-06-17.txt:The ladies succeeded during the win- ised for light drips, ter in sending to the Bed Cross Suriety Some clever aboriginal artist has HZ pairs of socks and aUmt fi dozen ar- produced miniatures of the tribal
+83471_1915-06-17.txt:held at Mac- larpoons which are aboriginal, con-
+83471_1916-10-26.txt:In translating the Bible for the Zulus and for some other aboriginal peoples It Is necessary to have two versions, one for the women and one for w herein things are the men. The Zulu law compels a made of ?-r from ??i out of w . ?d, pulp or married woman to cut herself off from
+83471_1917-06-14.txt:The aboriginal native* of the Ama-
+83471_1917-07-19.txt:world runs dry, the aboriginals draw
+83471_1917-07-19.txt:the current war of weary soldiers in the interior of Spain no one knows an exhibition of aboriginal craft, marching steadily and in step with how to road or write. There are in There was no water, no moisture their comrades, although they are Spain thirty thousand rural villages within miles, and the clay was baked sound asleep, can only be explained without schools of any kind, and BO hard that to be penetrated at all by examining their brain chambers of many thousands which can be reach- % must be broken with a hatchet. A secondary automatic actions. Each ed only by a bridle path, there being keen native guide presently discern-human being of normal intelligence no highroads or railway communica- e(j uttle tracks on the ground?faint-performs a host of these secondary tion of any kind. Attendance at est indications of life, apparently? actions, depending totally upon his school is voluntary not obligatory. an(j having hacked into the clay to unconscious memory to guide him. Seventy-six per cent of the children
+83471_1917-09-27.txt:fere gathering In all they can find if j ppertaining to the aboriginal Am rlcan, for&#39;the prospects are that hie e amendants will soon be living as cdlnarliy as other civilised people.
+83471_1917-10-25.txt:small abri and observation, breaking was token. All our linei was ours, uur Nq mattcrj we took the wood. We weeks one will And that the coldest there is water. One can hardly | scientific of all aboriginal Aremaking connection with the rear. That meant ( dead and theirs attested why.	searched every corner of it. and rout- ^ eights do not mean discomfort. It is a few feet below the surface any-
+83471_1920-01-22.txt:to omit mention of the American aborigine*. who quite generally were in earlier days wonderful colorists.
+83471_1920-03-25.txt:That old chap would never have taken Armed with this weapon, the aborig- a tumble if I hadn&#39;t fixed a string from Inal marksman Is able to kill off a our gate to the lamp-post!&quot;.
+83471_1921-03-31.txt:charged that In 1915 the Japanese had slaughtered 20.000 aborigines In For-
+83471_1921-05-05.txt:The commonwealth of Australia ha* taken steps for the preservation of the aborigines of that country and has as aigned a tract of public lands In the Northern Territories as reservation for the tribes. It Includes the Man The census of Germany, recently an(j Petenson Ranges and practically completed, shows a total population th0 whole of Lake Amadeus of 60.282,000 people. The total nuni- Governments of South and Western her of Inhabitants in 1913 was about Australia have set aside adjoining
+83471_1921-09-01.txt:aborigine* live in the district.
+83471_1921-09-15.txt:Australian aborigines?their customs could plunder and ravage In the vil- something, and they will thank any-1 . ,h 0|ymDlc of 46430 tonfl the &quot; would have been comparatively easy iage fora brief time after a death. 1 body who-can explain It. In the high- .	, .	_ h?lD afloai . th _ , ,
+83471_1924-07-03.txt:ng within their bound-tho aboriginal Indians
+83471_1927-01-27.txt:With his friends at Ottawa in control the O&#39;e*, of the world on tins, modern representatives of the aborigines of New Zealand.
+83471_1928-01-19.txt:Contrary to general belief, the Australian aborigines are a mirthful people, full of friendship once the barriers are broken down, said E. L.
+83471_1928-01-19.txt:within the reach of all, and to follow &quot;The aborigines have retreated Into demand for yellow metal to the return the mode is delightful when it can be that part of Australia so banco and ! fo 8(ablllzed conditions of one coundone so easily and economically by arid that white men fall to penetrate f|.y after auother
+83471_1928-01-19.txt:though the spoken language of China the public and private purse as uien- bueied himwlf with the science of is highly dialectic and among aborigl- tlcal, cannot, no matter how hard chemistry. Mr. Ayscough discovered
+83471_1928-01-19.txt:There are many aboriginal races alive and active in China today?the Hoklos, Ivolos, Miao, Tibetans,&#39; Turki peoples, Mongols, Manchus, Koreans and Sham?. These people have produced mixed types with the Chinese through marriage or by the marching of armies through the country.
+83471_1928-10-11.txt:merits of rival party leaders, It	the American aborigines had attained
+83471_1929-08-29.txt:&quot;The glory which was Maya/&#39; exemplified by archaeological discoveries of aboriginal knowledge of architecture, astronomy, sundry arts and writ*? ing, is being emphasized through the medium of the airplane. It was disclosed here that Colonel Lindbergh, aided by his bride, is taking a keen interest in archaeology and has &#39;contributed to the historical scroll the discovery of an ancient* Mayan ?lost city&quot; In the Yucatan jungle.
+83471_1929-11-14.txt:Soon this first aborigine was Join-	y.	American Magazine.?! -	with	the capacity to feel joy and fear,	nature that comes to the man or wo-	ing.?Addison. 1	???
+83471_1929-12-26.txt:brought to .light that it was well known to the ancient Egyptians, and that they probably got it from Babylon, but beyond this the trail ia lost. Visitors to Lapland have heard the melody there; it is known to the native tribes of South America, and it is frequently used by the aborigines of Australia, as well as by the Maoris and Arabs. It came to Lug-land when the Crusaders returned from the Holy Land, and it was used by these old-time warriors, as a sort of war song, when they were besieging Jerusalem.
+83471_1930-03-13.txt:The religion of these aborigines is largely superstition. They liave?mecli-cine men? in whose powers they believe. When the MacAIpIne party was watting at Cambridge Hay for the three relief airplanes which the wireless had advised would arrive on a certain day, one of the party suggested Jo McKinnon the Hudson&#39;s Bay factor at the post, that the Eskimo ?medicine man? who, with his tribe, necessities
+83471_1930-10-16.txt:country there exists an Aladdin&#39;s cave of gold closely guarded by aborigines.
+83471_1931-04-16.txt:aborigines were akin to the am lent Dravilian of Souther? India and the Quarter? as
+83471_1931-04-16.txt:00,663 full-blooded aborigine? in A us-triilla and about 16,818 half-castes. At wln *r,,w up
+83471_1931-04-16.txt:reserves and 1,700 square miles of missionary reserves for the natives aborigines except the nomads and the gainfully employed are wards of tho |
+83471_1931-04-16.txt:lug and food Only recently has Australia tried to 1111 evolve u scientific policy for the conservation of tho aborigines.
+83471_1931-04-16.txt:Shadravh L. James, an aboriginal
+83471_1931-04-16.txt:white man toward the aborigine,&quot; lie said, &quot;ha&amp;gt; been all along to dispirit and humiliate him, to extinguish his ? me of svif-respe. , to suppress bis ambition.
+83471_1931-04-16.txt:he done. His chief recommendation is almost any garden soil that laud and homes he provided for exceptions, they may be sown in the the aborigines and that his people he open ground in early Spring, as soon
+83471_1931-11-19.txt:The fantastic explanation has boon advanced that the Canadian Indians originated the game of ice hockey hy taking la crosse (called baggntaway by the aborigines) and making It applicable to play on skates. In contradiction, the French-Canadians maintain that their ancestors were the Inventors. Still other factions claim
+83471_1932-06-02.txt:Governor rather brutally phrased it. &quot;the natural progress of the aboriginal race toward extinction.&quot;
+83471_1932-06-02.txt:The Australian Year mates that there are now barely tiO.-o00 aborigines left, along with about
+83471_1932-06-16.txt:111 I Rives a vivid picture of Indian life in the northern Canadian wilds hook has considerable merit as a Canadian product by an aboriginal Canadian. It constitute# a real addition to
+83471_1932-09-22.txt:built by the hunter agreeably to the exact rules of Indian art. Few, who have never seen and observed the process of constructing this canoe, which, for the thousands of years before the advent of the white man, was the only croft used by the aborigines in navigating the interior waters, have any idea how, from such seemingly fragile materials, and with no other tools than a hatchet, knife, and perhaps a bone needle, the Indian can construct a canoe so extremely light and at the same time so tough and durable.
+83471_1933-08-24.txt:when the drought broke the floods came and she was marooned In an aborigine&#39;s hut for eight days.
+83471_1933-10-19.txt:ing paper is sometimes u*e&amp;lt;j. In &quot;gone native in Australia, and joined 0f Jh&#39;e Canadian Horticulturist, spring the covering should he re- r*ving aboriginal tribes, may have a 01 i,1L moved gradually. In places where profound influence on these stone-age mice are troublesome some wheat nomads.
+83471_1934-08-02.txt:To the Indian, the Yellowstone park wns a land of mystery, often shunned. Possibly because evil spirits were presumed to lurk In its spouting geysers and its steaming springs, possibly because the land was given to strange rumblings and awesome eruptions, more probably because more game was found In the lower vuileys, the aborigines left the Yellowstone very much
+83471_1934-08-30.txt:Scientists have called the aborigines the most interesting people on earth because, of all the humans that have come and gone during untold thousands, perhaps millions, of years, they alone survive to link the present with the prehistoric past. Their mode of life is still nomadic. They scorn settlements and civilized customs. Fire they make by twirling sticks as did the American Indians. They prefer nakedness to the rough dress of animal skins favored by other primitives.
+83471_1934-08-30.txt:Hunting is the aborigines? trade profession and occupation ; the sole purpose of life. Their game Is anything that walks, flies, or crawls. Toothsome to them are ants, grubs, caterpillars, lizards and frogs, other lellcacies are rats, kangaroos, parrots. ?mus. and almost any kind of fish. Animals and birds are thrown on the Ire, skins and all, on the theory that rooking in such fashion preserves the natural juices and flavors of the meat. They are particularly fond of grass* loppers and locusts which the women j gather in great baskets and throw Into a fire to singe off the legs and wings, after which they are roasted n the manner of chestnuts which they are said to resemble in taste.
+83471_1934-08-30.txt:Lacking dress, the aborigine seeks distinction in scars and welts which le assiduously cultivates on almost any part of the body. The larger and more numerous the scars, the prouder he owner. Unflinchingly lie submits to long incisions in arms, chest, thighs, md calves of the legs, into which powdered charcoal is then introduced.
+83471_1934-08-30.txt:The w ounds are kept open for a month )r more to promote the development 3f scar tissue. When the welt has raised sufficiently above the surface pf the skin, the incision is permitted to heal and the proud aborigine rejoices in the acquisition of another badge of honor.
+83471_1936-01-16.txt:The value of numerous bulbous growths was learned long age b.v the aborigines. They gathered the bulbs of the wild onion, better known by ils bloom as the California hyacinth which flowers on open hillsides. They dug the roots of the golden stars which blossom in the foothills; the roots of the desert lily, cousin of the onion, with its white funnel shaped blooms; and the canins, found in damp meadows from central California northward. The canins bulb looks like a small onion and contains much sugar.
+83471_1936-03-12.txt:Long before us these most wonderful of all aborigines were Indeed the Imperial people, the ?Romans of the
+83471_1936-04-23.txt:fn Australia the natives have been living off kangaroo meat for at least 10,000 years. Parts of kitchens believed to be that old were unearthed i near Kingston, South Australia, some time ago. Shape of the ovens leads archeologists to believe they were for roasting kangaroos at ceremonies. So strangely man like are these nnh that It teems almost Incredible that they should he eaten, but the fact remains that the Australian aborigines consider them a great delicacy. Vast herds of the beasts formerly roamed the great Inland plains of the &quot;island continent,&quot; but they have been largely killed off for their hides.
+83471_1936-04-30.txt:In northeastern Siberia, where tem- used by the aboriginal inhabitants of I effect r urther details of rate ?encumhrance. Apply te-
+83471_1936-05-28.txt:For these three and many oilier agricultural products, modern inas must thank the aboriginal American, probably the first, certainly the best, primitive farmer in the world, tho until recently he got little credit lor it.
+83471_1936-09-03.txt:The copper-skinned aborigines ot the American southwest, famed for their snake dances which are staged wi
+83471_1937-01-21.txt:The Capuchin friars, who for many years have sought to educate the wild aborigines of the Maranhao forests and convert them to Christianity, tell of a quaint. If somewhat oppressive sleeping habit among the A mini tribes, according to a Brazil correspondent In the Washington Post.
+83471_1937-11-04.txt:An aboriginal named Charlie had lev-water battle with a six-foot
+83471_1938-04-21.txt:ranging Royal Banquets When	aborigines who inhabit Bathurst 1s-
+83471_1938-04-28.txt:1 In the Far North the Eskimos make pipes from walrus ivory, which they carve beautifully with little figures. In the East the Chinaman uses a hollow bamboo stem, while the Australian aborigines actually make a pipe from an emu?s leg. 4
+83471_1938-06-30.txt:Dummy and Mary Ann, the tiff wives of an aboriginal living nwar Darwin, Australia, found their Jealousy so strong that Its effects culminated in a fight In which Dummy attacked the other wife.
+83471_1938-06-30.txt:The Judge bound over Dummy for six months. He said It would b# an interesting experiment, never previously tried on an aborigine. An Interpreter had to explain by signs the meaning of being bound Ills performance was not
+83471_1938-07-21.txt:Recent issues of stamp journals carry articles dealing with the unique interest of covers bearing the postmark of Goober Pedy, which is the aboriginal name for white man?s burrow. It has been suggested that specially decorated covers should be made available for use on Goober Pedy&#39;s international air mail.
+83471_1938-11-03.txt:Fred Blakeley, noted Australian author and explorer, has returned from the interior with the announcement that he has discovered a new tribe of aborigines that represent ?the purest descendants of the earth&#39;s original inhabitants.&quot;
+83471_1938-12-08.txt:The Roman letter B has come down to us unchanged, although it was a refinement of the Greek beta. The Roman B dates from pre-clas-sical to classical times. The earliest record of the Greek beta was about 460 B. C. In any consideration of the alphabet it is interesting to note that all of the symbols of all of the alphabets were developed in the beginning from the crude Dictographs of the ancients, whose method of leaving a written record was to draw a crude picture, de-cribing an event, on a slab of store ji on a stone cave wall. Picture symbols have been used by the aborigines of modern times, including die early settlers of Australia and die American Indians. It is generally accepted by scientists that die invention of the alphabet did iot consist of a sudden creation of otters representing sounds, but was a gradual transition from picture o letter symbols.
+83471_1939-07-13.txt:Hot Springs National Park Mankind has bathed at spas for better health, particularly in Europe, down through the ages. More than a century ago the United States government set aside Hot Springs, Ark., as a place ordained to special-in spa treatments and recrea-for the people of the nation for all time. American aborigines told of marvelous cures. These same springs were so famous to the Indians that in the long ago they be iisved the Great Spirit actually lived in them. There is a tale that the various tribes battled from time to time for control of the hot waters. Finally a truce was declared under which all tribes were extended the privilege of using the waters.
+83471_1939-12-07.txt:aboriginal preserve, but to keep the Chestnut Mnrc, rising 2-years-old. Apply
+83471_1939-12-07.txt:I Recently six aborigines reached Darwin, capital of the northern territory, after walking hundreds of miles through the unsurveyed Cast-
+83471_1940-12-05.txt:Of Alaska&#39;;! population of proximatcly 72.000 people, about 31,000 are descendants of the aboriginal Eskimo, Aleut, ami Indian races.
+83471_1942-01-08.txt:Ever since the Pilgrim Father* fell first on their knees and then on the aborigines, the American Indian has been pictured not only as a shiftless ne&#39;er-do-well but as a decadent, dying race. Many a generation of U. S. schoolboys has been taught a stern pride in the taking off of such die-hards as Rhode la-land&#39;s King Philip. Recently Indian-loving Commissioner John Collier helped explode the myth that these first families of America are vanishing. Said lie: Indians are increasing in North America more rapidly than whites; Indians of the Western hemisphere number 30.000,000 There were never more than about 900.000 Indians in the U. S. Since 1900 they have increased from 237.000 to 331 000-up 52 ts per
+83471_1942-03-19.txt:Far back in the mountains of North Carolina is a stand of timber, much of it aboriginal, which will never feel the woodsman&#39;s ax. Contrary to usual forest service practice (which manages and harvests and replants forest land), the Joyce Kilmer memorial forest will be preserved in perpetuity as a tribute to the man who wrote perhaps the most widely known poem about trees.
+83471_1945-03-29.txt:aboriginal.
+83471_1946-12-05.txt:A William Tell act with a boomerang. an Australian aboriginal weapon which returns to the thrower?s hand, was demonstrated by Mr. Frank Donellan ;it Paira-matta. New South Wales, recently, says the Ottawa Citizen. Mr. Don-nellan. who has been a champion boomerang thrower for 40 years, gave a display of his skill in aid of a charitable organization. First, balancing an apple on his head, he throws the boomerang, remaining perfectly still as the weapon circles and returns, neatly knocking the apple from his head!
+83471_1949-03-10.txt:in our innocence,, we had long thought that the steady lengthening-out of Big League hockey schedules at both ends, to say nothing of a spot or two of padding in the middle, was occasioned by nothing other than desire for a little extra pelf, or as the Indian aborigines used to phrase it, ?Meewant hunkmore wampum.&quot;
+83471_1981-12-16.txt:to be released if the detention is	not	and both language	versions are	equally	aboriginal, treaty or other rights or freedoms
+83471_1981-12-16.txt:lawful.	authoritative.	thal pertain to the aboriginal peoples of
+83471_1981-12-16.txt:(b) any rights or freedoms that may be acquired by the aboriginal peoples of Canada by way of land claims settlement.
+83471_1981-12-16.txt:rights of the aboriginal peoples of
+83471_1981-12-16.txt:35. ( 1 ) The existing aboriginal and treaty rights of the aboriginal peoples of Canada are hereby recognized and affirmed.
+83471_1981-12-16.txt:(2)	The conference convened under subsection (1) shall have included in its agenda an item respecting constitutional matters that directly affect the aboriginal peoples of Canada, including the identification and definition of the rights of those peoples to be included in the Constitution of Canada, and the Prime Minister of Canada shall invite representatives of those peoples to participate in the discussions on that item.
+83471_1983-01-05.txt:Just before Christmas Prime Minister Trudeau invited the ten provincial premiers, the heads of the two northern territories and native leaders to attend a constitutional Ottawa March 15-16. While defining aboriginal rights is to be the main focus of the conference, other issues such ms Senate reform and Que-
+83471_1983-02-09.txt:constitutional conference to be held March 15-16. The major Valentino, their purebred purpose of the March meeting buck, can shake a paw as well will be to discuss aboriginal as any trained dog.	rights under at least the
+83471_1983-02-09.txt:The Plouffes feel good following four subject about their decision to start (i) extension of aboriginal
+83471_1983-03-16.txt:one year on constitutional entrench aboriginal rights in matters that directly affect Canada?s constitution.	the aboriginal peoples of
+83471_1983-03-16.txt:Most experts agree that the For this reason, the most whole issue of aboriginal important item on the agenda rights is a complex one, far is amendment of the Con-too broad to be dealt with in stitution to entrench a clause two days. Five years may be requiring a continuing series a more realistic estimate
+83471_1983-03-23.txt:When the conference came around the huge table in to a close Wednesday, a Ottawa&#39;s downtown confer- modest agreement had been ence centre all day Tuesday worked out. Sixteen of the and Wednesday of last week trying to find areas of agreement on the subject of aboriginal rights in Canada. In	that he could not sign because
+83471_1983-03-23.txt:the following four aboriginal	talks. Another conference is
+83471_1983-03-23.txt:It was agreed to amend the constitution in two further ways: (1) aboriginal and treaty rights whicn now exist would be guaranteed equally to males and females, and (2) existing and future rights acquired through land claims settlements would be guaranteed.
+83471_1983-03-23.txt:The conference on aboriginal rights held last week in Ottawa was just the first timid step in a process that may never end. The leaders and delegates of the four major national native groups have not had a serious forum for dialogue with each other or with the federal and provincial governments. By !	making the meeting an open
+83471_1983-03-23.txt:The special status of Canada&#39;s aboriginal people prevents them from becoming part of this vision. On the other hand, there are hurdles to jump on the way to finding a formula for selfgovernment that will work ? a formula that will give native groups control of their schools and lead eventually to self-sufficiency of native families.
+83471_1983-04-06.txt:Pavillon-du-Parc sheltered workshop in Fort Coukmge. They	t. e subject of aboriginal	published in the Montreal
+83471_1983-12-14.txt:Chief Billy Diamond discussing left. He was decorated with aboriginal rights and Ren? medals and she wore a floor
+83471_1984-02-01.txt:as people who are concerned about the issue of aboriginal rights and the place of the aboriginal inhabitants in the overall fabric of Canada, and as individuals concerned about what is politically
+83471_1984-03-14.txt:A first ministers conference took place in Ottawa last week to discuss aboriginal rights. Although it opened on a relatively strong note with Prime Minister Trudeau suggesting Canada?s constitution be amended to include a guarantee of the right of self-government for native people, little agreement was reached during the meeting on this issue or any other.
+83471_1984-03-14.txt:native women met with resistance from Status Indian leaders who want to study the proposal for a time to it might affect other guarantees of aboriginal and treaty rights. As things stand at the moment, the Indian Act specifies that Indian women who marry white men lose their Indian status while white women who marry Indian men gain Indian status.
+83471_1984-06-27.txt:Thursday. Baaed on an agreement reached at the constitutional conference held in March 1988, it specifies that existing aboriginal and treaty rights apply equally to women and men and also guarantees that two more conferences will be held to define the rights of Indians, Inuit and Metis.
+83471_1984-06-27.txt:Prime Minister Trudeau urged Canadians to continue improving constitutional rights and economic circumstances of these native groups. He noted that this was the first time Canada had amended its constitution without having to seek the approval of the British Parliament and the first time any country has attempted to define the rights of its aboriginal peoples.	; ;	1 8
+83471_1984-08-22.txt:the Cree, Billy Diamond, 35, recently announced his resignation from that post while attending the annual general assembly of the Cree in East Main, 600 miles north of Montreal. When the eight Cree bands of Quebec united, in 1974, to oppose the building of the James Bay power project, they made Billy Diamond their leader, and gave him the title of Grand Chief. Under his leadership an agreement was reached in 1975 with the Quebec and federal governments, under which aboriginal natives of Quebec were to receive $225 It was announced in West	is great jubilation at Canadair	million over a period of 20
+83471_1989-01-18.txt:clouds, mountains and	the west coast aboriginal	story of two men discuss-	through the bond of peace.	Babel.	sure, nor	pretense	with	principle of unity clearly
+83471_1989-11-22.txt:Huron camp in the Parc Konrad Sioui, who rep- similar status for aborigi- ^wo ca\Y??i a	Well, away we go with a without fear 0f reprisal by any government,
+83471_1989-11-29.txt:boat transportation has, ship, she was removed to recall, has a very slim chance of avoiding chronic from the early beginnings Chats Lake and the underdevelopment standards in Quebec. Perhaps Vol-of the Ottawa River, been McLachlin Co refitted it taire was right after all when he advised France to the main mode of travel. and used the vessel for forget Quebec, those few arpents of snow The early aboriginal years as a tow ship. The people used the river with Steamer burned on July 7, their dugout and birch 1908. The remains were bark canoes to travel retrieved by the Upper Ot-across and up and down taNva Improvement Co ana while they moved around ^ey built a barge and its looking for food, furs and ^fe was extended until
+83471_1990-02-28.txt:of charter rights for multicultural and aboriginal	at less cost Additonally, plant operating costs would
+83471_1990-03-21.txt:The parties to the Accord should declare unequivocally the supremacy of the Canadian Charter of Rights and Freedoms. The agreement confirms the protection of charter rights for multicultural and aboriginal groups. We believe that the protection of such rights should be extended to all, and that the guarantees of lingusitic and cultural rights should never be open to question.
+83471_1990-06-13.txt:Schick is known for the &quot;Welcome&quot; signs at his store that are in 35 languages, including Canada&#39;s aboriginal languages.
+83471_1990-06-20.txt:While English and French Canada stood nose-to-nose over the accord, Harper&#39;s move forced them to listen to what had, until then, been merely a voice crying in the wilderness. At this point it was no longer possible to carry on with an image of Canada that preserves and promotes two official cultures while ignoring the preexistent human rights of aboriginal people.
+83471_1990-07-25.txt:corded the hunt on their ral survival of aboriginal Some of the people of this province say that they do not ?canvases?, cave walls, groups, of B.C. s Carma- care if the native people of Oka die, just as long as they In 1820, John James Audu- nagh Valley.	g@t their bridge back.
+83471_1990-12-05.txt:words. Even the conseil de la langue fran- mentally flawed. The commission does not have representation from large segments of the Quebec population, notably aboriginal peoples, women and the mi-This is a small step in the right direction. Quebec nority communities of Quebec.
+83471_1990-12-19.txt:the Accord did not say, particularly about aboriginal, women&#39;s, and minority rights,&quot; he said.
+83471_1991-01-02.txt:the Department concern-	velopment to all its lease	from PARCQ, nor from its	aboriginals,	budget; Pontiac Agnculu-
+83471_1991-01-02.txt:and administer planning	tates to users of public	aboriginals;	Department last year are	paid to Pontiac Agricultu-	Barber, that the	Council
+83471_1991-01-02.txt:Whereas our MRC has	negative economic conse-	agent for the aboriginal	ciently within the munici-	Moved by Sandra Mur-	shank&#39;s backhoe for load-
+83471_1991-11-06.txt:In any Constitutional negotiations, Harper said, the aboriginal people don&#39;t want to be treated as a piece of luggage. Natives, he said, have been told, &quot;you can have a distinct society, but you&#39;ll have to wait 10 years to see what that means.&quot;
+83471_1991-11-06.txt:Indians is that of a demo- Now, with the govern- he concluded, to yet anoth ralized and dependent ment&#39;s latest package of er standing ovation, people, hopelessly wan- Constitutional proposals dering the city streets. Harper said that he has re But today, he said, we alized that &quot;Once again Bay II,&quot; asked a lady in are witnessing a reawak- we are not being dealt with the audience, ening of Aboriginal peo- equally.	Support the aboriginal
+83471_1991-11-06.txt:More than once he em-We (the Aboriginal phasized the willingness people) have not been rec- of aboriginal people to ac-ognized for who we are in commodate their Europe-this country, Harper be- an neighbours. We have gan. &quot;Today, the Consti- never denied anyone their tution - the supreme law language, their culture, or of the land - does not rec- their religion,&quot; he said, ognize the first nations, By contrast, the white he said, even though they settlers attempted to su-have been here for more press the spiritual culture
+83471_1991-11-06.txt:Consolidated preferred marble works man, Alex Harper stated that aborigi-shares plus warrants for McDonald.	nais should be allowed to
+83471_1991-11-06.txt:Bell Tel. The Bell Tele- from this village a flock without having to consult phone Company of Cana- of 290 sheep for shipment the federal government, da, who recently complet- at Haley&#39;s station. The &quot;Canada has an Indian ed the purchase of a lot in sheep were purchased Act that totally dominates Quyon from Mrs C B from the farmers of the its aboriginal people,&quot; he Mohr, has begun the build- surrounding country and sajd. a plan similar to ing of their automatic were a choice lot.
+83471_1991-11-27.txt:?	recognizing the right of aboriginal peoples to govern themselves while being protected by Canadian law
+83471_1991-12-04.txt:?	recognizing the right of aboriginal peoples to govern themselves while being protected by Canadian law
+83471_1992-01-08.txt:One cannot erase the experiences of material progress, and certainly most modern Natives would not choose to do so. At the same time, all modern cultures must regain their connectedness to Nature, or we will all die in our own slop. We must, in a sense, all become aboriginals. Then we must free ourselves.
+83471_1992-01-08.txt:Concerning cultural and linguistic survival, Quebec&#39;s aboriginal peoples clearly have a stronger case than do Quebec&#39;s francophones. Further, since Quebec&#39;s anglophones are more numerous than the population of Manitoba or Saskatchewan or Nova Scotia and Prince Edward Island combined, and since these are concentrated in a specific region, they should be allowed to decide by referendum whether they wish to separate from an independent Quebec....&quot;
+83471_1992-01-08.txt:Given the above situation, one can think of dividing Quebec into four provinces: Rupert&#39;s Land, Eastern Townships, Quebec North Shore, and the Outaouais. Quebec North shore should be allowed to separate. Rupert&#39;s Land could hopefully become Canada&#39;s first aboriginal province (with self-government). The Eastern Townships and the Outaouais could also become new provinces, and these could keep Canada viable as a country. Then everybody would be happy?
+83471_1992-01-22.txt:the Conference as a cho- as aboriginal rights re- Another &quot;OC&quot; who took that their needs and that it is a political prob- music, and she has a lot to terview.
+83471_1992-07-08.txt:volves around get everybody off these There are over 50 types of fireflies. . aboriginal is- programs and get them so Each type has a different flash signal.
+83471_1992-07-29.txt:Maureen Schwab is fed up to the teeth with all the address the concerns of money being spent on aboriginals, with native
+83471_1994-06-29.txt:I Wake up and smell the coffee, Mr Bouchard. Despite I what you say, we anglophones, aboriginals, allo-I phones and federalists are as much Qu?b?cois as you I are. We don&#39;t intend to sit on our hands while you and J Jacques Parizeau dismantle our country and heri-I tage. We won&#39;t allow you to make the rules that as-Nl sures you a victory. Do you really believe that we will
+83471_1994-07-27.txt:and is heard on radio and television ex-	bps told me, and more electrical charg-	do not discriminate against our aboriginal people or
+83471_1995-09-27.txt:Breton, 2 - Elaine Palmer, 3 state publicly, I&#39;m with them. While Pontiacers don&#39;t have - Ryan Vowles, 4 - Erma the obvious tribal identity which gives added momentum Hodgins	to the aboriginal peoples&#39; intentions, we have just as much
+83471_1998-09-02.txt:aboriginals wish to remain while repudiating its struc-in Canada, what of the lands
+83471_2000-03-15.txt:Unlike our aboriginal forebears, who viewed nature as a nurturing element to be in communion with, our European ancestors saw nature as something to be conquered and controlled. Fly out of Toronto on a sunny day, and you can see how we have used technology to subdue nature, creating a grid of concrete and steel, with tokens of nature - trees, shrubberies and flowers -strategically placed to mimic the natural setting. A plastic environment, some call it. But, there is no turning back the clock on what the gods of technology call progress.
+83471_2002-04-17.txt:On Wednesday evening out through a window and shanties have so far this advisory committee.	policy and commitment to ing different aboriginal and Understanding policy is
+83471_2004-04-21.txt:As well, the 12 students studied art under the tutelage of local artist Peggy Shannon, learning art and sculpting techniques. Part of the project involved painting a mural depicting the area&#39;s aboriginal heritage now hanging on the side of the fire hall in Chapeau.
+83471_2004-04-21.txt:MURAL ARTISTS: The 12 students in the Allumettes Island Project Choice 2 program helped artist Peggy Shannon with this mural depicting aboriginal life on the island 500 years ago. The mural was mounted to the fire hall. From the left: Denise Weckwerth; Samantha Paquette; Peggy Shannon; Thomas Dunn; Josh Popkie; Rachel Hearty; Kerri Romain; Tara Turner; Dan Hodgson; Justin O?Brien; Julie Venasse; and Paula Sullivan. Missing from the photo is student Joanne Villeneuve.
+83471_2005-02-16.txt:Human Resources and Skills Development Canada, through the National Homelessness Initiative, Urban Aboriginal Homelessness component, is accepting funding applications from organizations interested in obtaining financial assistance while responding to the particular needs of homeless aboriginals in urban settings.
+83471_2005-08-03.txt:aboriginal | community.	? I
+83471_2005-09-21.txt:demonstrates	that	the	minorities	and aboriginals.
+83471_2005-12-21.txt:The NDP website offers a glimpse of its aboriginal platform and it is entitled, ?Honouring Obligations to Aboriginal Canadians?. The first obligation 1 believe Ms. Brault should address is to respect an individual?s right in this country to identify as an aboriginal person ship card, and w e strive to provide unbiased and neutral news content
+83471_2005-12-21.txt:Attitudes such as these go right to the heart of being an aboriginal person. For far too long. Dear Editor, we were told to deny and renounce to our ?aboriginalness? in the face of racism and dis crimination. We know who we are, and we take pride in who we are.
+83471_2005-12-21.txt:PEMBROKE - Algonquin	for turning challenges into	Regional Director for	looking forward to working	with aboriginal	groups	and
+83471_2006-01-11.txt:Abotech is registered as an aboriginal firm. As part of a government program, certain federal contracts are designated as ?set-asides&quot;, and must go to aboriginal businesses.
+83471_2006-01-11.txt:&quot;We heard of this set-aside program for aboriginal firms. That?s where we signed up. We did it through all different government organizations.&quot; Smith told the Ottawa Citizen in December.
+83471_2006-12-13.txt:But, Just as we recognize aboriginal rights of First Nations peoples in Canada, so we need to recognize the cultural-linguistic rights of the francophone nations of Canada. This needs to include francophones both within and without the province of Quebec as well as other francophone nations such as the ; Acadians and Metis peoples.
+83471_2007-02-21.txt:Larouche, Outaouais &quot;Our role as aboriginal spokesperson for the S?ret? people, we are the caretak-du Qu?bec. ?They have the era of the land.&quot; right to be there. If (the
+83471_2007-12-12.txt:Data about aboriginal peoples will be released on Jan. 15 and subsequent releas-
+83471_2008-01-23.txt:Sharp increase in Pontiac aboriginals: census
+83471_2008-01-23.txt:One in seven Pontiacers identify as aboriginal.
+83471_2008-01-23.txt:PONTIAC *The number of people identifying themselves as aboriginal in Ponbac rose sharply in the last five years, according to the most recent Canadian census.
+83471_2008-01-23.txt:The number of aboriginal people in MRC Pontiac rose by 61 per cent to a total of 2,075 people.
+83471_2008-01-23.txt:About one in seven people in the county of over 14,000 residents now identify as aboriginal.
+83471_2008-01-23.txt:The largest concentration is in the Mansfield and Fort Coulonge areas, which have 650 and 365 aboriginals, respectively.
+83471_2008-01-23.txt:The Municipality of Pontiac has 400 people that are aboriginal, up from 295 in 2001.
+83471_2008-01-23.txt:An active member of the aboriginal community in Mansfield and Fort Coulonge, Lise Romain said she was not surprised by the increase.
+83471_2008-01-23.txt:ple in the area had previously not identified themselves as aboriginal, because they were unaware of their roots.
+83471_2008-01-23.txt:Census results say 32 per cent of Mansfield residents and 27 per cent of Fort Coulonge residents are aboriginal.
+83471_2008-01-23.txt:After being affiliated with two separate aboriginal advocacy groups in recent years, the members of the tribes in Fort Coulonge and Mansfield have since become independent.
+83471_2008-01-23.txt:The Pontiac aboriginal plight was spotlighted last year when a group protested the mass logging being conducted in Pontiac forests. Their efforts earned them a meeting with provincial representatives.
+83471_2008-01-23.txt:Romain said she hoped the revelation that such a large number of Pontiacers are aboriginal would produce a greater emphasis on aboriginal issues.
+83471_2008-01-23.txt:Other highlights from the release of aboriginal statistics in the 2006 census:
+83471_2008-01-23.txt:western provinces. A total of 108,430 aboriginals live in Qu?bec.
+83471_2008-01-23.txt:OUR OPINION I Time to pay attention to Pontiac aboriginal issues
+83471_2008-01-23.txt:THE EQUITY was surprised to learn the results of the most recent 2006 census update, which listed over 2,000 local people as having identified themselves as aboriginal.
+83471_2008-01-23.txt:This area of Canada is among the oldest in terms of when it was settled. It makes sense that the older generations of families would have ties to aboriginals and those ties may have continued down family lines.
+83471_2008-01-23.txt:Considering the hardships endured by aboriginal people in Canada, the shame some felt about their status in their country led many to disown their heritage. Those tribulations have been well-documented but it seems a corner has been turned in terms of taking pride in aboriginal lineage.
+83471_2008-01-23.txt:Knowing now that so many of us consider ourselves aboriginal, perhaps it?s time for us to pay more attention to the issues surrounding this segment of the population.
+83471_2008-01-23.txt:A prominent member of the Pontiac aboriginal community, Lise Romain, said there are important issues like housing and health that should be addressed.
+83471_2008-01-23.txt:attention recently, forestry, which was the focus of a protest just last year as local aboriginals demonstrated against the mass-cutting of local forests for exports with few jobs or benefit remaining locally.
+83471_2008-01-23.txt:THE EQUITY regularly attends events celebrating the myriad other cultures in Pontiac: English, French, Scottish,German, Polish and Irish all come to mind with ease, but we would be interested in learning more about the aboriginal community?s heritage and culture. Therefore, it?s probably reasonable to say there are others who are also curious in this regard.
+83471_2008-01-23.txt:It would be fantastic if an aboriginal celebration day could be held someplace in the area, perhaps this summer.
+83471_2008-01-23.txt:It excites us to think of how engrossing it could be to learn about the food, religion, traditions and languages of aboriginal Pontiacers.
+83471_2008-05-07.txt:Other releases included data that showed Pontiac continued to be a truly bilingual county, experienced a sharp increase in people identifying as aboriginals and stayed primarily steady in its population counts.
+83471_2008-06-25.txt:Did fur traders and aboriginals stick to the Ontario shores while paddling their way down the river? Of course not, so it seems silly that the river?s historical and cultural values will only be recognized in Ontario, but not in Qu?bec.
+83471_2008-08-20.txt:A: People (and I include aboriginal people in this). Our species has a habit of spreading out across various habitats, destroying the natural elements wherever it develops permanent populations and producing long-term landscape damage that is slow to recover. I?m only being partially tongue-in-cheek here, but we certainly behave like an invasive species and have for millennia. It would be hard to select a number one ?wild? bad guy because their impacts are not the same, but I?d put something most people don?t even know about right up there. Canary-grass (Phalaris arund-inacea) is an agricultural grass that now dominates thousands of hectares of disturbed Ottawa River marshlands. It is much more ecologically intrusive ? especially in the lower river valley, than the overly-publicized Purple Loosestrife. The jury is still out on the newly arrived Water Chestnut; if it does not do well in more acidic waters, like Purple Loosestrife and European Water-milfoil, it likely will only become a locally significant problem in the lower watershed. European Carp is a bad one, so is Zebra Mussels (another lower watershed threat) ... the list goes on.
+83471_2008-10-01.txt:Cannon was specifically asked about the aboriginals of Barri?re Lake; Conservative plans for changes to Canada Post; the transparency and accountability of his government; his handling of the extradition of Bryson Farms co-owner Stuart Collins and the grassroots movement to bring a
+83471_2010-06-23.txt:Now think of the current reality in Canada and Australia. Our colonial leaders did not perpetuate 100 per cent genocide Instead, they practiced deliberate, forced assimilation, relocation, residential schooling and other means of denying a people their identity Now, as descendents of colonizers, even in 2010 we simply do not have a workable, proven system that shows us how to fairly deal with aboriginal cultures
+83471_2010-08-18.txt:tiers and that they maimed and lived with the aboriginal people of this land gives me a powerful sense of belonging Canada is often referred to, by the world, as a peaceful prosperous nation, and so it is, but this country and its greatness was earned and built by our ancestors. To a large degree, we have been gifted by those we have never met, but who were determined to build a better life and a better future for their children. 1 am sure that this lesson is repeated over and over again across our great land.
+83471_2010-09-01.txt:Aquaculture permitted them to remain as all-season residents of this land rather than being nomadic, as were most other aboriginal peoples in Australia.
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Mon, 26 Jun 2017 12:32:00 -0400</pubDate>
+        <link>http://smgprojects.github.io/grep-results-equity-search/</link>
+        <guid isPermaLink="true">http://smgprojects.github.io/grep-results-equity-search/</guid>
+        
+        <category>experiments</category>
+        
+        <category>first nations</category>
+        
+        
+        <category>Experiments</category>
+        
+      </item>
     
       <item>
         <title>using shaffer&#39;s hypothesis to markdown script</title>
@@ -666,366 +1085,6 @@ Below is an automatically generated list of all my blog posts!
       </item>
     
       <item>
-        <title>grep results searching the equity for first nations</title>
-        <description>&lt;p&gt;search commands:
-&lt;code&gt;
-grep &quot;indian&quot; *.txt
-grep &quot;1ndian&quot; *.txt
-grep &quot;algonq&quot; *.txt
-grep &quot;huron&quot; *.txt
-grep &quot;mohawk&quot; *.txt
-grep &quot;aborig&quot; *.txt
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;’ cree ‘ returns nothing&lt;/p&gt;
-
-&lt;p&gt;voyant corpus: &lt;a href=&quot;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&quot;&gt;http://voyant-tools.org/?corpus=cb9b47502208dce5ac6430f89a4bc44b&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;results, appended together for safekeeping:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;83471_1883-08-02.txt:sided p il icy that would t upon Amerivnns favors w liivli they refused tin* t&#39;aindians. But tli.it was before the North Wont trade lmd develo ml, and as tl
-83471_1899-02-16.txt:field peas, indian corn and potatoes.
-83471_1903-04-30.txt:Ujindians. Mr. Clancy called for a po-j I icy for all Canadians, and the abolition | of sectionalism.
-83471_1903-09-17.txt:of digestion their number reached the gunR to tho 8Ame num))cr n8 B ruling service is Sir Ferdinand von Mueller, &amp;lt;&quot;d place, a man has been made to great delight was to startle people, amazing	total of 2.000 succeeding	indian native prince, with whom he K.C.M.O. Be has been the head of	carry an enormous spitoon suspend- and he often said things simply be-
-83471_1911-11-16.txt:that particular corner. No person indian.A, au^^tho10Canadian ? c&#39;??? is K?ving universal satisfaction ua
-83471_1920-01-22.txt:T)ie price of sugar is advancing. The ( -Aiindian Hoard of Coiiimcrc* has set the price of stipar at lit cents per lb., but &amp;lt;li&amp;lt;l not guarantee for how long. Our price for Sugar |&amp;gt;er Ih. is ........ eeM
-83471_1923-11-22.txt:Owing to the tact that with the ex- tion, since she showed a slight gain in c&amp;lt; ption of one in Lot 3, the sows were weight. However, while Lot 2 showed all pregnant, gains in weight were not a cost of .8 cents less per day, indian accurate indication and the powers cations were that Lot 3 were in by of observation had to be relied upon, far the best breeding condition.
-83471_1973-08-29.txt:This summer has been a busy one for at least twelve high school students in Ot Last May 28th this group began an interesting ject with a great deal of co-operation between these girls and boys. They have created a replica of an Indian Village, consisting of teepee s , an old Indian Fort which will have medicines and indian costumes on display.
-83471_1975-03-05.txt:Ron Sparling of Ontario may not have counted on the depth The latest statistics on unemployment show the most to 0f the ditch in the shoulder of the Eardley Road when he be in the unorganized territories and indian reserves for slid into this situation last weekend. With spring right 29%. In the municipalities the unemployment rates are as around the corner and a new road in the works the above follows: Bryson 17%. Campbell&#39;s Bay 16.7%, Fort Coulonge all too frequent occurance should become nothing but a bad 12.7%, Portage du Fort 10%, Chapeau 8.3%, Quyon 7.1%, memory before long. The photo was taken on Saturday Shawville .7%.	morning, the first day of March, 1975.
-83471_1975-04-09.txt:Lynn Pirie, standing left, was the leader of this delightful band of indians and clowns, left to right, De si Keon, Julie Armstrong, Angela Towed, Sherry Graham, Jody Caldwell,
-83471_1977-11-23.txt:Our first snowfall of the season came on Saturday morning when about 2 inches had fallen. It has almost all disappeared now and not it is indian summer coming up ...
-83471_1979-03-21.txt:primarily Amerindians (Cree
-83471_1988-05-04.txt:other way.	mean	he agreed	with	Zac-	present	confusion over ho-	should be seen as accepta-	a band of indians that	horses	and ourselves.	vert	et blanc.
-83471_1988-06-01.txt:what they should call their may	call	a	&quot;style &quot;.	So	start.	The	usual	title	for	verend	Smith&quot;	than	it	is	what about Father.	correctly.	rindian	paintings by	For every	listing	in	this
-83471_1988-11-23.txt:real indian summer.	Obituary rvllUy iY?tlllGGn otOTGy
-83471_1991-07-17.txt:when the feeling grew on	stealth of an indian track-	accentuate this distortion,	coming unbearable. I	Radford or the bhawvilie
-83471_1991-08-28.txt:The Native Alliance the kids, horseshoes for all The Alliance made sev-meets on the second Sun- and a dance featuring eral draws throughout the day of every month and Don Stanley and his evening, of restaurant actively encourages com- Band.	meals, a indian head wall
-83471_1991-10-23.txt:Kappes, Marlyn Grodde, about one inch of snow fell Mrs Genevieve Bretzlaff. here but melted in the af-This special event was ternoon. So we can expect also a celebration for Mr indian summer now after and Mrs Walter Yach s this first snowfall, anniversary and Pastor We send happy birthday Kappes&#39; birthday who re- wishes to Mrs Margaret ceived gifts and good Mielke of Arnprior who to her mother, Alice Wilson, wjshes A full course sup- will be celebrating a - who had the misfortune to
-83471_1994-10-12.txt:and evening grosbeaks, juncos, tree indian summer. And please don&#39;t use	**	****** *** *f*****^^
-83471_1995-09-27.txt:ac, Chief of the Ottawa Amerindian tribe, who lived invested from 1720 to 1769.
-83471_1997-10-08.txt:A quick scan of the table of contents reveals the scope of the book Part 1 covers the Amerindian presence up to 1791; Part 2 covers the transformation of the territory, covering settlement, lumbering and cultural
-83471_2000-08-23.txt:Carrol gave the answer to the number of lakes in Pontiac while Dave knew the nickname the Amerindian people had for the Ottawa River (Great River).
-83471_2003-01-29.txt:Where were bones discovered?	mented by archaeologists such as T.	racism. Is it an issue that Amerindians of
-83471_2003-01-29.txt:implements and bones found along the	hie that the native Amerindians living	bones is a contentious issue.	a society, as individuals?
-83471_2007-01-31.txt:old prehistoric Amerindian every year,&quot; said O&#39;Brien. The Town Pants, whose artifacts that were found on &quot;But people enjoyed it last
-83471_2007-08-29.txt:dosage. The information presented in this	Amerindians used it as a purgative because	ment, so further research is key.&quot;And they never ever had to eat a salad.	a room listening to this man tell his story of the betrayal
-83471_2007-10-24.txt:who visit the Dumoine for canoe-camping, ^e Algonquin communities check out Jim Coffey, Esprit Rafting Adventures: kayaking, hiking, fishing and hunting. We could vvww.indianamarketing.com/anglais/nations/a (Please note: this is a paraphrase of part of easily add winter activities to this list such as igonq.htm	and	also Coffey&#39;s talk.) I challenge you to not only think
-83471_1894-09-13.txt:(hlleml 11ndian* Supplied With
-83471_1982-04-21.txt:algonquins, et
-83471_1982-04-21.txt:algonquins) et Reetigouche
-83471_2000-12-06.txt:www.algonqulncollege.com
-83471_2000-12-13.txt:www.algonqutncollege.com
-83471_2001-08-22.txt:Commonwealth Plywood), Les tentatives du goule Chef algonquin Harry vernement f?d?ral de briser Wawatie souligne les l&#39;Entente trilat?rale et de int?r?ts communs Algonquins et des compagnies foresti?res.
-83471_2003-04-16.txt:E-mail: myfuture@algonquincollege.com
-83471_2003-04-16.txt:Visit us at: www.algonquinonline.com
-83471_2004-02-25.txt:Amprior and Adam Blair, son of Paul and Betty Cockhum, of Kanata, were united in marriage August 2, 2003 at pm. Info can he obtained at Robert Simpson Park, Amprior, Ontario. Thank you to our wwwalgonquincollegc.com /pembrokc or by contacting the admissions office at
-83471_2004-08-18.txt:School of Part-time Studies check out our website at www.algonquincollege.com/distance/mdex.htm
-83471_2004-08-18.txt:E-mail: myfuture@algonquincollege.com
-83471_2004-08-25.txt:School of Part-time Studies check out our website at www.algonquincollege.com/distance/index.htm
-83471_2004-08-25.txt:E-mail: myfuture@algonqumcollege.com
-83471_2004-11-10.txt:2204 for your quote today, tenance. perryg@algonquin-Pontiac Printshop Ltd. 133 college.com 613-324-0347.
-83471_2005-01-19.txt:for more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at www.algonquincollege.com/disttnce/indejLhtm
-83471_2005-01-19.txt:I385 Woodroffe Avenue, Ottawa, ON K2G IV8 (6I3) 727-7655 or I-888484-4444 (Toll free) E-mail: myfuture@algonquincollege.com
-83471_2005-01-26.txt:for more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at www.algonquincollege.com/disunce/index.htm
-83471_2005-01-26.txt:E-mail: myfuture@algonquincollege.com
-83471_2005-05-25.txt:For more information on the wide variety w Distance Education courses available through the School of Part-time Studies, check o#t our website at www.algonquincollege.com/distanc
-83471_2005-05-25.txt:Or email: myfuture@algonquincollegeco#W; Algonquin College Off-Campus Learning * 1 1385 Woodroffe Avenue, Ottawa, ON K2G1V8 (613) 727-7655 or 1-800-565-4723 (Toll Free)
-83471_2005-06-01.txt:For more information on the wide variety of Distance Education courses available through the School of Part-time Studies, check oat our website at www.algonquincollege.com/distance
-83471_2005-09-14.txt:For more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website I http //www algonquincollege. com/d istance/indmh?
-83471_2005-09-14.txt:(613) 727-7655 or 1-800-565-4723 (Toll Free) E-mail: myfuture^algonquincollege.com
-83471_2005-09-21.txt:For more information on the wide variety of courses and programs available through Distance Education, School of Part-time Studies check out our website at httpV/www. algonquincollege com/distance/indeJitm
-83471_2005-09-21.txt:(613) 727-7655 or 1-800-565-4723 (Toll Free) E-mail: myfutureealgonquincollege com
-83471_2006-05-03.txt:www.algonquincollege.com/pembroke
-83471_2007-01-03.txt:www.algonqulncollege.com/pembroke
-83471_2007-04-25.txt:or visit our website at algonquincollege.com/pembroke
-83471_2007-05-02.txt:Apply at www.ontarlocollegas.ca or visit our website at algonqulncollege.com/pembroke
-83471_2007-05-09.txt:or visit our website at algonqulncoUege.com/pembroke
-83471_2007-05-16.txt:or visit our website at algonqulncollege.com/pembroke
-83471_2007-09-12.txt:e-mail us at flexibility@algonquincollege.com or visit www.algonquincollege.com/flexibility
-83471_2007-09-26.txt:e-mail us at flexibility@algonquincollege.com or visit www.algonquincollege.com/flexiblllty
-83471_2007-11-28.txt:contact Sharon at 613.727.4723 ext 3330, e-mail us at flexibility@algonquincollege.com
-83471_2007-12-05.txt:e-mail us at choice@algonquincollege.com
-83471_2007-12-05.txt:or visit algonquincollege.com/choice
-83471_2008-03-12.txt:A formal Invitation will be mailed to graduates For more information, please contact Brenda Chartrand at 613-735-4700, ext. 2702 or email: chartrb@algonquincollege.com
-83471_2008-03-26.txt:or email us at flexibility@algonquincollege.com or visit algonquincollege.com/flexibility
-83471_2008-03-26.txt:algonquincollge.com/PartTimeStudies
-83471_2008-05-07.txt:For more information, please contact Brenda Chartrand at 613-735-4700, ext. 2702 or email: chartrb@algonquincollege.com
-83471_2008-05-28.txt:email us at flexibility@algonquincollege.com or visit algonquincollege.com/flexibillty
-83471_2008-08-20.txt:www.algonquincollege.com/PartTime
-83471_2008-08-20.txt:contact Alicia at 613-727-4723, ext.3330 or visit algonquincollege.com/flexibilrty
-83471_2009-04-29.txt:www.algonquincollego.com/pem broke
-83471_2009-05-20.txt:www.algonquincoHege.com/pembroke
-83471_2009-05-27.txt:www algonquincollege com/pembroke ^SONOyiN
-83471_2009-05-27.txt:algonquin co llege, com/DE
-83471_2009-07-01.txt:www.algonquincollege.com/pembroke
-83471_2009-07-08.txt:www.algonquincollege.com/pembroke	C*1S*
-83471_2009-07-15.txt:www.algonquincollege.com/pembroke
-83471_2009-07-22.txt:www algonquincollege.com/pembroke
-83471_2009-07-29.txt:www algonquincollege.com/pembroke
-83471_2009-08-12.txt:www.algonquincollege.com/pembroke
-83471_2009-08-19.txt:www.algonqumcollege.com/pembroke
-83471_2009-08-26.txt:www.algonqumcollege.com/pembroke
-83471_2009-08-26.txt:algonquincollege.com/onCourse
-83471_2009-09-02.txt:algonquincollege.com/onCourse
-83471_2009-10-21.txt:SPECIAL FALL YEARLING SALES starting at 11 am | algonquincollege.com/DE
-83471_2009-10-21.txt:www algonquincollege com/pembroke AG0NQUIN
-83471_2009-12-02.txt:algonquincollege.com/onCourse
-83471_2009-12-02.txt:algonquincollege.com/onCourse
-83471_2010-01-06.txt:www.algonquincoliege.com/DE
-83471_2010-01-20.txt:www.algonquincollege.com/DE
-83471_2010-04-28.txt:www. algonquincoUege. com/DE
-83471_2010-10-20.txt:algonquin Park we met 12 tour buses and three school buses loaded with sightseers on Sunday. There were people, cars and buses every where and driving was very-slow We didn&#39;t see any moose this time
-83471_2010-10-20.txt:algonquincollege.com/DE
-83471_2010-10-27.txt:x web. algonquincollege. com/Pembroke
-83471_2010-10-27.txt:Call for more information: 613-735-4700 x 2735 or email LifeiongLearning@ algonquincollege.com
-83471_2010-11-17.txt:algonquincollege.com/DE
-83471_1894-03-22.txt:Some little way above Uhuron-ilai i 1	44 She usually comos into the garden at he now brought them more frequently, ae
-83471_1903-03-19.txt:Brandon, represented by T. E (,.rden* apj hure and dumfounded silence mi the like huronir h nliee.	Winnipeg, March	Siswart,
-83471_1948-06-10.txt:unmerited tag of Bone,lead . As hurondale chick hatchery, lon-usual, some who took part in the don. Ontario._________________________________
-83471_1965-02-11.txt:NEW 1965 VALIANT V-200, Hardtop V-8, automatic, padded dash, deluxe wheel covers, huron blue
-83471_2003-10-22.txt:farm house (at Village) 648- scott@huronwebgraphics.coM. pm.	P?s,es c&#39;&quot;aPres men&quot; Nancheng, Jiangxi, China).
-83471_2004-10-06.txt:o argen p esc	i pa	e eg e	of Inverhuron. Son and daugh-	For memory is the	only thing	Grandpa &amp;amp; Granny,	Aunts and
-83471_2008-02-06.txt:with a mohawk in a show of solidarity, has posted a 9-4-1 record so far in their Midget ?A? Outaouais Metro league and are in the thick of the championship hunt.
-83471_2008-04-09.txt:MacDougall made a deal with his players earlier in the season that if they won the provincial tournament he would style his hair in a mohawk and the youngsters could choose the colour
-83471_2008-04-09.txt:The offer from their head coach stemmed from earlier in the season when all the players got mohawks but MacDougall was unable to.
-83471_1883-11-22.txt:accordance with the statements made in Kiwis.* The mai ket retain* the lirai condition,anil advance colonization among the semi-official journals m Canada. Mill ; t,)llv noticed for some time past ; receipt* the aborigine?, there has boon a-i.remise of alitement | nvv R|na|, prices range from 25 to 20 by tho Premier, Mr John Macdonald, cvnts j? Vlih0ji, Kor stiietlv fresh stock which will doubtless appear in a day or higher prices arc obtained. Account two. The miHle of plmn.g tho stock has ^ fnilll American Markets have been been by giving options to syndicate? of capitalists. The amount placed including
-83471_1883-12-06.txt:homa Mrs. Ilyen, was able to ..and upright performance with aboriginal dances and ^ ^n where the deer was to be
-83471_1884-09-18.txt:It is not a long circuit from the gate of the Captain&#39;s garden to that of t he famous temple, but oven that short distance shows us a few sights which would be sufficiently amazing in any other part of the world. A native house is gravely coming up the river by itself, the father steering it with a long oar, while the children watch its progress from the steps of the ladder leading down into the water from the verandah. Under the shade of a huge banyan tree, half a dozen dusky Siamese boatmen are playing a kind of aboriginal lawn-tennis, using their feet instead of their hands to keep up the ball. Just beyond them, a small native child, with nothing on but the ornamental wreath which encircles the bristly tuft of black hair surmounting its otherwise shaven head, is admiring a magnificent butterfly, almost as large as a sparrow. A little farther on. a group of amphibious youngsters are playing in the thick, greasy, soap colored water, as Western children might play on land, while just across the river we espy a flotilla of light canoes, laden with fruit and vegetables, and manned by Siamese market women, who keep up a perpetual clamer of bargaining as shrill as a chorus of angry par-lute.
-83471_1886-04-15.txt:March, together with seven or eight men, lie tier as he looked up and down rime upon a party of the aborigines &amp;lt; n a am, I didn t &#39;zactly &#39;speet he would tv Sar frozen lake. By making signs and throwing tin events hev occurred to render his absence away his arms, he induced one of them a necessity. De Seckretary will turn to his (a woman) to stop. The rest of the Indians, name on de roll an scratch it off, and write however, approached with more hostile dis across it in red ink the word ?expelled.? positions, aud it Is said that one of them When the Srcrctary had carried out the seized Peyton by the throat with the intent request the President continued : tlon of killing him. This action on the part of ?Up to a y?ar ago Prof. Johnson was an the Indian caused some confusion, wh ch active, ?eeptcted member of dis club ended by one of the Indians beivg shot, was not only a worker in our cause, but he The woman wat- secured, but her husband was industrious as a man If he couldn&#39;t and on other Indian re luting, they were both get work at a dollar an? a half a day he got it
-83471_1888-12-06.txt:again restored by a Deer proposing to care	ernor marveled.	them, was the summit of the	spire, with the	I are interesting relics of aboriginal skill.	&quot;Speak up 1? roared an old foxhunting
-83471_1888-12-06.txt:them, was the summit of the spire, with the are interesting relics of aboriginal skill.
-83471_1889-05-02.txt:behind some buttress or in some dark recess j strong, brownbodied aborigines with terribly sharp spears, standing poised, still as dead stamps % rain pattering down on yon every other day In the year ; an impure atmosphere, with its dread oonseo ne nose, fever and dysentery ; gloom throughout the day, end darkness almost palpable throughout the night | and thee, if you will imagine such a forest extending the entire distance from Plymouth to Peterhead, you will have a fair Idea of some of the inconveniences endured by ns from June 28 to Deo. 6, 1887, and from Jane 1, 1888, to the present date, to continue again from the present date till aoout Deo. 10, 1888, when I hope to pay
-83471_1889-05-16.txt:aands began to crowd around the tables, | perhaps the moet unpleasant soere of the shore with settlements, aeparatlngt hi whites, j Christ, true Christian brotherhood. Hut il I under the b&amp;gt;ats without injuring them&quot;. The each man tryirg to git ahead of the others i night There was but one coat room, and while the Jesuits, who made the Indians the antagonism between capitalists and lab- bridge Is built V shaped at the channel, and in reaching a place where he could enter five cr six hundred men tried to get to it at their peculiar charge, were allowed to pick onrere continues and beet mes Scarcer, h is a draw allows shipping to pass through, the game of grab. Bat the worst did not Onoe. It took twenty five or thirty police- 0nt the fertile epote, and cluster the Indian# I much to be dreaded that, In Karope at least, come until the majority had succeeded In mcn to keep anything like order. In the upon them. Justice, of comes, should be democracy will end In Oserletn. Nation#, capturing food ana wine A crowded room crush few hate were saved uncrushed, over- done to the aborigines, but the Indian here tired of endless and issueleee struggle* is bad enough, but here wa# a crowded ooate were torn and umbrellas were broken, has ceased to exist There is scarcely a I would sacrifice their liberty and seek rest
-83471_1891-01-29.txt:take into no lands sf the aborigines
-83471_1891-07-30.txt:Sea, some of thi n, of a tonnage exceeding | on the onlsi.ie. when they are, in fact, the The aborigines of the w ilder parts of ?D?	_-?	the l&amp;gt;arley industry, in the growth of which
-83471_1892-09-29.txt:The last Irish census show# a decline of t)ie Wasanpa, the aboriginal inhabitants of population since 1881 of 470,000. The num- the country, who had lived there long be-her of foreigners has increased, chiefly ow fore Msiri made the land hie own and in-ing to the large immigration of Russian troduced many foreign element# into the Jews. The Methodists have increased population. A great many of the natives about 13 per cent. The Roman Catholics had fled for their lives beyond reach of the have decreased 10 per cent., the Episcopal- JespoU Scores of villages had been burned, iane 0 par cent., and the Presbyterians 5 and as the country was in a chaotic stato per cent. The Irish language is also dying cropi were not planted and famine had re-out. Ten years ago 64,000 people spoke BUited. The origin of the war was due to Irish only. In 1891 these were 38,000. In the King, who, j retending that he had a 1881 there were 885,000 who could apeak complete monopoly of the ivory trade, re-Irish and English, and last year there were ^sed to permit any of hie subject# to hold only 642,000.	? tusk of ivory as his own property. That
-83471_1892-11-03.txt:aborigine, knownjaa the &#39;Ottawa Pnncesa&#39;	may checks,_________ THEN	BY	all	means	gO to
-83471_1893-01-26.txt:the barren with those marvelous aboriginal	Carefully I raised to my knees and waited	,	.	it a person is telling an interesting story,
-83471_1894-02-15.txt:known to the aborigines in Northern Mexi- sound and I can do a day?s work alongside to he one-if you want to make money send oo. One giant kind is regarded by the In- of anybody. Dr. Williams&#39; Pink Pills for our illustrated list. William Briggs, pub-dians in that part of the country as their under Providence did it all. Pink Pills Usher, Toronto. greatest medicine, being much more power- should be kept in every house. Since they iul than the plant employed by the Klowas. cured me I have recommended them to my They can drink any amount of corn beer, friends everywhere,and I shall continue to and this remedy will take away all ill recommended them. ? effects. The name in use among them for
-83471_1894-05-31.txt:of the aboriginal tribes of Chota Nag pore, or 1 India. It ie observed whenever any calamity falls upon the community?such as, perhaps, a visitation of cholera. The wo-
-83471_1895-05-30.txt:money. Aunt C arrle has often spoken	not seen	him or heard from him for	as quietly as she had entered. So pass-	worshipped by the aborigines, who held a
-83471_1896-08-06.txt:ttuir party is evidently strong among cessors in the Colony and the aboriginal Liberal writers. As a matter of fact the Indians, has been progressing in the Gov-address contained nothing to evoke en- ernment buildings. The archives at the
-83471_1899-06-22.txt:in love with her	as if she had known ! with hcr f ce flushed with excitement, |	put Ln the cave of the Cumberland.	. ^ke increase of alcoholism- in France	, ,lle aboriginal Indians of our own
-83471_1899-10-05.txt:Prof. Spencer gave an interesting lecture on this fascinating but little understood subject at Melbourne university last month. Every aboriginal, said the lecturer, possessed in additios to his own name, that of some animal, such as a kangaroo, bandicoot, emu, 01 wild oat
-83471_1900-08-09.txt:to be the substance with which the Malays poison their kreeses and dag-fgera, and also the &quot; finger-nail poison formerly in use among aboriginal
-83471_1901-03-28.txt:&quot;It is a fact as big a* Table Mo un tain, that the vast majority of the ab original and the colored races are oi the British side in sentiment during the struggle which has been going on for a year and a hlaf. By the col* ored race I mean the mixed people in the colonies and sometime* Republics, beginning with full-blooded Hottentots and the imported aborigines up to the almost white, whose fathers, whatever their motives may have been, were Dutch or English.&quot;
-83471_1901-04-04.txt:He made bis request In plain, straight- the aborigines.	back, say, $5 per head. Indicating thn, over your door?&quot;.I	to
-83471_1901-05-02.txt:from the fact that his right foot was! luggage have been smuggled out of census of 18/1 only 38,87&#39;J aborigines resting on a sort of small trestle, 1	the house to-night without the know-	wore	enumerated,	of whom 8,280 were ncr.?
-83471_1901-05-02.txt:tribo in that colony having died in 1 &#39; 70. It is j ecoi d&amp;lt; d Philip estimated the aboriginal population about Urn close of the last century at on between.
-83471_1901-05-02.txt:the case of liotill. Australia, a large Tk&amp;lt;1 srojnd (U, l smoked all f iv lx- The \&amp;gt;k*U number of the aborigines in the f&amp;lt;m. lllnch and f?,t vcry m , Northern Territory are entirely out-I (lu.rCng lhv rest ot tll? ,Uy. Thc tbird
-83471_1901-05-02.txt:her of aborigines enumerated was very.	t here	wmild 1&amp;gt;;&amp;gt; of reform and econo-	rd in &#39; ,1, a
-83471_1901-05-02.txt:number of aborigines under the con- smoking.&quot;	&#39; TJ?-	close it has a
-83471_1901-05-02.txt:the aboriginals passed over as being
-83471_1901-05-09.txt:chicken, stir constantly until it boils, ! -00,000 arc aborigines, and these not add stiffly beaten whites of two | because of hostility on the part of
-83471_1902-08-07.txt:ingly frequent during the hot moist of aVowing pig8 10 graze&#39; or shut-1 At last he became bo low that his aboriginal peoples, and that it is	to till i cold in exr. saw.
-83471_1903-03-19.txt:The aborigines of the Malabar Islands employ a perfect whistling language by means of which they can communicate with each other over long distances. A stranger wandering over the Islands is frequently surprised to hear from a hill top tho sound of loud whistling, which is quickly repeated on the next hill, and ho is carried from summit to summit, until ft dies away in the distance. But perhaps the most curious means of communication in the world is the druin-languagc of a Congo tribe. These queer people can talk to each other with largo drums made of bamboo hoops, over which the skin of some animal is stretched. The drum, however, is used only on important occasions.
-83471_1903-05-21.txt:ough, but the old lacrosse, us played except those occupied by these Moby the magnificent aborigine riors of a Century akin to
-83471_1903-09-10.txt:Riverside,, and pitched a lorty-foot Wall tent under tho trees. Then ho moved his brass bods and other indispensable furniture into it and sol up housekeeping for the summer. The beds, a gasoline stove, a few easy chairs, and a portable Russian bath were the only luxuries he took with him upon his return to aboriginal existence. With his wife and five children he has inhabited his tent
-83471_1903-11-26.txt:aborigines, who is, perhaps, familiar tvitli aboriginal lift ; character than is any other individual in the Commonwealth, and Mr. Charles lloclley. conchologist of the
-83471_1903-11-26.txt:m n knowledge of cv&amp;lt;&amp;gt;O Nhat staff officers and others in tho the rudest aboriginal appliances, military service are In the They have, however, a stringent *&amp;gt;&#39;*? | striking tern of tribal classification, intended to represent different degrees of relationship and to assist in preventing mount a great many obstacles, he
-83471_1903-11-26.txt:too close inteimarriagi of this system, so prevalent among all classes of Australian aboriginals, | umpire staff remains an unsolved mystery
-83471_1903-12-03.txt:ister	who	has	a	stipend	of	between	interior	many	of the	aboriginal	In-	?	?	makf,s no	dirfercnce if	he only	properly completed, the &quot;check-lock&quot;	Dawson	isn&#39;t like	Crecdc, where it
-83471_1904-01-28.txt:Anyhow, we arc ready for anything or anybody, from n pious ecclesiastical visitation to a regular influx of tho aborigines
-83471_1905-11-23.txt:theory was seriously urged that it was impapMhle to work the mines of tho Tramivaal effectively with 8Uj&amp;gt;* plies of labor drawn from tho aboriginal races of Southern Africa j thoughtful ( hows that they might There was a difficulty in getting the as well seek fortune
-83471_1906-04-19.txt:When tho Australian aborigine ls push-?? I tin ] n And no catches snakes for food. With his won iVrful brown eyes ho ran see tho faintest trail wliere a snake has r.ig-zagged through the dry moss and leaves^ night-time his broad nuslrils take up tin chase, and, stooping down among J* bushes, with a tough forked stick in hit hand to support him, he follows the track as unerringly as a bloodhound When tie runs a snake to earth, if h# cannot surprise it in the open and Kill il by a sudden blow of Ills stick, hi squats over Its hole, making a low his-S&#39;iig or whistling sound with his Ups. Soon the snake puts its head out of ?he nnd peers round. In an Instant ll#U forked ?1 ink descends and fixes it to tM ground by Hie neck, and th&amp;lt; low, &amp;lt;?	, if !sihii. I Hu
-83471_1906-04-26.txt:daring that lie had lived for thirty alone among the aborigine? of
-83471_1906-12-13.txt:Austrian aborigines are the lowest known epee e* nf humanity. They have little or no reasoning faculties, and their only idee of a H gher Power is through . fear. They are chocolate colored, wear little clothing, and their weapons are of wood.
-83471_1910-03-10.txt:tag at a meeting of the Sydney Natural History society, A. Meston, forI merly protector of aborigines in north-I era Queensland, says that when In fall foliage it la one of the moat beautiful trees In the world. The wood la elegantly grained and marked by colors and peculiar streaks which readily I distinguish It from any other known timber. It la extremely hard and tough, and the blacks of the Cape York peninsula use It for making their woomeras, with which they throw the ?pear. The tree bears long rods containing beans, which, like tbe leaves,
-83471_1910-09-01.txt:hunt?&quot; demanded Ashby Vrawlor, f.u.0&amp;lt;| turbaned aborigines with try.&quot;	mcn- You could not say they were Another hour sc eat eating, then
-83471_1910-11-10.txt:In addition to gold miners, backwoodsmen and other pioneers of the empire there will lx? aborigines from Australia, Maoris from Zealand, Red Indians from the Far West, the semi-civilized tribes from the Fiji Islands, colored people from the Mata be le and Bechu&amp;amp;ua-land. Eskimos froji the frozen north and Chinamen from tho Malay Peninsula. The homes and habit* of there people with their work will be shown,.
-83471_1910-11-24.txt:Always the Australian boomerang has been interesting to the civilized general public. Many persons unfamiliar with the fact that the boomerangs of these aborigines of the far off island continent have been of various shapes and patterns. Most of those former experimenters in civilization have made a particular type of the boomerang, deciding finally for themselves that ?the blamed thing will fly, but it won?t come back.? It has remained for an Englishman so to improve the Australian cross shaped wea-that it is no more than a cross
-83471_1910-12-01.txt:C7 Pacific coast will he memorable for what will undoubtedly be the best of I j the extraordinary series of passion ____________________________I 1 plays given by the aborigines of Can-
-83471_1911-02-02.txt:at the same time, until the discovery work of some aborigines of the Island. **P&#39;Hlg SLOCK, SO II j Oil A\?Ult a pOOtl Mil t fit
-83471_1912-05-09.txt:He went from her presence with quarrel between Gordon and hi* doctor must earn about $L&amp;lt;00 an- hair dressing, for it follows the the cruel, terrible fever of disap- willful little Ruby, and that Gordon	m or&amp;lt;,vr to. cover expenses aboriginal style in vogue in the
-83471_1913-10-09.txt:trations AjVwork is lxsii&amp;gt;g sent r^Pli Broochesf Links, etc., oto. did th# aborigines themselves ever
-83471_1914-02-12.txt:the aborigines, in * thev aaid. to frighten awav tl ? i &#39; dehi!
-83471_1914-03-05.txt:tuesc aboriginal tribes reflects ac that tribes more or les* allied in	DANGEROUS PLEURISY ALWAYS IoU,er rnd tbr The irnnof middle
-83471_1915-06-17.txt:The ladies succeeded during the win- ised for light drips, ter in sending to the Bed Cross Suriety Some clever aboriginal artist has HZ pairs of socks and aUmt fi dozen ar- produced miniatures of the tribal
-83471_1915-06-17.txt:held at Mac- larpoons which are aboriginal, con-
-83471_1916-10-26.txt:In translating the Bible for the Zulus and for some other aboriginal peoples It Is necessary to have two versions, one for the women and one for w herein things are the men. The Zulu law compels a made of ?-r from ??i out of w . ?d, pulp or married woman to cut herself off from
-83471_1917-06-14.txt:The aboriginal native* of the Ama-
-83471_1917-07-19.txt:world runs dry, the aboriginals draw
-83471_1917-07-19.txt:the current war of weary soldiers in the interior of Spain no one knows an exhibition of aboriginal craft, marching steadily and in step with how to road or write. There are in There was no water, no moisture their comrades, although they are Spain thirty thousand rural villages within miles, and the clay was baked sound asleep, can only be explained without schools of any kind, and BO hard that to be penetrated at all by examining their brain chambers of many thousands which can be reach- % must be broken with a hatchet. A secondary automatic actions. Each ed only by a bridle path, there being keen native guide presently discern-human being of normal intelligence no highroads or railway communica- e(j uttle tracks on the ground?faint-performs a host of these secondary tion of any kind. Attendance at est indications of life, apparently? actions, depending totally upon his school is voluntary not obligatory. an(j having hacked into the clay to unconscious memory to guide him. Seventy-six per cent of the children
-83471_1917-09-27.txt:fere gathering In all they can find if j ppertaining to the aboriginal Am rlcan, for&#39;the prospects are that hie e amendants will soon be living as cdlnarliy as other civilised people.
-83471_1917-10-25.txt:small abri and observation, breaking was token. All our linei was ours, uur Nq mattcrj we took the wood. We weeks one will And that the coldest there is water. One can hardly | scientific of all aboriginal Aremaking connection with the rear. That meant ( dead and theirs attested why.	searched every corner of it. and rout- ^ eights do not mean discomfort. It is a few feet below the surface any-
-83471_1920-01-22.txt:to omit mention of the American aborigine*. who quite generally were in earlier days wonderful colorists.
-83471_1920-03-25.txt:That old chap would never have taken Armed with this weapon, the aborig- a tumble if I hadn&#39;t fixed a string from Inal marksman Is able to kill off a our gate to the lamp-post!&quot;.
-83471_1921-03-31.txt:charged that In 1915 the Japanese had slaughtered 20.000 aborigines In For-
-83471_1921-05-05.txt:The commonwealth of Australia ha* taken steps for the preservation of the aborigines of that country and has as aigned a tract of public lands In the Northern Territories as reservation for the tribes. It Includes the Man The census of Germany, recently an(j Petenson Ranges and practically completed, shows a total population th0 whole of Lake Amadeus of 60.282,000 people. The total nuni- Governments of South and Western her of Inhabitants in 1913 was about Australia have set aside adjoining
-83471_1921-09-01.txt:aborigine* live in the district.
-83471_1921-09-15.txt:Australian aborigines?their customs could plunder and ravage In the vil- something, and they will thank any-1 . ,h 0|ymDlc of 46430 tonfl the &quot; would have been comparatively easy iage fora brief time after a death. 1 body who-can explain It. In the high- .	, .	_ h?lD afloai . th _ , ,
-83471_1924-07-03.txt:ng within their bound-tho aboriginal Indians
-83471_1927-01-27.txt:With his friends at Ottawa in control the O&#39;e*, of the world on tins, modern representatives of the aborigines of New Zealand.
-83471_1928-01-19.txt:Contrary to general belief, the Australian aborigines are a mirthful people, full of friendship once the barriers are broken down, said E. L.
-83471_1928-01-19.txt:within the reach of all, and to follow &quot;The aborigines have retreated Into demand for yellow metal to the return the mode is delightful when it can be that part of Australia so banco and ! fo 8(ablllzed conditions of one coundone so easily and economically by arid that white men fall to penetrate f|.y after auother
-83471_1928-01-19.txt:though the spoken language of China the public and private purse as uien- bueied himwlf with the science of is highly dialectic and among aborigl- tlcal, cannot, no matter how hard chemistry. Mr. Ayscough discovered
-83471_1928-01-19.txt:There are many aboriginal races alive and active in China today?the Hoklos, Ivolos, Miao, Tibetans,&#39; Turki peoples, Mongols, Manchus, Koreans and Sham?. These people have produced mixed types with the Chinese through marriage or by the marching of armies through the country.
-83471_1928-10-11.txt:merits of rival party leaders, It	the American aborigines had attained
-83471_1929-08-29.txt:&quot;The glory which was Maya/&#39; exemplified by archaeological discoveries of aboriginal knowledge of architecture, astronomy, sundry arts and writ*? ing, is being emphasized through the medium of the airplane. It was disclosed here that Colonel Lindbergh, aided by his bride, is taking a keen interest in archaeology and has &#39;contributed to the historical scroll the discovery of an ancient* Mayan ?lost city&quot; In the Yucatan jungle.
-83471_1929-11-14.txt:Soon this first aborigine was Join-	y.	American Magazine.?! -	with	the capacity to feel joy and fear,	nature that comes to the man or wo-	ing.?Addison. 1	???
-83471_1929-12-26.txt:brought to .light that it was well known to the ancient Egyptians, and that they probably got it from Babylon, but beyond this the trail ia lost. Visitors to Lapland have heard the melody there; it is known to the native tribes of South America, and it is frequently used by the aborigines of Australia, as well as by the Maoris and Arabs. It came to Lug-land when the Crusaders returned from the Holy Land, and it was used by these old-time warriors, as a sort of war song, when they were besieging Jerusalem.
-83471_1930-03-13.txt:The religion of these aborigines is largely superstition. They liave?mecli-cine men? in whose powers they believe. When the MacAIpIne party was watting at Cambridge Hay for the three relief airplanes which the wireless had advised would arrive on a certain day, one of the party suggested Jo McKinnon the Hudson&#39;s Bay factor at the post, that the Eskimo ?medicine man? who, with his tribe, necessities
-83471_1930-10-16.txt:country there exists an Aladdin&#39;s cave of gold closely guarded by aborigines.
-83471_1931-04-16.txt:aborigines were akin to the am lent Dravilian of Souther? India and the Quarter? as
-83471_1931-04-16.txt:00,663 full-blooded aborigine? in A us-triilla and about 16,818 half-castes. At wln *r,,w up
-83471_1931-04-16.txt:reserves and 1,700 square miles of missionary reserves for the natives aborigines except the nomads and the gainfully employed are wards of tho |
-83471_1931-04-16.txt:lug and food Only recently has Australia tried to 1111 evolve u scientific policy for the conservation of tho aborigines.
-83471_1931-04-16.txt:Shadravh L. James, an aboriginal
-83471_1931-04-16.txt:white man toward the aborigine,&quot; lie said, &quot;ha&amp;gt; been all along to dispirit and humiliate him, to extinguish his ? me of svif-respe. , to suppress bis ambition.
-83471_1931-04-16.txt:he done. His chief recommendation is almost any garden soil that laud and homes he provided for exceptions, they may be sown in the the aborigines and that his people he open ground in early Spring, as soon
-83471_1931-11-19.txt:The fantastic explanation has boon advanced that the Canadian Indians originated the game of ice hockey hy taking la crosse (called baggntaway by the aborigines) and making It applicable to play on skates. In contradiction, the French-Canadians maintain that their ancestors were the Inventors. Still other factions claim
-83471_1932-06-02.txt:Governor rather brutally phrased it. &quot;the natural progress of the aboriginal race toward extinction.&quot;
-83471_1932-06-02.txt:The Australian Year mates that there are now barely tiO.-o00 aborigines left, along with about
-83471_1932-06-16.txt:111 I Rives a vivid picture of Indian life in the northern Canadian wilds hook has considerable merit as a Canadian product by an aboriginal Canadian. It constitute# a real addition to
-83471_1932-09-22.txt:built by the hunter agreeably to the exact rules of Indian art. Few, who have never seen and observed the process of constructing this canoe, which, for the thousands of years before the advent of the white man, was the only croft used by the aborigines in navigating the interior waters, have any idea how, from such seemingly fragile materials, and with no other tools than a hatchet, knife, and perhaps a bone needle, the Indian can construct a canoe so extremely light and at the same time so tough and durable.
-83471_1933-08-24.txt:when the drought broke the floods came and she was marooned In an aborigine&#39;s hut for eight days.
-83471_1933-10-19.txt:ing paper is sometimes u*e&amp;lt;j. In &quot;gone native in Australia, and joined 0f Jh&#39;e Canadian Horticulturist, spring the covering should he re- r*ving aboriginal tribes, may have a 01 i,1L moved gradually. In places where profound influence on these stone-age mice are troublesome some wheat nomads.
-83471_1934-08-02.txt:To the Indian, the Yellowstone park wns a land of mystery, often shunned. Possibly because evil spirits were presumed to lurk In its spouting geysers and its steaming springs, possibly because the land was given to strange rumblings and awesome eruptions, more probably because more game was found In the lower vuileys, the aborigines left the Yellowstone very much
-83471_1934-08-30.txt:Scientists have called the aborigines the most interesting people on earth because, of all the humans that have come and gone during untold thousands, perhaps millions, of years, they alone survive to link the present with the prehistoric past. Their mode of life is still nomadic. They scorn settlements and civilized customs. Fire they make by twirling sticks as did the American Indians. They prefer nakedness to the rough dress of animal skins favored by other primitives.
-83471_1934-08-30.txt:Hunting is the aborigines? trade profession and occupation ; the sole purpose of life. Their game Is anything that walks, flies, or crawls. Toothsome to them are ants, grubs, caterpillars, lizards and frogs, other lellcacies are rats, kangaroos, parrots. ?mus. and almost any kind of fish. Animals and birds are thrown on the Ire, skins and all, on the theory that rooking in such fashion preserves the natural juices and flavors of the meat. They are particularly fond of grass* loppers and locusts which the women j gather in great baskets and throw Into a fire to singe off the legs and wings, after which they are roasted n the manner of chestnuts which they are said to resemble in taste.
-83471_1934-08-30.txt:Lacking dress, the aborigine seeks distinction in scars and welts which le assiduously cultivates on almost any part of the body. The larger and more numerous the scars, the prouder he owner. Unflinchingly lie submits to long incisions in arms, chest, thighs, md calves of the legs, into which powdered charcoal is then introduced.
-83471_1934-08-30.txt:The w ounds are kept open for a month )r more to promote the development 3f scar tissue. When the welt has raised sufficiently above the surface pf the skin, the incision is permitted to heal and the proud aborigine rejoices in the acquisition of another badge of honor.
-83471_1936-01-16.txt:The value of numerous bulbous growths was learned long age b.v the aborigines. They gathered the bulbs of the wild onion, better known by ils bloom as the California hyacinth which flowers on open hillsides. They dug the roots of the golden stars which blossom in the foothills; the roots of the desert lily, cousin of the onion, with its white funnel shaped blooms; and the canins, found in damp meadows from central California northward. The canins bulb looks like a small onion and contains much sugar.
-83471_1936-03-12.txt:Long before us these most wonderful of all aborigines were Indeed the Imperial people, the ?Romans of the
-83471_1936-04-23.txt:fn Australia the natives have been living off kangaroo meat for at least 10,000 years. Parts of kitchens believed to be that old were unearthed i near Kingston, South Australia, some time ago. Shape of the ovens leads archeologists to believe they were for roasting kangaroos at ceremonies. So strangely man like are these nnh that It teems almost Incredible that they should he eaten, but the fact remains that the Australian aborigines consider them a great delicacy. Vast herds of the beasts formerly roamed the great Inland plains of the &quot;island continent,&quot; but they have been largely killed off for their hides.
-83471_1936-04-30.txt:In northeastern Siberia, where tem- used by the aboriginal inhabitants of I effect r urther details of rate ?encumhrance. Apply te-
-83471_1936-05-28.txt:For these three and many oilier agricultural products, modern inas must thank the aboriginal American, probably the first, certainly the best, primitive farmer in the world, tho until recently he got little credit lor it.
-83471_1936-09-03.txt:The copper-skinned aborigines ot the American southwest, famed for their snake dances which are staged wi
-83471_1937-01-21.txt:The Capuchin friars, who for many years have sought to educate the wild aborigines of the Maranhao forests and convert them to Christianity, tell of a quaint. If somewhat oppressive sleeping habit among the A mini tribes, according to a Brazil correspondent In the Washington Post.
-83471_1937-11-04.txt:An aboriginal named Charlie had lev-water battle with a six-foot
-83471_1938-04-21.txt:ranging Royal Banquets When	aborigines who inhabit Bathurst 1s-
-83471_1938-04-28.txt:1 In the Far North the Eskimos make pipes from walrus ivory, which they carve beautifully with little figures. In the East the Chinaman uses a hollow bamboo stem, while the Australian aborigines actually make a pipe from an emu?s leg. 4
-83471_1938-06-30.txt:Dummy and Mary Ann, the tiff wives of an aboriginal living nwar Darwin, Australia, found their Jealousy so strong that Its effects culminated in a fight In which Dummy attacked the other wife.
-83471_1938-06-30.txt:The Judge bound over Dummy for six months. He said It would b# an interesting experiment, never previously tried on an aborigine. An Interpreter had to explain by signs the meaning of being bound Ills performance was not
-83471_1938-07-21.txt:Recent issues of stamp journals carry articles dealing with the unique interest of covers bearing the postmark of Goober Pedy, which is the aboriginal name for white man?s burrow. It has been suggested that specially decorated covers should be made available for use on Goober Pedy&#39;s international air mail.
-83471_1938-11-03.txt:Fred Blakeley, noted Australian author and explorer, has returned from the interior with the announcement that he has discovered a new tribe of aborigines that represent ?the purest descendants of the earth&#39;s original inhabitants.&quot;
-83471_1938-12-08.txt:The Roman letter B has come down to us unchanged, although it was a refinement of the Greek beta. The Roman B dates from pre-clas-sical to classical times. The earliest record of the Greek beta was about 460 B. C. In any consideration of the alphabet it is interesting to note that all of the symbols of all of the alphabets were developed in the beginning from the crude Dictographs of the ancients, whose method of leaving a written record was to draw a crude picture, de-cribing an event, on a slab of store ji on a stone cave wall. Picture symbols have been used by the aborigines of modern times, including die early settlers of Australia and die American Indians. It is generally accepted by scientists that die invention of the alphabet did iot consist of a sudden creation of otters representing sounds, but was a gradual transition from picture o letter symbols.
-83471_1939-07-13.txt:Hot Springs National Park Mankind has bathed at spas for better health, particularly in Europe, down through the ages. More than a century ago the United States government set aside Hot Springs, Ark., as a place ordained to special-in spa treatments and recrea-for the people of the nation for all time. American aborigines told of marvelous cures. These same springs were so famous to the Indians that in the long ago they be iisved the Great Spirit actually lived in them. There is a tale that the various tribes battled from time to time for control of the hot waters. Finally a truce was declared under which all tribes were extended the privilege of using the waters.
-83471_1939-12-07.txt:aboriginal preserve, but to keep the Chestnut Mnrc, rising 2-years-old. Apply
-83471_1939-12-07.txt:I Recently six aborigines reached Darwin, capital of the northern territory, after walking hundreds of miles through the unsurveyed Cast-
-83471_1940-12-05.txt:Of Alaska&#39;;! population of proximatcly 72.000 people, about 31,000 are descendants of the aboriginal Eskimo, Aleut, ami Indian races.
-83471_1942-01-08.txt:Ever since the Pilgrim Father* fell first on their knees and then on the aborigines, the American Indian has been pictured not only as a shiftless ne&#39;er-do-well but as a decadent, dying race. Many a generation of U. S. schoolboys has been taught a stern pride in the taking off of such die-hards as Rhode la-land&#39;s King Philip. Recently Indian-loving Commissioner John Collier helped explode the myth that these first families of America are vanishing. Said lie: Indians are increasing in North America more rapidly than whites; Indians of the Western hemisphere number 30.000,000 There were never more than about 900.000 Indians in the U. S. Since 1900 they have increased from 237.000 to 331 000-up 52 ts per
-83471_1942-03-19.txt:Far back in the mountains of North Carolina is a stand of timber, much of it aboriginal, which will never feel the woodsman&#39;s ax. Contrary to usual forest service practice (which manages and harvests and replants forest land), the Joyce Kilmer memorial forest will be preserved in perpetuity as a tribute to the man who wrote perhaps the most widely known poem about trees.
-83471_1945-03-29.txt:aboriginal.
-83471_1946-12-05.txt:A William Tell act with a boomerang. an Australian aboriginal weapon which returns to the thrower?s hand, was demonstrated by Mr. Frank Donellan ;it Paira-matta. New South Wales, recently, says the Ottawa Citizen. Mr. Don-nellan. who has been a champion boomerang thrower for 40 years, gave a display of his skill in aid of a charitable organization. First, balancing an apple on his head, he throws the boomerang, remaining perfectly still as the weapon circles and returns, neatly knocking the apple from his head!
-83471_1949-03-10.txt:in our innocence,, we had long thought that the steady lengthening-out of Big League hockey schedules at both ends, to say nothing of a spot or two of padding in the middle, was occasioned by nothing other than desire for a little extra pelf, or as the Indian aborigines used to phrase it, ?Meewant hunkmore wampum.&quot;
-83471_1981-12-16.txt:to be released if the detention is	not	and both language	versions are	equally	aboriginal, treaty or other rights or freedoms
-83471_1981-12-16.txt:lawful.	authoritative.	thal pertain to the aboriginal peoples of
-83471_1981-12-16.txt:(b) any rights or freedoms that may be acquired by the aboriginal peoples of Canada by way of land claims settlement.
-83471_1981-12-16.txt:rights of the aboriginal peoples of
-83471_1981-12-16.txt:35. ( 1 ) The existing aboriginal and treaty rights of the aboriginal peoples of Canada are hereby recognized and affirmed.
-83471_1981-12-16.txt:(2)	The conference convened under subsection (1) shall have included in its agenda an item respecting constitutional matters that directly affect the aboriginal peoples of Canada, including the identification and definition of the rights of those peoples to be included in the Constitution of Canada, and the Prime Minister of Canada shall invite representatives of those peoples to participate in the discussions on that item.
-83471_1983-01-05.txt:Just before Christmas Prime Minister Trudeau invited the ten provincial premiers, the heads of the two northern territories and native leaders to attend a constitutional Ottawa March 15-16. While defining aboriginal rights is to be the main focus of the conference, other issues such ms Senate reform and Que-
-83471_1983-02-09.txt:constitutional conference to be held March 15-16. The major Valentino, their purebred purpose of the March meeting buck, can shake a paw as well will be to discuss aboriginal as any trained dog.	rights under at least the
-83471_1983-02-09.txt:The Plouffes feel good following four subject about their decision to start (i) extension of aboriginal
-83471_1983-03-16.txt:one year on constitutional entrench aboriginal rights in matters that directly affect Canada?s constitution.	the aboriginal peoples of
-83471_1983-03-16.txt:Most experts agree that the For this reason, the most whole issue of aboriginal important item on the agenda rights is a complex one, far is amendment of the Con-too broad to be dealt with in stitution to entrench a clause two days. Five years may be requiring a continuing series a more realistic estimate
-83471_1983-03-23.txt:When the conference came around the huge table in to a close Wednesday, a Ottawa&#39;s downtown confer- modest agreement had been ence centre all day Tuesday worked out. Sixteen of the and Wednesday of last week trying to find areas of agreement on the subject of aboriginal rights in Canada. In	that he could not sign because
-83471_1983-03-23.txt:the following four aboriginal	talks. Another conference is
-83471_1983-03-23.txt:It was agreed to amend the constitution in two further ways: (1) aboriginal and treaty rights whicn now exist would be guaranteed equally to males and females, and (2) existing and future rights acquired through land claims settlements would be guaranteed.
-83471_1983-03-23.txt:The conference on aboriginal rights held last week in Ottawa was just the first timid step in a process that may never end. The leaders and delegates of the four major national native groups have not had a serious forum for dialogue with each other or with the federal and provincial governments. By !	making the meeting an open
-83471_1983-03-23.txt:The special status of Canada&#39;s aboriginal people prevents them from becoming part of this vision. On the other hand, there are hurdles to jump on the way to finding a formula for selfgovernment that will work ? a formula that will give native groups control of their schools and lead eventually to self-sufficiency of native families.
-83471_1983-04-06.txt:Pavillon-du-Parc sheltered workshop in Fort Coukmge. They	t. e subject of aboriginal	published in the Montreal
-83471_1983-12-14.txt:Chief Billy Diamond discussing left. He was decorated with aboriginal rights and Ren? medals and she wore a floor
-83471_1984-02-01.txt:as people who are concerned about the issue of aboriginal rights and the place of the aboriginal inhabitants in the overall fabric of Canada, and as individuals concerned about what is politically
-83471_1984-03-14.txt:A first ministers conference took place in Ottawa last week to discuss aboriginal rights. Although it opened on a relatively strong note with Prime Minister Trudeau suggesting Canada?s constitution be amended to include a guarantee of the right of self-government for native people, little agreement was reached during the meeting on this issue or any other.
-83471_1984-03-14.txt:native women met with resistance from Status Indian leaders who want to study the proposal for a time to it might affect other guarantees of aboriginal and treaty rights. As things stand at the moment, the Indian Act specifies that Indian women who marry white men lose their Indian status while white women who marry Indian men gain Indian status.
-83471_1984-06-27.txt:Thursday. Baaed on an agreement reached at the constitutional conference held in March 1988, it specifies that existing aboriginal and treaty rights apply equally to women and men and also guarantees that two more conferences will be held to define the rights of Indians, Inuit and Metis.
-83471_1984-06-27.txt:Prime Minister Trudeau urged Canadians to continue improving constitutional rights and economic circumstances of these native groups. He noted that this was the first time Canada had amended its constitution without having to seek the approval of the British Parliament and the first time any country has attempted to define the rights of its aboriginal peoples.	; ;	1 8
-83471_1984-08-22.txt:the Cree, Billy Diamond, 35, recently announced his resignation from that post while attending the annual general assembly of the Cree in East Main, 600 miles north of Montreal. When the eight Cree bands of Quebec united, in 1974, to oppose the building of the James Bay power project, they made Billy Diamond their leader, and gave him the title of Grand Chief. Under his leadership an agreement was reached in 1975 with the Quebec and federal governments, under which aboriginal natives of Quebec were to receive $225 It was announced in West	is great jubilation at Canadair	million over a period of 20
-83471_1989-01-18.txt:clouds, mountains and	the west coast aboriginal	story of two men discuss-	through the bond of peace.	Babel.	sure, nor	pretense	with	principle of unity clearly
-83471_1989-11-22.txt:Huron camp in the Parc Konrad Sioui, who rep- similar status for aborigi- ^wo ca\Y??i a	Well, away we go with a without fear 0f reprisal by any government,
-83471_1989-11-29.txt:boat transportation has, ship, she was removed to recall, has a very slim chance of avoiding chronic from the early beginnings Chats Lake and the underdevelopment standards in Quebec. Perhaps Vol-of the Ottawa River, been McLachlin Co refitted it taire was right after all when he advised France to the main mode of travel. and used the vessel for forget Quebec, those few arpents of snow The early aboriginal years as a tow ship. The people used the river with Steamer burned on July 7, their dugout and birch 1908. The remains were bark canoes to travel retrieved by the Upper Ot-across and up and down taNva Improvement Co ana while they moved around ^ey built a barge and its looking for food, furs and ^fe was extended until
-83471_1990-02-28.txt:of charter rights for multicultural and aboriginal	at less cost Additonally, plant operating costs would
-83471_1990-03-21.txt:The parties to the Accord should declare unequivocally the supremacy of the Canadian Charter of Rights and Freedoms. The agreement confirms the protection of charter rights for multicultural and aboriginal groups. We believe that the protection of such rights should be extended to all, and that the guarantees of lingusitic and cultural rights should never be open to question.
-83471_1990-06-13.txt:Schick is known for the &quot;Welcome&quot; signs at his store that are in 35 languages, including Canada&#39;s aboriginal languages.
-83471_1990-06-20.txt:While English and French Canada stood nose-to-nose over the accord, Harper&#39;s move forced them to listen to what had, until then, been merely a voice crying in the wilderness. At this point it was no longer possible to carry on with an image of Canada that preserves and promotes two official cultures while ignoring the preexistent human rights of aboriginal people.
-83471_1990-07-25.txt:corded the hunt on their ral survival of aboriginal Some of the people of this province say that they do not ?canvases?, cave walls, groups, of B.C. s Carma- care if the native people of Oka die, just as long as they In 1820, John James Audu- nagh Valley.	g@t their bridge back.
-83471_1990-12-05.txt:words. Even the conseil de la langue fran- mentally flawed. The commission does not have representation from large segments of the Quebec population, notably aboriginal peoples, women and the mi-This is a small step in the right direction. Quebec nority communities of Quebec.
-83471_1990-12-19.txt:the Accord did not say, particularly about aboriginal, women&#39;s, and minority rights,&quot; he said.
-83471_1991-01-02.txt:the Department concern-	velopment to all its lease	from PARCQ, nor from its	aboriginals,	budget; Pontiac Agnculu-
-83471_1991-01-02.txt:and administer planning	tates to users of public	aboriginals;	Department last year are	paid to Pontiac Agricultu-	Barber, that the	Council
-83471_1991-01-02.txt:Whereas our MRC has	negative economic conse-	agent for the aboriginal	ciently within the munici-	Moved by Sandra Mur-	shank&#39;s backhoe for load-
-83471_1991-11-06.txt:In any Constitutional negotiations, Harper said, the aboriginal people don&#39;t want to be treated as a piece of luggage. Natives, he said, have been told, &quot;you can have a distinct society, but you&#39;ll have to wait 10 years to see what that means.&quot;
-83471_1991-11-06.txt:Indians is that of a demo- Now, with the govern- he concluded, to yet anoth ralized and dependent ment&#39;s latest package of er standing ovation, people, hopelessly wan- Constitutional proposals dering the city streets. Harper said that he has re But today, he said, we alized that &quot;Once again Bay II,&quot; asked a lady in are witnessing a reawak- we are not being dealt with the audience, ening of Aboriginal peo- equally.	Support the aboriginal
-83471_1991-11-06.txt:More than once he em-We (the Aboriginal phasized the willingness people) have not been rec- of aboriginal people to ac-ognized for who we are in commodate their Europe-this country, Harper be- an neighbours. We have gan. &quot;Today, the Consti- never denied anyone their tution - the supreme law language, their culture, or of the land - does not rec- their religion,&quot; he said, ognize the first nations, By contrast, the white he said, even though they settlers attempted to su-have been here for more press the spiritual culture
-83471_1991-11-06.txt:Consolidated preferred marble works man, Alex Harper stated that aborigi-shares plus warrants for McDonald.	nais should be allowed to
-83471_1991-11-06.txt:Bell Tel. The Bell Tele- from this village a flock without having to consult phone Company of Cana- of 290 sheep for shipment the federal government, da, who recently complet- at Haley&#39;s station. The &quot;Canada has an Indian ed the purchase of a lot in sheep were purchased Act that totally dominates Quyon from Mrs C B from the farmers of the its aboriginal people,&quot; he Mohr, has begun the build- surrounding country and sajd. a plan similar to ing of their automatic were a choice lot.
-83471_1991-11-27.txt:?	recognizing the right of aboriginal peoples to govern themselves while being protected by Canadian law
-83471_1991-12-04.txt:?	recognizing the right of aboriginal peoples to govern themselves while being protected by Canadian law
-83471_1992-01-08.txt:One cannot erase the experiences of material progress, and certainly most modern Natives would not choose to do so. At the same time, all modern cultures must regain their connectedness to Nature, or we will all die in our own slop. We must, in a sense, all become aboriginals. Then we must free ourselves.
-83471_1992-01-08.txt:Concerning cultural and linguistic survival, Quebec&#39;s aboriginal peoples clearly have a stronger case than do Quebec&#39;s francophones. Further, since Quebec&#39;s anglophones are more numerous than the population of Manitoba or Saskatchewan or Nova Scotia and Prince Edward Island combined, and since these are concentrated in a specific region, they should be allowed to decide by referendum whether they wish to separate from an independent Quebec....&quot;
-83471_1992-01-08.txt:Given the above situation, one can think of dividing Quebec into four provinces: Rupert&#39;s Land, Eastern Townships, Quebec North Shore, and the Outaouais. Quebec North shore should be allowed to separate. Rupert&#39;s Land could hopefully become Canada&#39;s first aboriginal province (with self-government). The Eastern Townships and the Outaouais could also become new provinces, and these could keep Canada viable as a country. Then everybody would be happy?
-83471_1992-01-22.txt:the Conference as a cho- as aboriginal rights re- Another &quot;OC&quot; who took that their needs and that it is a political prob- music, and she has a lot to terview.
-83471_1992-07-08.txt:volves around get everybody off these There are over 50 types of fireflies. . aboriginal is- programs and get them so Each type has a different flash signal.
-83471_1992-07-29.txt:Maureen Schwab is fed up to the teeth with all the address the concerns of money being spent on aboriginals, with native
-83471_1994-06-29.txt:I Wake up and smell the coffee, Mr Bouchard. Despite I what you say, we anglophones, aboriginals, allo-I phones and federalists are as much Qu?b?cois as you I are. We don&#39;t intend to sit on our hands while you and J Jacques Parizeau dismantle our country and heri-I tage. We won&#39;t allow you to make the rules that as-Nl sures you a victory. Do you really believe that we will
-83471_1994-07-27.txt:and is heard on radio and television ex-	bps told me, and more electrical charg-	do not discriminate against our aboriginal people or
-83471_1995-09-27.txt:Breton, 2 - Elaine Palmer, 3 state publicly, I&#39;m with them. While Pontiacers don&#39;t have - Ryan Vowles, 4 - Erma the obvious tribal identity which gives added momentum Hodgins	to the aboriginal peoples&#39; intentions, we have just as much
-83471_1998-09-02.txt:aboriginals wish to remain while repudiating its struc-in Canada, what of the lands
-83471_2000-03-15.txt:Unlike our aboriginal forebears, who viewed nature as a nurturing element to be in communion with, our European ancestors saw nature as something to be conquered and controlled. Fly out of Toronto on a sunny day, and you can see how we have used technology to subdue nature, creating a grid of concrete and steel, with tokens of nature - trees, shrubberies and flowers -strategically placed to mimic the natural setting. A plastic environment, some call it. But, there is no turning back the clock on what the gods of technology call progress.
-83471_2002-04-17.txt:On Wednesday evening out through a window and shanties have so far this advisory committee.	policy and commitment to ing different aboriginal and Understanding policy is
-83471_2004-04-21.txt:As well, the 12 students studied art under the tutelage of local artist Peggy Shannon, learning art and sculpting techniques. Part of the project involved painting a mural depicting the area&#39;s aboriginal heritage now hanging on the side of the fire hall in Chapeau.
-83471_2004-04-21.txt:MURAL ARTISTS: The 12 students in the Allumettes Island Project Choice 2 program helped artist Peggy Shannon with this mural depicting aboriginal life on the island 500 years ago. The mural was mounted to the fire hall. From the left: Denise Weckwerth; Samantha Paquette; Peggy Shannon; Thomas Dunn; Josh Popkie; Rachel Hearty; Kerri Romain; Tara Turner; Dan Hodgson; Justin O?Brien; Julie Venasse; and Paula Sullivan. Missing from the photo is student Joanne Villeneuve.
-83471_2005-02-16.txt:Human Resources and Skills Development Canada, through the National Homelessness Initiative, Urban Aboriginal Homelessness component, is accepting funding applications from organizations interested in obtaining financial assistance while responding to the particular needs of homeless aboriginals in urban settings.
-83471_2005-08-03.txt:aboriginal | community.	? I
-83471_2005-09-21.txt:demonstrates	that	the	minorities	and aboriginals.
-83471_2005-12-21.txt:The NDP website offers a glimpse of its aboriginal platform and it is entitled, ?Honouring Obligations to Aboriginal Canadians?. The first obligation 1 believe Ms. Brault should address is to respect an individual?s right in this country to identify as an aboriginal person ship card, and w e strive to provide unbiased and neutral news content
-83471_2005-12-21.txt:Attitudes such as these go right to the heart of being an aboriginal person. For far too long. Dear Editor, we were told to deny and renounce to our ?aboriginalness? in the face of racism and dis crimination. We know who we are, and we take pride in who we are.
-83471_2005-12-21.txt:PEMBROKE - Algonquin	for turning challenges into	Regional Director for	looking forward to working	with aboriginal	groups	and
-83471_2006-01-11.txt:Abotech is registered as an aboriginal firm. As part of a government program, certain federal contracts are designated as ?set-asides&quot;, and must go to aboriginal businesses.
-83471_2006-01-11.txt:&quot;We heard of this set-aside program for aboriginal firms. That?s where we signed up. We did it through all different government organizations.&quot; Smith told the Ottawa Citizen in December.
-83471_2006-12-13.txt:But, Just as we recognize aboriginal rights of First Nations peoples in Canada, so we need to recognize the cultural-linguistic rights of the francophone nations of Canada. This needs to include francophones both within and without the province of Quebec as well as other francophone nations such as the ; Acadians and Metis peoples.
-83471_2007-02-21.txt:Larouche, Outaouais &quot;Our role as aboriginal spokesperson for the S?ret? people, we are the caretak-du Qu?bec. ?They have the era of the land.&quot; right to be there. If (the
-83471_2007-12-12.txt:Data about aboriginal peoples will be released on Jan. 15 and subsequent releas-
-83471_2008-01-23.txt:Sharp increase in Pontiac aboriginals: census
-83471_2008-01-23.txt:One in seven Pontiacers identify as aboriginal.
-83471_2008-01-23.txt:PONTIAC *The number of people identifying themselves as aboriginal in Ponbac rose sharply in the last five years, according to the most recent Canadian census.
-83471_2008-01-23.txt:The number of aboriginal people in MRC Pontiac rose by 61 per cent to a total of 2,075 people.
-83471_2008-01-23.txt:About one in seven people in the county of over 14,000 residents now identify as aboriginal.
-83471_2008-01-23.txt:The largest concentration is in the Mansfield and Fort Coulonge areas, which have 650 and 365 aboriginals, respectively.
-83471_2008-01-23.txt:The Municipality of Pontiac has 400 people that are aboriginal, up from 295 in 2001.
-83471_2008-01-23.txt:An active member of the aboriginal community in Mansfield and Fort Coulonge, Lise Romain said she was not surprised by the increase.
-83471_2008-01-23.txt:ple in the area had previously not identified themselves as aboriginal, because they were unaware of their roots.
-83471_2008-01-23.txt:Census results say 32 per cent of Mansfield residents and 27 per cent of Fort Coulonge residents are aboriginal.
-83471_2008-01-23.txt:After being affiliated with two separate aboriginal advocacy groups in recent years, the members of the tribes in Fort Coulonge and Mansfield have since become independent.
-83471_2008-01-23.txt:The Pontiac aboriginal plight was spotlighted last year when a group protested the mass logging being conducted in Pontiac forests. Their efforts earned them a meeting with provincial representatives.
-83471_2008-01-23.txt:Romain said she hoped the revelation that such a large number of Pontiacers are aboriginal would produce a greater emphasis on aboriginal issues.
-83471_2008-01-23.txt:Other highlights from the release of aboriginal statistics in the 2006 census:
-83471_2008-01-23.txt:western provinces. A total of 108,430 aboriginals live in Qu?bec.
-83471_2008-01-23.txt:OUR OPINION I Time to pay attention to Pontiac aboriginal issues
-83471_2008-01-23.txt:THE EQUITY was surprised to learn the results of the most recent 2006 census update, which listed over 2,000 local people as having identified themselves as aboriginal.
-83471_2008-01-23.txt:This area of Canada is among the oldest in terms of when it was settled. It makes sense that the older generations of families would have ties to aboriginals and those ties may have continued down family lines.
-83471_2008-01-23.txt:Considering the hardships endured by aboriginal people in Canada, the shame some felt about their status in their country led many to disown their heritage. Those tribulations have been well-documented but it seems a corner has been turned in terms of taking pride in aboriginal lineage.
-83471_2008-01-23.txt:Knowing now that so many of us consider ourselves aboriginal, perhaps it?s time for us to pay more attention to the issues surrounding this segment of the population.
-83471_2008-01-23.txt:A prominent member of the Pontiac aboriginal community, Lise Romain, said there are important issues like housing and health that should be addressed.
-83471_2008-01-23.txt:attention recently, forestry, which was the focus of a protest just last year as local aboriginals demonstrated against the mass-cutting of local forests for exports with few jobs or benefit remaining locally.
-83471_2008-01-23.txt:THE EQUITY regularly attends events celebrating the myriad other cultures in Pontiac: English, French, Scottish,German, Polish and Irish all come to mind with ease, but we would be interested in learning more about the aboriginal community?s heritage and culture. Therefore, it?s probably reasonable to say there are others who are also curious in this regard.
-83471_2008-01-23.txt:It would be fantastic if an aboriginal celebration day could be held someplace in the area, perhaps this summer.
-83471_2008-01-23.txt:It excites us to think of how engrossing it could be to learn about the food, religion, traditions and languages of aboriginal Pontiacers.
-83471_2008-05-07.txt:Other releases included data that showed Pontiac continued to be a truly bilingual county, experienced a sharp increase in people identifying as aboriginals and stayed primarily steady in its population counts.
-83471_2008-06-25.txt:Did fur traders and aboriginals stick to the Ontario shores while paddling their way down the river? Of course not, so it seems silly that the river?s historical and cultural values will only be recognized in Ontario, but not in Qu?bec.
-83471_2008-08-20.txt:A: People (and I include aboriginal people in this). Our species has a habit of spreading out across various habitats, destroying the natural elements wherever it develops permanent populations and producing long-term landscape damage that is slow to recover. I?m only being partially tongue-in-cheek here, but we certainly behave like an invasive species and have for millennia. It would be hard to select a number one ?wild? bad guy because their impacts are not the same, but I?d put something most people don?t even know about right up there. Canary-grass (Phalaris arund-inacea) is an agricultural grass that now dominates thousands of hectares of disturbed Ottawa River marshlands. It is much more ecologically intrusive ? especially in the lower river valley, than the overly-publicized Purple Loosestrife. The jury is still out on the newly arrived Water Chestnut; if it does not do well in more acidic waters, like Purple Loosestrife and European Water-milfoil, it likely will only become a locally significant problem in the lower watershed. European Carp is a bad one, so is Zebra Mussels (another lower watershed threat) ... the list goes on.
-83471_2008-10-01.txt:Cannon was specifically asked about the aboriginals of Barri?re Lake; Conservative plans for changes to Canada Post; the transparency and accountability of his government; his handling of the extradition of Bryson Farms co-owner Stuart Collins and the grassroots movement to bring a
-83471_2010-06-23.txt:Now think of the current reality in Canada and Australia. Our colonial leaders did not perpetuate 100 per cent genocide Instead, they practiced deliberate, forced assimilation, relocation, residential schooling and other means of denying a people their identity Now, as descendents of colonizers, even in 2010 we simply do not have a workable, proven system that shows us how to fairly deal with aboriginal cultures
-83471_2010-08-18.txt:tiers and that they maimed and lived with the aboriginal people of this land gives me a powerful sense of belonging Canada is often referred to, by the world, as a peaceful prosperous nation, and so it is, but this country and its greatness was earned and built by our ancestors. To a large degree, we have been gifted by those we have never met, but who were determined to build a better life and a better future for their children. 1 am sure that this lesson is repeated over and over again across our great land.
-83471_2010-09-01.txt:Aquaculture permitted them to remain as all-season residents of this land rather than being nomadic, as were most other aboriginal peoples in Australia.
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Fri, 23 Jun 2017 12:32:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/grep-results-equity-search/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/grep-results-equity-search/</guid>
-        
-        <category>experiments</category>
-        
-        <category>first nations</category>
-        
-        
-        <category>Experiments</category>
-        
-      </item>
-    
-      <item>
         <title>getting data out of opencontext</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#couple-of-ways-one-could-grab-it&quot; id=&quot;markdown-toc-couple-of-ways-one-could-grab-it&quot;&gt;COUPLE OF WAYS ONE COULD GRAB IT:&lt;/a&gt;&lt;/li&gt;
@@ -1379,35 +1438,6 @@ utility&lt;/p&gt;
         <category>Experiments</category>
         
         <category>Code</category>
-        
-      </item>
-    
-      <item>
-        <title>the workflow in this notebook</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#a-reminder&quot; id=&quot;markdown-toc-a-reminder&quot;&gt;A Reminder&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;a-reminder&quot;&gt;A Reminder&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;terminal in the smgprojects folder&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rake draft&lt;/code&gt; to create a new note in the drafts folder&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rake write&lt;/code&gt; to open all notes in the draft folder&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rake publish&lt;/code&gt; to move notes to the source folder&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;make&lt;/code&gt; to make the damned site&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rake togithub&lt;/code&gt; to put the built site in the github repo&lt;/li&gt;
-  &lt;li&gt;push to github.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 23 Jun 2017 11:39:00 -0400</pubDate>
-        <link>http://smgprojects.github.io/the-workflow-in-this-notebook/</link>
-        <guid isPermaLink="true">http://smgprojects.github.io/the-workflow-in-this-notebook/</guid>
-        
-        <category>workflow</category>
-        
-        
-        <category>Meta</category>
         
       </item>
     

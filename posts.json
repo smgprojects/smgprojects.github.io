@@ -2,6 +2,18 @@
     "posts": [
         
         {
+            "title": "searching the equity for first nations",
+            "url": "http://smgprojects.github.io/searching-the-equity-for-first-nations/",
+            "date": "2017-06-26T12:32:00-04:00"
+        },
+        
+        {
+            "title": "grep results searching the equity for first nations",
+            "url": "http://smgprojects.github.io/grep-results-equity-search/",
+            "date": "2017-06-26T12:32:00-04:00"
+        },
+        
+        {
             "title": "using shaffer&#39;s hypothesis to markdown script",
             "url": "http://smgprojects.github.io/using-shaffers-hypothesis-to-markdown-script/",
             "date": "2017-06-23T16:18:00-04:00"
@@ -23,12 +35,6 @@
             "title": "using hugo academic to make shawngraham.github.io",
             "url": "http://smgprojects.github.io/using-hugo-academic-to-make-shawngraham-dot-github-dot-io/",
             "date": "2017-06-23T12:33:00-04:00"
-        },
-        
-        {
-            "title": "grep results searching the equity for first nations",
-            "url": "http://smgprojects.github.io/grep-results-equity-search/",
-            "date": "2017-06-23T12:32:00-04:00"
         },
         
         {
