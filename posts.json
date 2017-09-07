@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "skim notes exporter",
+            "url": "http://smgprojects.github.io/skimnotes_exporter/",
+            "date": "2017-09-06T12:32:00-04:00"
+        },
+        
+        {
             "title": "searching the equity for first nations",
             "url": "http://smgprojects.github.io/searching-the-equity-for-first-nations/",
             "date": "2017-06-26T12:32:00-04:00"
